@@ -174,14 +174,14 @@ public class CustomSentimentAnnotatorTest {
 //            pipeline.addAnnotator(new CustomParserAnnotator(false, -1));
 
 
-            Annotation document = new Annotation("Cuộc đời là những chuyến đi và bạn có thể quyết định được con đường đi của mình. Thỉnh thoảng, sẽ có nhiều chuyện không may xảy ra nhưng hãy vững bước bạn nhé.");
+//            Annotation document = new Annotation("Cuộc đời là những chuyến đi và bạn có thể quyết định được con đường đi của mình. Thỉnh thoảng, sẽ có nhiều chuyện không may xảy ra nhưng hãy vững bước bạn nhé.");
+            Annotation document = new Annotation("Cuộc đời  .");
 
             // Run all Annotations on this text
             pipeline.annotate(document);
 
             List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
             for (CoreMap sentence : sentences) {
-                System.out.println(sentence);
                 for (CoreLabel coreLabel : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
                     System.out.println(coreLabel.get(CoreAnnotations.TextAnnotation.class));
                 }
