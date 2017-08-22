@@ -74,7 +74,7 @@ public class CustomParserAnnotator extends SentenceAnnotator  {
   private final GrammaticalStructure.Extras extraDependencies;
 
   public CustomParserAnnotator(boolean verbose, int maxSent) {
-    this(System.getProperty("parse.model", LexicalizedParser.DEFAULT_PARSER_LOC), verbose, maxSent, StringUtils.EMPTY_STRING_ARRAY);
+    this(System.getProperty("parse.model", "VietNamesePCFG.ser.gz"), verbose, maxSent, StringUtils.EMPTY_STRING_ARRAY);
   }
 
   public CustomParserAnnotator(String parserLoc,
