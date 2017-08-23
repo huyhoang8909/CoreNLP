@@ -47,3 +47,5 @@ public interface CoreMap extends TypesafeMap, PrettyLoggable, Serializable {
   public String toShorterString(String... what);
 
 }
+
+

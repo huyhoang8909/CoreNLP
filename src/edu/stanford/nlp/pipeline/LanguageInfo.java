@@ -10,7 +10,7 @@ import java.util.*;
 public class LanguageInfo {
 
   /** languages supported **/
-  public enum HumanLanguage {ARABIC, CHINESE, ENGLISH, FRENCH, GERMAN, SPANISH}
+  public enum HumanLanguage {ARABIC, CHINESE, ENGLISH, FRENCH, GERMAN, SPANISH, VIETNAMESE}
 
   /** list of properties files for each language **/
   public static final String ARABIC_PROPERTIES = "StanfordCoreNLP-arabic.properties";
@@ -19,6 +19,7 @@ public class LanguageInfo {
   public static final String FRENCH_PROPERTIES = "StanfordCoreNLP-french.properties";
   public static final String GERMAN_PROPERTIES = "StanfordCoreNLP-german.properties";
   public static final String SPANISH_PROPERTIES = "StanfordCoreNLP-spanish.properties";
+  public static final String VIETNAMESE_PROPERTIES = "StanfordCoreNLP-vietnamese.properties";
 
   /** map enum to properties file **/
   public static final Map<HumanLanguage,String> languageToPropertiesFile;
@@ -31,6 +32,7 @@ public class LanguageInfo {
     languageToPropertiesFile.put(HumanLanguage.FRENCH, FRENCH_PROPERTIES);
     languageToPropertiesFile.put(HumanLanguage.GERMAN, GERMAN_PROPERTIES);
     languageToPropertiesFile.put(HumanLanguage.SPANISH, SPANISH_PROPERTIES);
+    languageToPropertiesFile.put(HumanLanguage.VIETNAMESE, VIETNAMESE_PROPERTIES);
   }
 
   private LanguageInfo() {
@@ -68,13 +70,15 @@ public class LanguageInfo {
       return HumanLanguage.GERMAN;
     if (inputString.toLowerCase().equals("spanish") || inputString.toLowerCase().equals("es"))
       return HumanLanguage.SPANISH;
+    if (inputString.toLowerCase().equals("vietnamese") || inputString.toLowerCase().equals("vi"))
+      return HumanLanguage.VIETNAMESE;
     else
       return null;
   }
 
   /** Check if language is a segmenter language, return boolean. **/
   public static boolean isSegmenterLanguage(HumanLanguage language) {
-    return language == HumanLanguage.ARABIC || language == HumanLanguage.CHINESE;
+    return language == HumanLanguage.ARABIC || language == HumanLanguage.CHINESE || language == HumanLanguage.VIETNAMESE;
   }
 
   public static boolean isSegmenterLanguage(String inputString) {

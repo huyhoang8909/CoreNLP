@@ -21,6 +21,7 @@ import edu.stanford.nlp.pipeline.ArabicSegmenterAnnotator;
 import edu.stanford.nlp.pipeline.ChineseSegmenterAnnotator;
 import edu.stanford.nlp.pipeline.LanguageInfo;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.pipeline.VietnameseSegmenterAnnotator;
 import edu.stanford.nlp.process.CoreLabelTokenFactory;
 import edu.stanford.nlp.process.PTBTokenizer;
 import edu.stanford.nlp.process.Tokenizer;
@@ -30,6 +31,7 @@ import edu.stanford.nlp.process.WordToSentenceProcessor;
 import edu.stanford.nlp.util.Generics;
 import edu.stanford.nlp.util.PropertiesUtils;
 import edu.stanford.nlp.util.logging.Redwood;
+import vn.hus.nlp.tokenizer.VietTokenizer;
 
 
 /**
@@ -106,6 +108,9 @@ public class CustomTokenizerAnnotator implements Annotator {
             else if (LanguageInfo.getLanguageFromString(
                     props.getProperty("tokenize.language")) == LanguageInfo.HumanLanguage.CHINESE)
                 segmenterAnnotator = new ChineseSegmenterAnnotator("segment", props);
+            else if (LanguageInfo.getLanguageFromString(
+                    props.getProperty("tokenize.language")) == LanguageInfo.HumanLanguage.VIETNAMESE)
+                segmenterAnnotator = new VietnameseSegmenterAnnotator("segment", props);
             else {
                 segmenterAnnotator = null;
                 throw new RuntimeException("No segmenter implemented for: " +
@@ -175,11 +180,8 @@ public class CustomTokenizerAnnotator implements Annotator {
         switch (type) {
 
             case Arabic:
-            case Chinese:
-                factory = null;
-                break;
             case Vietnamese:
-                // TODO: inject vietnamese tokenizer here
+            case Chinese:
                 factory = null;
                 break;
             case Spanish:
@@ -231,7 +233,7 @@ public class CustomTokenizerAnnotator implements Annotator {
             log.info("Tokenizing ... ");
         }
 
-        // for Arabic and Chinese use a segmenter instead
+        // for Arabic, Vietnamese and Chinese use a segmenter instead
         if (useSegmenter) {
             segmenterAnnotator.annotate(annotation);
             return;
@@ -290,11 +292,11 @@ public class CustomTokenizerAnnotator implements Annotator {
         Unspecified(null, null, "invertible,ptb3Escaping=true"),
         Arabic("ar", null, ""),
         Chinese("zh", null, ""),
+        Vietnamese("vi", null, ""),
         Spanish("es", "SpanishTokenizer", "invertible,ptb3Escaping=true,splitAll=true"),
         English("en", "PTBTokenizer", "invertible,ptb3Escaping=true"),
         German("de", null, "invertible,ptb3Escaping=true"),
         French("fr", "FrenchTokenizer", ""),
-        Vietnamese("vi", "VietnameseTokenizer", ""),
         Whitespace(null, "WhitespaceTokenizer", "");
 
         private static final Map<String, TokenizerType> nameToTokenizerMap = initializeNameMap();

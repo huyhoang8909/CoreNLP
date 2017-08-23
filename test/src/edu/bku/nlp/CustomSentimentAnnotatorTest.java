@@ -6,9 +6,12 @@ import org.junit.experimental.runners.Enclosed;
 import org.junit.runner.RunWith;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
+import java.util.Properties;
 import java.util.function.Function;
 
+import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -24,6 +27,7 @@ import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Iterables;
 import edu.stanford.nlp.util.StringUtils;
+import vn.hus.nlp.tokenizer.VietTokenizer;
 
 @RunWith(Enclosed.class)
 public class CustomSentimentAnnotatorTest {
@@ -167,15 +171,19 @@ public class CustomSentimentAnnotatorTest {
     public static class VietnameseSentiment {
         @Test
         public void success() throws IOException, ClassNotFoundException {
+            Properties properties = new Properties();
+            properties.setProperty("tokenize.language", "vietnamese");
+            properties.setProperty("tokenize.language", "vietnamese");
+
             AnnotationPipeline pipeline = new AnnotationPipeline();
-            pipeline.addAnnotator(new CustomTokenizerAnnotator(true, "en"));
+            pipeline.addAnnotator(new CustomTokenizerAnnotator(true, properties));
             pipeline.addAnnotator(new WordsToSentencesAnnotator(true));
 //            pipeline.addAnnotator(new POSTaggerAnnotator(false));
 //            pipeline.addAnnotator(new CustomParserAnnotator(false, -1));
-
-
-//            Annotation document = new Annotation("Cuộc đời là những chuyến đi và bạn có thể quyết định được con đường đi của mình. Thỉnh thoảng, sẽ có nhiều chuyện không may xảy ra nhưng hãy vững bước bạn nhé.");
-            Annotation document = new Annotation("Cuộc đời  .");
+//
+//
+            Annotation document = new Annotation("Cuộc đời là những chuyến đi và bạn có thể quyết định được con đường đi của mình.");
+            // Thỉnh thoảng, sẽ có nhiều chuyện không may xảy ra nhưng hãy vững bước bạn nhé.
 
             // Run all Annotations on this text
             pipeline.annotate(document);
