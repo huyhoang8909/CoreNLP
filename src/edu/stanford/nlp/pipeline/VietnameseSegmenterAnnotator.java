@@ -118,24 +118,28 @@ public class VietnameseSegmenterAnnotator implements Annotator {
 
     private void doOneSentence(CoreMap annotation) {
         String text = annotation.get(CoreAnnotations.TextAnnotation.class);
-        String[] tokenizes = segmenter.tokenize(text);
-        System.out.println(tokenizes[0]);
-        List<CoreLabel> tokens = convertToCorelabel(tokenizes);
-
-        annotation.set(CoreAnnotations.TokensAnnotation.class, tokens);
-    }
-
-    private List<CoreLabel> convertToCorelabel(String[] tokens) {
-        List<CoreLabel> coreLabels = new ArrayList<>();
-        for (String token : tokens) {
+        String[] tokenizes = segmenter.tokenize(text)[0].split(" ");
+        System.out.println(tokenizes.length);
+        int beginPosition = 0;
+        int endPosition = -1;
+        List<CoreLabel> tokens = new ArrayList<>();
+        for (String token : tokenizes) {
             CoreLabel coreLabel = new CoreLabel() {{
                 setWord(token);
                 setValue(token);
-                setLemma(token);
+                setOriginalText(token);
             }};
-            coreLabels.add(coreLabel);
+
+            beginPosition = endPosition + 1;
+            endPosition = beginPosition + token.length() - 1;
+
+            coreLabel.setEndPosition(endPosition);
+            coreLabel.setBeginPosition(beginPosition);
+            tokens.add(coreLabel);
         }
-        return coreLabels;
+
+
+        annotation.set(CoreAnnotations.TokensAnnotation.class, tokens);
     }
 
 

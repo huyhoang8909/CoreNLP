@@ -29,6 +29,9 @@ import edu.stanford.nlp.util.Iterables;
 import edu.stanford.nlp.util.StringUtils;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 
+import static java.lang.System.setOut;
+import static java.lang.System.setProperty;
+
 @RunWith(Enclosed.class)
 public class CustomSentimentAnnotatorTest {
 
@@ -48,9 +51,9 @@ public class CustomSentimentAnnotatorTest {
             pipeline.addAnnotator(new TokenizerAnnotator(false, "en"));
             pipeline.addAnnotator(new WordsToSentencesAnnotator(false));
             pipeline.addAnnotator(new POSTaggerAnnotator(false));
-            pipeline.addAnnotator(new MorphaAnnotator(false));
-            pipeline.addAnnotator(new NERCombinerAnnotator(false));
-            pipeline.addAnnotator(new ParserAnnotator(false, -1));
+//            pipeline.addAnnotator(new MorphaAnnotator(false));
+//            pipeline.addAnnotator(new NERCombinerAnnotator(false));
+//            pipeline.addAnnotator(new ParserAnnotator(false, -1));
             //pipeline.addAnnotator(new CorefAnnotator(null, null, null, false));
             //pipeline.addAnnotator(new SRLAnnotator(false));
 
@@ -182,8 +185,7 @@ public class CustomSentimentAnnotatorTest {
 //            pipeline.addAnnotator(new CustomParserAnnotator(false, -1));
 //
 //
-            Annotation document = new Annotation("Cuộc đời là những chuyến đi và bạn có thể quyết định được con đường đi của mình.");
-            // Thỉnh thoảng, sẽ có nhiều chuyện không may xảy ra nhưng hãy vững bước bạn nhé.
+            Annotation document = new Annotation("Cuộc đời là những chuyến đi và bạn có thể quyết định được con đường đi của mình. Thỉnh thoảng, sẽ có nhiều chuyện không may xảy ra nhưng hãy vững bước bạn nhé.");
 
             // Run all Annotations on this text
             pipeline.annotate(document);
@@ -192,6 +194,38 @@ public class CustomSentimentAnnotatorTest {
             for (CoreMap sentence : sentences) {
                 for (CoreLabel coreLabel : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
                     System.out.println(coreLabel.get(CoreAnnotations.TextAnnotation.class));
+                }
+            }
+
+        }
+    }
+
+    public static class EnglishSegmenter {
+        @Test
+        public void success() throws IOException, ClassNotFoundException {
+            AnnotationPipeline pipeline = new AnnotationPipeline();
+            pipeline.addAnnotator(new CustomTokenizerAnnotator(false, "en"));
+            pipeline.addAnnotator(new WordsToSentencesAnnotator(false));
+//            pipeline.addAnnotator(new POSTaggerAnnotator(false));
+
+            // create annotation with text
+            String text = "I like dog. But don't like cat.";
+            Annotation document = new Annotation(text);
+            Assert.assertEquals(text, document.toString());
+            Assert.assertEquals(text, document.get(CoreAnnotations.TextAnnotation.class));
+
+
+//            Annotation document = new Annotation("Cuộc đời là những chuyến đi và bạn có thể quyết định được con đường đi của mình.");
+            // Thỉnh thoảng, sẽ có nhiều chuyện không may xảy ra nhưng hãy vững bước bạn nhé.
+
+            // Run all Annotations on this text
+            pipeline.annotate(document);
+
+            List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
+            for (CoreMap sentence : sentences) {
+                System.out.println(sentence.toShorterString());
+                for (CoreLabel coreLabel : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+                    System.out.println(coreLabel.index());
                 }
             }
 
