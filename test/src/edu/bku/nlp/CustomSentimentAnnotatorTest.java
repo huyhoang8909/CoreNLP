@@ -18,8 +18,6 @@ import edu.stanford.nlp.pipeline.BinarizerAnnotator;
 import edu.stanford.nlp.pipeline.POSTaggerAnnotator;
 import edu.stanford.nlp.pipeline.TokenizerAnnotator;
 import edu.stanford.nlp.pipeline.WordsToSentencesAnnotator;
-import edu.stanford.nlp.tagger.maxent.MaxentTagger;
-import edu.stanford.nlp.tagger.maxent.TaggerConfig;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
@@ -182,7 +180,7 @@ public class CustomSentimentAnnotatorTest {
             pipeline.addAnnotator(new CustomParserAnnotator("vn.parser", properties));
             pipeline.addAnnotator(new BinarizerAnnotator("", properties));
 
-            Annotation document = new Annotation("Cuộc đời là những chuyến đi và bạn có thể quyết định được con đường đi của mình. Thỉnh thoảng, sẽ có nhiều chuyện không may xảy ra nhưng hãy vững bước bạn nhé.");
+            Annotation document = new Annotation("Cựu lãnh đạo Ngân hàng Sacombank Trầm Bê bị cho có sai phạm, tiếp tay cho Phạm Công Danh gây thất thoát hàng nghìn tỷ đồng.");
 
             // Run all Annotations on this text
             pipeline.annotate(document);
@@ -190,11 +188,8 @@ public class CustomSentimentAnnotatorTest {
             List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
 
             for (CoreMap sentence : sentences) {
-//                maxentTagger.tagCoreLabels(sentence.get(CoreAnnotations.TokensAnnotation.class));
-                Tree tree = sentence.get(TreeCoreAnnotations.BinarizedTreeAnnotation.class);
-                tree.pennPrint();
                 for (CoreLabel coreLabel : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
-//                    System.out.println(coreLabel.get(CoreAnnotations.TextAnnotation.class) + coreLabel.get(CoreAnnotations.PartOfSpeechAnnotation.class));
+                    System.out.println(coreLabel.get(CoreAnnotations.TextAnnotation.class) + "/" + coreLabel.get(CoreAnnotations.PartOfSpeechAnnotation.class));
 //                }
                 }
             }
@@ -203,12 +198,15 @@ public class CustomSentimentAnnotatorTest {
 
         @Test
         public void maxentTest() throws Exception {
-//            Properties properties = new Properties();
-//            properties.setProperty("tokenize.language", "vietnamese");
-//            properties.setProperty("model", "resources/models/vtb.tagger");
-//
+
+
+            Properties properties = new Properties();
+            properties.setProperty("tokenize.language", "vietnamese");
+            properties.setProperty("model", "resources/models/vtb.tagger");
+
 //            old.edu.stanford.nlp.tagger.maxent.TaggerConfig taggerConfig = new old.edu.stanford.nlp.tagger.maxent.TaggerConfig(properties);
 //            old.edu.stanford.nlp.tagger.maxent.MaxentTagger maxentTagger = new old.edu.stanford.nlp.tagger.maxent.MaxentTagger(taggerConfig);
+
             VietnameseMaxentTagger vn = new VietnameseMaxentTagger();
             List<WordTag> results = vn.tagText2("Cựu lãnh đạo Ngân hàng Sacombank Trầm Bê bị cho có sai phạm, tiếp tay cho Phạm Công Danh gây thất thoát hàng nghìn tỷ đồng.");
             System.out.println(results);

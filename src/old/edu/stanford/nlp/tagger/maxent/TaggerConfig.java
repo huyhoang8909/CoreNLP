@@ -681,7 +681,6 @@ public class TaggerConfig extends Properties /* Inherits implementation of seria
       TaggerConfig taggerConfig = new TaggerConfig();
       Set<String> strings = config.stringPropertyNames();
       strings.forEach(item -> {
-        System.out.println(item);
           taggerConfig.setProperty(item, config.getProperty(item));
       });
 

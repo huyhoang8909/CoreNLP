@@ -8,6 +8,7 @@ import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 import edu.stanford.nlp.util.*;
 import edu.stanford.nlp.util.concurrent.MulticoreWrapper;
 import edu.stanford.nlp.util.concurrent.ThreadsafeProcessor;
+import vn.hus.nlp.tagger.VietnameseMaxentTagger;
 
 /**
  * Wrapper for the maxent part of speech tagger.
@@ -27,6 +28,7 @@ public class POSTaggerAnnotator implements Annotator  {
 
   private final boolean reuseTags;
 
+  static VietnameseMaxentTagger vnTagger = new VietnameseMaxentTagger();
   /** Create a tagger annotator using the default English tagger from the models jar
    *  (and non-verbose initialization).
    */
@@ -132,7 +134,8 @@ public class POSTaggerAnnotator implements Annotator  {
     List<TaggedWord> tagged = null;
     if (tokens.size() <= maxSentenceLength) {
       try {
-        tagged = pos.tagSentence(tokens, this.reuseTags);
+        tagged = vnTagger.tagListCoreLabel(tokens);
+//        tagged = pos.tagSentence(tokens, this.reuseTags);
       } catch (OutOfMemoryError e) {
         log.error(e); // Beware that we can now get an OOM in logging, too.
         log.warn("Tagging of sentence ran out of memory. " +

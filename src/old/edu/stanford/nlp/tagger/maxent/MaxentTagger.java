@@ -179,6 +179,8 @@ public class MaxentTagger implements Function<Sentence<? extends HasWord>,Senten
 
   public static final String DEFAULT_NLP_GROUP_MODEL_PATH = "/u/nlp/data/pos-tagger/wsj3t0-18-left3words/left3words-wsj-0-18.tagger";
   public static final String DEFAULT_DISTRIBUTION_PATH = "models/left3words-wsj-0-18.tagger";
+  public static final String DEFAULT_JAR_PATH =
+          "edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger";
 
   private static TestSentence ts;
 

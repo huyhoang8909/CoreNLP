@@ -38,6 +38,7 @@ import edu.stanford.nlp.sequences.SequenceModel;
 import edu.stanford.nlp.tagger.common.Tagger;
 import edu.stanford.nlp.util.*;
 import edu.stanford.nlp.util.logging.Redwood;
+import vn.hus.nlp.tagger.VietnameseMaxentTagger;
 
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
@@ -90,7 +91,7 @@ public class TestSentence implements SequenceModel  {
 
   public TestSentence(MaxentTagger maxentTagger) {
     assert(maxentTagger != null);
-    assert(maxentTagger.getLambdaSolve() != null);
+//    assert(maxentTagger.getLambdaSolve() != null);
     this.maxentTagger = maxentTagger;
     if (maxentTagger.config != null) {
       tagSeparator = maxentTagger.config.getTagSeparator();

@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import edu.stanford.nlp.ling.TaggedWord;
+import edu.stanford.nlp.ling.CoreLabel;
 import old.edu.stanford.nlp.ling.WordTag;
 import old.edu.stanford.nlp.tagger.maxent.MaxentTagger;
 import old.edu.stanford.nlp.tagger.maxent.TaggerConfig;
@@ -107,6 +109,55 @@ public class VietnameseMaxentTagger {
 				System.err.println("There is an error.");
 			}
 			tokens.add(new WordTag(word, tag));
+		}
+		return tokens;
+	}
+
+
+	public List<TaggedWord> tagListCoreLabel(List<CoreLabel> words) {
+		List<TaggedWord> tokens = new  ArrayList<TaggedWord>();
+		// replace the space characters of the word in the word list by
+		// underscores chars and build a string containing all the words
+		StringBuffer buffer = new StringBuffer(words.size()*5);
+		for (CoreLabel word : words) {
+			buffer.append(word.word().replace(' ', '_'));
+			buffer.append(" ");
+		}
+		// tag the tokenized string
+		// changed from version 2.0 of Stanford Maxent Tagger
+		String taggedString = null;
+		try {
+			taggedString = tagTokenizedString(buffer.toString());
+		} catch (Exception e) {
+			System.out.println("tagListCoreLabel throw exception: " + e.getStackTrace());
+		}
+		// split the tagged string using the word/tag delimiter
+		String[] pairs = taggedString.split("\\s+");
+		String word, tag;
+		for (String pair : pairs) {
+			String[] wt = pair.split(IConstants.DELIM);
+			if (wt.length == 2) {
+				word = wt[0];
+				// recover the space character if user don't want underscores
+				if (!TaggerOptions.UNDERSCORE) {
+					word = wt[0].replaceAll("_", " ");
+				}
+				tag = wt[1];
+			} else if (wt.length > 2) {
+				// the case of date with / separator, for example 20/10/1980/N
+				// the word is 20/10/1980
+				word = wt[0];
+				for (int j = 1; j < wt.length - 1; j++) {
+					word += IConstants.DELIM + wt[j];
+				}
+				// the tag is the last part
+				tag = wt[wt.length-1];
+			} else { // wt.length < 2
+				word = "";
+				tag = "";
+				System.err.println("There is an error.");
+			}
+			tokens.add(new TaggedWord(word, tag));
 		}
 		return tokens;
 	}
