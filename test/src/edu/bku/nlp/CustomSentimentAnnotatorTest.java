@@ -6,31 +6,25 @@ import org.junit.experimental.runners.Enclosed;
 import org.junit.runner.RunWith;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 import java.util.Properties;
 import java.util.function.Function;
 
-import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.AnnotationPipeline;
-import edu.stanford.nlp.pipeline.MorphaAnnotator;
-import edu.stanford.nlp.pipeline.NERCombinerAnnotator;
+import edu.stanford.nlp.pipeline.BinarizerAnnotator;
 import edu.stanford.nlp.pipeline.POSTaggerAnnotator;
-import edu.stanford.nlp.pipeline.ParserAnnotator;
 import edu.stanford.nlp.pipeline.TokenizerAnnotator;
 import edu.stanford.nlp.pipeline.WordsToSentencesAnnotator;
+import edu.stanford.nlp.tagger.maxent.MaxentTagger;
+import edu.stanford.nlp.tagger.maxent.TaggerConfig;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Iterables;
 import edu.stanford.nlp.util.StringUtils;
-import vn.hus.nlp.tokenizer.VietTokenizer;
-
-import static java.lang.System.setOut;
-import static java.lang.System.setProperty;
 
 @RunWith(Enclosed.class)
 public class CustomSentimentAnnotatorTest {
@@ -176,59 +170,76 @@ public class CustomSentimentAnnotatorTest {
         public void success() throws IOException, ClassNotFoundException {
             Properties properties = new Properties();
             properties.setProperty("tokenize.language", "vietnamese");
-            properties.setProperty("tokenize.language", "vietnamese");
+            properties.setProperty("model", "resources/models/VietNamesePCFG.ser.gz");
+            properties.setProperty("vn.parser.model", "resources/models/VietNamesePCFG.ser.gz");
 
             AnnotationPipeline pipeline = new AnnotationPipeline();
             pipeline.addAnnotator(new CustomTokenizerAnnotator(true, properties));
             pipeline.addAnnotator(new WordsToSentencesAnnotator(true));
-//            pipeline.addAnnotator(new POSTaggerAnnotator(false));
-//            pipeline.addAnnotator(new CustomParserAnnotator(false, -1));
-//
-//
+            pipeline.addAnnotator(new POSTaggerAnnotator(true));
+            pipeline.addAnnotator(new CustomParserAnnotator("vn.parser", properties));
+            pipeline.addAnnotator(new BinarizerAnnotator("", properties));
+
             Annotation document = new Annotation("Cuộc đời là những chuyến đi và bạn có thể quyết định được con đường đi của mình. Thỉnh thoảng, sẽ có nhiều chuyện không may xảy ra nhưng hãy vững bước bạn nhé.");
 
             // Run all Annotations on this text
             pipeline.annotate(document);
 
             List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
+
             for (CoreMap sentence : sentences) {
+//                maxentTagger.tagCoreLabels(sentence.get(CoreAnnotations.TokensAnnotation.class));
+                Tree tree = sentence.get(TreeCoreAnnotations.BinarizedTreeAnnotation.class);
+                tree.pennPrint();
                 for (CoreLabel coreLabel : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
-                    System.out.println(coreLabel.get(CoreAnnotations.TextAnnotation.class));
+//                    System.out.println(coreLabel.get(CoreAnnotations.TextAnnotation.class) + coreLabel.get(CoreAnnotations.PartOfSpeechAnnotation.class));
+//                }
                 }
             }
 
         }
-    }
 
-    public static class EnglishSegmenter {
         @Test
-        public void success() throws IOException, ClassNotFoundException {
-            AnnotationPipeline pipeline = new AnnotationPipeline();
-            pipeline.addAnnotator(new CustomTokenizerAnnotator(false, "en"));
-            pipeline.addAnnotator(new WordsToSentencesAnnotator(false));
-//            pipeline.addAnnotator(new POSTaggerAnnotator(false));
+        public void maxentTest() {
+            Properties properties = new Properties();
+            properties.setProperty("tokenize.language", "vietnamese");
+            properties.setProperty("model", "resources/models/vtb.tagger");
 
-            // create annotation with text
-            String text = "I like dog. But don't like cat.";
-            Annotation document = new Annotation(text);
-            Assert.assertEquals(text, document.toString());
-            Assert.assertEquals(text, document.get(CoreAnnotations.TextAnnotation.class));
+            TaggerConfig taggerConfig = new TaggerConfig(properties);
+            MaxentTagger maxentTagger = new MaxentTagger(taggerConfig);
+
+        }
+
+        public static class EnglishSegmenter {
+            @Test
+            public void success() throws IOException, ClassNotFoundException {
+                AnnotationPipeline pipeline = new AnnotationPipeline();
+                pipeline.addAnnotator(new CustomTokenizerAnnotator(false, "en"));
+                pipeline.addAnnotator(new WordsToSentencesAnnotator(false));
+                pipeline.addAnnotator(new POSTaggerAnnotator(false));
+
+                // create annotation with text
+                String text = "I like dog. But don't like cat.";
+                Annotation document = new Annotation(text);
+                Assert.assertEquals(text, document.toString());
+                Assert.assertEquals(text, document.get(CoreAnnotations.TextAnnotation.class));
 
 
 //            Annotation document = new Annotation("Cuộc đời là những chuyến đi và bạn có thể quyết định được con đường đi của mình.");
-            // Thỉnh thoảng, sẽ có nhiều chuyện không may xảy ra nhưng hãy vững bước bạn nhé.
+                // Thỉnh thoảng, sẽ có nhiều chuyện không may xảy ra nhưng hãy vững bước bạn nhé.
 
-            // Run all Annotations on this text
-            pipeline.annotate(document);
+                // Run all Annotations on this text
+                pipeline.annotate(document);
 
-            List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
-            for (CoreMap sentence : sentences) {
-                System.out.println(sentence.toShorterString());
-                for (CoreLabel coreLabel : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
-                    System.out.println(coreLabel.index());
+                List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
+                for (CoreMap sentence : sentences) {
+                    System.out.println(sentence.toShorterString());
+                    for (CoreLabel coreLabel : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+                        System.out.println(coreLabel.index());
+                    }
                 }
-            }
 
+            }
         }
     }
 }

@@ -176,13 +176,6 @@
       <scope>system</scope>
       <systemPath>${basedir}/lib/vn.hus.nlp.fsm-1.0.0.jar</systemPath>
     </dependency>
-    <dependency>
-      <groupId>vn.hus</groupId>
-      <artifactId>nlp-tokenizer</artifactId>
-      <version>4.1.1</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/lib/vn.hus.nlp.tokenizer-4.1.1.jar</systemPath>
-    </dependency>
 
   </dependencies>
   <build>

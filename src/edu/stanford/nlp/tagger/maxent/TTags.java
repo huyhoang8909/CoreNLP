@@ -142,6 +142,26 @@ public class TTags {
       closed.add("VC");
       closed.add("VE");
       isEnglish = false;
+    } else if (language.equalsIgnoreCase("vietnamese")) {
+      closed.add("Np");
+      closed.add("Nc");
+      closed.add("Nu");
+      closed.add("N");
+      closed.add("V");
+      closed.add("A");
+      closed.add("P");
+      closed.add("R");
+      closed.add("L");
+      closed.add("M");
+      closed.add("E");
+      closed.add("C");
+      closed.add("CC");
+      closed.add("I");
+      closed.add("T");
+      closed.add("Y");
+      closed.add("Z");
+      closed.add("X");
+      isEnglish = false;
     } else if (language.equalsIgnoreCase("arabic")) {
       // kulick tag set
       // the following tags seem to be complete sets in the training

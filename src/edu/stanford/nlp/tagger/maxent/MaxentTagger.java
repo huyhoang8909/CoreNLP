@@ -309,6 +309,7 @@ public class MaxentTagger extends Tagger implements ListProcessor<List<? extends
    * @throws RuntimeIOException if I/O errors or serialization errors
    */
   public MaxentTagger(String modelFile, Properties config, boolean printLoading) {
+    System.out.println(modelFile);
     readModelAndInit(config, modelFile, printLoading);
   }
 
