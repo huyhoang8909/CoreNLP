@@ -29,10 +29,10 @@
 //    Support/Questions: java-nlp-user@lists.stanford.edu
 //    Licensing: java-nlp-support@lists.stanford.edu
 
-package edu.stanford.nlp.trees.international.pennchinese;
+package old.edu.stanford.nlp.trees.international.pennchinese;
 
-import edu.stanford.nlp.trees.TreebankLanguagePack;
-import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.trees.TreebankLanguagePack;
+import old.edu.stanford.nlp.util.StringUtils;
 
 import java.io.*;
 import java.util.*;

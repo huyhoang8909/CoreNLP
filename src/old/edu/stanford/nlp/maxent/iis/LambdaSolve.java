@@ -5,14 +5,14 @@
  * Company:      Stanford University<p>
  */
 
-package edu.stanford.nlp.maxent.iis;
+package old.edu.stanford.nlp.maxent.iis;
 
-import edu.stanford.nlp.io.InDataStreamFile;
-import edu.stanford.nlp.io.OutDataStreamFile;
-import edu.stanford.nlp.io.PrintFile;
-import edu.stanford.nlp.math.ArrayMath;
-import edu.stanford.nlp.maxent.*;
-import edu.stanford.nlp.util.MutableDouble;
+import old.edu.stanford.nlp.io.InDataStreamFile;
+import old.edu.stanford.nlp.io.OutDataStreamFile;
+import old.edu.stanford.nlp.io.PrintFile;
+import old.edu.stanford.nlp.math.ArrayMath;
+import old.edu.stanford.nlp.maxent.*;
+import old.edu.stanford.nlp.util.MutableDouble;
 
 import java.text.NumberFormat;
 import java.io.IOException;

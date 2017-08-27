@@ -1,14 +1,14 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
 import java.util.*;
 import java.util.regex.Pattern;
 
-import edu.stanford.nlp.io.EncodingPrintWriter;
-import edu.stanford.nlp.ling.Document;
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.ling.CoreAnnotations;
-import edu.stanford.nlp.util.CoreMap;
-import edu.stanford.nlp.util.Generics;
+import old.edu.stanford.nlp.io.EncodingPrintWriter;
+import old.edu.stanford.nlp.ling.Document;
+import old.edu.stanford.nlp.ling.HasWord;
+import old.edu.stanford.nlp.ling.CoreAnnotations;
+import old.edu.stanford.nlp.util.CoreMap;
+import old.edu.stanford.nlp.util.Generics;
 
 /**
  * Transforms a Document of Words into a Document of Sentences by grouping the

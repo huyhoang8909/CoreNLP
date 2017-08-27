@@ -25,6 +25,8 @@ import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Iterables;
 import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.ling.WordTag;
+import vn.hus.nlp.tagger.VietnameseMaxentTagger;
 
 @RunWith(Enclosed.class)
 public class CustomSentimentAnnotatorTest {
@@ -200,13 +202,16 @@ public class CustomSentimentAnnotatorTest {
         }
 
         @Test
-        public void maxentTest() {
-            Properties properties = new Properties();
-            properties.setProperty("tokenize.language", "vietnamese");
-            properties.setProperty("model", "resources/models/vtb.tagger");
-
-            TaggerConfig taggerConfig = new TaggerConfig(properties);
-            MaxentTagger maxentTagger = new MaxentTagger(taggerConfig);
+        public void maxentTest() throws Exception {
+//            Properties properties = new Properties();
+//            properties.setProperty("tokenize.language", "vietnamese");
+//            properties.setProperty("model", "resources/models/vtb.tagger");
+//
+//            old.edu.stanford.nlp.tagger.maxent.TaggerConfig taggerConfig = new old.edu.stanford.nlp.tagger.maxent.TaggerConfig(properties);
+//            old.edu.stanford.nlp.tagger.maxent.MaxentTagger maxentTagger = new old.edu.stanford.nlp.tagger.maxent.MaxentTagger(taggerConfig);
+            VietnameseMaxentTagger vn = new VietnameseMaxentTagger();
+            List<WordTag> results = vn.tagText2("Cựu lãnh đạo Ngân hàng Sacombank Trầm Bê bị cho có sai phạm, tiếp tay cho Phạm Công Danh gây thất thoát hàng nghìn tỷ đồng.");
+            System.out.println(results);
 
         }
 

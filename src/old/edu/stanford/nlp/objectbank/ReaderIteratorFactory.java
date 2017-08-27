@@ -1,7 +1,7 @@
-package edu.stanford.nlp.objectbank;
+package old.edu.stanford.nlp.objectbank;
 
-import edu.stanford.nlp.util.AbstractIterator;
-import edu.stanford.nlp.io.EncodingFileReader;
+import old.edu.stanford.nlp.util.AbstractIterator;
+import old.edu.stanford.nlp.io.EncodingFileReader;
 
 import java.io.*;
 import java.net.URL;

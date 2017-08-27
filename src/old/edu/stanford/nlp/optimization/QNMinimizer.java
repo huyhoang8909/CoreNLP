@@ -1,4 +1,4 @@
-package edu.stanford.nlp.optimization;
+package old.edu.stanford.nlp.optimization;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.stanford.nlp.math.ArrayMath;
+import old.edu.stanford.nlp.math.ArrayMath;
 
 
 /**

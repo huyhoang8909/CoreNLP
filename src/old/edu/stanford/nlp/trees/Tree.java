@@ -1,4 +1,4 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -9,26 +9,26 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.*;
 
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.CyclicCoreLabel;
-import edu.stanford.nlp.ling.HasTag;
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.ling.LabelFactory;
-import edu.stanford.nlp.ling.LabeledWord;
-import edu.stanford.nlp.ling.Sentence;
-import edu.stanford.nlp.ling.TaggedWord;
-import edu.stanford.nlp.ling.Word;
-import edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.SpanAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.WordAnnotation;
-import edu.stanford.nlp.util.CoreMap;
-import edu.stanford.nlp.util.Filter;
-import edu.stanford.nlp.util.Filters;
-import edu.stanford.nlp.util.IntPair;
-import edu.stanford.nlp.util.MutableInteger;
-import edu.stanford.nlp.util.Scored;
-import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.ling.CoreLabel;
+import old.edu.stanford.nlp.ling.CyclicCoreLabel;
+import old.edu.stanford.nlp.ling.HasTag;
+import old.edu.stanford.nlp.ling.HasWord;
+import old.edu.stanford.nlp.ling.Label;
+import old.edu.stanford.nlp.ling.LabelFactory;
+import old.edu.stanford.nlp.ling.LabeledWord;
+import old.edu.stanford.nlp.ling.Sentence;
+import old.edu.stanford.nlp.ling.TaggedWord;
+import old.edu.stanford.nlp.ling.Word;
+import old.edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.SpanAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.WordAnnotation;
+import old.edu.stanford.nlp.util.CoreMap;
+import old.edu.stanford.nlp.util.Filter;
+import old.edu.stanford.nlp.util.Filters;
+import old.edu.stanford.nlp.util.IntPair;
+import old.edu.stanford.nlp.util.MutableInteger;
+import old.edu.stanford.nlp.util.Scored;
+import old.edu.stanford.nlp.util.StringUtils;
 
 /**
  * The abstract class <code>Tree</code> is used to collect all of the

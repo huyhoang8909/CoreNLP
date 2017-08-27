@@ -1,7 +1,7 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.CoreAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations;
+import old.edu.stanford.nlp.ling.CoreAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations;
 
 
 /**

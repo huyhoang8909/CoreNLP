@@ -1,6 +1,6 @@
-package edu.stanford.nlp.stats;
+package old.edu.stanford.nlp.stats;
 
-import edu.stanford.nlp.math.SloppyMath;
+import old.edu.stanford.nlp.math.SloppyMath;
 
 /**
  * Default implementations of all the convenience methods provided by

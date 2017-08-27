@@ -1,10 +1,10 @@
-package edu.stanford.nlp.trees.international.pennchinese;
+package old.edu.stanford.nlp.trees.international.pennchinese;
 
-import edu.stanford.nlp.process.Tokenizer;
-import edu.stanford.nlp.trees.PennTreeReader;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.TreeFactory;
-import edu.stanford.nlp.trees.TreeNormalizer;
+import old.edu.stanford.nlp.process.Tokenizer;
+import old.edu.stanford.nlp.trees.PennTreeReader;
+import old.edu.stanford.nlp.trees.Tree;
+import old.edu.stanford.nlp.trees.TreeFactory;
+import old.edu.stanford.nlp.trees.TreeNormalizer;
 
 import java.io.*;
 

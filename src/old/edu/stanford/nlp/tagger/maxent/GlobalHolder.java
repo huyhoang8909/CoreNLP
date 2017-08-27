@@ -25,18 +25,20 @@
 //    Licensing: java-nlp-support@lists.stanford.edu
 //http://www-nlp.stanford.edu/software/tagger.shtml
 
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.io.InDataStreamFile;
-import edu.stanford.nlp.io.OutDataStreamFile;
-import edu.stanford.nlp.io.PrintFile;
-import edu.stanford.nlp.maxent.iis.LambdaSolve;
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.util.Timing;
+import old.edu.stanford.nlp.io.InDataStreamFile;
+import old.edu.stanford.nlp.io.OutDataStreamFile;
+import old.edu.stanford.nlp.io.PrintFile;
+import old.edu.stanford.nlp.maxent.iis.LambdaSolve;
+import old.edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.util.Timing;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -240,8 +242,24 @@ public class GlobalHolder {
   private static void readExtractors(InputStream file) throws IOException, ClassNotFoundException {
 
     ObjectInputStream in = new ObjectInputStream(file);
-    extractors = (Extractors) in.readObject();
-    extractorsRare = (Extractors) in.readObject();
+    edu.stanford.nlp.tagger.maxent.Extractors temp = (edu.stanford.nlp.tagger.maxent.Extractors) in.readObject();
+
+    Extractor[] extractorsx = new Extractor[temp.size()];
+    for (int i = 0; i < temp.getV().length; i++) {
+      edu.stanford.nlp.tagger.maxent.Extractor extractor = temp.getV()[i];
+      extractorsx[i]  = new Extractor(extractor.getPosition(), extractor.isTag());
+    }
+
+    extractors.init(extractorsx);
+
+    edu.stanford.nlp.tagger.maxent.Extractors temp1 = (edu.stanford.nlp.tagger.maxent.Extractors) in.readObject();
+    Extractor[] extractorsx1 = new Extractor[temp1.size()];
+    for (int i = 0; i < temp1.getV().length; i++) {
+      edu.stanford.nlp.tagger.maxent.Extractor extractor = temp1.getV()[i];
+      extractorsx1[i]  = new Extractor(extractor.getPosition(), extractor.isTag());
+    }
+
+    extractorsRare.init(extractorsx1);
     extractors.initTypes();
     extractorsRare.initTypes();
     int left = extractors.leftContext();

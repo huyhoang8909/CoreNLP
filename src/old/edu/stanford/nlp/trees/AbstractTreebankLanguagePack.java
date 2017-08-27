@@ -1,13 +1,13 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import java.io.Serializable;
 
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.process.WhitespaceTokenizer;
-import edu.stanford.nlp.util.Filter;
-import edu.stanford.nlp.util.Filters;
-import edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.ling.HasWord;
+import old.edu.stanford.nlp.objectbank.TokenizerFactory;
+import old.edu.stanford.nlp.process.WhitespaceTokenizer;
+import old.edu.stanford.nlp.util.Filter;
+import old.edu.stanford.nlp.util.Filters;
+import old.edu.stanford.nlp.util.Function;
 
 
 /**

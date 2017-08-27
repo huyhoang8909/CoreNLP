@@ -1,4 +1,4 @@
-package edu.stanford.nlp.io;
+package old.edu.stanford.nlp.io;
 
 import java.io.*;
 import java.util.Arrays;
@@ -14,8 +14,8 @@ import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.net.URLConnection;
 
-import edu.stanford.nlp.util.AbstractIterator;
-import edu.stanford.nlp.util.ErasureUtils;
+import old.edu.stanford.nlp.util.AbstractIterator;
+import old.edu.stanford.nlp.util.ErasureUtils;
 
 /**
  * Helper Class for storing serialized objects to disk.

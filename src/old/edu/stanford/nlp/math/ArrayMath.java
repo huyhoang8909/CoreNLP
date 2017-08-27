@@ -1,4 +1,4 @@
-package edu.stanford.nlp.math;
+package old.edu.stanford.nlp.math;
 
 import java.io.IOException;
 import java.text.NumberFormat;
@@ -7,8 +7,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Random;
 
-import edu.stanford.nlp.io.IOUtils;
-import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.io.IOUtils;
+import old.edu.stanford.nlp.util.StringUtils;
 
 /**
  * Class ArrayMath

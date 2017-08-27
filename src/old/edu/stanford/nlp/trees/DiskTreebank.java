@@ -1,10 +1,10 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import java.io.*;
 import java.util.*;
 
-import edu.stanford.nlp.io.FileSequentialCollection;
-import edu.stanford.nlp.io.RuntimeIOException;
+import old.edu.stanford.nlp.io.FileSequentialCollection;
+import old.edu.stanford.nlp.io.RuntimeIOException;
 
 
 /**

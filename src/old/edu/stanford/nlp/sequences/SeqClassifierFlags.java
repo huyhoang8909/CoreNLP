@@ -1,8 +1,8 @@
-package edu.stanford.nlp.sequences;
+package old.edu.stanford.nlp.sequences;
 
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.optimization.StochasticCalculateMethods;
-import edu.stanford.nlp.process.WordShapeClassifier;
+import old.edu.stanford.nlp.ling.CoreLabel;
+import old.edu.stanford.nlp.optimization.StochasticCalculateMethods;
+import old.edu.stanford.nlp.process.WordShapeClassifier;
 
 import java.io.Serializable;
 import java.util.*;

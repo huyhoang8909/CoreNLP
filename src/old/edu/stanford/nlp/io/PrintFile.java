@@ -7,7 +7,7 @@
  * @version 1.0
  */
 
-package edu.stanford.nlp.io;
+package old.edu.stanford.nlp.io;
 
 import java.io.*;
 

@@ -4,10 +4,10 @@
  * Copyright:    Copyright (c) Kristina Toutanova<p>
  * Company:      Stanford University<p>
  */
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.objectbank.ObjectBank;
-import edu.stanford.nlp.util.Timing;
+import old.edu.stanford.nlp.objectbank.ObjectBank;
+import old.edu.stanford.nlp.util.Timing;
 
 import java.io.File;
 import java.util.HashMap;

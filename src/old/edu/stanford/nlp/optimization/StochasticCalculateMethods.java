@@ -1,4 +1,4 @@
-package edu.stanford.nlp.optimization;
+package old.edu.stanford.nlp.optimization;
 
 /**
  * This enumeratin was created to organize the selection of different methods for stochastic

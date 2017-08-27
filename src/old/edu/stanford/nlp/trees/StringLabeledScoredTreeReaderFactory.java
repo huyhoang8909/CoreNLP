@@ -1,6 +1,6 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.StringLabelFactory;
+import old.edu.stanford.nlp.ling.StringLabelFactory;
 
 import java.io.Reader;
 

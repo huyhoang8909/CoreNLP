@@ -8,7 +8,7 @@
  */
 
 
-package edu.stanford.nlp.maxent;
+package old.edu.stanford.nlp.maxent;
 
 /**
  * A class representing a data item with an array of inputs X and a String classification Y

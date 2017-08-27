@@ -1,4 +1,4 @@
-package edu.stanford.nlp.math;
+package old.edu.stanford.nlp.math;
 
 import java.util.Collection;
 

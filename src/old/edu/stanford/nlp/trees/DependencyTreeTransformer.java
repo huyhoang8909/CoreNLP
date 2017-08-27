@@ -1,13 +1,13 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import java.util.List;
 import java.util.regex.Pattern;
 
-import edu.stanford.nlp.trees.tregex.TregexPattern;
-import edu.stanford.nlp.trees.tregex.tsurgeon.Tsurgeon;
-import edu.stanford.nlp.trees.tregex.tsurgeon.TsurgeonPattern;
-import edu.stanford.nlp.util.Generics;
-import edu.stanford.nlp.util.Pair;
+import old.edu.stanford.nlp.trees.tregex.TregexPattern;
+import old.edu.stanford.nlp.trees.tregex.tsurgeon.Tsurgeon;
+import old.edu.stanford.nlp.trees.tregex.tsurgeon.TsurgeonPattern;
+import old.edu.stanford.nlp.util.Generics;
+import old.edu.stanford.nlp.util.Pair;
 
 /**
  * Transforms an English structure parse tree in order to get the dependencies right:

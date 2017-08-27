@@ -1,4 +1,4 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 /**
  * Implements a variant on the HeadFinder found in Michael Collins' 1999

@@ -1,9 +1,9 @@
-package edu.stanford.nlp.trees.international.pennchinese;
+package old.edu.stanford.nlp.trees.international.pennchinese;
 
 import java.io.Reader;
 
-import edu.stanford.nlp.ling.StringLabelFactory;
-import edu.stanford.nlp.trees.*;
+import old.edu.stanford.nlp.ling.StringLabelFactory;
+import old.edu.stanford.nlp.trees.*;
 
 
 /**

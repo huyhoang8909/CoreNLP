@@ -1,4 +1,4 @@
-package edu.stanford.nlp.util;
+package old.edu.stanford.nlp.util;
 
 /**
  * A class for Double objects that you can change.

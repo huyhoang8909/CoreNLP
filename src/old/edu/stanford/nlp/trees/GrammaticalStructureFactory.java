@@ -1,9 +1,9 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
-import edu.stanford.nlp.util.Filter;
+import old.edu.stanford.nlp.util.Filter;
 
 /**
  * A general factory for {@link GrammaticalStructure} objects.

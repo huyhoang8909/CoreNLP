@@ -1,4 +1,4 @@
-package edu.stanford.nlp.util;
+package old.edu.stanford.nlp.util;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ import java.util.TreeSet;
 import java.util.WeakHashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
-import edu.stanford.nlp.util.concurrent.SynchronizedInterner;
+import old.edu.stanford.nlp.util.concurrent.SynchronizedInterner;
 
 /**
  * A collection of utilities to make dealing with Java generics less

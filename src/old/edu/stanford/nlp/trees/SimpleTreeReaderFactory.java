@@ -1,4 +1,4 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import java.io.Reader;
 

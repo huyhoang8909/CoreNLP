@@ -1,10 +1,10 @@
-package edu.stanford.nlp.trees.international.pennchinese;
+package old.edu.stanford.nlp.trees.international.pennchinese;
 
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.trees.*;
-import edu.stanford.nlp.util.Filter;
-import edu.stanford.nlp.util.Filters;
-import edu.stanford.nlp.ling.HasWord;
+import old.edu.stanford.nlp.objectbank.TokenizerFactory;
+import old.edu.stanford.nlp.trees.*;
+import old.edu.stanford.nlp.util.Filter;
+import old.edu.stanford.nlp.util.Filters;
+import old.edu.stanford.nlp.ling.HasWord;
 
 
 /**

@@ -1,4 +1,4 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import static java.lang.System.err;
 
@@ -8,15 +8,15 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.ling.Sentence;
-import edu.stanford.nlp.ling.TaggedWord;
-import edu.stanford.nlp.ling.WordTag;
-import edu.stanford.nlp.process.Morphology;
-import edu.stanford.nlp.util.ArrayUtils;
-import edu.stanford.nlp.util.Generics;
-import edu.stanford.nlp.util.Pair;
-import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.ling.Label;
+import old.edu.stanford.nlp.ling.Sentence;
+import old.edu.stanford.nlp.ling.TaggedWord;
+import old.edu.stanford.nlp.ling.WordTag;
+import old.edu.stanford.nlp.process.Morphology;
+import old.edu.stanford.nlp.util.ArrayUtils;
+import old.edu.stanford.nlp.util.Generics;
+import old.edu.stanford.nlp.util.Pair;
+import old.edu.stanford.nlp.util.StringUtils;
 
 /**
  * Finds WordNet collocations in parse trees.  It can restructure

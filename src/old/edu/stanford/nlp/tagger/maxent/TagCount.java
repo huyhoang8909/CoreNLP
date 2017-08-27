@@ -6,9 +6,9 @@
  * Company:      Stanford University<p>
  */
 
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.io.OutDataStreamFile;
+import old.edu.stanford.nlp.io.OutDataStreamFile;
 
 import java.util.HashMap;
 import java.io.DataInputStream;

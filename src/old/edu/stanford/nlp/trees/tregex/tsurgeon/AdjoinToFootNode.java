@@ -1,7 +1,7 @@
-package edu.stanford.nlp.trees.tregex.tsurgeon;
+package old.edu.stanford.nlp.trees.tregex.tsurgeon;
 
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.tregex.TregexMatcher;
+import old.edu.stanford.nlp.trees.Tree;
+import old.edu.stanford.nlp.trees.tregex.TregexMatcher;
 
 /** Adjoin in a tree (like in TAG), but retain the target of adjunction as the foot of the auxiliary tree.
  * @author Roger Levy (rog@nlp.stanford.edu)

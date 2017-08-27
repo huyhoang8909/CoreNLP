@@ -1,4 +1,4 @@
-package edu.stanford.nlp.optimization;
+package old.edu.stanford.nlp.optimization;
 
 /**
  * The interface for unconstrained function minimizers.

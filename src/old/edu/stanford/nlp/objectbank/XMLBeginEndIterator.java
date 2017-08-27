@@ -1,9 +1,9 @@
-package edu.stanford.nlp.objectbank;
+package old.edu.stanford.nlp.objectbank;
 
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.process.Tokenizer;
-import edu.stanford.nlp.util.AbstractIterator;
-import edu.stanford.nlp.util.XMLUtils;
+import old.edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.process.Tokenizer;
+import old.edu.stanford.nlp.util.AbstractIterator;
+import old.edu.stanford.nlp.util.XMLUtils;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

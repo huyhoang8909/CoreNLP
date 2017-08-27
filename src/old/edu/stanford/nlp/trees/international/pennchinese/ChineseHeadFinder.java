@@ -1,7 +1,7 @@
-package edu.stanford.nlp.trees.international.pennchinese;
+package old.edu.stanford.nlp.trees.international.pennchinese;
 
-import edu.stanford.nlp.trees.AbstractCollinsHeadFinder;
-import edu.stanford.nlp.trees.TreebankLanguagePack;
+import old.edu.stanford.nlp.trees.AbstractCollinsHeadFinder;
+import old.edu.stanford.nlp.trees.TreebankLanguagePack;
 
 import java.util.HashMap;
 

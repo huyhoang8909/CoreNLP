@@ -1,23 +1,23 @@
-package edu.stanford.nlp.ling;
+package old.edu.stanford.nlp.ling;
 
 import java.util.HashMap;
 import java.util.Set;
 
-import edu.stanford.nlp.ling.AnnotationLookup.KeyLookup;
-import edu.stanford.nlp.ling.CoreAnnotations.AfterAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.BeforeAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.CategoryAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.CurrentAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.DocIDAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.SentenceIndexAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.WordAnnotation;
-import edu.stanford.nlp.util.ArrayCoreMap;
-import edu.stanford.nlp.util.CoreMap;
+import old.edu.stanford.nlp.ling.AnnotationLookup.KeyLookup;
+import old.edu.stanford.nlp.ling.CoreAnnotations.AfterAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.BeforeAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.CategoryAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.CurrentAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.DocIDAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.SentenceIndexAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.WordAnnotation;
+import old.edu.stanford.nlp.util.ArrayCoreMap;
+import old.edu.stanford.nlp.util.CoreMap;
 
 
 /**

@@ -1,4 +1,4 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 /**
  * This is a simple interface for a function that alters a

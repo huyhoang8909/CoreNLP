@@ -1,8 +1,8 @@
-package edu.stanford.nlp.trees.tregex;
+package old.edu.stanford.nlp.trees.tregex;
 
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.util.Pair;
+import old.edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.trees.Tree;
+import old.edu.stanford.nlp.util.Pair;
 
 import java.util.*;
 import java.util.regex.Matcher;

@@ -1,6 +1,6 @@
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.io.RuntimeIOException;
+import old.edu.stanford.nlp.io.RuntimeIOException;
 
 import java.io.*;
 import java.util.HashMap;

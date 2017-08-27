@@ -1,4 +1,4 @@
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -10,8 +10,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.*;
 
-import edu.stanford.nlp.io.EncodingPrintWriter;
-import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.io.EncodingPrintWriter;
+import old.edu.stanford.nlp.util.StringUtils;
 
 
 /** A POS tagger server for the Stanford POS Tagger.

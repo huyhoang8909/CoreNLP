@@ -1,6 +1,6 @@
-package edu.stanford.nlp.ling;
+package old.edu.stanford.nlp.ling;
 
-import edu.stanford.nlp.process.Morphology;
+import old.edu.stanford.nlp.process.Morphology;
 
 /**
  * A WordLemmaTag corresponds to a pair of a tagged (e.g., for part of speech)

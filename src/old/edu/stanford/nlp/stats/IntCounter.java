@@ -1,4 +1,4 @@
-package edu.stanford.nlp.stats;
+package old.edu.stanford.nlp.stats;
 
 import java.io.Serializable;
 import java.text.NumberFormat;
@@ -15,11 +15,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import edu.stanford.nlp.util.ErasureUtils;
-import edu.stanford.nlp.util.Factory;
-import edu.stanford.nlp.util.Filter;
-import edu.stanford.nlp.util.MapFactory;
-import edu.stanford.nlp.util.MutableInteger;
+import old.edu.stanford.nlp.util.ErasureUtils;
+import old.edu.stanford.nlp.util.Factory;
+import old.edu.stanford.nlp.util.Filter;
+import old.edu.stanford.nlp.util.MapFactory;
+import old.edu.stanford.nlp.util.MutableInteger;
 
 /**
  * A specialized kind of hash table (or map) for storing numeric counts for

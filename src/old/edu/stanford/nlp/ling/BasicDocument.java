@@ -1,9 +1,9 @@
-package edu.stanford.nlp.ling;
+package old.edu.stanford.nlp.ling;
 
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.process.PTBTokenizer;
-import edu.stanford.nlp.process.Tokenizer;
-import edu.stanford.nlp.util.ErasureUtils;
+import old.edu.stanford.nlp.objectbank.TokenizerFactory;
+import old.edu.stanford.nlp.process.PTBTokenizer;
+import old.edu.stanford.nlp.process.Tokenizer;
+import old.edu.stanford.nlp.util.ErasureUtils;
 
 import java.io.*;
 import java.net.URL;

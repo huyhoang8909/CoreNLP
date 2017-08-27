@@ -1,4 +1,4 @@
-package edu.stanford.nlp.util;
+package old.edu.stanford.nlp.util;
 
 /**
  * Just a single integer

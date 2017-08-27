@@ -1,4 +1,4 @@
-package edu.stanford.nlp.util;
+package old.edu.stanford.nlp.util;
 
 import java.util.Map;
 import java.util.Set;

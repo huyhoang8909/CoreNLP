@@ -1,7 +1,7 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import static edu.stanford.nlp.trees.GrammaticalRelation.*;
-import edu.stanford.nlp.util.Generics;
+import static old.edu.stanford.nlp.trees.GrammaticalRelation.*;
+import old.edu.stanford.nlp.util.Generics;
 
 import java.util.*;
 import java.util.concurrent.locks.Lock;

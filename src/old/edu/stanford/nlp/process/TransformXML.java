@@ -1,4 +1,4 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
 
 import java.io.*;
@@ -11,9 +11,9 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.io.IOUtils;
-import edu.stanford.nlp.util.XMLUtils;
+import old.edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.io.IOUtils;
+import old.edu.stanford.nlp.util.XMLUtils;
 
 
 /**

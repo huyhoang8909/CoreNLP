@@ -26,10 +26,10 @@
 //http://www-nlp.stanford.edu/software/tagger.shtml
 
 
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.util.StringBuildMemoizer;
-import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.util.StringBuildMemoizer;
+import old.edu.stanford.nlp.util.StringUtils;
 
 import java.util.*;
 
@@ -562,6 +562,6 @@ class ExtractorNextTagWord extends Extractor {
 
   @Override public boolean isLocal() { return false; }
   @Override public boolean isDynamic() { return true; }
-  
+
 }
 

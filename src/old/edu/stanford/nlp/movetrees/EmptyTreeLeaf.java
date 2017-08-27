@@ -1,12 +1,12 @@
-package edu.stanford.nlp.movetrees;
+package old.edu.stanford.nlp.movetrees;
 
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.ling.LabeledWord;
-import edu.stanford.nlp.ling.StringLabel;
-import edu.stanford.nlp.trees.LabeledScoredTreeFactory;
-import edu.stanford.nlp.trees.LabeledScoredTreeLeaf;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.TreeFactory;
+import old.edu.stanford.nlp.ling.Label;
+import old.edu.stanford.nlp.ling.LabeledWord;
+import old.edu.stanford.nlp.ling.StringLabel;
+import old.edu.stanford.nlp.trees.LabeledScoredTreeFactory;
+import old.edu.stanford.nlp.trees.LabeledScoredTreeLeaf;
+import old.edu.stanford.nlp.trees.Tree;
+import old.edu.stanford.nlp.trees.TreeFactory;
 
 import java.util.List;
 

@@ -24,13 +24,13 @@
 //    java-nlp-support@lists.stanford.edu
 //    http://nlp.stanford.edu/software/
 
-package edu.stanford.nlp.stats;
+package old.edu.stanford.nlp.stats;
 
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
-import edu.stanford.nlp.util.Factory;
+import old.edu.stanford.nlp.util.Factory;
 
 /**
  * An Object to double map used for keeping weights or counts for objects.

@@ -1,9 +1,9 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.Word;
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.process.PTBTokenizer;
-import edu.stanford.nlp.util.Filter;
+import old.edu.stanford.nlp.ling.Word;
+import old.edu.stanford.nlp.objectbank.TokenizerFactory;
+import old.edu.stanford.nlp.process.PTBTokenizer;
+import old.edu.stanford.nlp.util.Filter;
 
 
 /**

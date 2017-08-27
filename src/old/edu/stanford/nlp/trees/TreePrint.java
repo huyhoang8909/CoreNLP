@@ -1,11 +1,11 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.CoreAnnotations.CopyAnnotation;
-import edu.stanford.nlp.ling.*;
-import edu.stanford.nlp.trees.international.pennchinese.ChineseEnglishWordMap;
-import edu.stanford.nlp.util.*;
-import edu.stanford.nlp.util.XMLUtils;
-import edu.stanford.nlp.process.PTBTokenizer;
+import old.edu.stanford.nlp.ling.CoreAnnotations.CopyAnnotation;
+import old.edu.stanford.nlp.ling.*;
+import old.edu.stanford.nlp.trees.international.pennchinese.ChineseEnglishWordMap;
+import old.edu.stanford.nlp.util.*;
+import old.edu.stanford.nlp.util.XMLUtils;
+import old.edu.stanford.nlp.process.PTBTokenizer;
 
 import java.io.*;
 import java.util.*;

@@ -1,13 +1,13 @@
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.io.NumberRangesFileFilter;
-import edu.stanford.nlp.io.PrintFile;
-import edu.stanford.nlp.ling.TaggedWord;
-import edu.stanford.nlp.ling.Word;
-import edu.stanford.nlp.ling.Sentence;
-import edu.stanford.nlp.maxent.CGRunner;
-import edu.stanford.nlp.maxent.Problem;
-import edu.stanford.nlp.trees.*;
+import old.edu.stanford.nlp.io.NumberRangesFileFilter;
+import old.edu.stanford.nlp.io.PrintFile;
+import old.edu.stanford.nlp.ling.TaggedWord;
+import old.edu.stanford.nlp.ling.Word;
+import old.edu.stanford.nlp.ling.Sentence;
+import old.edu.stanford.nlp.maxent.CGRunner;
+import old.edu.stanford.nlp.maxent.Problem;
+import old.edu.stanford.nlp.trees.*;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

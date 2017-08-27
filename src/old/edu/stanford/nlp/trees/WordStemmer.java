@@ -1,8 +1,8 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.CategoryWordTagFactory;
-import edu.stanford.nlp.ling.WordTag;
-import edu.stanford.nlp.process.Morphology;
+import old.edu.stanford.nlp.ling.CategoryWordTagFactory;
+import old.edu.stanford.nlp.ling.WordTag;
+import old.edu.stanford.nlp.process.Morphology;
 
 import java.io.Reader;
 

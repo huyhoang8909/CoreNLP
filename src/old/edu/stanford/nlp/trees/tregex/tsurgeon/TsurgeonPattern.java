@@ -26,10 +26,10 @@
 //    Licensing: parser-support@lists.stanford.edu
 //    http://www-nlp.stanford.edu/software/tregex.shtml
 
-package edu.stanford.nlp.trees.tregex.tsurgeon;
+package old.edu.stanford.nlp.trees.tregex.tsurgeon;
 
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.tregex.TregexMatcher;
+import old.edu.stanford.nlp.trees.Tree;
+import old.edu.stanford.nlp.trees.tregex.TregexMatcher;
 
 
 /**

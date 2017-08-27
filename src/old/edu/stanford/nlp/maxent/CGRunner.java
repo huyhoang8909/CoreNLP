@@ -4,12 +4,12 @@
  * Copyright:   Copyright (c) 2002. Kristina Toutanova, Stanford University
  * Company:     Stanford University, All Rights Reserved.
  */
-package edu.stanford.nlp.maxent;
+package old.edu.stanford.nlp.maxent;
 
 import java.util.Arrays;
 
-import edu.stanford.nlp.maxent.iis.LambdaSolve;
-import edu.stanford.nlp.optimization.*;
+import old.edu.stanford.nlp.maxent.iis.LambdaSolve;
+import old.edu.stanford.nlp.optimization.*;
 
 
 /**

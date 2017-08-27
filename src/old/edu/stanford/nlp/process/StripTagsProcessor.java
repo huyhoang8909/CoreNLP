@@ -1,4 +1,4 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
 
 import java.util.ArrayList;
@@ -7,9 +7,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import edu.stanford.nlp.ling.BasicDocument;
-import edu.stanford.nlp.ling.Document;
-import edu.stanford.nlp.ling.Word;
+import old.edu.stanford.nlp.ling.BasicDocument;
+import old.edu.stanford.nlp.ling.Document;
+import old.edu.stanford.nlp.ling.Word;
 
 /**
  * A <code>Processor</code> whose <code>process</code> method deletes all

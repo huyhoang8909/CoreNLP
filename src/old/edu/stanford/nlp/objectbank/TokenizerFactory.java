@@ -1,6 +1,6 @@
-package edu.stanford.nlp.objectbank;
+package old.edu.stanford.nlp.objectbank;
 
-import edu.stanford.nlp.process.Tokenizer;
+import old.edu.stanford.nlp.process.Tokenizer;
 
 import java.io.Reader;
 

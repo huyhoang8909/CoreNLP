@@ -12,14 +12,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import edu.stanford.nlp.ling.WordTag;
-import edu.stanford.nlp.tagger.maxent.MaxentTagger;
-import edu.stanford.nlp.tagger.maxent.TaggerConfig;
+import old.edu.stanford.nlp.ling.WordTag;
+import old.edu.stanford.nlp.tagger.maxent.MaxentTagger;
+import old.edu.stanford.nlp.tagger.maxent.TaggerConfig;
 import vn.hus.nlp.tagger.io.IOutputer;
 import vn.hus.nlp.tagger.io.PlainOutputer;
 import vn.hus.nlp.tagger.io.XMLOutputer;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 import vn.hus.nlp.utils.UTF8FileUtility;
+
+import static old.edu.stanford.nlp.tagger.maxent.MaxentTagger.tagTokenizedString;
 
 /**
  * @author LE HONG Phuong, phuonglh@gmail.com
@@ -31,7 +33,7 @@ import vn.hus.nlp.utils.UTF8FileUtility;
  * Updated: 04/2010.
  * 
  */
-public class VietnameseMaxentTagger extends MaxentTagger {
+public class VietnameseMaxentTagger {
 	
 	/**
 	 * The underlying tokenizer

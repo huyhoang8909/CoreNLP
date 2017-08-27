@@ -1,4 +1,4 @@
-package edu.stanford.nlp.util;
+package old.edu.stanford.nlp.util;
 
 import java.util.AbstractSet;
 import java.util.Collection;

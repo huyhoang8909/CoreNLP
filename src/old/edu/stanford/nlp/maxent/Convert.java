@@ -7,7 +7,7 @@
  * @version 1.0
  */
 
-package edu.stanford.nlp.maxent;
+package old.edu.stanford.nlp.maxent;
 
 
 import java.io.*;

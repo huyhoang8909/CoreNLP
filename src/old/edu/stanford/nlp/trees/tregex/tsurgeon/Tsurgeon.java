@@ -26,13 +26,13 @@
 //    Licensing: parser-support@lists.stanford.edu
 //    http://www-nlp.stanford.edu/software/tregex.shtml
 
-package edu.stanford.nlp.trees.tregex.tsurgeon;
+package old.edu.stanford.nlp.trees.tregex.tsurgeon;
 
-import edu.stanford.nlp.trees.*;
-import edu.stanford.nlp.trees.tregex.TregexPattern;
-import edu.stanford.nlp.trees.tregex.TregexMatcher;
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.util.Pair;
+import old.edu.stanford.nlp.trees.*;
+import old.edu.stanford.nlp.trees.tregex.TregexPattern;
+import old.edu.stanford.nlp.trees.tregex.TregexMatcher;
+import old.edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.util.Pair;
 
 import java.util.*;
 import java.util.regex.Pattern;
@@ -232,7 +232,7 @@ public class Tsurgeon {
     TregexPattern matchPattern;
     try {
       matchPattern = TregexPattern.compile(patternString);
-    } catch (edu.stanford.nlp.trees.tregex.ParseException e) {
+    } catch (old.edu.stanford.nlp.trees.tregex.ParseException e) {
       System.err.println("Error parsing your tregex pattern:\n" + patternString);
       throw new RuntimeException(e);
     }

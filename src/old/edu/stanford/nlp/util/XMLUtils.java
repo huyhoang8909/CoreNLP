@@ -1,4 +1,4 @@
-package edu.stanford.nlp.util;
+package old.edu.stanford.nlp.util;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -16,7 +16,7 @@ import org.xml.sax.InputSource;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXParseException;
 
-import edu.stanford.nlp.io.IOUtils;
+import old.edu.stanford.nlp.io.IOUtils;
 
 /**
  * Provides some utilities for dealing with XML files, both by properly

@@ -1,9 +1,9 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 
 
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.ling.StringLabel;
+import old.edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.ling.StringLabel;
 
 import java.util.List;
 import java.util.Properties;

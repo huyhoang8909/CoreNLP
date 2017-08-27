@@ -1,7 +1,7 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.CategoryWordTagFactory;
-import edu.stanford.nlp.ling.LabelFactory;
+import old.edu.stanford.nlp.ling.CategoryWordTagFactory;
+import old.edu.stanford.nlp.ling.LabelFactory;
 
 import java.io.Reader;
 

@@ -1,13 +1,14 @@
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.ling.TaggedWord;
-import edu.stanford.nlp.trees.TreeNormalizer;
-import edu.stanford.nlp.trees.TreeTransformer;
-import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.ling.TaggedWord;
+import old.edu.stanford.nlp.trees.TreeNormalizer;
+import old.edu.stanford.nlp.trees.TreeTransformer;
+import old.edu.stanford.nlp.util.StringUtils;
 
 import java.io.*;
 import java.util.HashMap;
 import java.util.Properties;
+import java.util.Set;
 import java.util.zip.GZIPInputStream;
 import java.net.URL;
 
@@ -675,7 +676,17 @@ public class TaggerConfig extends Properties /* Inherits implementation of seria
    */
   public static TaggerConfig readConfig(DataInputStream stream) throws IOException, ClassNotFoundException {
     ObjectInputStream in = new ObjectInputStream(stream);
-    return (TaggerConfig) in.readObject();
+    edu.stanford.nlp.tagger.maxent.TaggerConfig config = (edu.stanford.nlp.tagger.maxent.TaggerConfig) in.readObject();
+
+      TaggerConfig taggerConfig = new TaggerConfig();
+      Set<String> strings = config.stringPropertyNames();
+      strings.forEach(item -> {
+        System.out.println(item);
+          taggerConfig.setProperty(item, config.getProperty(item));
+      });
+
+
+    return taggerConfig;
   }
 
 

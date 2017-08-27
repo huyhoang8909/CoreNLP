@@ -1,7 +1,7 @@
-package edu.stanford.nlp.ling;
+package old.edu.stanford.nlp.ling;
 
-import edu.stanford.nlp.util.CoreMap;
-import edu.stanford.nlp.util.TypesafeMap;
+import old.edu.stanford.nlp.util.CoreMap;
+import old.edu.stanford.nlp.util.TypesafeMap;
 
 /**
  * The base class for any annotation that can be marked on a {@link CoreMap},

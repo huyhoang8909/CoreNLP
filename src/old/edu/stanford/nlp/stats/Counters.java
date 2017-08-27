@@ -24,7 +24,7 @@
 //    java-nlp-support@lists.stanford.edu
 //    http://nlp.stanford.edu/software/
 
-package edu.stanford.nlp.stats;
+package old.edu.stanford.nlp.stats;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -57,19 +57,19 @@ import java.util.Random;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import edu.stanford.nlp.math.ArrayMath;
-import edu.stanford.nlp.math.SloppyMath;
-import edu.stanford.nlp.util.BinaryHeapPriorityQueue;
-import edu.stanford.nlp.util.CollectionUtils;
-import edu.stanford.nlp.util.ErasureUtils;
-import edu.stanford.nlp.util.Factory;
-import edu.stanford.nlp.util.FixedPrioritiesPriorityQueue;
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.util.Index;
-import edu.stanford.nlp.util.PriorityQueue;
-import edu.stanford.nlp.util.Sets;
-import edu.stanford.nlp.util.Pair;
-import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.math.ArrayMath;
+import old.edu.stanford.nlp.math.SloppyMath;
+import old.edu.stanford.nlp.util.BinaryHeapPriorityQueue;
+import old.edu.stanford.nlp.util.CollectionUtils;
+import old.edu.stanford.nlp.util.ErasureUtils;
+import old.edu.stanford.nlp.util.Factory;
+import old.edu.stanford.nlp.util.FixedPrioritiesPriorityQueue;
+import old.edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.util.Index;
+import old.edu.stanford.nlp.util.PriorityQueue;
+import old.edu.stanford.nlp.util.Sets;
+import old.edu.stanford.nlp.util.Pair;
+import old.edu.stanford.nlp.util.StringUtils;
 
 
 /**
@@ -622,8 +622,8 @@ public class Counters {
    * @return A PriorityQueue where the count is a key's priority
    */
   // TODO: rewrite to use entrySet()
-  public static <E> edu.stanford.nlp.util.PriorityQueue<E> toPriorityQueue(Counter<E> c) {
-    edu.stanford.nlp.util.PriorityQueue<E> queue = new BinaryHeapPriorityQueue<E>();
+  public static <E> old.edu.stanford.nlp.util.PriorityQueue<E> toPriorityQueue(Counter<E> c) {
+    old.edu.stanford.nlp.util.PriorityQueue<E> queue = new BinaryHeapPriorityQueue<E>();
     for (E key : c.keySet()) {
       double count = c.getCount(key);
       queue.add(key, count);

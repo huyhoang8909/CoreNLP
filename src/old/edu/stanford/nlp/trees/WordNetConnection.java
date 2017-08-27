@@ -1,4 +1,4 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 /**
  * Allows us to verify that a wordnet connection is available without compile

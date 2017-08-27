@@ -26,10 +26,10 @@
 //http://www-nlp.stanford.edu/software/tagger.shtml
 
 
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.util.Index;
-import edu.stanford.nlp.util.HashIndex;
+import old.edu.stanford.nlp.util.Index;
+import old.edu.stanford.nlp.util.HashIndex;
 
 /**
  * A collection of Ambiguity Class.

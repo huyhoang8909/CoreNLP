@@ -26,11 +26,11 @@
 //    Licensing: parser-support@lists.stanford.edu
 //    http://www-nlp.stanford.edu/software/tregex.shtml
 
-package edu.stanford.nlp.trees.tregex;
+package old.edu.stanford.nlp.trees.tregex;
 
 import java.util.*;
 
-import edu.stanford.nlp.trees.Tree;
+import old.edu.stanford.nlp.trees.Tree;
 
 /**
  * A TregexMatcher can be used to match a {@link TregexPattern} against a {@link edu.stanford.nlp.trees.Tree}.

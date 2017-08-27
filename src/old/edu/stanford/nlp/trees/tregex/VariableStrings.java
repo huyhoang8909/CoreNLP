@@ -1,6 +1,6 @@
-package edu.stanford.nlp.trees.tregex;
+package old.edu.stanford.nlp.trees.tregex;
 
-import edu.stanford.nlp.stats.IntCounter;
+import old.edu.stanford.nlp.stats.IntCounter;
 
 import java.util.Map;
 import java.util.HashMap;

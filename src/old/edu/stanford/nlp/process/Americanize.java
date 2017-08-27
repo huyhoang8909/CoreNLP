@@ -1,10 +1,10 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
 
-import edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.util.Function;
 
 
-import edu.stanford.nlp.ling.HasWord;
+import old.edu.stanford.nlp.ling.HasWord;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

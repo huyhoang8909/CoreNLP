@@ -5,9 +5,9 @@
  * Company:     Stanford University<p>
  */
 
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.ling.WordTag;
+import old.edu.stanford.nlp.ling.WordTag;
 
 import java.util.*;
 

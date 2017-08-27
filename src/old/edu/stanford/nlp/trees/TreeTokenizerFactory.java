@@ -1,8 +1,8 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.process.Tokenizer;
-import edu.stanford.nlp.process.AbstractTokenizer;
+import old.edu.stanford.nlp.objectbank.TokenizerFactory;
+import old.edu.stanford.nlp.process.Tokenizer;
+import old.edu.stanford.nlp.process.AbstractTokenizer;
 
 import java.io.Reader;
 import java.io.IOException;

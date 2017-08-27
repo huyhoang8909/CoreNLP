@@ -1,8 +1,8 @@
-package edu.stanford.nlp.optimization;
+package old.edu.stanford.nlp.optimization;
 
-import edu.stanford.nlp.objectbank.ObjectBank;
-import edu.stanford.nlp.util.Pair;
-import edu.stanford.nlp.math.ArrayMath;
+import old.edu.stanford.nlp.objectbank.ObjectBank;
+import old.edu.stanford.nlp.util.Pair;
+import old.edu.stanford.nlp.math.ArrayMath;
 
 import java.util.LinkedList;
 import java.util.List;

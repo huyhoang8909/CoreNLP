@@ -1,12 +1,12 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Stack;
 
-import edu.stanford.nlp.process.Tokenizer;
-import edu.stanford.nlp.ling.HasIndex;
+import old.edu.stanford.nlp.process.Tokenizer;
+import old.edu.stanford.nlp.ling.HasIndex;
 
 /**
  * This class implements the <code>TreeReader</code> interface to read Penn Treebank-style 

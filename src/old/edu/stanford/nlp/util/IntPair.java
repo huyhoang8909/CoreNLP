@@ -1,4 +1,4 @@
-package edu.stanford.nlp.util;
+package old.edu.stanford.nlp.util;
 
 public class IntPair extends IntTuple {
   private static final long serialVersionUID = 1L;

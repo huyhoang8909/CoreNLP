@@ -1,12 +1,12 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.CoreAnnotation;
-import edu.stanford.nlp.ling.Label;
-import static edu.stanford.nlp.trees.GrammaticalRelation.DEPENDENT;
-import static edu.stanford.nlp.trees.GrammaticalRelation.GOVERNOR;
-import edu.stanford.nlp.trees.GrammaticalRelation.GrammaticalRelationAnnotation;
-import edu.stanford.nlp.util.Filter;
-import edu.stanford.nlp.util.Generics;
+import old.edu.stanford.nlp.ling.CoreAnnotation;
+import old.edu.stanford.nlp.ling.Label;
+import static old.edu.stanford.nlp.trees.GrammaticalRelation.DEPENDENT;
+import static old.edu.stanford.nlp.trees.GrammaticalRelation.GOVERNOR;
+import old.edu.stanford.nlp.trees.GrammaticalRelation.GrammaticalRelationAnnotation;
+import old.edu.stanford.nlp.util.Filter;
+import old.edu.stanford.nlp.util.Generics;
 
 import java.util.*;
 import java.util.concurrent.locks.Lock;

@@ -24,11 +24,11 @@
 //    Support/Questions: java-nlp-user@lists.stanford.edu
 //    Licensing: java-nlp-support@lists.stanford.edu
 //http://www-nlp.stanford.edu/software/tagger.shtml
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.io.InDataStreamFile;
-import edu.stanford.nlp.io.OutDataStreamFile;
-import edu.stanford.nlp.maxent.Feature;
+import old.edu.stanford.nlp.io.InDataStreamFile;
+import old.edu.stanford.nlp.io.OutDataStreamFile;
+import old.edu.stanford.nlp.maxent.Feature;
 
 
 /**

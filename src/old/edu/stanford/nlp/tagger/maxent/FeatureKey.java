@@ -6,11 +6,11 @@
  */
 
 
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
 import java.io.DataInputStream;
 
-import edu.stanford.nlp.io.OutDataStreamFile;
+import old.edu.stanford.nlp.io.OutDataStreamFile;
 
 
 /**

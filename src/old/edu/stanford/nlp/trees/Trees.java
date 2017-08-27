@@ -1,11 +1,11 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.util.MutableInteger;
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.ling.*;
-import edu.stanford.nlp.ling.CoreAnnotations.TagLabelAnnotation;
-import edu.stanford.nlp.movetrees.EmptyTreeLeaf;
+import old.edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.util.MutableInteger;
+import old.edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.ling.*;
+import old.edu.stanford.nlp.ling.CoreAnnotations.TagLabelAnnotation;
+import old.edu.stanford.nlp.movetrees.EmptyTreeLeaf;
 
 import java.util.*;
 import java.io.*;

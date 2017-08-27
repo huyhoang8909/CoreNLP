@@ -1,8 +1,8 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.HasTag;
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.ling.Label;
+import old.edu.stanford.nlp.ling.HasTag;
+import old.edu.stanford.nlp.ling.HasWord;
+import old.edu.stanford.nlp.ling.Label;
 
 import java.util.ArrayList;
 import java.util.Arrays;

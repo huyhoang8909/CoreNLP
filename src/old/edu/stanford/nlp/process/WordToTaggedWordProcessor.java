@@ -1,4 +1,4 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
 
 import java.io.File;
@@ -6,11 +6,11 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.stanford.nlp.ling.BasicDocument;
-import edu.stanford.nlp.ling.Document;
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.ling.TaggedWord;
-import edu.stanford.nlp.ling.Word;
+import old.edu.stanford.nlp.ling.BasicDocument;
+import old.edu.stanford.nlp.ling.Document;
+import old.edu.stanford.nlp.ling.HasWord;
+import old.edu.stanford.nlp.ling.TaggedWord;
+import old.edu.stanford.nlp.ling.Word;
 
 
 /**

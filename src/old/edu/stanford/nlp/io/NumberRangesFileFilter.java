@@ -1,6 +1,6 @@
-package edu.stanford.nlp.io;
+package old.edu.stanford.nlp.io;
 
-import edu.stanford.nlp.util.Pair;
+import old.edu.stanford.nlp.util.Pair;
 
 import java.io.File;
 import java.io.FileFilter;

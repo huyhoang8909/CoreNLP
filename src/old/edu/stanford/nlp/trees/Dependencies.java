@@ -1,13 +1,13 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import java.util.Comparator;
 
-import edu.stanford.nlp.ling.HasTag;
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
-import edu.stanford.nlp.util.CoreMap;
-import edu.stanford.nlp.util.Filter;
+import old.edu.stanford.nlp.ling.HasTag;
+import old.edu.stanford.nlp.ling.HasWord;
+import old.edu.stanford.nlp.ling.Label;
+import old.edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
+import old.edu.stanford.nlp.util.CoreMap;
+import old.edu.stanford.nlp.util.Filter;
 
 /** Utilities for Dependency objects.
  *

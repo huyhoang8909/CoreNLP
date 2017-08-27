@@ -1,4 +1,4 @@
-package edu.stanford.nlp.util;
+package old.edu.stanford.nlp.util;
 
 /**
  * Scored: This is a simple interface that says that an object can answer

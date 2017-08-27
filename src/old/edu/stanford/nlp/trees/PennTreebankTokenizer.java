@@ -1,6 +1,6 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.process.TokenizerAdapter;
+import old.edu.stanford.nlp.process.TokenizerAdapter;
 
 import java.io.Reader;
 import java.io.StreamTokenizer;

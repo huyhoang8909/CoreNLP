@@ -25,10 +25,10 @@
 //    Licensing: java-nlp-support@lists.stanford.edu
 //http://www-nlp.stanford.edu/software/tagger.shtml
 
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.process.WordShapeClassifier;
-import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.process.WordShapeClassifier;
+import old.edu.stanford.nlp.util.StringUtils;
 
 import java.util.*;
 

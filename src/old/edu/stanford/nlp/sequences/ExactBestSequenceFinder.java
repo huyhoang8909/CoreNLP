@@ -1,4 +1,4 @@
-package edu.stanford.nlp.sequences;
+package old.edu.stanford.nlp.sequences;
 
 import java.util.Arrays;
 

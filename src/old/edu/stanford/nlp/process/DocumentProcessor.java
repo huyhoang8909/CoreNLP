@@ -1,5 +1,5 @@
-package edu.stanford.nlp.process;
-import edu.stanford.nlp.ling.Document;
+package old.edu.stanford.nlp.process;
+import old.edu.stanford.nlp.ling.Document;
 
 /**
  * Top-level interface for transforming Documents.

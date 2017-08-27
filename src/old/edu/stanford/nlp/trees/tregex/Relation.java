@@ -1,4 +1,4 @@
-package edu.stanford.nlp.trees.tregex;
+package old.edu.stanford.nlp.trees.tregex;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -7,18 +7,18 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import edu.stanford.nlp.io.NumberRangesFileFilter;
-import edu.stanford.nlp.trees.DiskTreebank;
-import edu.stanford.nlp.trees.HeadFinder;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.Trees;
-import edu.stanford.nlp.trees.TreeReaderFactory;
-import edu.stanford.nlp.trees.PennTreeReaderFactory;
-import edu.stanford.nlp.trees.NPTmpRetainingTreeNormalizer;
-import edu.stanford.nlp.trees.ModCollinsHeadFinder;
-import edu.stanford.nlp.util.IdentityHashSet;
-import edu.stanford.nlp.util.Interner;
-import edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.io.NumberRangesFileFilter;
+import old.edu.stanford.nlp.trees.DiskTreebank;
+import old.edu.stanford.nlp.trees.HeadFinder;
+import old.edu.stanford.nlp.trees.Tree;
+import old.edu.stanford.nlp.trees.Trees;
+import old.edu.stanford.nlp.trees.TreeReaderFactory;
+import old.edu.stanford.nlp.trees.PennTreeReaderFactory;
+import old.edu.stanford.nlp.trees.NPTmpRetainingTreeNormalizer;
+import old.edu.stanford.nlp.trees.ModCollinsHeadFinder;
+import old.edu.stanford.nlp.util.IdentityHashSet;
+import old.edu.stanford.nlp.util.Interner;
+import old.edu.stanford.nlp.util.Function;
 
 
 /**

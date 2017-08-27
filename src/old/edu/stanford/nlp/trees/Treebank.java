@@ -1,11 +1,11 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.io.ExtensionFileFilter;
-import edu.stanford.nlp.stats.ClassicCounter;
-import edu.stanford.nlp.stats.Counters;
-import edu.stanford.nlp.util.Sets;
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.ling.StringLabel;
+import old.edu.stanford.nlp.io.ExtensionFileFilter;
+import old.edu.stanford.nlp.stats.ClassicCounter;
+import old.edu.stanford.nlp.stats.Counters;
+import old.edu.stanford.nlp.util.Sets;
+import old.edu.stanford.nlp.ling.Label;
+import old.edu.stanford.nlp.ling.StringLabel;
 
 import java.io.*;
 import java.text.NumberFormat;

@@ -15,7 +15,7 @@ public interface IConstants {
 	 * The default maxent model file of the Vietnamese tagger.
 	 */
 	//TODO: How to set flexible by using resources/models/vtb.tagger
-	public static String DEFAULT_MODEL_FILE = "src/main/resources/models/vtb.tagger";
+	public static String DEFAULT_MODEL_FILE = "/Users/namlai/Documents/workspace/ml/sentimentAnalyses/vn-core-nlp/resources/models/vtb.tagger";
 	// the experiment 1 (reported in the article)
 //	public static String DEFAULT_MODEL_FILE = "experiments/fold1/left5words-vtb-1.tagger";
 	/**

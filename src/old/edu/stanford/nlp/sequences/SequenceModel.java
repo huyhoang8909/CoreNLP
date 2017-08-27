@@ -1,4 +1,4 @@
-package edu.stanford.nlp.sequences;
+package old.edu.stanford.nlp.sequences;
 
 /**
  * Class capable of scoring sequences of a fixed length, typically with a probability distribution over

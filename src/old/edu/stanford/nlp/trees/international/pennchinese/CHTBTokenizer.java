@@ -1,8 +1,8 @@
-package edu.stanford.nlp.trees.international.pennchinese;
+package old.edu.stanford.nlp.trees.international.pennchinese;
 
-import edu.stanford.nlp.io.EncodingPrintWriter;
-import edu.stanford.nlp.process.AbstractTokenizer;
-import edu.stanford.nlp.process.Tokenizer;
+import old.edu.stanford.nlp.io.EncodingPrintWriter;
+import old.edu.stanford.nlp.process.AbstractTokenizer;
+import old.edu.stanford.nlp.process.Tokenizer;
 
 import java.io.*;
 

@@ -5,12 +5,12 @@
  * Company:      Stanford University<p>
  */
 
-package edu.stanford.nlp.maxent;
+package old.edu.stanford.nlp.maxent;
 
-import edu.stanford.nlp.io.InDataStreamFile;
-import edu.stanford.nlp.io.OutDataStreamFile;
-import edu.stanford.nlp.util.Index;
-import edu.stanford.nlp.util.IntPair;
+import old.edu.stanford.nlp.io.InDataStreamFile;
+import old.edu.stanford.nlp.io.OutDataStreamFile;
+import old.edu.stanford.nlp.util.Index;
+import old.edu.stanford.nlp.util.IntPair;
 
 import java.io.PrintStream;
 import java.util.HashMap;

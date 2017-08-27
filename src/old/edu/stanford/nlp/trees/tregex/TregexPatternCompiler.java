@@ -26,12 +26,12 @@
 //    Licensing: parser-support@lists.stanford.edu
 //    http://www-nlp.stanford.edu/software/tregex.shtml
 
-package edu.stanford.nlp.trees.tregex;
+package old.edu.stanford.nlp.trees.tregex;
 
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.trees.CollinsHeadFinder;
-import edu.stanford.nlp.trees.HeadFinder;
-import edu.stanford.nlp.trees.PennTreebankLanguagePack;
+import old.edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.trees.CollinsHeadFinder;
+import old.edu.stanford.nlp.trees.HeadFinder;
+import old.edu.stanford.nlp.trees.PennTreebankLanguagePack;
 
 /**
  * A class for compiling TregexPatterns with specific HeadFinders and or

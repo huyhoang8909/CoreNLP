@@ -1,7 +1,7 @@
-package edu.stanford.nlp.trees.tregex.tsurgeon;
+package old.edu.stanford.nlp.trees.tregex.tsurgeon;
 
-import edu.stanford.nlp.trees.tregex.TregexMatcher;
-import edu.stanford.nlp.trees.Tree;
+import old.edu.stanford.nlp.trees.tregex.TregexMatcher;
+import old.edu.stanford.nlp.trees.Tree;
 
 /**
  * @author Roger Levy (rog@nlp.stanford.edu)

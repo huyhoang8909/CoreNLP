@@ -1,12 +1,12 @@
-package edu.stanford.nlp.ling;
+package old.edu.stanford.nlp.ling;
 
 import java.util.Comparator;
 import java.util.Map;
 import java.util.TreeMap;
 
-import edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation;
-import edu.stanford.nlp.util.CoreMap;
+import old.edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation;
+import old.edu.stanford.nlp.util.CoreMap;
 
 /**
  * Version of CoreLabel that allows for cycles in values/keys.

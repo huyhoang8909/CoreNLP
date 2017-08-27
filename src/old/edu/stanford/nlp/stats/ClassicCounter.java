@@ -24,7 +24,7 @@
 //    java-nlp-support@lists.stanford.edu
 //    http://nlp.stanford.edu/software/
 
-package edu.stanford.nlp.stats;
+package old.edu.stanford.nlp.stats;
 
 import java.io.Serializable;
 import java.util.AbstractCollection;
@@ -35,10 +35,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import edu.stanford.nlp.math.SloppyMath;
-import edu.stanford.nlp.util.Factory;
-import edu.stanford.nlp.util.MapFactory;
-import edu.stanford.nlp.util.MutableDouble;
+import old.edu.stanford.nlp.math.SloppyMath;
+import old.edu.stanford.nlp.util.Factory;
+import old.edu.stanford.nlp.util.MapFactory;
+import old.edu.stanford.nlp.util.MutableDouble;
 
 
 /**

@@ -1,10 +1,10 @@
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.io.InDataStreamFile;
-import edu.stanford.nlp.io.OutDataStreamFile;
-import edu.stanford.nlp.io.RuntimeIOException;
-import edu.stanford.nlp.util.Index;
-import edu.stanford.nlp.util.HashIndex;
+import old.edu.stanford.nlp.io.InDataStreamFile;
+import old.edu.stanford.nlp.io.OutDataStreamFile;
+import old.edu.stanford.nlp.io.RuntimeIOException;
+import old.edu.stanford.nlp.util.Index;
+import old.edu.stanford.nlp.util.HashIndex;
 
 import java.io.IOException;
 import java.io.DataInputStream;
@@ -170,6 +170,30 @@ public class TTags {
       closed.add("EOS");
       closed.add("-LRB-");
       closed.add("-RRB-");
+    } else if (language.equalsIgnoreCase("vietnamese")) {
+      this.closed.add(".");
+      this.closed.add(",");
+      this.closed.add(":");
+      this.closed.add("(");
+      this.closed.add(")");
+      this.closed.add("LBKT");
+      this.closed.add("RBKT");
+      this.closed.add("#");
+      this.closed.add("/");
+      this.closed.add("-");
+      this.closed.add("&");
+      this.closed.add("...");
+      this.closed.add(";");
+      this.closed.add("?");
+      this.closed.add("'");
+      this.closed.add("I");
+      this.closed.add("Q");
+      this.closed.add("Vb");
+      this.closed.add("Vy");
+      this.closed.add("CC");
+      this.closed.add("Y");
+      this.closed.add("Z");
+      this.closed.add("SLASH");
     } else if (language.equalsIgnoreCase("")) {
     }
     /* add closed-class lists for other languages here */

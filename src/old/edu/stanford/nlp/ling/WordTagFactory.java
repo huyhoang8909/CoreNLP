@@ -1,4 +1,4 @@
-package edu.stanford.nlp.ling;
+package old.edu.stanford.nlp.ling;
 
 /**
  * A <code>WordTagFactory</code> acts as a factory for creating

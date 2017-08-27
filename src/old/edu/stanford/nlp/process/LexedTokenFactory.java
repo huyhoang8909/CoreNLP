@@ -1,4 +1,4 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
 /**
  * Constructs a token (of arbitrary type) from a String and its position

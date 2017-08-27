@@ -1,7 +1,7 @@
-package edu.stanford.nlp.sequences;
+package old.edu.stanford.nlp.sequences;
 
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.objectbank.IteratorFromReaderFactory;
+import old.edu.stanford.nlp.ling.CoreLabel;
+import old.edu.stanford.nlp.objectbank.IteratorFromReaderFactory;
 
 import java.util.List;
 import java.io.PrintWriter;

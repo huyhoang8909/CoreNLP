@@ -5,7 +5,7 @@ package vn.hus.nlp.tagger.io;
 
 import java.util.List;
 
-import edu.stanford.nlp.ling.WordTag;
+import old.edu.stanford.nlp.ling.WordTag;
 
 /**
  * @author LE HONG Phuong, phuonglh@gmail.com

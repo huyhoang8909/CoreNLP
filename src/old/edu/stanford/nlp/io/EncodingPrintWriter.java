@@ -1,4 +1,4 @@
-package edu.stanford.nlp.io;
+package old.edu.stanford.nlp.io;
 
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;

@@ -1,7 +1,7 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
 
-import edu.stanford.nlp.ling.Word;
+import old.edu.stanford.nlp.ling.Word;
 
 /**
  * Constructs a Word from a String. This is the default

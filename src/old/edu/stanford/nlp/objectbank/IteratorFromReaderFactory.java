@@ -1,4 +1,4 @@
-package edu.stanford.nlp.objectbank;
+package old.edu.stanford.nlp.objectbank;
 
 import java.util.Iterator;
 

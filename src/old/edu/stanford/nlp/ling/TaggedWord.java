@@ -1,4 +1,4 @@
-package edu.stanford.nlp.ling;
+package old.edu.stanford.nlp.ling;
 
 /**
  * A <code>TaggedWord</code> object contains a word and its tag.

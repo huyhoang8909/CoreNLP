@@ -1,4 +1,4 @@
-package edu.stanford.nlp.ling;
+package old.edu.stanford.nlp.ling;
 
 /**
  * A <code>StringLabel</code> object acts as a Label by containing a

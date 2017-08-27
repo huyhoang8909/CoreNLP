@@ -1,8 +1,8 @@
-package edu.stanford.nlp.trees.tregex.tsurgeon;
+package old.edu.stanford.nlp.trees.tregex.tsurgeon;
 
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.Trees;
-import edu.stanford.nlp.trees.tregex.TregexMatcher;
+import old.edu.stanford.nlp.trees.Tree;
+import old.edu.stanford.nlp.trees.Trees;
+import old.edu.stanford.nlp.trees.tregex.TregexMatcher;
 
 /** Excises all nodes from the top to the bottom, and puts all the children of bottom node in where the top was.
  * @author Roger Levy (rog@stanford.edu)

@@ -4,10 +4,10 @@
  * Copyright:    Copyright (c) Kristina Toutanova<p>
  * Company:      Stanford University<p>
  */
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.io.InDataStreamFile;
-import edu.stanford.nlp.io.OutDataStreamFile;
+import old.edu.stanford.nlp.io.InDataStreamFile;
+import old.edu.stanford.nlp.io.OutDataStreamFile;
 
 import java.io.IOException;
 import java.io.DataInputStream;

@@ -1,8 +1,8 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
 
-import edu.stanford.nlp.ling.Word;
-import edu.stanford.nlp.objectbank.TokenizerFactory;
+import old.edu.stanford.nlp.ling.Word;
+import old.edu.stanford.nlp.objectbank.TokenizerFactory;
 
 import java.io.*;
 import java.util.Iterator;

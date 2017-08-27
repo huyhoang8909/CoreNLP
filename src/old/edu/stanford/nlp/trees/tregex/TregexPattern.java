@@ -28,20 +28,20 @@
 //    http://www-nlp.stanford.edu/software/tregex.shtml
 
 
-package edu.stanford.nlp.trees.tregex;
+package old.edu.stanford.nlp.trees.tregex;
 
 import java.io.*;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import edu.stanford.nlp.io.IOUtils;
-import edu.stanford.nlp.ling.StringLabelFactory;
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.trees.*;
-import edu.stanford.nlp.util.Pair;
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.util.Timing;
+import old.edu.stanford.nlp.io.IOUtils;
+import old.edu.stanford.nlp.ling.StringLabelFactory;
+import old.edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.trees.*;
+import old.edu.stanford.nlp.util.Pair;
+import old.edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.util.Timing;
 
 
 /**

@@ -26,21 +26,21 @@
 //http://www-nlp.stanford.edu/software/tagger.shtml
 
 
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.io.IOUtils;
-import edu.stanford.nlp.io.PrintFile;
-import edu.stanford.nlp.io.RuntimeIOException;
-import edu.stanford.nlp.ling.*;
-import edu.stanford.nlp.objectbank.ObjectBank;
-import edu.stanford.nlp.objectbank.ReaderIteratorFactory;
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.process.*;
-import edu.stanford.nlp.process.PTBTokenizer.PTBTokenizerFactory;
-import edu.stanford.nlp.sequences.PlainTextDocumentReaderAndWriter;
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.util.Timing;
-import edu.stanford.nlp.util.XMLUtils;
+import old.edu.stanford.nlp.io.IOUtils;
+import old.edu.stanford.nlp.io.PrintFile;
+import old.edu.stanford.nlp.io.RuntimeIOException;
+import old.edu.stanford.nlp.ling.*;
+import old.edu.stanford.nlp.objectbank.ObjectBank;
+import old.edu.stanford.nlp.objectbank.ReaderIteratorFactory;
+import old.edu.stanford.nlp.objectbank.TokenizerFactory;
+import old.edu.stanford.nlp.process.*;
+import old.edu.stanford.nlp.process.PTBTokenizer.PTBTokenizerFactory;
+import old.edu.stanford.nlp.sequences.PlainTextDocumentReaderAndWriter;
+import old.edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.util.Timing;
+import old.edu.stanford.nlp.util.XMLUtils;
 
 import java.io.*;
 import java.util.*;

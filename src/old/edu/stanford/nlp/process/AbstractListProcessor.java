@@ -1,10 +1,10 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.stanford.nlp.ling.Document;
+import old.edu.stanford.nlp.ling.Document;
 
 /**
  * Class AbstractListProcessor

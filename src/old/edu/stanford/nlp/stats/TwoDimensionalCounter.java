@@ -1,4 +1,4 @@
-package edu.stanford.nlp.stats;
+package old.edu.stanford.nlp.stats;
 
 import java.io.Serializable;
 import java.text.DecimalFormat;
@@ -10,12 +10,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import edu.stanford.nlp.math.ArrayMath;
-import edu.stanford.nlp.math.SloppyMath;
-import edu.stanford.nlp.util.MapFactory;
-import edu.stanford.nlp.util.MutableDouble;
-import edu.stanford.nlp.util.Pair;
-import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.math.ArrayMath;
+import old.edu.stanford.nlp.math.SloppyMath;
+import old.edu.stanford.nlp.util.MapFactory;
+import old.edu.stanford.nlp.util.MutableDouble;
+import old.edu.stanford.nlp.util.Pair;
+import old.edu.stanford.nlp.util.StringUtils;
 
 /**
  * A class representing a mapping between pairs of typed objects and double values.

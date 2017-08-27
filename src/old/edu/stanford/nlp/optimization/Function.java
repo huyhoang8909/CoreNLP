@@ -1,4 +1,4 @@
-package edu.stanford.nlp.optimization;
+package old.edu.stanford.nlp.optimization;
 
 /**
  * An interface for double-valued functions over double arrays.

@@ -1,6 +1,6 @@
-package edu.stanford.nlp.trees.tregex;
+package old.edu.stanford.nlp.trees.tregex;
 
-import edu.stanford.nlp.trees.Tree;
+import old.edu.stanford.nlp.trees.Tree;
 
 import java.util.Iterator;
 import java.util.List;

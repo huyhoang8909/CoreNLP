@@ -1,7 +1,7 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.ling.LabelFactory;
+import old.edu.stanford.nlp.ling.Label;
+import old.edu.stanford.nlp.ling.LabelFactory;
 
 /**
  * A <code>SimpleConstituent</code> object defines a generic edge in a graph.

@@ -1,4 +1,4 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -11,11 +11,11 @@ import java.util.Set;
 import java.util.regex.Pattern;
 import java.io.Serializable;
 
-import edu.stanford.nlp.ling.CoreAnnotation;
-import edu.stanford.nlp.trees.tregex.TregexMatcher;
-import edu.stanford.nlp.trees.tregex.TregexPattern;
-import edu.stanford.nlp.util.Generics;
-import edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.ling.CoreAnnotation;
+import old.edu.stanford.nlp.trees.tregex.TregexMatcher;
+import old.edu.stanford.nlp.trees.tregex.TregexPattern;
+import old.edu.stanford.nlp.util.Generics;
+import old.edu.stanford.nlp.util.StringUtils;
 
 
 /**
@@ -257,7 +257,7 @@ public class GrammaticalRelation implements Comparable<GrammaticalRelation>, Ser
       try {
         TregexPattern p = TregexPattern.compile(pattern);
         this.targetPatterns.add(p);
-      } catch (edu.stanford.nlp.trees.tregex.ParseException pe) {
+      } catch (old.edu.stanford.nlp.trees.tregex.ParseException pe) {
         throw new RuntimeException("Bad pattern: " + pattern, pe);
       }
     }

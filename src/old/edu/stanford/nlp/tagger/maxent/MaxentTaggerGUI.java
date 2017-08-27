@@ -24,7 +24,7 @@
 //    Support/Questions: java-nlp-user@lists.stanford.edu
 //    Licensing: java-nlp-support@lists.stanford.edu
 //    http://www-nlp.stanford.edu/software/tagger.shtml
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
 import javax.swing.*;
 import java.awt.*;

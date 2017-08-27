@@ -1,9 +1,9 @@
-package edu.stanford.nlp.util.concurrent;
+package old.edu.stanford.nlp.util.concurrent;
 
 import java.util.Set;
 
-import edu.stanford.nlp.util.Generics;
-import edu.stanford.nlp.util.Interner;
+import old.edu.stanford.nlp.util.Generics;
+import old.edu.stanford.nlp.util.Interner;
 
 /**
  * <p>

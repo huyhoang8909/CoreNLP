@@ -1,9 +1,9 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
 
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetBeginAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
+import old.edu.stanford.nlp.ling.CoreLabel;
+import old.edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetBeginAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
 
 /**
  * Constructs {@link CoreLabel}s from Strings optionally with

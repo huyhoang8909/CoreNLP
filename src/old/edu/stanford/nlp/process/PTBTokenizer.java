@@ -1,4 +1,4 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
 // Stanford English Tokenizer -- a deterministic, fast high-quality tokenizer
 // Copyright (c) 2002-2009 The Board of Trustees of
@@ -33,13 +33,13 @@ import java.text.NumberFormat;
 import java.util.*;
 import java.util.regex.Pattern;
 
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.Word;
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.util.Timing;
-import edu.stanford.nlp.io.IOUtils;
+import old.edu.stanford.nlp.ling.CoreLabel;
+import old.edu.stanford.nlp.ling.Word;
+import old.edu.stanford.nlp.ling.HasWord;
+import old.edu.stanford.nlp.objectbank.TokenizerFactory;
+import old.edu.stanford.nlp.util.StringUtils;
+import old.edu.stanford.nlp.util.Timing;
+import old.edu.stanford.nlp.io.IOUtils;
 
 
 /**

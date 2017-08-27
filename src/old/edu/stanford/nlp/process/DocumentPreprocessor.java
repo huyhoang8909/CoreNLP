@@ -1,12 +1,12 @@
-package edu.stanford.nlp.process;
+package old.edu.stanford.nlp.process;
 
-import edu.stanford.nlp.io.IOUtils;
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.ling.Word;
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.objectbank.XMLBeginEndIterator;
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.web.HTMLParser;
+import old.edu.stanford.nlp.io.IOUtils;
+import old.edu.stanford.nlp.ling.HasWord;
+import old.edu.stanford.nlp.ling.Word;
+import old.edu.stanford.nlp.objectbank.TokenizerFactory;
+import old.edu.stanford.nlp.objectbank.XMLBeginEndIterator;
+import old.edu.stanford.nlp.util.Function;
+import old.edu.stanford.nlp.web.HTMLParser;
 
 import java.io.*;
 import java.net.URL;

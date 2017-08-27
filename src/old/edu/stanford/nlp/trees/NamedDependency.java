@@ -1,9 +1,9 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.ling.StringLabel;
-import edu.stanford.nlp.util.ErasureUtils;
-import edu.stanford.nlp.util.XMLUtils;
+import old.edu.stanford.nlp.ling.Label;
+import old.edu.stanford.nlp.ling.StringLabel;
+import old.edu.stanford.nlp.util.ErasureUtils;
+import old.edu.stanford.nlp.util.XMLUtils;
 
 
 /**

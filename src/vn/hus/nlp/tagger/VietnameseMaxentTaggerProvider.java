@@ -3,7 +3,7 @@
  */
 package vn.hus.nlp.tagger;
 
-import edu.stanford.nlp.tagger.maxent.MaxentTagger;
+import old.edu.stanford.nlp.tagger.maxent.MaxentTagger;
 
 /**
  * @author LE HONG Phuong, phuonglh@gmail.com

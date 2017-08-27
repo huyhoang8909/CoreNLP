@@ -1,8 +1,8 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import java.io.Serializable;
 
-import edu.stanford.nlp.ling.CoreAnnotations.CopyAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.CopyAnnotation;
 
 /**
  * A <code>TypedDependency</code> is a relation between two words in a

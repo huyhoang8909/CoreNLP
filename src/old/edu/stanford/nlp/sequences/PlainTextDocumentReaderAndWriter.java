@@ -1,14 +1,14 @@
-package edu.stanford.nlp.sequences;
+package old.edu.stanford.nlp.sequences;
 
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.BeforeAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.AfterAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.CurrentAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.PositionAnnotation;
-import edu.stanford.nlp.process.PTBTokenizer;
-import edu.stanford.nlp.process.WordToSentenceProcessor;
-import edu.stanford.nlp.util.XMLUtils;
+import old.edu.stanford.nlp.ling.CoreLabel;
+import old.edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.BeforeAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.AfterAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.CurrentAnnotation;
+import old.edu.stanford.nlp.ling.CoreAnnotations.PositionAnnotation;
+import old.edu.stanford.nlp.process.PTBTokenizer;
+import old.edu.stanford.nlp.process.WordToSentenceProcessor;
+import old.edu.stanford.nlp.util.XMLUtils;
 
 import java.io.*;
 import java.util.*;

@@ -4,13 +4,13 @@
  * Copyright:   Copyright (c) 2000. Kristina Toutanova, Stanford University
  * Company:     Stanford University, All Rights Reserved.
  */
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
-import edu.stanford.nlp.maxent.Experiments;
-import edu.stanford.nlp.maxent.Feature;
-import edu.stanford.nlp.maxent.Problem;
-import edu.stanford.nlp.maxent.iis.LambdaSolve;
-import edu.stanford.nlp.util.MutableDouble;
+import old.edu.stanford.nlp.maxent.Experiments;
+import old.edu.stanford.nlp.maxent.Feature;
+import old.edu.stanford.nlp.maxent.Problem;
+import old.edu.stanford.nlp.maxent.iis.LambdaSolve;
+import old.edu.stanford.nlp.util.MutableDouble;
 
 import java.text.NumberFormat;
 import java.io.DataInputStream;

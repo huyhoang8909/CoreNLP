@@ -6,7 +6,7 @@
  */
 
 
-package edu.stanford.nlp.tagger.maxent;
+package old.edu.stanford.nlp.tagger.maxent;
 
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;

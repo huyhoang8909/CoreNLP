@@ -1,13 +1,13 @@
-package edu.stanford.nlp.trees;
+package old.edu.stanford.nlp.trees;
 
 import java.io.*;
 import java.util.*;
 
-import edu.stanford.nlp.ling.CoreAnnotations;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.HasIndex;
-import edu.stanford.nlp.util.*;
-import edu.stanford.nlp.objectbank.ObjectBank;
+import old.edu.stanford.nlp.ling.CoreAnnotations;
+import old.edu.stanford.nlp.ling.CoreLabel;
+import old.edu.stanford.nlp.ling.HasIndex;
+import old.edu.stanford.nlp.util.*;
+import old.edu.stanford.nlp.objectbank.ObjectBank;
 
 
 /**

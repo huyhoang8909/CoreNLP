@@ -1,6 +1,6 @@
-package edu.stanford.nlp.movetrees;
+package old.edu.stanford.nlp.movetrees;
 
-import edu.stanford.nlp.trees.Tree;
+import old.edu.stanford.nlp.trees.Tree;
 
 interface HasTrace {
 

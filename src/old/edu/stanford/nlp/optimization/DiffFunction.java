@@ -1,4 +1,4 @@
-package edu.stanford.nlp.optimization;
+package old.edu.stanford.nlp.optimization;
 
 /**
  * An interface for once-differentiable double-valued functions over
