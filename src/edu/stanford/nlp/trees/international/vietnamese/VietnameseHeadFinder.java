@@ -98,10 +98,10 @@ public class VietnameseHeadFinder extends AbstractCollinsHeadFinder {
     // new for CTB9
     nonTerminalInfo.put("DFL", new String[][]{rightExceptPunct});
     nonTerminalInfo.put("EMO", new String[][]{leftExceptPunct}); // left/right doesn't matter
-    nonTerminalInfo.put("INC", new String[][]{leftExceptPunct}); 
-    nonTerminalInfo.put("INTJ", new String[][]{leftExceptPunct}); 
-    nonTerminalInfo.put("OTH", new String[][]{leftExceptPunct}); 
-    nonTerminalInfo.put("SKIP", new String[][]{leftExceptPunct}); 
+    nonTerminalInfo.put("INC", new String[][]{leftExceptPunct});
+    nonTerminalInfo.put("INTJ", new String[][]{leftExceptPunct});
+    nonTerminalInfo.put("OTH", new String[][]{leftExceptPunct});
+    nonTerminalInfo.put("SKIP", new String[][]{leftExceptPunct});
 
   }
 

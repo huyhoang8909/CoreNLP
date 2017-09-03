@@ -181,12 +181,12 @@ public class CustomSentimentAnnotatorTest {
 
             pipeline.addAnnotator(new WordsToSentencesAnnotator(true));
 
-            pipeline.addAnnotator(new CustomPOSTaggerAnnotator(true));
+            pipeline.addAnnotator(new POSTaggerAnnotator(true));
 
             pipeline.addAnnotator(new CustomParserAnnotator(false, -1));
-//            pipeline.addAnnotator(new BinarizerAnnotator("", properties));
+            pipeline.addAnnotator(new BinarizerAnnotator("", properties));
 
-            String text = "Cựu lãnh đạo Ngân hàng Sacombank Trầm Bê bị cho có sai phạm, tiếp tay cho Phạm Công Danh gây thất thoát hàng nghìn tỷ đồng.";
+            String text = "Cậu bé đang nghịch quả bóng màu xanh";
             Annotation document = new Annotation(text);
 
             // Run all Annotations on this text
@@ -198,7 +198,7 @@ public class CustomSentimentAnnotatorTest {
                 // get the tokens for the sentence and iterate over them
                 for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
 
-
+                    System.out.println(token.word() + "/" + token.tag());
                 }
 
                 Tree tree = sentence.get(TreeCoreAnnotations.TreeAnnotation.class);
