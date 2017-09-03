@@ -1,0 +1,46 @@
+<s>
+( S
+	( S
+		( NP-SUB
+			( N
+				( Gió chướng  ) ) )
+		( VP
+			( V
+				( thổi  ) )
+			( AP-DOB
+				( A
+					( mạnh  ) ) ) ) )
+	( ,,
+		(  ) )
+	( S
+		( NP-SUB
+			( Nc
+				( chiếc  ) )
+			( NP-ĐN
+				( N
+					( ghe  ) )
+				( VP-ĐN
+					( V
+						( cào  ) ) ) ) )
+		( C
+			( như  ) )
+		( VP
+			( V
+				( muốn  ) )
+			( VP-DOB
+				( V
+					( rung  ) )
+				( R
+					( lên  ) ) ) ) )
+	( .
+		( .  ) ) )
+</s>
+<s>
+(S (NP-SUB (N Hàm răng)
+           (NP-ĐN (P tôi)))
+   (VP (R1 cũng)
+       (V đánh)
+       (AP-DOB (A lập cập)))
+   (. .))
+
+</s>

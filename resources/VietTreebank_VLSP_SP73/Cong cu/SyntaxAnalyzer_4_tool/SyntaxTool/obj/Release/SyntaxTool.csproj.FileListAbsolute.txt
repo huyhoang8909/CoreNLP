@@ -1,0 +1,13 @@
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\bin\Release\SyntaxTool.exe.config
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\obj\Release\SyntaxTool.exe
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\obj\Release\SyntaxTool.pdb
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\bin\Release\SyntaxTool.exe
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\bin\Release\SyntaxTool.pdb
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\bin\Release\vi\SyntaxTool.resources.dll
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\bin\Release\Lithium.dll
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\obj\Release\ResolveAssemblyReference.cache
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\obj\Release\SyntaxTool.Form1.resources
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\obj\Release\SyntaxTool.Properties.Resources.resources
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\obj\Release\SyntaxTool.Form1.vi.resources
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\obj\Release\SyntaxTool.csproj.GenerateResource.Cache
+c:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool\obj\Release\vi\SyntaxTool.resources.dll

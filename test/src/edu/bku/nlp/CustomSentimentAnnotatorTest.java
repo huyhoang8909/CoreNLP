@@ -10,12 +10,14 @@ import java.util.List;
 import java.util.Properties;
 import java.util.function.Function;
 
+import edu.stanford.nlp.coref.CorefCoreAnnotations;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.AnnotationPipeline;
 import edu.stanford.nlp.pipeline.BinarizerAnnotator;
 import edu.stanford.nlp.pipeline.POSTaggerAnnotator;
+import edu.stanford.nlp.pipeline.ParserAnnotator;
 import edu.stanford.nlp.pipeline.TokenizerAnnotator;
 import edu.stanford.nlp.pipeline.WordsToSentencesAnnotator;
 import edu.stanford.nlp.trees.Tree;
@@ -170,36 +172,45 @@ public class CustomSentimentAnnotatorTest {
         public void success() throws IOException, ClassNotFoundException {
             Properties properties = new Properties();
             properties.setProperty("tokenize.language", "vietnamese");
-            properties.setProperty("model", "resources/models/VietNamesePCFG.ser.gz");
+            properties.setProperty("pos.model", "resources/models/vtb.tagger");
             properties.setProperty("vn.parser.model", "resources/models/VietNamesePCFG.ser.gz");
 
             AnnotationPipeline pipeline = new AnnotationPipeline();
-            pipeline.addAnnotator(new CustomTokenizerAnnotator(true, properties));
-            pipeline.addAnnotator(new WordsToSentencesAnnotator(true));
-            pipeline.addAnnotator(new POSTaggerAnnotator(true));
-            pipeline.addAnnotator(new CustomParserAnnotator("vn.parser", properties));
-            pipeline.addAnnotator(new BinarizerAnnotator("", properties));
 
-            Annotation document = new Annotation("Cựu lãnh đạo Ngân hàng Sacombank Trầm Bê bị cho có sai phạm, tiếp tay cho Phạm Công Danh gây thất thoát hàng nghìn tỷ đồng.");
+            pipeline.addAnnotator(new CustomTokenizerAnnotator(true, properties));
+
+            pipeline.addAnnotator(new WordsToSentencesAnnotator(true));
+
+            pipeline.addAnnotator(new CustomPOSTaggerAnnotator(true));
+
+            pipeline.addAnnotator(new CustomParserAnnotator(false, -1));
+//            pipeline.addAnnotator(new BinarizerAnnotator("", properties));
+
+            String text = "Cựu lãnh đạo Ngân hàng Sacombank Trầm Bê bị cho có sai phạm, tiếp tay cho Phạm Công Danh gây thất thoát hàng nghìn tỷ đồng.";
+            Annotation document = new Annotation(text);
 
             // Run all Annotations on this text
             pipeline.annotate(document);
 
             List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
-
             for (CoreMap sentence : sentences) {
-                for (CoreLabel coreLabel : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
-                    System.out.println(coreLabel.get(CoreAnnotations.TextAnnotation.class) + "/" + coreLabel.get(CoreAnnotations.PartOfSpeechAnnotation.class));
-//                }
+
+                // get the tokens for the sentence and iterate over them
+                for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+
+
                 }
+
+                Tree tree = sentence.get(TreeCoreAnnotations.TreeAnnotation.class);
+                tree.pennPrint();
+//                String s = sentence.get(CoreAnnotations.SentencesAnnotation.class);
+//                System.out.println(s);
             }
 
         }
 
         @Test
         public void maxentTest() throws Exception {
-
-
             Properties properties = new Properties();
             properties.setProperty("tokenize.language", "vietnamese");
             properties.setProperty("model", "resources/models/vtb.tagger");

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SyntaxTool">
+</Property><Property Name="Solution File" Value="C:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool.sln">
+</Property><Property Name="User Options File" Value="C:\VLSP\Tool\SyntaxAnalyzer_4_tool\SyntaxTool.suo">
+</Property><Property Name="Date" Value="20 Tháng Mười Một 2008">
+</Property><Property Name="Time" Value="13:20 CH">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="SyntaxTool.sln" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool.sln">
+</Event><Event ErrorLevel="0" Project="" Source="SyntaxTool.suo" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool.suo">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\SyntaxTool.csproj" Description="Project file successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\SyntaxTool.csproj">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\ActRule.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\ActRule.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Agenda.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Agenda.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Chart.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Chart.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Form1.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Form1.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Form1.Designer.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Grammar.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Grammar.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Node.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Node.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Program.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Program.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Rule.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Rule.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\StandardizeRule\StandardizeRule.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\StandardizeRule\StandardizeRule.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\SyntaxTree.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\SyntaxTree.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\StandardizeRule\Tag.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\StandardizeRule\Tag.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Tree.cs" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Tree.cs">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Properties\Settings.settings" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\app.config" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\app.config">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\ClassDiagram1.cd" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\ClassDiagram1.cd">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Resources\dictA.txt" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Resources\dictA.txt">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Form1.resx" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Form1.resx">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Form1.vi.resx" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Form1.vi.resx">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\Properties\Resources.resx" Description="File successfully backed up as C:\VLSP\Tool\SyntaxAnalyzer_4_tool\Backup\SyntaxTool\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\SyntaxTool.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SyntaxTool" Source="SyntaxTool\SyntaxTool.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SyntaxTool.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SyntaxTool.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SyntaxTool" Source="SyntaxTool\SyntaxTool.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,1263 @@
+<s>
+(S(NP-SUB(N-H Hàng)(A lậu))
+(VP(V-H tràn)
+         (PP(E-H theo)
+                  (NP(L những)(N-H cơn sốt))))
+(. .))
+
+</s>
+<s>
+(S(NP-SUB(NP(Np-H Cổng Trắng))
+(, ,)
+(NP(Np-H Thác Ném))
+(, ,)
+(NP(N-H quốc lộ)(M 1)
+(AP(A-H cũ)))
+(... ...)
+(- -)
+(NP(L những)(N-H địa danh)))
+(VP(R đã)(V-H trở nên)
+           (AP-DOB(R quá)(A-H quen thuộc)
+                         (PP-LOC(E-H trên)
+                                  (NP(N-H bản đồ)
+                                           (NP(N-H hàng)(A lậu))
+                                           (VP(V-H đi)(V-H về)
+                                                        (NP-DOB(Np-H Lạng Sơn)))))))
+(. .))
+
+</s>
+<s>
+(S(VP-MNR(V-H Theo)
+(NP-DOB(N-H chân)(N cửu vạn)))
+(, ,)
+(NP-SUB(P-H chúng tôi))
+(VP(R đã)(V-H chứng kiến)
+(SBAR-DOB(S(NP-SUB(Nc-H con)(N đường)
+                             (VP(V-H vận chuyển)
+                                       (NP-DOB(N-H hàng)(A lậu))))
+                    (AP-PRD(AP(A-H đầy)(V sôi động))
+                                      (C và)
+                                      (AP(R cũng)(R không)(A-H kém)(N phần)
+                                                               (AP(A-H tinh vi)(, ,)(A-H phức tạp)))))))
+(. .))
+
+</s>
+<s>
+(S(XP(X-H Thôi thì)
+            (AP(A-H đủ)(T cả)
+                     (: :)
+            (SBAR-DOB(S(PP-SUB(PP(E-H từ)
+                                               (NP(N-H mũ)(V bảo hiểm)))
+                                      (PP(E-H đến)
+                                                (NP(N-H gà)(Np Tam Hoàng))
+                                                (, ,)
+                                                (NP(N-H lợn)(A khoang))
+                                                 (, ,)
+                                                 (NP(N-H lợn)(A trắng))
+                                                  (, ,)
+                                                 (NP(N-H cá))
+                                                  (, ,)
+                                                (NP(N-H ba ba))))
+                                   (... ...)
+                                 (AP-PRD(A-H đầy)
+                                             (PP(E-H ở)                  
+                                                  (NP(L các)(N-H chợ))))))))
+(. .))
+
+</s>
+<s>
+(S(NP(N-H Mũ bảo hiểm)
+(... ...)
+(NP(M 19 . 000)(Nu-H đồng)))
+(. .))
+
+</s>
+<s>
+(S(NP-SUB(N-H Mé)(A phải)
+              (AP(A-H dọc)
+                            (NP(N-H đường)
+                                         (PP(PP(E-H từ)
+                                                         (NP(Np-H Đồng Đăng)))
+                                                  (PP(E-H lên)
+                                                              (NP(Np-H Tân Thanh)))))))
+(VP(V-H có)
+               (NP-DOB(L vô số)(Nc-H con)(N đường mòn)
+                                     (AP(A-H lầy)(N đất))))
+(. .))
+
+</s>
+<s>
+(S(NP-SUB(N-H Chúng))
+(VP(V-H dẫn)(A thẳng)
+              (VP-DOB(V-H lên)(N núi)
+                           (, ,)
+                       (NP(N-H nơi)
+                                (SBAR(S(NP-SUB(N-H hàng)(A lậu))
+                                                   (VP(V-H được)
+                                                              (SBAR-DOB(S(NP-SUB *E*)
+                                                                                           (VP(V-H chuyển)(R đến))))))))))
+(. .))
+
+</s>
+<s>
+(S(NP-SUB(N-H Bên)(P kia)
+           (NP(N-H núi)))
+(, ,)
+(VP(VP(R chỉ)(V-H cách)
+                (NP-DOB(L vài)(Nu-H kilômet)))
+        (VP(V-H là)
+              (NP-DOB(L những)(N-H kho)(N hàng)
+                            (AP(A-H lậu))
+                            (VP(R đang)(V-H chờ)
+                                       (VP-PRP(V-H mang)(R đi))))))
+(. .))
+
+</s>
+<s>
+(S(VP-MNR(V-H Gọi)
+            (C là)
+                 (NP(N-H kho)(N hàng)))
+(C nhưng)
+(NP-ADV(N-H thực tế))
+(NP-SUB(P-H chúng))
+(VP(V-H là)
+            (NP-DOB(N-H bãi)
+                        (VP(V-H chứa)(N hàng))
+                        (VP(V-H được)
+                                 (SBAR-DOB(S(NP-SUB *E*)
+                                                              (VP(V-H che phủ)(A tạm bợ)
+                                                                           (PP-PRP(E-H bằng)
+                                                                                         (NP(L những)(Nc-H tấm)(N bạt)))))))))
+(. .))
+
+</s>
+<s>
+(S(NP-SUB(L Những)(Nc-H chiếc)(N đầu)(N đĩa)
+                (NP(Ny-H CD))
+                (, ,)
+                (NP(Ny-H VCD)))
+(... ...)
+(VP(VP(V-H chất)(A cao)
+              (NP(M 5)(- -)(M 6)(Nu-H m)))
+        (, ,)
+       (VP(V-H trải)(A rộng)
+                      (NP-DOB(R hàng)(M trăm)(Nu-H mét)(A vuông))))
+(. .))
+
+</s>
+<s>
+(S(NP-SUB(N-H Cửu vạn)(Ny S)(. .))
+(VP(V-H cho)(V biết)
+(: :)
+(SBAR-DOB(S(" ")(VP(R Chỉ)(V-H sang)(Np VN))
+                                    (NP-SUB(N-H hàng))
+                                     (VP(R mới)(V-H được)
+                                                (SBAR-DOB(S(NP-SUB *E*)
+                                                                  (VP(V-H nâng niu))))))
+                         (C chứ)
+                         (S(PP-LOC(E-H ở)
+                                         (NP(N-H bên)(P đó)))
+                              (NP-SUB(P-H họ))
+                              (VP(V-H quăng quật)
+                                            (AP(A-H ghê)(R lắm))))(" ")))
+(. .))
+
+</s>
+<s>
+(S(PP-TMP(E-H Đến)
+(AP(A-H gần)(N trưa)))
+(, ,)
+(NP-SUB(L những)(N-H vác)(N hàng)
+(AP(A-H đầu tiên)))
+(VP(R đã)(V-H qua)(N núi))
+(. .))
+
+</s>
+<s>
+(S(NP-SUB *E*)
+(AP-PRD(A-H Dễ dàng)
+              (VP(V-H nhận)(V thấy)
+                     (SBAR-DOB(S(NP-SUB(P-H đó))
+                                                   (VP(V-H là)
+                                                              (NP-DOB(L những)(Nc-H chiếc)(N mũ bảo hiểm)
+                                                                           (VP(V-H được)
+                                                                                     (SBAR-DOB(S(NP-SUB *E*)
+                                                                                                       (VP(V-H bọc)(A chắc)
+                                                                                                                    (PP(E-H trong)
+                                                                                                                               (NP(L những)(N-H túi)
+                                                                                                                                            (NP(N-H nilông)(A đen))))))))))))))
+(. .))
+
+</s>
+<s>
+(S(AP-MNR(R Không)(A-H vội vã))
+(, ,)
+(NP-SUB(N-H đám)(N cửu vạn))
+(AP-PRD(A-H từ từ)
+(VP(V-H vác)(R xuống)))
+(. .))
+
+</s>
+<s>
+(S(NP-LOC-SUB(N-H Đoạn)(P nào)
+               (AP-PRD(A-H khó)(V đi)))
+(C thì)
+(VP(R đã)(V-H có)
+          (NP-DOB(N-H người)
+                     (VP(V-H đứng)(V chờ)
+                              (PP(E-H từ)
+                                     (AP(A-H trước)))
+                                (PP-PRP(E-H để)
+                                       (VP(V-H lấy))))))
+(. .))
+
+</s>
+<s>
+(S(NP-SUB(M Một)(N-H cửu vạn))
+(AP-PRD(A-H thì thầm)
+(: :)
+(VP(V-H Có)
+      (NP-DOB(L những)(N-H hôm)
+             (SBAR(S(NP-SUB(P-H người ta))
+                              (VP(VP(R còn)(V-H ném)
+                                               (NP-DOB(P cả)(N-H vác)(N hàng))
+                                       (R xuống))
+                                      (C mà)
+                                      (VP(R chẳng)(N-H việc)(P gì))))))))
+(. .))
+
+</s>
+<s>
+(S(NP-SUB(N-H Bọc)(A ngoài)
+                (VP(V-H có)(A rách)))
+(VP(VP(R lại)(V-H nhét))
+        (VP(V-H gấp)
+                   (PP(E-H vào)
+                           (NP(N-H bao tải))))
+        (C rồi)
+        (VP(V-H vứt)(R lên)
+                   (NP-DOB(N-H xe)(Np Minsk))
+                   (VP(V-H phóng)(R đi))))
+(" ")
+(. .))
+
+</s>
+<s>
+(S(NP-TPC(N-H Đợt)(N hàng)
+            (NP(P-H này)))
+(NP-SUB(N-H giá trị))
+(AP-PRD(R không)(A-H cao)
+                         (SBAR-PRP(E-H bởi)(S(NP-SUB(N-H giá))
+                                                            (AP-PRD(R khá)(A-H bèo))))
+                         (, ,)
+                          (AP-PRP(R hơn nữa)(R lại)(A-H cồng kềnh)))
+(. .))
+</s>
+<s>
+(S(VP(V-H Có)
+             (NP-DOB(N-H tay)(N cửu vạn)
+                       (SBAR(S(NP-SUB(N-H một mình))
+                                         (VP(VP(V-H làm)
+                                                      (NP-DOB(M hai)(N-H vác)))
+                                                 (VP(V-H chạy)(A phăm phăm)
+                                                               (PP(E-H ra)
+                                                                       (NP(N-H đường)))))))))
+(. .))
+</s>
+<s>
+(S(S(NP-SUB(L Những)(N-H tuyến)(N đường))
+         (VP(R không)(V-H có)
+                     (NP-DOB(N-H nhà)(N dân))))
+(C thì)
+(S(NP-SUB(N-H cửu vạn))
+(VP(V-H khẩn trương)
+            (VP(VP(V-H nhảy)
+                          (PP(E-H lên)
+                                     (NP-DOB(N-H xe máy))))
+                    (VP(V-H lao)
+                             (PP(E-H về)
+                                       (NP(N-H điểm)(V tập kết)))))))
+(. .))
+</s>
+<s>
+(S(S(NP-SUB(N-H Đoạn)(P nào))
+(VP(V-H có)
+           (AP(A-H sẵn)(N kho))))
+(C thì)
+(S(NP-SUB(N-H hàng))
+(VP(V-H được)
+       (SBAR-DOB(S(NP-SUB *E*)
+                                    (VP(V-H đưa)
+                                               (PP(E-H vào)
+                                                       (AP(A-H trong))))))))
+(, ,)
+(S(NP-SUB(L những)(Nc-H chiếc)(N ôtô))
+(VP(R cũng)(R đã)(V-H đợi)(A sẵn)
+          (PP-PRP(E-H để)
+                      (VP(V-H chuyển)(N hàng)
+                                 (PP-PRP(E-H đến)
+                                         (NP(N-H điểm)(V tập kết)
+                                                     (AP(A-H mới))
+                                                     (VP(V-H cách)
+                                                                         (NP-DOB(P-H đó))
+                                                                         (AP-IOB(R không)(A-H xa)))))))))
+(. .))
+</s>
+<s>
+(S(VP-MNR(V-H Cứ)
+(NP-DOB(R từng)(N-H đoạn)(M một)
+(C như)
+(NP(P-H vậy))))
+(, ,)
+(NP-SUB(N-H hàng))
+(AP-MNR(A-H dần dần)
+(VP(V-H được)
+(SBAR-DOB(S(NP-SUB *E*)
+                  (VP(V-H đưa)(R về)
+                                (NP-DOB(N-H thành phố)(Np Lạng Sơn))
+                                (PP-PRP(E-H để)
+                                         (VP(V-H tiêu thụ))))))))
+(. .))
+
+</s>
+<s>
+(S(PP-TMP(E-H Trong)
+                (NP(N-H khi)
+                             (SBAR(S(NP-SUB(L các)(N-H thành phố)(A lớn))
+                                                (VP(R đang)(V-H rối tung)
+                                                                 (NP-DOB(N-H chuyện)
+                                                                                 (VP(VP(V-H kiểm tra))
+                                                                                        (, ,)
+                                                                                        (VP(V-H kiểm định)
+                                                                                                    (NP-DOB(N-H chất lượng)(N mũ bảo hiểm))))))))))
+(C thì)
+(PP-LOC(E-H tại)
+            (NP(Np-H Lạng Sơn)))
+(, ,)
+(NP-SUB(N-H mũ)
+          (AP(A-H kém)
+                       (NP(N-H chất lượng))))
+(VP(V-H ồ ạt)
+           (VP(V-H tràn)(R về)))
+(. .))
+
+</s>
+<s>
+(S(PP(E-H Theo)
+            (SBAR(S(NP-SUB(M một)(N-H chủ)(N hàng)
+                                             (NP(Nc-H người)(Np Trung Quốc)))
+                                (VP(V-H cho)(V biết)
+                                                 (, ,)
+                                       (SBAR-DOB(S(VP-PRP(V-H tùy)
+                                                                              (PP(E-H theo)
+                                                                                        (NP(Np-H chất lượng))))
+                                                                     (, ,)
+                                                                      (NP-SUB(Np-H mũ bảo hiểm))
+                                                                      (VP(V-H có )
+                                                                              (NP-DOB(N-H giá)
+                                                                                             (VP(V-H dao động)
+                                                                                                   (LBKT LBKT)
+                                                                                         (PP(E-H từ)
+                                                                                                    (NP(M 10)(- -)(M 14)(Nu-H NDT)))
+                                                                                                  (RBKT RBKT) 
+                                                                                           (VP(V-H tương đương)
+                                                                                                         (NP-DOB(M 19 . 000)(- -)(M 26. 000)(Nu-H đ))))))))))))
+(. .))
+</s>
+<s>
+(S(C Nếu)
+(NP-TPC(N-H mũ)(N trẻ con))
+(C thì)
+(VP-TH(V-H bán)(C như)
+(VP(V-H cho)))
+(. .))
+
+</s>
+<s>
+(S(PP-PRP(T Chính)(E-H vì)
+(NP(N-H giá)(A rẻ)))
+(C nên)
+(NP-SUB(P-H ai))
+(VP(V-H muốn)
+              (VP(V-H mua)(N hàng)
+                          (VP(V-H phải)(V mua)
+                                     (PP(E-H với)
+                                                  (NP(N-H số lượng)
+                                                                     (NP(L vài)(M ngàn)(N-H chiếc)
+                                                                                    (VP(R mới)(V-H bán))))))))
+(. .))
+
+</s>
+<s>
+(S(NP-SUB(P-H Ai)
+                 (VP(V-H mua)
+                            (NP-DOB(L vài)(M trăm)(N-H chiếc))))
+     (VP(R chỉ)(V-H có)
+                  (NP-DOB(N-H cách)
+                                  (VP(V-H mua)(R lại)
+                                               (PP(E-H của)
+                                                           (NP(L các)(N-H chủ)(N hàng)
+                                                                             (NP(Ny-H VN)))))))
+(. .))
+
+</s>
+<s>
+Không
+biết
+chủ
+hàng
+Trung Quốc
+lãi
+bao nhiêu
+,
+chỉ
+biết
+qua
+đến
+Lạng Sơn
+giá trị
+của
+chiếc
+mũ
+đã
+tăng
+lên
+gấp
+rưỡi
+.
+</s>
+<s>
+Tại
+chợ
+cửa khẩu
+Tân Thanh
+,
+giá
+một
+chiếc
+mũ
+giả hiệu
+Amoro
+được
+bán
+28 . 000
+-
+35 . 1000
+đ
+.
+
+
+</s>
+<s>
+Về
+đến
+chợ
+Đồng Đăng
+giá
+đã
+là
+70 . 000
+đ
+.
+
+
+</s>
+<s>
+Cũng
+vẫn
+những
+chiếc
+mũ bảo hiểm
+này
+,
+tại
+Hà Nội
+,
+sau
+một
+hành trình
+dài
+gần
+200
+km
+,
+giá
+một
+chiếc
+lên
+đến
+gần
+100 . 000
+đ
+.
+
+
+</s>
+<s>
+Điều
+đáng
+nói
+hơn
+,
+tất cả
+các
+loại
+mũ
+nhập
+lậu
+đều
+vi phạm
+nghiêm trọng
+quyền
+sở hữu trí tuệ
+.
+
+
+</s>
+<s>
+Nhãn mác
+bị
+nhái
+phổ biến
+nhất 
+là
+Amoro
+.
+
+
+</s>
+<s>
+Nếu
+nói
+về
+hình thức
+,
+mẫu mã
+thì
+ai
+cũng
+nghĩ
+đó
+là
+hàng
+thật
+.
+
+
+</s>
+<s>
+Không
+chỉ
+vậy
+,
+nhiều
+mũ
+còn
+được
+dán
+tem
+chất lượng
+với
+đầy đủ
+hoa văn
+,
+phản quang
+và
+dòng
+chữ
+tiếng
+Anh
+“
+đạt
+tiêu chuẩn
+chất lượng
+VN
+”
+.
+
+
+</s>
+<s>
+Nhưng
+chất lượng
+thực tế
+vô cùng
+kém
+,
+một
+đứa
+trẻ
+cũng
+có thể
+dễ dàng
+bóp
+hai
+thành
+mũ
+chạm
+nhau
+.
+
+
+</s>
+<s>
+Ngay
+cả
+khi
+đã
+có
+lót
+xốp
+,
+người ta
+cũng
+có thể
+bóp méo
+mà
+không
+phải
+mất
+nhiều
+sức
+.
+
+
+</s>
+<s>
+Con
+nào
+chết
+:
+xẻ
+gấp
+. . .
+
+
+</s>
+<s>
+Phức tạp
+không
+kém
+là
+tình trạng
+nhập
+lậu
+nông sản
+thực phẩm
+.
+
+
+</s>
+<s>
+Gà
+,
+lợn
+. . .
+các
+loại
+được
+nhập
+về
+tràn lan
+và
+bán công khai
+tại
+các
+chợ
+mà
+không
+gặp
+bất kỳ
+cản trở
+nào
+.
+
+
+</s>
+<s>
+Cả
+cái
+chợ
+Đồng Đăng
+khu vực
+ven
+sông
+Kỳ Lừa
+cứ
+đến
+cuối
+tuần
+là
+nhộn nhịp
+đủ
+loại
+gà
+ta
+,
+gà
+Tam Hoàng
+,
+lợn
+khoang
+,
+lợn
+trắng
+đủ
+loại
+.
+
+
+</s>
+<s>
+Người
+mua
+thì
+không
+quan tâm
+hàng
+nhập
+lậu
+hay
+nội địa
+.
+
+
+</s>
+<s>
+Người
+bán
+hàng
+thì
+cứ
+khẳng định
+mua
+từ
+các
+làng
+bản
+của
+người
+dân tộc
+nên
+rất
+an toàn
+.
+
+
+</s>
+<s>
+Tuy nhiên
+,
+nhiều
+người
+dân
+đi
+chợ
+cho
+biết
+phần lớn
+đều
+là
+nông sản
+,
+thực phẩm
+Trung Quốc
+.
+
+
+</s>
+<s>
+Chị
+Nông Thị Hương
+,
+một
+người
+dân
+,
+khẳng định
+:
+“
+Chỉ
+mấy
+ông
+bảo vệ
+chợ
+không
+biết
+chứ
+người
+đi
+chợ
+biết
+hết
+.
+
+
+</s>
+<s>
+Thậm chí
+thịt
+lợn
+,
+thịt
+bò
+còn
+được
+xẻ
+sẵn
+từ
+bên
+kia
+mang
+sang
+đây
+bán
+”
+.
+
+
+</s>
+<s>
+Ngay
+cả
+khi
+phía
+Trung Quốc
+công bố
+phát hiện
+virus
+H5N1
+trên
+lợn
+,
+tình hình
+thịt
+lợn
+tại
+Lạng Sơn
+cũng
+không
+bị
+ảnh hưởng
+gì
+.
+
+
+</s>
+<s>
+Theo
+thông tin
+từ
+Chi cục
+Quản lý
+thị trường
+(
+QLTT
+)
+,
+giá
+gia cầm
+từ
+gốc
+được
+bán
+10.000
+đ
+/
+kg
+,
+về
+đến
+Lạng Sơn
+giá
+tăng
+lên
+gấp
+đôi
+.
+
+
+</s>
+<s>
+Với
+việc
+bỏ
+vốn
+một
+,
+lời
+gấp
+đôi
+,
+tư thương
+nào
+mà
+chẳng
+muốn
+làm
+.
+
+
+</s>
+<s>
+Trong
+khi
+đang
+còn
+chưa
+biết
+xử lý
+ra
+sao
+đối với
+gà
+,
+vịt
+,
+lợn
+,
+bò
+,
+thị trường
+nông sản
+thực phẩm
+Lạng Sơn
+lại
+tiếp tục
+đón nhận
+những
+mặt hàng
+mới
+chưa
+rõ
+chất lượng
+như
+cá chim
+trắng
+,
+ba ba
+. . .
+
+
+</s>
+<s>
+Thông tin
+từ
+một số
+lái buôn
+gia súc
+cho
+biết
+để
+hợp thức hóa
+,
+ngay
+khi
+hàng
+vượt
+qua
+biên giới
+,
+chủ
+hàng
+lập tức
+“
+nhờ
+”
+các
+xã
+vùng biên
+xác nhận
+đó
+là
+gia súc
+nội địa
+.
+
+
+</s>
+<s>
+Nếu
+con
+nào
+chết
+thì
+lập tức
+xẻ
+thịt
+mang
+gấp
+về
+thành phố
+để
+bán
+.
+
+
+</s>
+<s>
+Tại
+các
+chợ
+Đồng Đăng
+,
+Tân Thanh
+. . .
+ban
+quản lý
+chợ
+chỉ
+biết
+tổ chức
+,
+sắp xếp
+gian hàng
+,
+còn
+việc
+kiểm dịch
+thực phẩm
+lại
+thuộc
+về
+thú y
+.
+
+
+</s>
+<s>
+Tuy nhiên
+,
+chẳng
+thấy
+một
+ai
+thực thi
+nhiệm vụ
+này
+.
+
+
+</s>
+<s>
+Đường biên
+dài
+,
+lực lượng
+mỏng
+.
+
+
+</s>
+<s>
+Ông 
+Hoàng Minh Trường
+,
+chi
+cục trưởng
+Chi cục
+QLTT
+tỉnh
+Lạng Sơn
+,
+cho
+biết
+:
+“
+Nếu
+chỉ
+bắt
+trên
+các
+tuyến
+đường
+hoặc
+tổ chức
+bắt
+tại
+các
+đường mòn
+ven
+quốc lộ
+thì
+rất
+dễ
+.
+
+
+</s>
+<s>
+Tuy nhiên
+,
+với
+253
+km
+đường biên
+,
+chúng tôi
+không thể
+chặn
+hết
+được
+. . .
+
+
+</s>
+<s>
+Hơn nữa
+,
+với
+lợi nhuận
+cao
+,
+các
+chủ
+hàng
+luôn
+tìm
+mọi
+cách
+đối phó
+để
+đưa
+hàng
+sang
+”
+.
+
+
+</s>
+<s>
+Khó khăn
+nhất
+đối với
+cơ quan chức năng
+chính
+là
+việc
+xác định
+thế nào 
+là
+hàng
+nông sản
+,
+thực phẩm
+nhập
+lậu
+.
+
+
+</s>
+<s>
+Nếu
+chặn
+bắt
+ngay
+được
+từ
+biên giới
+thì
+khỏi
+nói
+.
+
+
+</s>
+<s>
+Nhưng
+khi
+hàng
+đã
+chui
+vào
+thị trường
+thì
+chịu
+.
+
+
+</s>
+<s>
+Ông
+Trường
+nói
+vui
+:
+“
+Chỉ
+khi
+lợn gà
+nói
+được
+ngoại ngữ
+thì
+chúng tôi
+mới
+biết
+đó
+không
+phải
+hàng
+nội địa
+”
+.
+
+
+</s>
+<s>
+Lực lượng
+QLTT
+cũng
+tỏ
+ra
+bỡ ngỡ
+với
+những
+mặt hàng
+mới
+như
+cá chim
+trắng
+,
+ba ba
+. . .
+
+
+</s>
+<s>
+Như
+các
+mặt hàng
+nông sản
+thực phẩm
+nói chung
+,
+chưa
+có
+căn cứ
+pháp lý
+để
+chứng minh
+thực phẩm
+nhập
+lậu
+vào
+tỉnh
+Lạng Sơn
+.
+
+
+</s>
+<s>
+Chỉ
+có
+người
+tiêu dùng
+là
+đánh cuộc
+với
+may rủi
+.
+
+
+</s>

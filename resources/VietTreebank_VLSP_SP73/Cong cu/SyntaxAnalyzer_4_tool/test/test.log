@@ -1,0 +1,30 @@
+<mod>
+<fName>C:\VLSP\Tool\SyntaxAnalyzer_4_tool\test\9539.prd</fName>
+<sIdx>0</sIdx>
+<sOld>(S-TTL(NP-SUB(N-H Người))
+              (VP(V-H xóa)
+                      (NP-DOB(" ")(N-H xóc chéo)(" ")
+                              (NP-TMP(N-H mùa)(N lũ))))
+(. .))
+
+</sOld>
+<sNew>(NP-TTL(NP-SUB(N-H Người))
+              (VP(V-H xóa)
+                      (NP-DOB(" ")(N-H xóc chéo)(" ")
+                              (NP-TMP(N-H mùa)(N lũ))))
+(. .))</sNew>
+</mod>
+<mod>
+<fName>C:\VLSP\Tool\SyntaxAnalyzer_4_tool\test\9539.prd</fName>
+<sIdx>0</sIdx>
+<sOld>(NP-TTL(NP-SUB(N-H Người))
+              (VP(V-H xóa)
+                      (NP-DOB(" ")(N-H xóc chéo)(" ")
+                              (NP-TMP(N-H mùa)(N lũ))))
+(. .))</sOld>
+<sNew>(NP-TTL(NP(N-H Người))
+              (VP(V-H xóa)
+                      (NP-DOB(" ")(N-H xóc chéo)(" ")
+                              (NP-TMP(N-H mùa)(N lũ))))
+(. .))</sNew>
+</mod>
