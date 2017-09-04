@@ -12,11 +12,11 @@ fs.readdir(baseDir, function (err, items) {
     const rl = readline.createInterface({ input: require('fs').createReadStream(fileName) });
 
     rl.on('line', function (line) {
-      line = line.replace(/S  \(/g, "S(");
+      // line = line.replace(/ \(/g, "(");
       // var finalLine = (line.replace(line.trim(), convert(line.trim()))).replace(/__/g, "_") + '\n';
       fs.appendFileSync(
         fileName.substring(0, fileName.length - 4) + '.mrg',
-        line + '\n');
+        convert(line.trim()) + '\n');
     });
   })
 });
