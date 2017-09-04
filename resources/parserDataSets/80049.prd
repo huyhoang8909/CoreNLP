@@ -146,7 +146,7 @@
      (. .))
 </s>
 <s>
-(S (R Thậm chí)
+(S(R Thậm chí)
      (PP-ADV (E-H với)
           (NP (R không) (A ít) (N-H bạn)
                (VP (V-H có)
@@ -277,7 +277,7 @@
 </s>
 <s>
 (S 
-     (S (" ") (NP-SUB-1 *T*)
+     (S(" ") (NP-SUB-1 *T*)
           (VP 
                (VP (V-H Thôi))
                (VP (V-H cố gắng)
@@ -331,7 +331,7 @@
      (. .))
 </s>
 <s>
-(S (C Đồng thời) (NP-SUB *E*)
+(S(C Đồng thời) (NP-SUB *E*)
      (VP 
           (VP (R sẽ) (V-H có)
                (NP-DOB 

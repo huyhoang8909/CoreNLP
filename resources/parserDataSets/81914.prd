@@ -426,7 +426,7 @@
 </s>
 <s>
 (S(VP-ADV(V-H Vào)
-(PP(E-H đến )
+(PP(E-H đến)
       (NP(N-H nơi))))
 (NP-SUB *E*)
 (VP(V-H thấy)
@@ -706,7 +706,7 @@
 (. .))
 </s>
 <s>
-(S(NP-SUB(N-H Bản )(Np Na))
+(S(NP-SUB(N-H Bản)(Np Na))
 (VP(V-H ở)
 (VP(V-H cách)(A xa)
            (NP(N-H địa điểm)
@@ -847,7 +847,7 @@
 (S(S(AP-ADV(A-H Y)(N hẹn))
         (NP-SUB-1(Np-H Già))
         (VP(V-H vào)))
-                    (, , )
+                    (, ,)
 (S(NP-SUB-1 *T*)
     (VP(R đang)(V-H trao)
            (NP-DOB(N-H hàng))))
@@ -855,7 +855,7 @@
 (S(NP-SUB(M một)(N-H trung đội)
                     (NP(N-H bộ đội)(Np Lào))
                      (VP(V-H phục)(V sẵn)))
-(VP(VP(V-H bắn )(V chết)
+(VP(VP(V-H bắn)(V chết)
               (NP(M bốn)(N-H tên)(N phỉ)))
 (C và)
        (VP(V-H làm)(V bị thương)

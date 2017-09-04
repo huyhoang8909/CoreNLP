@@ -321,7 +321,7 @@
 
 </s>
 <s>
-(S(NP-SUB(NP(A Nhiều )(N-H đồng bào))
+(S(NP-SUB(NP(A Nhiều)(N-H đồng bào))
 (, ,)
 (NP(N-H đồng chí)))
 (VP(V-H hi sinh))
@@ -407,7 +407,7 @@
 
 </s>
 <s>
-(S(VP-TMP(V-H Bắt đầu )
+(S(VP-TMP(V-H Bắt đầu)
 (PP(E-H từ)
 (NP(N-H năm)(M 1961))))
 (, ,)

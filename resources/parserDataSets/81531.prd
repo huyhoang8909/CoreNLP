@@ -308,7 +308,7 @@
                                                                                         (PP(E-H của)
                                                                                                  (SBAR(S(NP-SUB(N-H láng giềng))
                                                                                                                     (VP(V-H đem)(V cho))))))))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(VP-PRP(R Chỉ)(V-H sống)
@@ -692,18 +692,18 @@
                    (C mà)
                   (VP(R không)(V-H ra)
                                  (NP-DOB(N-H nét)(N chữ))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(S(NP-SUB(N-H Vợ chồng)
-              (NP(NP(Nc-H anh )(Np Lộc))
+              (NP(NP(Nc-H anh)(Np Lộc))
                       (, ,)
-                      (NP(Nc-H chị )(Np Bình))))
-(VP(R đã )(V-H nản)))
-(C nhưng )
+                      (NP(Nc-H chị)(Np Bình))))
+(VP(R đã)(V-H nản)))
+(C nhưng)
 (S(NP-SUB(Np-H Phú))
 (VP(V-H quyết)
-          (VP(R không )(V-H chịu)
+          (VP(R không)(V-H chịu)
                        (VP(V-H bỏ)(V học)))))
 (, ,) 
 (S(NP-SUB(N-H cậu))
@@ -1043,7 +1043,7 @@
 <s>
 (S(NP-SUB(Np-H Tôi))
 (VP(R cũng)(V được)(V-H nghe)
-                      (SBAR(S(NP-SUB(N-H thầy)(N giáo )
+                      (SBAR(S(NP-SUB(N-H thầy)(N giáo)
                                                     (NP(Np-H Đường Xuân Tùng)
                                                     (, ,)
                                                     (NP(N-H hiệu trưởng)

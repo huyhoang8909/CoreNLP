@@ -80,7 +80,7 @@
 (. .))
 </s>
 <s>
-(SQ(WHADV(P-H Bao giờ) )
+(SQ(WHADV(P-H Bao giờ))
        (NP-SUB(N-H tiếng)(N súng)(N chiến tranh))
             (VP(V-H chấm dứt)
                    (SBAR-PRP(E-H để)

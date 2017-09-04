@@ -1,5 +1,5 @@
 <s>
-(S-TTL(NP(" ")(N-H Đảo )(Np Đài Loan)(" ")
+(S-TTL(NP(" ")(N-H Đảo)(Np Đài Loan)(" ")
 (PP(E-H ở)
 (NP(N-H đồng bằng)
 (NP(N-H sông)(Np Cửu Long)))))
@@ -151,7 +151,7 @@
 (, ,)
 (VP-TPC(VP(V-H quay)(R qua))
 (VP(V-H quay)(R lại)))
-(VP-TH(VP(V-H thiếu )(A trước))
+(VP-TH(VP(V-H thiếu)(A trước))
 (VP(V-H hụt)(A sau)))
 (. .))
 </s>
@@ -401,7 +401,7 @@
 (AP-PRD(A-H khá)(R lên)
 (PP(R cũng)(E-H nhờ)
                  (NP(N-H con)))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(VP-PRP(V-H Thương)
@@ -417,7 +417,7 @@
         (VP(V-H phải)
             (VP(V-H sử dụng)
                       (NP-MNR(T cho)(N-H ý nghĩa)))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(VP-ADV(V-H Cất)
@@ -460,7 +460,7 @@
           (VP(V-H sử dụng)
                  (NP-DOB(N-H đồng tiền))
                  (AP-MNR(A-H đúng)(N hướng)))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(NP-SUB(A Nhiều)(N-H hộ))
@@ -479,7 +479,7 @@
 (S-TTL(C Và)
 (NP(N-H nỗi buồn)
 (PP(E-H của)
-(NP(N-H thanh niên)(Np Tân Lộc ))))
+(NP(N-H thanh niên)(Np Tân Lộc))))
 (. .))
 
 
@@ -537,7 +537,7 @@
             (NP(N-H cù lao)(Np Tân Lộc)))
 (VP(R cũng)(V-H có)
               (NP-DOB(A nhiều)(N-H thiếu nữ)(A tuyệt sắc)))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(VP(V-H Có)
@@ -645,7 +645,7 @@
 (NP-DOB(N-H con))
 (VP-IOB(V-H lấy)
        (NP-DOB(N-H chồng)(Np Đài Loan))))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(C Nhưng)
@@ -682,7 +682,7 @@
 (VP(V-H sửa)
 (NP-DOB(N-H xe)
           (VP(V-H gắn)(N máy)))))))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(PP-TMP(E-H Sau)
@@ -701,7 +701,7 @@
                                           (NP(M 20)(Nu-H tuổi))
                                               (RBKT RBKT)))
                           (AP(A-H lỡ dở))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(VP-ADV(V-H Cách)
@@ -751,7 +751,7 @@
 (NP-IOB(N-H gia đình))
 (VP-DOB(V-H vượt)(R qua)
 (NP-DOB(N-H khốn khó))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S-SPL(C Hay)
@@ -789,7 +789,7 @@
                (VP-PRP(V-H đi)
                          (VP(V-H lấy)
                                        (NP-DOB(N-H chồng)(A ngoại)))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(NP-TMP(N-H Hôm)

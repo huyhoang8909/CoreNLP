@@ -1,7 +1,7 @@
 <s>
 (S 
      (NP-TMP (N-H Ngày)
-          (NP (N-H thứ ) (M ba)))
+          (NP (N-H thứ) (M ba)))
      (NP-SUB *E*)
      (VP (V-H phúc thẩm)
           (NP-DOB (N-H vụ án)
@@ -122,7 +122,7 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (NP-SUB (P-H Tôi))
           (VP (V-H muốn)
                (SBAR 
@@ -188,7 +188,7 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (NP-SUB (N-H Ông))
           (VP (V-H nhận thức)
                (XP (C như) (X-H thế nào)
@@ -299,7 +299,7 @@
 </s>
 <s>
 (S 
-     (S (" ") (NP-SUB *E*)
+     (S(" ") (NP-SUB *E*)
           (VP (V-H Là)
                (NP (N-H tín dụng)
                     (VP (V-H ưu đãi))
@@ -340,7 +340,7 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (NP-SUB (N-H Bộ))
           (VP (R không) (V-H có)
                (NP-DOB (N-H chủ trương) (P này)))
@@ -352,7 +352,7 @@
           (VP (V-H khẳng định)))
      (, ,)
      (C mà)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (R chỉ) (V-H là)
                (NP (N-H đề nghị)
                     (PP (E-H của)
@@ -360,13 +360,13 @@
      (C và)
      (S 
           (SBAR-CND (C nếu)
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP 
                          (VP (V-H xem xét))
                          (VP (" ") (V-H thấy)
                               (AP (A-H đúng))))))
           (C thì)
-          (S (NP-SUB *E*)
+          (S(NP-SUB *E*)
                (VP (V-H giao)
                     (NP-DOB (N-H người)
                          (VP (V-H phụ trách)
@@ -375,7 +375,7 @@
      (. .))
 </s>
 <s>
-(S (X Như vậy) (, ,)
+(S(X Như vậy) (, ,)
      (SQ (" ")
           (NP-SUB (Nc-H việc) (V xác nhận)
                (PP (E-H của)
@@ -472,12 +472,12 @@
                          (... ...)
                          (VP (V-H bị)
                               (SBAR 
-                                   (S (NP-SUB *E*)
+                                   (S(NP-SUB *E*)
                                         (VP (V-H buông lỏng)))))))))
      (. .))
 </s>
 <s>
-(S (" ")
+(S(" ")
      (VP-PRP (V-H Mong)
           (SBAR 
                (S 
@@ -520,7 +520,7 @@
           (RBKT RBKT))
      (VP (V-H cho) (V biết)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (AP-PRD (" ") (R không) (A-H cần thiết) (" ")
                          (VP (V-H đối chất)
                               (PP (E-H với)
@@ -534,7 +534,7 @@
      (PP-TMP (E-H Trước)
           (NP (N-H khi)
                (SBAR 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP (V-H kết thúc))))))
      (, ,)
      (NP-SUB (N-H bộ trưởng)
@@ -567,7 +567,7 @@
      (. .))
 </s>
 <s>
-(S (" ")
+(S(" ")
      (S 
           (NP-SUB (P-H Tôi))
           (VP (R không) (V-H được)
@@ -664,14 +664,14 @@
                          (NP (N-H cổng) (A sau)
                               (PP (E-H của)
                                    (NP (N-H tòa án)))))))
-          (PP-PRP (E-H để )
+          (PP-PRP (E-H để)
                (VP (V-H tiếp tục) (... ...)
                     (VP (V-H tránh mặt)
                          (NP-DOB (N-H báo chí))))))
      (. .))
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP 
           (VP (V-H Có)
                (NP-DOB (N-H thiếu sót)))
@@ -689,7 +689,7 @@
                (NP-SUB (N-H Công ty) (Np Tiếp thị))
                (VP (V-H được)
                     (SBAR 
-                         (S (NP-SUB *E*)
+                         (S(NP-SUB *E*)
                               (VP (V-H ưu đãi)))))))
      (C nhưng)
      (S 
@@ -800,7 +800,7 @@
      (VP (V-H *E*) (: :) (" ")
           (SBAR 
                (S 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP (R Có) (V-H thể hiện)
                               (PP-LOC (E-H ở)
                                    (NP (N-H công văn) (M 999)
@@ -834,7 +834,7 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (VP-VOC(V-H Thưa))
           (, ,)
           (NP-SUB *E*)
@@ -880,7 +880,7 @@
           (SBAR 
                (S 
                     (SBAR-CNC 
-                         (S (NP-SUB *E*)
+                         (S(NP-SUB *E*)
                               (VP (R Không) (V-H có)
                                    (NP-DOB (N-H quy định) (A rõ)))))
                     (, ,)
@@ -996,10 +996,10 @@
 (S 
      (S 
           (SBAR-CND (C Nếu)
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (AP-PRD (R chưa) (A-H rõ))))
           (, ,)
-          (S (" ")
+          (S(" ")
                (NP-SUB (Ny-H HĐXX))
                (VP (R có thể) (V-H thẩm vấn)
                     (NP-DOB 
@@ -1050,7 +1050,7 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (NP-SUB (N-H Tiền))
           (VP (R không) (V-H mất))
           (" "))
@@ -1067,7 +1067,7 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (S 
                (NP-SUB (N-H Ngân hàng))
                (VP (R không) (V-H thu hồi) (R được)
@@ -1130,7 +1130,7 @@
      (NP-SUB (N-H bị cáo) (Np Nguyễn Thiện Luân))
      (VP (V-H cho) (V biết)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (AP-PRD (" ") (R không) (A-H cần thiết) (" ")
                          (VP (V-H công bố)
                               (NP-DOB (N-H nội dung) (V đối chất)
@@ -1147,7 +1147,7 @@
      (. .))
 </s>
 <s>
-(S (C Tuy nhiên) (, ,)
+(S(C Tuy nhiên) (, ,)
      (NP-SUB (Ny-H HĐXX))
      (VP (R vẫn) (V-H quyết định)
           (VP (V-H công bố) (A công khai)

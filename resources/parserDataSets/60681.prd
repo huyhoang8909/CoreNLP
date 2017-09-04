@@ -55,7 +55,7 @@
 (NP(" ")(N-H tam giác)(N sắt)(" ")
 (PP(E-H của)
 (NP(N-H phong trào)
-(NP(Ny-H SVHS )(Np Sài Gòn))))))
+(NP(Ny-H SVHS)(Np Sài Gòn))))))
 (. .))
 
 
@@ -751,7 +751,7 @@
 (NP-DOB(M một)(N-H thư)
 (VP(V-H gửi)
 (PP-LOC(E-H đến)
-(NP(N-H Tổng hội)(Ny SV ))))))
+(NP(N-H Tổng hội)(Ny SV))))))
 (. .))
 </s>
 <s>

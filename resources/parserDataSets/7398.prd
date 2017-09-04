@@ -985,7 +985,7 @@
                       (VP(V-H quản lý))
                       (SBAR(C mà)
                                 (S(NP-SUB(N-H ông))
-                                        (VP(V-H gọi )
+                                        (VP(V-H gọi)
                                         (C là)
                                         (VP(V-H mang)
                                                (NP-DOB(N-H tính)(N nhân văn))))))))
@@ -1023,7 +1023,7 @@
 
 </s>
 <s>
-(S(PP-LOC(E-H Ở )
+(S(PP-LOC(E-H Ở)
              (NP(Np-H Đà Nẵng)))
      (VP(V-H có)
              (SBAR(S(NP-SUB(N-H cặp)(N vợ chồng)
@@ -1101,7 +1101,7 @@
                                    (, ,)
          (VP(V-H tư vấn)(A cặn kẽ)
                   (PP-PRP(E-H để)
-                        (VP(VP(V-H giữ )
+                        (VP(VP(V-H giữ)
                                        (NP(N-H sức khỏe)))
                                 (C và)
                                 (VP(V-H tránh)(V lây nhiễm)

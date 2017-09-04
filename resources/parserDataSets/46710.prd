@@ -642,7 +642,7 @@
      (VP(VP(R chưa)(V-H biết)
                   (VP(V-H đi)(P đâu)))
              (, ,)
-            (VP(V-H làm )(P gì)
+            (VP(V-H làm)(P gì)
                    (SBAR-PRP(E-H vì)(S(PP-LOC(E-H ở)
                                                                (NP(N-H quê)))
                                                      (VP(R cũng)(R không)(V-H còn)(N vườn ruộng))))))
@@ -1238,7 +1238,7 @@
 
 </s>
 <s>
-(S(S(AP-MDP(A-H Chắc ))
+(S(S(AP-MDP(A-H Chắc))
 (NP-SUB(Np-H Kim))
 (VP(VP(V-H đoán)
 (VP(V-H có)
@@ -1400,7 +1400,7 @@
 
 </s>
 <s>
-(S(P Vậy )
+(S(P Vậy)
 (NP-SUB(Np-H Kim))
 (AP-PRD(A-H trong sáng))
 (? ?))

@@ -101,7 +101,7 @@
 
 </s>
 <s>
-(S (" ")
+(S(" ")
      (S 
           (NP-TMP (N-H Hồi) (P ấy))
           (NP-SUB (P-H đây))
@@ -139,12 +139,12 @@
 </s>
 <s>
 (S 
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (R Không) (V-H nhớ)
                (AP-MNR (A-H chính xác))
                (NP-DOB (P bao nhiêu) (N-H đứa))))
      (C nhưng)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (AP (A-H nhiều) (R lắm)))
      (, ,)
      (NP-TMP (L mấy) (M chục) (N-H năm) (T rồi)
@@ -174,7 +174,7 @@
 
 </s>
 <s>
-(S (C Còn)
+(S(C Còn)
      (S 
           (NP-TPC (L những) (N-H đứa)
                (AP (A-H nhỏ) (R quá)))
@@ -228,7 +228,7 @@
      (, ,)
      (NP-SUB (Np-H Rơ Châm Yoih)
           (PP-LOC (E-H ở)
-               (NP (N-H làng) (Np Buih) (LBKT LBKT )
+               (NP (N-H làng) (Np Buih) (LBKT LBKT)
                     (NP (N-H xã) (Np Ia Ka) (, ,) (Np Chư Pah))
                     (RBKT RBKT))))
      (VP 
@@ -375,7 +375,7 @@
                                              (NP-SUB (P-H nó))
                                              (VP (V-H chết)))
                                         (C thì)
-                                        (S (NP-SUB-1 *T*)
+                                        (S(NP-SUB-1 *T*)
                                              (VP (V-H chịu)
                                                   (VP (V-H phạt)
                                                        (NP-DOB (N-H bò))
@@ -401,8 +401,8 @@
                     (NP (N-H mặt) (N người) (V chết))))
           (VP (V-H *E*) (: :) (" ")
                (SBAR 
-                    (S (T Đấy) (, ,)
-                         (S (NP-SUB *T*)
+                    (S(T Đấy) (, ,)
+                         (S(NP-SUB *T*)
                               (VP (V-H thương)
                                    (NP-DOB (N-H con))))
                          (C nên)
@@ -411,7 +411,7 @@
                               (VP (V-H chết) (C mà)
                                    (VP (R không) (V-H nhắm) (N mắt) (R được))))
                          (, ,)
-                         (S (NP-SUB *E*)
+                         (S(NP-SUB *E*)
                               (VP (R còn) (V-H trợn) (A ngược)
                                    (NP-MNR (P-H thế) (T kia))))
                          (, ,)
@@ -454,7 +454,7 @@
      (VP (V-H phán) (: :) (" ")
           (SBAR 
                (S 
-                    (S (C Vậy là)
+                    (S(C Vậy là)
                          (NP-SUB (Nc-H con) (Np Yoih))
                          (VP (R đã) (V-H ưng)
                               (NP-DOB (Nc-H cái) (N bụng))))
@@ -552,7 +552,7 @@
      (. .))
 </s>
 <s>
-(S (" ")
+(S(" ")
      (S 
           (NP-TMP (N-H Giờ))
           (NP-SUB (P-H Nó))
@@ -621,7 +621,7 @@
      (. .))
 </s>
 <s>
-(S (C Rồi)
+(S(C Rồi)
      (NP-SUB (P-H tui))
      (VP 
           (VP (V-H rang)
@@ -716,7 +716,7 @@
      (VP (V-H Thương)
           (NP-DOB (N-H người)))
      (C như thể)
-     (VP (V-H thương )
+     (VP (V-H thương)
           (NP-DOB (N-H thân)))
      (. .))
 </s>
@@ -827,7 +827,7 @@
      (. .))
 </s>
 <s>
-(S (C Còn)
+(S(C Còn)
      (NP-SUB (N-H ông bà))
      (NP-TMP (R cứ)
           (NP (M năm) (N-H bữa))
@@ -946,7 +946,7 @@
      (. .))
 </s>
 <s>
-(S (C Rồi)
+(S(C Rồi)
      (NP-SUB (R cũng) (T chính) (N-H cụ) (Np Công))
      (VP 
           (VP (V-H dẫn)
@@ -1092,7 +1092,7 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (S 
                (NP-SUB (P-H Mình))
                (VP (R không) (V-H nuôi)
@@ -1171,7 +1171,7 @@
      (. .))
 </s>
 <s>
-(S (" ")
+(S(" ")
      (S 
           (NP-TMP (N-H Lúc) (P ấy))
           (S 
@@ -1349,7 +1349,7 @@
      (. .))
 </s>
 <s>
-(S (" ")
+(S(" ")
      (S 
           (NP-SUB (N-H Nhà) (P mình))
           (AP-PRD (A-H nghèo)))
@@ -1462,7 +1462,7 @@
 (S 
      (NP-TMP (N-H Lúc) (A ngặt))
      (, ,)
-     (S (NP-SUB-1 *E*)
+     (S(NP-SUB-1 *E*)
           (VP (V-H biết)
                (SBAR 
                     (S 
@@ -1471,7 +1471,7 @@
                               (AP (A-H đủ)
                                    (NP (N-H sức))))))))
      (C nhưng)
-     (S (NP-SUB-1 *T*)
+     (S(NP-SUB-1 *T*)
           (VP (R cũng) (V-H nhận)
                (VP (V-H đi)
                     (VP (V-H đào)

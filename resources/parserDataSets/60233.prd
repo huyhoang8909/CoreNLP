@@ -891,7 +891,7 @@
 (. .))
 </s>
 <s>
-(S(S(NP-SUB(N-H Pha )(Np Vũng Tàu))
+(S(S(NP-SUB(N-H Pha)(Np Vũng Tàu))
 (VP(V-H chớp)(M ba)))
 (, ,)
 (S(PP-TMP(E-H từ)
@@ -1003,7 +1003,7 @@
 (, ,)
 (VP(V-H reo)(A to)
 (: :)
-(SBAR(S-EXC(NP(P-H Ta )(P đây)(T rồi))))))
+(SBAR(S-EXC(NP(P-H Ta)(P đây)(T rồi))))))
 (! !))
 
 </s>

@@ -102,7 +102,7 @@
                                       (NP-TMP(NP(N-H lúc)
                                                                       (NP(M 10)(Nu-H g)))
                                                        (NP(N-H ngày)(N thứ bảy)
-                                                                       (QP(M-H 28)(- -)(M 8)(- - )(M 2004))))
+                                                                       (QP(M-H 28)(- -)(M 8)(- -)(M 2004))))
                                         (PP-LOC(E-H tại)
                                                      (NP(N-H nhà hàng)(N khách  sạn)(Np Continental)
                                                                 (LBKT LBKT)
@@ -604,7 +604,7 @@
 (. .))
 </s>
 <s>
-(S(VP-PRP(V-H Bị )
+(S(VP-PRP(V-H Bị)
 (NP-DOB(N-H thương tật)(A  nặng)))
 (, ,)
 (NP-SUB(Nc-H anh)(Np Tư On))
@@ -635,7 +635,7 @@
                                                                       (LBKT LBKT)
                                                                    (NP(Np-H Tiền Giang))
                                                                        (RBKT RBKT))))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(NP-TMP(N-H Năm)(M 1992))
@@ -848,7 +848,7 @@
                                    (VP(V-H phải)
                                           (... ...)
                                                (VP(V-H xúc)(P nó)(R lên))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(NP-SUB(N-H Ý tưởng)
@@ -897,7 +897,7 @@
                                                                                                                       (NP(N-H chiều cao)
                                                                                                                              (NP(Nc-H cây)(N lúa)
                                                                                                                                          (VP(R đã)(V-H cắt))))))))))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(NP-SUB(N-H Hệ thống)(P này))
@@ -927,7 +927,7 @@
                    (NP(Nc-H anh)(Np Tư))))
      (NP-TMP(N-H ban đầu))
      (VP(R chỉ)(V-H có)(P vậy))
-(. . ))
+(. .))
 
 
 
@@ -1003,7 +1003,7 @@
                                                          (NP-DOB(N-H máy))
                                                          (VP-DIR(V-H xuống)
                                                                         (NP-LOC(N-H ruộng)))))))
-(. . ))
+(. .))
 
 </s>
 <s>
@@ -1028,7 +1028,7 @@
                                                                    (VP(V-H rơi)
                                                                                (PP(E-H xuống)
                                                                                            (NP(N-H ruộng)))))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(C Và)
@@ -1047,7 +1047,7 @@
                                                                                      (PP(E-H trong)
                                                                                                (NP(N-H gia đình))))
                                                                    (VP(R cũng)(V-H hết))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(NP-TMP(M Mỗi)(N-H ngày)
@@ -1098,7 +1098,7 @@
                                                 (/ /)
                                                 (NP(Nu-H ha))) 
                                 (VP-TMP(V-H tùy)(N thời điểm))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(PP-TPC(E-H Về)
@@ -1112,7 +1112,7 @@
                       (VP(V-H là)
                               (VP(V-H gom)(V hết)
                                           (NP-DOB(M 1 . 000)(Nu-H m 2)))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(S(C Dù)(P-H vậy)
@@ -1139,5 +1139,5 @@
       (- -)
       (S(NP-SUB (Nc-H anh)(Np Tư))
            (VP(V-H quả quyết)))
-(. . ))
+(. .))
 </s>

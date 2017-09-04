@@ -67,7 +67,7 @@
                          (VP(V-H làm)
                                   (NP(N-H vàng)))
                           (VP(V-H thuộc)
-                                 (NP(N-H Công ty)(Ny TNHH )(Np Trường Sơn)
+                                 (NP(N-H Công ty)(Ny TNHH)(Np Trường Sơn)
                                               (PP-LOC(E-H tại)
                                                      (NP(Nc-H bãi)(N vàng)(Np Phước Thành)
                                                              (LBKT LBKT)
@@ -771,7 +771,7 @@
                                                                                                 (VP(V-H đào)(V-H đãi)
                                                                                                        (NP(N-H vàng))))
                                                                                                         (PP(E-H của)
-                                                                                                                       (NP(N-H Công ty)(Ny TNHH )(Np Trường Sơn)))))))))
+                                                                                                                       (NP(N-H Công ty)(Ny TNHH)(Np Trường Sơn)))))))))
                               (, ,)
                              (NP-SUB(N-H tỉnh))
                              (VP(VP(R đã)(V-H chỉ đạo)
@@ -804,7 +804,7 @@
 </s>
 <s>
 (S(C Ngoài ra)
-     (NP-SUB(N-H Công ty)(Ny TNHH )(Np Trường Sơn))
+     (NP-SUB(N-H Công ty)(Ny TNHH)(Np Trường Sơn))
      (VP(V-H quyết định)
                   (VP(V-H hỗ trợ)
                            (NP-DOB(N-H gia đình)
@@ -1214,6 +1214,6 @@
     (VP(R đã)(V-H khiến)
             (NP-DOB(P-H tôi))
             (VP(R không)(R còn)(V-H biết)
-                   (VP(V-H nói )(P gì)(R thêm))))
+                   (VP(V-H nói)(P gì)(R thêm))))
 (... ...))
 </s>

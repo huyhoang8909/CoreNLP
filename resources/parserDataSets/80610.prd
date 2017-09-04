@@ -112,7 +112,7 @@
      (. .))
 </s>
 <s>
-(S (C Và)
+(S(C Và)
      (NP-SUB (N-H khu vực)
           (AP (A-H đông)
                (NP 
@@ -125,7 +125,7 @@
      (. .))
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (R Thường) (V-H thấy)
           (SBAR 
                (S 
@@ -240,7 +240,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (S 
           (NP-SUB (" ") (N-H sự kiện) (N xe đạp) (" ")
                (PP-LOC (E-H ở)
@@ -378,7 +378,7 @@
 
 </s>
 <s>
-(S (C Và)
+(S(C Và)
      (AP-MDP (A-H đặc biệt))
      (, ,)
      (NP-SUB (R rất) (A nhiều) (N-H phụ nữ)
@@ -496,7 +496,7 @@
 
 </s>
 <s>
-(S (C Tuy nhiên) (, ,)
+(S(C Tuy nhiên) (, ,)
      (NP-SUB (N-H người)
           (VP (V-H đưa)
                (NP-DOB (N-H mô hình)
@@ -563,7 +563,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP 
           (VP (Vb-H Download)
                (NP-DOB (N-H hình dáng)
@@ -573,7 +573,7 @@
                     (NP-DOB (N-H mẹ))))
           (VP (V-H *E*) (: :)
                (SBAR 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP (V-H làm)
                               (NP-DOB (L mấy) (Nc-H chiếc) (N xe) (C như thế này))
                               (PP-PRP (E-H để) (E cho)
@@ -738,7 +738,7 @@
 
 </s>
 <s>
-(S (C Và) (C rồi)
+(S(C Và) (C rồi)
      (VP (V-H có)
           (SBAR 
                (S 
@@ -867,7 +867,7 @@
 
 </s>
 <s>
-(S (C Và)
+(S(C Và)
      (NP-TMP (P-H bây giờ))
      (C thì)
      (NP-SUB (N-H thiên hạ)
@@ -885,7 +885,7 @@
 
 </s>
 <s>
-(S (C Tuy nhiên) (, ,)
+(S(C Tuy nhiên) (, ,)
      (NP-SUB (N-H xe)
           (NP (N-H người))
           (VP (" ") (V-H ra) (N sau) (" ") (LBKT LBKT)

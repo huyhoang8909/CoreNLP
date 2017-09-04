@@ -11,7 +11,7 @@
      (VP(VP(V-H đến) 
                     (NP-LOC(N-H cù lao)(Np Tân Lộc)(, ,)(Np Thốt Nốt)
 (, ,)
-                              (NP(Ny-H TP )(Np Cần Thơ))))
+                              (NP(Ny-H TP)(Np Cần Thơ))))
              (VP(V-H gặp)
                      (NP-DOB(N-H thợ)(V lặn)(Np Nguyễn Văn Mộng)
 (, ,)
@@ -74,7 +74,7 @@
              (NP(P-H đây))
              (NP(M 30)(N-H năm)))
 (, ,)
-   (NP-SUB(N-H cha )(Nc anh)(Np Mộng)
+   (NP-SUB(N-H cha)(Nc anh)(Np Mộng)
  (- -)
             (NP(Nc-H ông)(Np Nguyễn Văn Mười))
  (- -))
@@ -296,7 +296,7 @@
  (C hay)(C như)
                                                           (NP(N-H cánh)(N thợ)(V lặn)
                                                                   (VP(A chuyên)(V-H trục)
-                                                                          (NP-DOB(N-H sà lan)(, ,)(N-H lựu đạn)(, ,)(N-H xác)(N người ))))
+                                                                          (NP-DOB(N-H sà lan)(, ,)(N-H lựu đạn)(, ,)(N-H xác)(N người))))
                                                                           (PP-LOC(E-H ở)
                                                                                    (NP(NP(N-H xóm)(Np Chài))
 (, ,)
@@ -382,7 +382,7 @@
                                                 (VP(V-H chìm)))
                                          (P này))
                                 (VP(V-H là)
-                                        (NP(Nc-H chiếc)(N thứ )(M năm)
+                                        (NP(Nc-H chiếc)(N thứ)(M năm)
                                                 (SBAR(C mà)
                                                         (S(NP-SUB(Nc-H nhóm)(Nc anh)(Np Dương))
                                                              (VP(R đã)(V-H thực hiện)
@@ -484,7 +484,7 @@
 </s>
 <s>
 (S(S(AP-TMP(A-H Đúng)
-                 (NP(M ba )(N-H tháng)(N sau)))
+                 (NP(M ba)(N-H tháng)(N sau)))
          (NP-SUB(Nc-H anh)(Np Dương))
          (VP(R mới)(V-H lôi)
                  (NP-DOB(P-H nó))
@@ -526,7 +526,7 @@
 (, ,)
                                                      (NP-LOC(Ny-H P .)(Np Hưng Phú)
 (, ,)
-                                                             (NP(Ny-H Q . )(Np Cái Răng)
+                                                             (NP(Ny-H Q .)(Np Cái Răng)
 (, ,)
                                                                       (NP(Ny-H TP)(Np Cần Thơ)))))))
                               (RBKT RBKT))
@@ -579,7 +579,7 @@
 
 </s>
 <s>
-(S(NP-TPC(NP(N-H Sông )(Np Hậu))
+(S(NP-TPC(NP(N-H Sông)(Np Hậu))
 (, ,)
                       (NP(N-H sông)(Np Tiền))(P này)
     (NP-LOC(N-H nơi)(P đâu)))
@@ -691,7 +691,7 @@
         (VP(V-H bị)
                 (VP(V-H trôi))))
 (, ,)
-  (S(NP-SUB(Nb-H pôngtông)(N bến )(N phà)(Np Hậu Giang))
+  (S(NP-SUB(Nb-H pôngtông)(N bến)(N phà)(Np Hậu Giang))
        (VP(V-H bị)
                (AP(A-H hư hao))))))
  (NP-TPC(P-H gì))
@@ -705,7 +705,7 @@
 </s>
 <s>
 (S(NP-TMP(N-H Hiện giờ))
-    (NP-SUB(NP(N-H cụm )(N phà)(Np Hậu Giang))
+    (NP-SUB(NP(N-H cụm)(N phà)(Np Hậu Giang))
 (, ,)
                        (NP(L các)(N-H xí nghiệp)(N cơ khí)
                                (VP(V-H đóng)
@@ -801,7 +801,7 @@
         (AP-PRD(A-H tối)(A đen)
                  (AP(A-H mờ mịt))))
 (, ,)
-   (S(NP-SUB(N-H nước ))
+   (S(NP-SUB(N-H nước))
         (AP-PRD(A-H lạnh)
                 (AP(A-H căm căm))))
 (. .))
@@ -908,13 +908,13 @@
 <s>
 (S-SPL(C Rồi)
      (PP(E-H đến)
-             (NP(Nc-H anh )(Np Tuấn)))
+             (NP(Nc-H anh)(Np Tuấn)))
 (. .))
 
 
 </s>
 <s>
-(S(S(NP-SUB(Nc-H Anh )(Np Tuấn))
+(S(S(NP-SUB(Nc-H Anh)(Np Tuấn))
          (VP(R đang)(V-H lặn)
                  (VP-PRP(V-H mò)
                          (NP-DOB(N-H ghe))
@@ -940,7 +940,7 @@
                     (VP(V-H bay)(R lên)(R khỏi)
                             (NP-LOC(N-H mặt nước)))
                     (VP(V-H đập)
-                            (NP-DOB(N-H đầu ))
+                            (NP-DOB(N-H đầu))
                             (PP-LOC(E-H vào)
                                     (NP(N-H bánh lái))))))
 (... ...)
@@ -1076,7 +1076,7 @@
 <s>
 (S(NP-SUB(Nc-H Ông)(Np Ba Dung))
      (VP(VP(V-H có)
-                    (NP-DOB(M bốn)(Nc-H đứa)(N con )(N trai)))
+                    (NP-DOB(M bốn)(Nc-H đứa)(N con)(N trai)))
 (, ,)  
             (VP(NP-TMP(P cả)(N-H đời))
                     (VP(V-H ngang dọc)

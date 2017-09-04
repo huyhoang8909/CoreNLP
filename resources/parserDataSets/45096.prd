@@ -58,7 +58,7 @@
           (NP-SUB (A Nhiều) (N-H kịch bản))
           (VP (R đã) (V-H được)
                (SBAR 
-                    (S (NP-SUB-1 *T*)
+                    (S(NP-SUB-1 *T*)
                          (VP (V-H đưa) (R ra))))))
      (, ,)
      (S 
@@ -199,7 +199,7 @@
                     (AP (A-H bất ngờ) (A thú vị) (C như)
                          (NP (M một) (Nc-H món) (N quà)
                               (SBAR-PRP 
-                                   (S (NP-SUB-1 *T*)
+                                   (S(NP-SUB-1 *T*)
                                         (VP (V-H tặng)
                                              (NP-DOB (N-H ông))))))))))
      (. .))
@@ -405,10 +405,10 @@
 <s>
 (S 
      (SBAR-CND (C Nếu)
-          (S (NP-SUB *E*)
+          (S(NP-SUB *E*)
                (VP (R không) (V-H được))))
      (C thì)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (V-H thôi)))
      (. .))
 
@@ -437,7 +437,7 @@
                                         (NP-SUB (N-H bố))
                                         (VP (R không) (V-H bị)
                                              (SBAR 
-                                                  (S (NP-SUB *E*)
+                                                  (S(NP-SUB *E*)
                                                        (VP (V-H hiểu) (V lầm))))))))))))
      (. .))
 
@@ -741,7 +741,7 @@
 </s>
 <s>
 (S 
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (V-H Định)
                (VP (V-H tặng)
                     (NP-IOB (N-H anh))
@@ -1183,7 +1183,7 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (NP-SUB (N-H Tình nhân))
           (VP (R lại) (V-H gặp)
                (NP-DOB (N-H tình nhân)))
@@ -1404,8 +1404,8 @@
 
 </s>
 <s>
-(S (C Tuy)
-     (S (NP-SUB-1 *T*)
+(S(C Tuy)
+     (S(NP-SUB-1 *T*)
           (VP (R không) (V-H gặp) (R lại)
                (NP-DOB (N-H người yêu) (A cũ))))
      (C nhưng)
@@ -1440,10 +1440,10 @@
 </s>
 <s>
 (S 
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (V-H Nấn ná) (V-H chần chừ)))
      (, ,)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (AP-TMP (R càng) (A-H lâu))
           (VP (R càng) (A khó) (V-H nói)))
      (. .))
@@ -1576,7 +1576,7 @@
 
 </s>
 <s>
-(S (C Còn)
+(S(C Còn)
      (NP-TMP (N-H ngày mai))
      (, ,)
      (NP-TMP (N-H khi)

@@ -134,7 +134,7 @@
                                                                 (VP(VP(V-H phòng)(V cháy))
                                                                        (VP(V-H chữa)(V cháy))
                                                                            (LBKT LBKT)
-                                                                       (VP(Vy-H PCCC ))
+                                                                       (VP(Vy-H PCCC))
                                                                          (RBKT RBKT))))))))
 (. .))
 </s>
@@ -376,7 +376,7 @@
 </s>
 <s>
 (S(NP-SUB(N-H Kiến thức)(, ,)(N-H kinh nghiệm))
-     (VP(V-H cho )(N phép)
+     (VP(V-H cho)(N phép)
              (NP-DOB(P-H mình))
              (PP-TMP(E-H trong)(N vòng)
                      (NP(M hai)(, ,)(M ba)(N-H ngày)))
@@ -406,7 +406,7 @@
 </s>
 <s>
 (S(NP-SUB *E*)
-     (VP(V-H Thử )
+     (VP(V-H Thử)
              (VP(V-H hình dung)
                      (SBAR(S(PP-TPC(E-H với)
                                                (NP(M 4 . 000)(Nu-H m2)(N nhà xưởng)

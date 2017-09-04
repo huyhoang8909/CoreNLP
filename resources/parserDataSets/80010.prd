@@ -53,7 +53,7 @@
                                              (NP-DOB (N-H chữ) (A đẹp)))))))
                     (, ,)
                     (C nên)
-                    (S (NP-SUB *T*-1)
+                    (S(NP-SUB *T*-1)
                          (VP (R cũng) (V-H ham mê)
                               (VP (V-H luyện)
                                    (NP-DOB (N-H chữ) (A đẹp))))))))
@@ -97,7 +97,7 @@
      (VP (V-H là)
           (NP-TMP (N-H khi)
                (SBAR 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP 
                               (VP (V-H vào)
                                    (NP-DOB (N-H bộ đội)
@@ -154,7 +154,7 @@
 
 </s>
 <s>
-(S (C Thế là)
+(S(C Thế là)
      (S 
           (NP-SUB (N-H lớp)
                (VP (V-H dạy)
@@ -254,7 +254,7 @@
      (. .))
 </s>
 <s>
-(S (" ")
+(S(" ")
      (S 
           (VP-MNR (R Mới) (V-H quen) (N nhau))
           (, ,)
@@ -354,7 +354,7 @@
 
 </s>
 <s>
-(S (PP-TMP(E-H Vào)
+(S(PP-TMP(E-H Vào)
             (NP(N-H dịp)
                    (VP(V-H nghỉ hè))))
      (NP-SUB(R rất)(A đông)(N-H học sinh)(N phổ thông))
@@ -1284,7 +1284,7 @@
 
 </s>
 <s>
-(S (C Quả là)
+(S(C Quả là)
      (NP-SUB (M một) (Nc-H đoạn) (N văn))
      (AP-PRD 
           (AP (A-H hay))

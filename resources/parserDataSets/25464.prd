@@ -31,7 +31,7 @@
                                    (NP (N-H người) (V quản lý))))))))
      (VP (R đã) (V-H được)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H qui định)
                          (AP (A-H chi tiết) (, ,) (A-H rõ ràng))))))
      (. .))
@@ -224,7 +224,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (PP-ADV (E-H trong)
           (NP (P-H đó)))
      (S 
@@ -233,7 +233,7 @@
                     (NP (N-H cấp) (N tỉnh))))
           (VP (V-H được)
                (SBAR 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP 
                               (VP (V-H lập))
                               (, ,)
@@ -300,7 +300,7 @@
           (SBAR 
                (S 
                     (SBAR-CND (C nếu)
-                         (S (NP-SUB *E*)
+                         (S(NP-SUB *E*)
                               (VP (R chỉ) (V-H đặt)
                                    (NP-DOB (N văn phòng))
                                    (PP-LOC (E-H ở)
@@ -328,7 +328,7 @@
      (. .))
 </s>
 <s>
-(S (" ")
+(S(" ")
      (NP-SUB (N-H Văn phòng)
           (VP (V-H đăng ký)
                (NP-DOB (N-H quyền)
@@ -422,7 +422,7 @@
      (... ...))
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (PP-LOC (E-H tại)
           (NP (N-H hội nghị)
                (NP-TMP (N-H hôm qua))))
@@ -669,9 +669,9 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (SBAR-CND (C Nếu)
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (R cứ) (V-H dùng)
                          (NP-DOB (N-H quyền lực)
                               (NP (N-H hành chính) (N nhà nước)))
@@ -762,7 +762,7 @@
                                                             (NP-SUB (" ") (N-H ông) (N con) (" "))
                                                             (VP (V-H thực hiện)))))))
                                    (, ,)
-                                   (S (NP-SUB *E*)
+                                   (S(NP-SUB *E*)
                                         (AP-PRD (R vừa) (A-H nhiêu khê))
                                         (VP (R vừa) (R không) (V-H thể hiện)
                                              (NP (N-H hướng) (V đi)

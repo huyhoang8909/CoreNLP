@@ -374,7 +374,7 @@
       (NP(N-H con)(N anh)))
 (VP(VP(R vừa)(V-H thi)(V tốt nghiệp)
 (NP-DOB(N-H lớp)(M 9)
-(NP(N-H Trường )(Ny THCS)
+(NP(N-H Trường)(Ny THCS)
             (NP(Np Nguyễn Văn Trỗi))
              (, ,)
              (NP(Np-H Duy Nghĩa)

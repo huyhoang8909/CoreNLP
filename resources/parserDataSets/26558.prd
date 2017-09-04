@@ -37,7 +37,7 @@
                     (PP-PRP (E-H để)
                          (PP-TMP (E-H từ) (P đó)
                               (SBAR 
-                                   (S (NP-SUB *E*)
+                                   (S(NP-SUB *E*)
                                         (VP (V-H đưa) (R ra) (R được)
                                              (NP-DOB (L những) (N-H giải pháp)
                                                   (VP (V-H khắc phục)
@@ -67,7 +67,7 @@
      (. .))
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Phân cấp)
           (VP-PRP (V-H thực hiện)
                (VP (V-H cổ phần hóa))))
@@ -75,7 +75,7 @@
 
 </s>
 <s>
-(S (" ")
+(S(" ")
      (S 
           (NP-SUB (N-H Tốc độ) (V cổ phần hóa))
           (AP-PRD (R không) (A-H chậm)))
@@ -135,7 +135,7 @@
      (NP-SUB (P-H Tôi))
      (VP (V-H nghĩ)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H giải quyết) (R được) (T hết)))))
      (. .))
 </s>
@@ -191,7 +191,7 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (AP-MDP (A-H Lạ) (C là)
                (NP-TMP (N-H khi)
                     (SBAR 
@@ -374,7 +374,7 @@
      (NP-SUB (Nc-H Ông) (Np Dũng))
      (VP (R cũng) (V-H cho) (V biết)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (R sẽ) (V-H cố gắng)
                          (VP (V-H khởi công)
                               (AP (A-H sớm))
@@ -400,7 +400,7 @@
                               (NP-SUB (Ny-H TP))
                               (VP (R sẽ) (V-H được)
                                    (SBAR 
-                                        (S (NP-SUB *E*)
+                                        (S(NP-SUB *E*)
                                              (VP (V-H cung cấp)
                                                   (NP-DOB (M một) (N-H lượng) (N nước sạch)
                                                        (PP-MNR (E-H bằng)
@@ -427,7 +427,7 @@
      (. .))
 </s>
 <s>
-(S (" ") (NP-SUB *E*)
+(S(" ") (NP-SUB *E*)
      (AP-PRD 
           (AP (A-H To))
           (C nhưng)
@@ -560,12 +560,12 @@
 <s>
 (S 
      (NP-TMP (N-H Hồi) (N giờ))
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (V-H gọi)
                (VP (V-H là)
                     (VP (V-H tăng trưởng)))))
      (C nhưng)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (V-H thiếu)
                (AP (A-H bền vững))))
      (. .))
@@ -602,7 +602,7 @@
      (S 
           (NP-TMP (N-H khi)
                (SBAR 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP (V-H có)
                               (NP-DOB (N-H biến động))))))
           (, ,)
@@ -632,7 +632,7 @@
      (. .))
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (PP-ADV (E-H trong)
           (NP (N-H quá trình) (V phát triển)
                (XP-TMP (X-H vừa qua))))
@@ -780,7 +780,7 @@
 <s>
 (S 
      (NP-SUB (Nc-H Ông) (Np Trần Du Lịch))
-     (VP (V-H *E* ) (: :) (" ")
+     (VP (V-H *E*) (: :) (" ")
           (SBAR 
                (S 
                     (S-PRP 
@@ -911,7 +911,7 @@
      (. .))
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Xử lý)
           (AP-MNR (A-H nghiêm minh))
           (PP-MNR (E-H theo)
@@ -929,7 +929,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Thực hiện) (A tốt)
           (NP-DOB (L các) (N-H quy định)
                (SBAR (E-H đối với)
@@ -947,7 +947,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP 
           (VP (V-H Kiện toàn))
           (C và)
@@ -960,7 +960,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Tiếp tục)
           (VP (V-H đổi mới))
           (C và)
@@ -970,7 +970,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Tiếp tục)
           (VP (V-H đổi mới)
                (NP-DOB (N-H phương thức) (V lãnh đạo)
@@ -1038,7 +1038,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP 
           (VP (A Kiên quyết) (V-H chấn chỉnh)
                (NP-DOB (N-H bộ máy) (N hành chính)
@@ -1067,7 +1067,7 @@
 (. .))
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Kiểm tra) (, ,) (V-H xử lý)
           (AP-MNR (A-H kiên quyết))
           (NP-DOB (L các) (N-H vụ)
@@ -1110,7 +1110,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP 
           (VP (V-H Phát triển) (A nhanh)
                (NP-DOB (L các) (N-H ngành) (N dịch vụ)))
@@ -1121,7 +1121,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Tiếp tục)
           (VP (V-H nhân) (A rộng)
                (NP-DOB (L các) (N-H mô hình)
@@ -1140,7 +1140,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Tổng kết)
           (NP-DOB 
                (NP (N-H quá trình) (V cổ phần hóa)
@@ -1200,7 +1200,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP 
           (VP (V-H Nâng) (A cao)
                (NP-DOB (N-H năng lực)

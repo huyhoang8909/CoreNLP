@@ -235,7 +235,7 @@
                                   (, ,)
                      (NP(N-H cấp)(M II))))
     (NP-SUB(N-H chị))
-    (VP(R từng)(V-H làm )
+    (VP(R từng)(V-H làm)
             (NP-DOB(N-H chi đội trưởng)
                                          (, ,)
                                         (C rồi)
@@ -282,7 +282,7 @@
              (SBAR(S(SBAR-CND(C dù)
                                         (S(S(NP-SUB-1 *T*)
                                     (VP(V-H là)
-                                            (NP(N-H con )(N nhà)(A nghèo))))
+                                            (NP(N-H con)(N nhà)(A nghèo))))
                                          (, ,)
                                       (C dù)
                                 (S(NP-SUB-1 *T*)
@@ -510,9 +510,9 @@
 
 </s>
 <s>
-(S (R Đồng thời)
+(S(R Đồng thời)
      (PP (E-H với)
-          (NP (N-H vốn) (N ngoại ngữ )
+          (NP (N-H vốn) (N ngoại ngữ)
                (VP (V-H học) (R được))))
      (, ,)
      (NP-SUB (N-H chị))
@@ -612,7 +612,7 @@
 <s>
 (S(NP-TMP(A Hơn)(M một)(N-H năm)(T trời))
     (NP-SUB(N-H chị))
-    (VP(V-H phải )
+    (VP(V-H phải)
             (VP(V-H nằm)
                     (PP-LOC(E-H ở)
                             (NP(N-H nhà)))
@@ -636,7 +636,7 @@
 </s>
 <s>
 (S(PP-TMP(E-H Đến)
-             (NP(N-H cuối )(M 1995)))
+             (NP(N-H cuối)(M 1995)))
     (NP-SUB(N-H chị))
     (VP(V-H thi)(V đậu)
             (NP-DOB(N-H bằng)(Ny C)(N tiếng)(Np Anh)
@@ -737,7 +737,7 @@
      (VP(V-H theo)(V học)
              (NP-DOB(N-H ngành)(V phát triển)(N con người)
                      (PP-LOC(E-H tại)
-                             (NP(Ny-H ĐH )(Np Kansas)
+                             (NP(Ny-H ĐH)(Np Kansas)
                                      (NP(LBKT LBKT)(Np-H Mỹ)(RBKT RBKT))))))
 (. .))
 
@@ -765,7 +765,7 @@
     (NP-TMP(T ngay)(N-H học kỳ)(N đầu))
     (NP-SUB(N-H chị))
     (VP(R đã)(V-H đoạt)(R được)
-            (NP-DOB(M ba)(N-H điểm)(Ny A )))
+            (NP-DOB(M ba)(N-H điểm)(Ny A)))
 (. .))
 
 
@@ -800,7 +800,7 @@
         (VP(V-H được)
                 (SBAR(S(NP-SUB(N-H hội đồng)(N khoa học)
                                           (PP-LOC(E-H tại)
-                                                  (NP(Ny-H ĐH )(Np Kansas))))
+                                                  (NP(Ny-H ĐH)(Np Kansas))))
                                    (VP(V-H đánh giá)
                                            (AP(A-H cao))))))
 (. .))
@@ -831,7 +831,7 @@
                                     (PP(E-H của)
                                             (NP(Ny-H WB)))
                                     (PP-LOC(E-H ở)
-                                            (NP(Np-H Washington DC )))))))
+                                            (NP(Np-H Washington DC)))))))
 (. .))
 
 
@@ -856,7 +856,7 @@
                                                               (S(NP-SUB(Ny-H SV))
                                                                    (VP(V-H học tập)))) 
                                                        (PP-LOC(E-H tại)
-                                                               (NP(Ny-H ĐH )(Np Kansas)))))))))
+                                                               (NP(Ny-H ĐH)(Np Kansas)))))))))
 (. .))
 
 
@@ -874,7 +874,7 @@
 <s>
 (S(NP-TMP(N-H Giờ đây))
  (, ,)
-   (NP-SUB-1(Nc-H cô)(Np Út )(Np Yến)
+   (NP-SUB-1(Nc-H cô)(Np Út)(Np Yến)
             (AP(A-H tật nguyền))
             (NP-TMP(N-H ngày xưa))
             (SBAR(C mà)
@@ -882,7 +882,7 @@
                        (VP(R cứ)(V-H thắc thỏm)(V lo âu)
                                (VP(R không)(V-H biết)
                                        (SBAR(S(NP-SUB-1 *T*)
-                                                         (VP(V-H làm )
+                                                         (VP(V-H làm)
                                                                  (NP-DOB(P-H gì))
                                                                  (PP-PRP(E-H để)
                                                                          (VP(V-H sống)))))))))))
@@ -938,7 +938,7 @@
                                                                               (PP(E-H cho)
                                                                                      (NP(L các)(N-H chương trình)(C và)(N-H chính sách)
                                                                                              (VP(V-H dành)(R cho)
-                                                                                                     (NP(Ny-H NKT )(Np Mỹ))))))))))))))
+                                                                                                     (NP(Ny-H NKT)(Np Mỹ))))))))))))))
 (. .))
 
 
@@ -1091,7 +1091,7 @@
                    (VP(V-H đóng góp)
                            (NP-DOB(L chút ít)(P-H gì)(P đó))
                            (PP(E-H cho)
-                                   (NP(N-H quê hương)(Ny VN ))))))
+                                   (NP(N-H quê hương)(Ny VN))))))
 (. .))
 
 
@@ -1114,7 +1114,7 @@
                                             (PP(E-H với)
                                                     (NP(N-H điều kiện)(V giáo dục)
                                                             (PP-LOC(E-H ở)
-                                                                    (NP(Ny-H VN ))))))))))
+                                                                    (NP(Ny-H VN))))))))))
 (. .))
 
 
@@ -1122,7 +1122,7 @@
 <s>
 (S(S(VP-ADV(V-H Được)(V biết))
                 (, ,)
-         (NP-SUB(N-H Trường)(Ny ĐH )(Np Đà Lạt))
+         (NP-SUB(N-H Trường)(Ny ĐH)(Np Đà Lạt))
          (VP(R đã)(V-H mời)
                  (NP-DOB(N-H chị))
                  (VP(V-H tham gia)
@@ -1138,7 +1138,7 @@
                                   (NP(P-H mình)))
                            (VP(V-H truyền đạt)
                                    (PP(E-H đến)
-                                           (NP(L các)(Ny-H SV)(Ny VN )))))))
+                                           (NP(L các)(Ny-H SV)(Ny VN)))))))
 (. .))
 
 

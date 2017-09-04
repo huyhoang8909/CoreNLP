@@ -394,7 +394,7 @@
   (: :)(" ")
       (SBAR(S(NP-TMP(N-H Lần)(P ấy))
                         (, ,)
-                       (NP-SUB(Np-H Công ty)(N sữa)(Ny F )(. .))
+                       (NP-SUB(Np-H Công ty)(N sữa)(Ny F)(. .))
                        (VP(R đã)(V-H đổ)
                               (VP(R không)(V-H biết)
                                           (NP-DOB(P bao nhiêu)(N-H tiền)))

@@ -4,7 +4,7 @@
           (NP-SUB (N-H Cầu) (Np Bình Triệu) (M 2))
           (VP (R chưa) (V-H xây) (V xong)))
      (, ,)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (V-H làm)
                (NP-DOB (N-H đường) (A tạm))
                (SBAR-PRP (E-H cho)
@@ -37,7 +37,7 @@
 </s>
 <s>
 (S-TTL 
-     (PP-LOC (E-H Từ )
+     (PP-LOC (E-H Từ)
           (NP (N-H đường) (A tạm)))
      (. .))
 
@@ -68,7 +68,7 @@
 
 </s>
 <s>
-(S (C Như vậy) (, ,)
+(S(C Như vậy) (, ,)
      (PP-TMP (E-H trước)
           (NP (N-H thời điểm)
                (VP (V-H cấm)
@@ -86,7 +86,7 @@
      (NP-SUB (N-H cầu) (Np Bình Triệu) (M 2))
      (VP (V-H được)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (" ") (V-H ép) (" ")
                          (VP-PRP (V-H đưa)
                               (PP (E-H vào)
@@ -176,11 +176,11 @@
                (NP (Ny-H BT2))
                (RBKT RBKT)))
      (SBAR-PRP (E-H do)
-          (S (NP-SUB *E*)
+          (S(NP-SUB *E*)
                (VP (R có) (V-H thay đổi)
                     (NP-DOB (N-H thiết kế) (N ban đầu)))))
      (C nên)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (V-H làm) (R cho)
                (NP-DOB (N-H tiến độ)
                     (VP (V-H kéo dài)))))
@@ -200,7 +200,7 @@
 
 </s>
 <s>
-(S (C Còn)
+(S(C Còn)
      (PP-TPC (E-H về)
           (AP (A-H chủ quan)))
      (C thì)
@@ -235,7 +235,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (PP-TMP (E-H sau)
           (NP (P-H đó)))
      (NP-SUB *E*)
@@ -278,7 +278,7 @@
 
 </s>
 <s>
-(S (C Song)
+(S(C Song)
      (VP-SUB (V-H thay)
           (NP-DOB (N-H qui mô) (P đó)))
      (VP (R cũng) (V-H làm)
@@ -336,7 +336,7 @@
 
 </s>
 <s>
-(S (C Mặc dù)
+(S(C Mặc dù)
      (S 
           (S 
                (NP-SUB (N-H công trình)
@@ -347,7 +347,7 @@
                (NP-SUB (Ny-H HĐND))
                (VP (R cũng) (R rất) (V-H cân nhắc))))
      (C nhưng)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (V-H quyết định)
                (VP (V-H tạo)
                     (NP-DOB (N-H điều kiện))
@@ -623,7 +623,7 @@
                     (VP (V-H xảy) (R ra)
                          (NP-DOB (N-H hậu quả))))))
      (C thì)
-     (S (NP-SUB-1 *T*)
+     (S(NP-SUB-1 *T*)
           (VP (V-H phải)
                (VP (V-H chịu)
                     (NP-DOB (N-H trách nhiệm)))))
@@ -652,7 +652,7 @@
      (. .))
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (NP-SUB (P-H đây))
      (VP (R cũng) (R chỉ) (V-H là)
           (NP-DOB (N-H giải pháp) (A tạm)
@@ -677,7 +677,7 @@
                                    (QP (M-H 341 tỉ)
                                    (VP (V-H được)
                                         (SBAR 
-                                             (S (NP-SUB *E*)
+                                             (S(NP-SUB *E*)
                                                   (VP (V-H duyệt)
                                                 (NP-TMP (N-H khi)
                          (VP (V-H áp)
@@ -816,11 +816,11 @@
 (. .))
 </s>
 <s>
-(S (P Thế) (C nhưng)
+(S(P Thế) (C nhưng)
      (PP-ADV (E-H với)
           (NP (N-H lập luận) (: :)
                (SBAR 
-                    (S (C nếu)
+                    (S(C nếu)
                          (S 
                               (VP-SUB (V-H kéo dài)
                                    (NP-DOB (N-H thời gian)
@@ -872,7 +872,7 @@
      (. .))
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Đến)
           (NP-LOC (N-H trạm)
                (VP (V-H thu) (N phí) (A-H tạm))))
@@ -894,7 +894,7 @@
                (VP (V-H thu) (N phí)))
           (VP (V-H được)
                (SBAR 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP (A chóng vánh) (V-H dựng) (R lên)
                               (PP-MNR (R cũng) (E-H theo)
                                    (NP (N-H kiểu) (" ")
@@ -920,7 +920,7 @@
                                              (NP-SUB (N-H qui mô))
                                              (VP (R đã) (V-H được)
                                                   (SBAR 
-                                                       (S (NP-SUB *E*)
+                                                       (S(NP-SUB *E*)
                                                             (VP (V-H phê duyệt)))))))))))))
      (, ,)
      (C cho nên)
@@ -1080,7 +1080,7 @@
                (NP (N-H trạm)
                     (VP (V-H thu) (N phí)))))
      (SBAR-PRP (C do)
-          (S (NP-SUB *E*)
+          (S(NP-SUB *E*)
                (VP (V-H bị)
                     (VP (V-H vướng)
                          (VP (V-H giải tỏa)
@@ -1112,7 +1112,7 @@
      (. .))
 </s>
 <s>
-(S (C Và)
+(S(C Và)
      (S 
           (SBAR-PRP (R cũng) (E-H do)
                (S 
@@ -1293,7 +1293,7 @@
      (, ,)
      (S 
           (SBAR-PRP (E-H do)
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (R chưa) (V-H thu)
                          (NP-DOB (N-H phí)))))
           (C nên)
@@ -1312,7 +1312,7 @@
 (S 
      (NP-TMP (N-H Khi)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (A gần) (V-H qua)
                          (NP-DOB (N-H trạm) (V kiểm soát))
                          (PP-MNR (E-H với)

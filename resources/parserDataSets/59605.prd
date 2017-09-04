@@ -26,7 +26,7 @@
 
 </s>
 <s>
-(S (C Và)
+(S(C Và)
      (NP-SUB (T chính) (P-H họ))
      (VP (R đã) (V-H tạo)
           (NP-DOB (N-H điều kiện))
@@ -66,7 +66,7 @@
      (VP (R rất) (V-H ngạc nhiên)
           (NP (N-H khi)
                (SBAR 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP 
                               (VP (V-H gặp)
                                    (NP-DOB 
@@ -127,7 +127,7 @@
                     (S 
                          (PP-TMP (E-H đến)
                               (NP (P-H nay)))
-                         (S (NP-SUB *E*)
+                         (S(NP-SUB *E*)
                               (VP (R đã) (V-H tăng) (R lên)
                                    (NP-DOB (M 1 . 300) (N-H sản phẩm))))
                          (C và)
@@ -172,7 +172,7 @@
 
 </s>
 <s>
-(S (C Không những) (P vậy) (, ,)
+(S(C Không những) (P vậy) (, ,)
      (NP-SUB (N-H công ty)
           (PP (E-H của)
                (NP (Nc-H anh) (Np Ninh))))
@@ -327,7 +327,7 @@
 
 </s>
 <s>
-(S (C Còn)
+(S(C Còn)
      (PP-LOC-SUB (E-H ở)
           (NP (N-H nhà hàng) (Np Angkor)
                (PP-LOC (E-H trên)
@@ -374,7 +374,7 @@
 
 </s>
 <s>
-(S (X Ngoài ra) (, ,)
+(S(X Ngoài ra) (, ,)
      (NP-SUB (N-H công ty)
           (PP (E-H của)
                (NP (Nc-H anh) (Np Ninh))))
@@ -521,7 +521,7 @@
 
 </s>
 <s>
-(S (T Thế) (C nhưng)
+(S(T Thế) (C nhưng)
      (PP-PRP (E-H để)
           (VP (V-H thành đạt) (C như)
                (NP-TMP (N-H ngày) (N hôm nay))))
@@ -545,7 +545,7 @@
                (VP (V-H mời)
                     (NP-DOB (N-H thầy)
                          (VP-PRP (V-H dạy)
-                              (NP-DOB (N-H vi tính )
+                              (NP-DOB (N-H vi tính)
                                    (PP-DIR 
                                         (PP (E-H từ)
                                              (NP (Ny-H TP . HCM)))
@@ -598,7 +598,7 @@
                (VP-PRP (V-H dạy)
                     (NP-DOB (N-H vi tính))))
           (SBAR-PRP (E-H vì)
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (AP-PRD (R quá) (A-H bận)
                          (NP (N-H việc)
                               (PP (E-H cho)
@@ -611,7 +611,7 @@
 
 </s>
 <s>
-(S (C Không những) (T vậy) (, ,)
+(S(C Không những) (T vậy) (, ,)
      (PP-PRP (E-H để)
           (VP (V-H thúc đẩy)
                (NP-DOB (N-H thị trường) (V máy tính)
@@ -761,7 +761,7 @@
                               (PP-LOC (E-H tại)
                                    (NP (A nhiều) (N-H tỉnh)
                                         (PP-LOC (E-H ở)
-                                             (NP (Ny-H CPC ))))))))))
+                                             (NP (Ny-H CPC))))))))))
      (. .))
 
 
@@ -797,13 +797,13 @@
                                         (VP (V-H tiêu thụ)
                                              (NP-DOB (N-H hàng hóa)))))))
                     (C nên)
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP (V-H cần)
                               (VP (V-H tính toán)
                                    (AP (A-H kỹ))
                                    (, ,)
                                    (SBAR-PRP (E-H bởi)
-                                        (S (X có khi)
+                                        (S(X có khi)
                                              (S-SUB (NP-SUB *E*)
                                                   (VP (V-H đưa)
                                                        (NP-DOB (N-H hàng))
@@ -842,12 +842,12 @@
 
 </s>
 <s>
-(S (C Tuy nhiên) (, ,)
+(S(C Tuy nhiên) (, ,)
      (PP-PRP (E-H để)
           (VP (V-H tiêu thụ)
                (NP-DOB (N-H hàng hóa)
                     (VP (V-H được) (A nhiều)))))
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (V-H cần)
                (VP (V-H có)
                     (NP-DOB (N-H đầu mối)
@@ -868,7 +868,7 @@
 
 </s>
 <s>
-(S (C Bởi) (NP-SUB *E*)
+(S(C Bởi) (NP-SUB *E*)
      (VP (R đã) (R từng) (V-H xảy) (V ra)
           (NP-DOB (L một số) (N-H vụ)
                (NP (Ny-H DN) (Ny VN)
@@ -882,7 +882,7 @@
                               (VP (V-H đòi)
                                    (NP-DOB (N-H tiền)
                                         (SBAR-PRP (R chỉ) (E-H vì)
-                                             (S (NP-SUB *E*)
+                                             (S(NP-SUB *E*)
                                                   (VP (R không) (V-H có)
                                                        (NP-DOB (N-H văn phòng) (V đại diện)
                                                             (VP-PRP (V-H giám sát)))))))))))))
@@ -894,7 +894,7 @@
 (S 
      (NP-SUB (N-H Việc)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H lập)
                          (NP-DOB (N-H văn phòng) (V đại diện)
                               (PP-PRP (E-H để)
@@ -934,7 +934,7 @@
      (VP (R đã) (V-H bật) (V cười)
           (NP (N-H khi)
                (SBAR 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP 
                               (VP (V-H nói)
                                    (NP-DOB (N-H chương trình)
@@ -968,7 +968,7 @@
 
 </s>
 <s>
-(S (C Vì vậy) (, ,)
+(S(C Vì vậy) (, ,)
      (NP-SUB (N-H việc)
           (VP (V-H tiếp cận)
                (PP (E-H với)
@@ -1098,7 +1098,7 @@
 
 </s>
 <s>
-(S (C Còn)
+(S(C Còn)
      (NP-SUB (Nc-H anh) (Np Lê Trọng Nhân) (LBKT LBKT)
           (NP (N-H giám đốc)
                (NP (N-H Công ty) (Np World Heritage)))
@@ -1106,7 +1106,7 @@
      (VP (V-H cho)
           (SBAR (C rằng)
                (S 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP (R đừng) (V-H nói)
                               (PP-LOC (E-H ở)
                                    (NP (P-H đâu)

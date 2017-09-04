@@ -17,7 +17,7 @@
                     (S(NP-SUB(N-H anh)(N nông dân)
                                   (AP(A-H ít)
                                          (NP(N-H chữ)))
-                                   (NP(Np-H Nguyễn Văn Kiệm ))
+                                   (NP(Np-H Nguyễn Văn Kiệm))
                             (PP-LOC(E-H ở)
                                  (NP(N-H vùng đất)(N bãi)(V bồi)
                                       (NP-LOC(N-H bên)
@@ -596,7 +596,7 @@ anh
 
 </s>
 <s>
-(S(VP-ADV(V-H Bắt đầu )
+(S(VP-ADV(V-H Bắt đầu)
              (PP-TMP(E-H từ)
                      (NP(P-H đó))))
     (NP-SUB(N-H anh))
@@ -830,7 +830,7 @@ nghiên cứu
 <s>
 (S(NP-TMP(N-H Khi)
            (VP(V-H đi)(V tìm)
-                   (NP-DOB(N-H nguồn)(N sạn)(N muối) )
+                   (NP-DOB(N-H nguồn)(N sạn)(N muối))
                    (PP-PRP(E-H để)
                             (VP(V-H thi công)
                                     (NP-DOB(N-H công trình)

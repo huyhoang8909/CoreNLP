@@ -335,7 +335,7 @@
 
 </s>
 <s>
-Hay như gia đình ông Trần Hùng cũng quyết cho ba người con vào đại học , trong đó có hai người về học tại VN ( Trần Thị Kim Hiền học ĐH Y Huế , cậu em út Trần Trọng T Tiến cũng đang là sinh viên năm 2 ĐH  Y Thái Bình ) , riêng người chị Trần Thị Kim Hương có đến hai bằng cử nhân kinh tế và ngoại ngữ , hiện làm tại Công ty  dược CPF có tiếng tại Lào . 
+Hay như gia đình ông Trần Hùng cũng quyết cho ba người con vào đại học , trong đó có hai người về học tại VN ( Trần Thị Kim Hiền học ĐH Y Huế , cậu em út Trần Trọng T Tiến cũng đang là sinh viên năm 2 ĐH  Y Thái Bình) , riêng người chị Trần Thị Kim Hương có đến hai bằng cử nhân kinh tế và ngoại ngữ , hiện làm tại Công ty  dược CPF có tiếng tại Lào . 
 
 
 
@@ -549,7 +549,7 @@ Hay như gia đình ông Trần Hùng cũng quyết cho ba người con vào đ�
 (S(NP-SUB(P-H Chúng tôi))
     (VP(R rất)(V-H lo)
             (SBAR(C là)
-                    (S(VP-ADV(V-H lên )
+                    (S(VP-ADV(V-H lên)
                                 (NP(N-H cấp)(M II)))
                         (NP-SUB(L các)(N-H em))
                          (VP(R sẽ)(V-H bị)

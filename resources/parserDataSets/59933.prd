@@ -52,7 +52,7 @@
 (S(C Nhưng)
      (NP-TMP(N-H khi) 
              (SBAR(S(NP-SUB-1(P-H chúng tôi))
-                               (VP(V-H tìm)(R đến )
+                               (VP(V-H tìm)(R đến)
                                        (NP-LOC(N-H nơi))))))
 (C thì)
 (NP-SUB-1 *T*)
@@ -259,7 +259,7 @@
                  (AP(A-H ác liệt)(T lắm))))
 (, ,)
    (S(NP-SUB(P cả)(N-H vùng)(Np U Minh)
-                (AP(A-H mênh mông)(C là)(P vậy )))
+                (AP(A-H mênh mông)(C là)(P vậy)))
 (C mà)
        (VP(R hầu như)(R không)(V-H còn)
                (NP-DOB(N-H chỗ)(A an toàn))))
@@ -409,7 +409,7 @@
 
 </s>
 <s>
-(S(PP-LOC(E-H Ở )
+(S(PP-LOC(E-H Ở)
             (NP(Np-H Côn Đảo)))
 (, ,)
    (S-PV(NP-TMP(L mỗi)(N-H lần))
@@ -420,7 +420,7 @@
                                                  (VP-PRP(V-H đánh)))))))
 (C thì)
    (S(NP-SUB(Np-H Hai Địa))
-        (VP(V-H xông )(R ra)
+        (VP(V-H xông)(R ra)
                 (VP-PRP(V-H chịu)
                         (NP-DOB(N-H đòn))
                         (VP(V-H thay)))))
@@ -482,12 +482,12 @@
 
 </s>
 <s>
-(S(C Nhưng )
+(S(C Nhưng)
      (S(NP-SUB(Np-H Hai Địa))
           (VP(R không)(V-H có) 
                   (NP-DOB(N-H nhà))))
 (, ,)
-     (S(NP-SUB(N-H anh )(P ấy))
+     (S(NP-SUB(N-H anh)(P ấy))
           (VP(R đang)(V-H đi)
                   (VP(V-H hoạt động)
                           (PP-LOC(E-H trên)
@@ -578,7 +578,7 @@
 (S(C Tức là) 
      (NP-TMP(N-H lần)(P đó))
      (NP-SUB(P-H tôi))
-     (VP(R không )(V-H gặp)(R được)
+     (VP(R không)(V-H gặp)(R được)
              (NP-DOB(Nc-H anh)(Np Hai Địa)))
 (. .))
 
@@ -712,7 +712,7 @@
                       (VP(V-H đi)(R ra)
 (, ,)
                               (PP-MNR(E-H theo)
-                                      (NP(N-H đường )(Np Trường Sơn))))))
+                                      (NP(N-H đường)(Np Trường Sơn))))))
 (. .))
 
 
@@ -784,7 +784,7 @@
 <s>
 (S(T Riêng)
     (NP-SUB(Nc-H anh)(Np Hai Địa))
-    (VP(VP(V-H dạt vô )
+    (VP(VP(V-H dạt vô)
                    (NP-LOC(N-H bờ)(N biển)(Np Quảng Bình)))
 (, ,)
             (VP(V-H bị)
@@ -1040,7 +1040,7 @@
 </s>
 <s>
 (S-TTL(VP(V-H Khai thông)
-                      (NP-DOB(Nc-H con)(N đường )(N biển)(Np Đông)))
+                      (NP-DOB(Nc-H con)(N đường)(N biển)(Np Đông)))
 (. .))
 
 
@@ -1579,9 +1579,9 @@
 <s>
 (S(NP-SUB *E*)
     (VP(V-H Tìm)(R ra)
-            (NP-DOB(N-H cửa)(A lý tưởng)(A nhất )
+            (NP-DOB(N-H cửa)(A lý tưởng)(A nhất)
                     (VP(V-H là)
-                           (NP(N-H cửa )(Np Bồ Đề)
+                           (NP(N-H cửa)(Np Bồ Đề)
 (, ,)
                                    (NP(N-H lạch)
                                            (AP(A-H sâu)
@@ -1656,7 +1656,7 @@
             (NP-DOB(M hai)(N-H thuyền)))
      (VP(V-H là)
              (VP(V-H đề phòng)
-                     (VP(VP(V-H mất )
+                     (VP(VP(V-H mất)
                                     (QP(M-H một)))
                             (VP(R vẫn)(V-H còn)
                                     (QP(M-H một))))))
@@ -1747,7 +1747,7 @@
 
 </s>
 <s>
-(S(NP-SUB(Nc-H Con)(N đường )(N biển)(Np Đông))
+(S(NP-SUB(Nc-H Con)(N đường)(N biển)(Np Đông))
     (AP-PRD(R đã)(A-H chính thức)
             (VP(V-H được)
                     (VP(V-H khai thông))))

@@ -358,7 +358,7 @@
 (VP(V-H nhận)(R được)
             (NP-DOB(N-H tin)
 (: :)(" ")
-(SBAR(S-PV(NP-SUB(NP(Nc-H Thằng )(Np Luyện))
+(SBAR(S-PV(NP-SUB(NP(Nc-H Thằng)(Np Luyện))
                                     (C và)
                                      (NP(Nc-H thằng)(Np Nam)))
 (VP(VP(V-H bị)
@@ -885,7 +885,7 @@
 (. .))
 </s>
 <s>
-(S(S(NP-SUB(N-H Vợ )(Np Minh))
+(S(S(NP-SUB(N-H Vợ)(Np Minh))
         (VP(VP(V-H bị)(N bạo bệnh))
                (VP(V-H mất)
                         (NP-TMP(R mới)(L mấy)(N-H tháng)(A trước)))))
@@ -1161,7 +1161,7 @@
 (. .))
 </s>
 <s>
-(S(NP-SUB(Nc-H Vợ )(Np Lợi))
+(S(NP-SUB(Nc-H Vợ)(Np Lợi))
 (VP(R vừa)(R mới)(V-H sinh)
            (NP-DOB(Nc-H đứa)(N con)
                  (AP(A-H đầu lòng))

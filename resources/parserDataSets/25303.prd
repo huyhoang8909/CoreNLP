@@ -80,7 +80,7 @@
      (NP-SUB (L các) (N-H mặt hàng) (A trên))
      (VP (V-H bị)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP 
                          (VP (V-H lập)
                               (NP-DOB (N-H biên bản)))
@@ -99,7 +99,7 @@
           (SBAR 
                (S 
                     (SBAR-PRP 
-                         (S (NP-SUB-1 *T*)
+                         (S(NP-SUB-1 *T*)
                               (VP (R vẫn) (R đang) (V-H tiếp tục)
                                    (VP (V-H kiểm tra))
                                    (VP (V-H lập)
@@ -107,7 +107,7 @@
                                              (VP-PRP (V-H thu giữ)
                                                   (NP-DOB (L các) (N-H mặt hàng) (A trên))))))))
                     (C nên)
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP (R chưa thể) (V-H công bố)
                               (NP-DOB (N-H số lượng))
                               (AP (A-H chính thức)))))))

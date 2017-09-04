@@ -421,7 +421,7 @@
 </s>
 <s>
 (S(NP-TMP(A Gần)(M 23)(Nu-H g))
-    (C mà )
+    (C mà)
     (VP(R vẫn)(V-H còn)
               (NP-DOB(A gần)(M chục)(N-H cô)
                          (VP(R đang)(V-H chờ)
@@ -1019,7 +1019,7 @@
 </s>
 <s>
 (S(C Tuy)
-    (S(NP-SUB(N-H cuộc sống ))
+    (S(NP-SUB(N-H cuộc sống))
         (AP-PRD(R không)(A-H dư dả)))
         (, ,)
       (S(NP-SUB(N-H gia đình)(N chị))

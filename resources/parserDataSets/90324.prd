@@ -1,6 +1,6 @@
 <s>
 (S-TTL(NP(N-H Ngày)(A u uất))
-  (... ... ))
+  (... ...))
 
 
 
@@ -455,7 +455,7 @@
                             (NP(P-H đó)))))
    (, ,)
       (C rồi)
-         (S(NP-SUB(NP(N-H lữ )(M 196)(Np Mỹ))
+         (S(NP-SUB(NP(N-H lữ)(M 196)(Np Mỹ))
                                              (, ,)
                                 (NP(N-H sư dù)(M 101)(Np Mỹ))
                                             (, ,)
@@ -873,7 +873,7 @@
                (SBAR(S(NP-SUB(P-H ta))
                                 (VP(V-H là)
                                    (NP-DOB(N-H số)(A đông))))))
-        (C mà )
+        (C mà)
                      (NP-SUB *E*)
                      (VP(VP(R không)(V-H đấu tranh)(R được)
                                 (PP(E-H với)

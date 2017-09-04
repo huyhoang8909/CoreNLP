@@ -8,7 +8,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Chủ tịch)
+(S(NP-SUB(N-H Chủ tịch)
                (NP(Ny-H UBND)
                        (NP(N-H tỉnh)(Np Quảng Nam)))
                (NP(Np-H Nguyễn Xuân Phúc)))

@@ -89,7 +89,7 @@
 
 </s>
 <s>
-(S(NP-TMP(N-H Ngày)(N thứ )(M ba))
+(S(NP-TMP(N-H Ngày)(N thứ)(M ba))
      (VP-ADV(V-H hết)
              (NP-DOB(N-H gạo)))
      (NP-SUB(N-H anh em))
@@ -105,8 +105,8 @@
 
 </s>
 <s>
-(S(NP-TMP(N-H Ngày)(N thứ )(M năm))
-     (VP-ADV(VP(V-H gặp )
+(S(NP-TMP(N-H Ngày)(N thứ)(M năm))
+     (VP-ADV(VP(V-H gặp)
                                (NP-DOB(Nc-H cái)(N lều)(A nát)
                                        (PP(E-H của)
                                                (NP(N-H dân)(N sơn tràng)))))
@@ -255,7 +255,7 @@
 <s>
 (S(VP-SUB(V-H Đi)
              (VP(V-H qui tập)))
-    (AP-PRD(R không )(A-H khác)
+    (AP-PRD(R không)(A-H khác)
           (NP(P-H gì))
            (VP(V-H đi)
                    (NP-DOB(N-H trận))))
@@ -379,7 +379,7 @@
 (S(VP-ADV(V-H Muốn)
             (VP(V-H có)
                     (NP-DOB(N-H nước)(V uống))))
-(C thì )
+(C thì)
    (NP-SUB *E*)
    (VP(V-H phải)
            (VP(V-H tìm)
@@ -419,7 +419,7 @@
          (VP(R bỗng)(V-H chạm)(R phải)
                  (NP-DOB(L mấy)(Nc-H viên)(N đá)
                          (VP(V-H khắc)
-                                 (NP(N-H số)(M 1)(, ,)(M 2)(, , )(M 3))))))
+                                 (NP(N-H số)(M 1)(, ,)(M 2)(, ,)(M 3))))))
   (, ,)
   (S(NP-SUB(N-H anh))
        (VP(VP(V-H nghi)
@@ -534,7 +534,7 @@
 
 </s>
 <s>
-(S(NP-TMP(N-H Ngày)(N thứ )(M tư))
+(S(NP-TMP(N-H Ngày)(N thứ)(M tư))
 (, ,)
     (NP-SUB(N-H anh))
     (VP(VP(V-H cho)
@@ -774,7 +774,7 @@
                            (NP-DOB(N-H quân hàm)(N thiếu tá)))
 (, ,)
                     (VP(V-H đề bạt)
-                            (NP-DOB(N-H đoàn trưởng )
+                            (NP-DOB(N-H đoàn trưởng)
                                      (NP(N-H đoàn)(V qui tập))))))
 (. .))
 
@@ -961,7 +961,7 @@
                          (NP-LOC(N-H huyện)(Np Pa Xay)))
                  (VP(V-H vận động)
                          (NP-DOB(Np-H Xông Vàng)
-                                 (VP(V-H đi )
+                                 (VP(V-H đi)
                                          (VP(V-H chỉ)
                                                  (NP-DOB(N-H đường))))))))
 (, ,)
@@ -1053,7 +1053,7 @@
 
 </s>
 <s>
-(S(NP-TMP(N-H Ngày)(N thứ )(M ba))
+(S(NP-TMP(N-H Ngày)(N thứ)(M ba))
      (NP-SUB(N-H dân))
      (VP(V-H mời)
              (NP-DOB(N-H tổ)(V công tác))

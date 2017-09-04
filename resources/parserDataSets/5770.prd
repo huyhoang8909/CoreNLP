@@ -1,7 +1,7 @@
 <s>
 (S-TTL 
      (AP (A-H Đỏ) (A đen)
-          (NP (N-H gà chọi )))
+          (NP (N-H gà chọi)))
      (. .))
 
 </s>
@@ -84,7 +84,7 @@
 
 </s>
 <s>
-(S (T Thế) (C nhưng)
+(S(T Thế) (C nhưng)
      (VP-ADV (R không) (V-H có)
           (NP-DOB (Nc-H sự) (V dẫn) (N đường)
                (PP (E-H của)
@@ -269,7 +269,7 @@
      (. .))
 </s>
 <s>
-(S (X Có lẽ)
+(S(X Có lẽ)
      (VP (V-H so)
           (PP (E-H với)
                (NP (N-H dân) (N bạc) (N gà))))
@@ -338,7 +338,7 @@
 
 </s>
 <s>
-(S (NP-SUB(T Cả)(N-H sới)(N gà))
+(S(NP-SUB(T Cả)(N-H sới)(N gà))
      (VP(V-H náo động))
 (. .))
 
@@ -445,7 +445,7 @@
 
 </s>
 <s>
-(S (X Có lẽ)
+(S(X Có lẽ)
      (NP-SUB (N-H cuộc đời)
           (PP (E-H của)
                (NP (Np-H Tuấn) (" ")
@@ -541,7 +541,7 @@
 
 </s>
 <s>
-(S (T Thế) (C nhưng)
+(S(T Thế) (C nhưng)
      (NP-SUB (N-H mức độ)
           (VP (V-H chơi)
                (NP-DOB (N-H bạc) (N gà))
@@ -632,7 +632,7 @@
                     (PP-LOC (E-H ở)
                          (NP (N-H địa phương))))))
      (, ,)
-     (S (C nếu)
+     (S(C nếu)
           (VP-TPC (R chỉ) (V-H là)
                (NP (N-H người) (A bình thường)))
           (NP-SUB *E*)
@@ -717,7 +717,7 @@
 (. .))
 </s>
 <s>
-(S (NP-SUB(M Mỗi)(N-H sới)(N gà))
+(S(NP-SUB(M Mỗi)(N-H sới)(N gà))
      (VP(R đều)(V-H có)
              (NP-DOB(N-H lịch)(V đá)
                       (AP(A-H cụ thể))))
@@ -827,7 +827,7 @@
 
 </s>
 <s>
-(S (C Nếu)
+(S(C Nếu)
      (VP-SUB (V-H sơ ý)
           (VP (V-H bắt) (R phải)
                (NP-DOB (N-H gà) (" ")
@@ -850,7 +850,7 @@
                          (C và)
                          (VP (R không) (V-H đá) (R được) (T nữa))))))
      (, ,)
-     (S (C nếu) (NP-SUB *T*-1)
+     (S(C nếu) (NP-SUB *T*-1)
           (VP (V-H đá)
                (NP-DOB (R cũng) (R chỉ) (L vài) (N-H hồ)
                     (VP (V-H là)
@@ -861,7 +861,7 @@
 </s>
 <s>
 (S 
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (V-H Phải)
                (VP (V-H xem)
                     (NP-DOB (N-H phong độ)))))
@@ -966,7 +966,7 @@
      (. .))
 </s>
 <s>
-(S (T Chính) (C vì thế) (C mà)
+(S(T Chính) (C vì thế) (C mà)
      (NP-SUB (Nc-H con) (N ô) (V rụt))
      (VP 
           (VP (R đã)

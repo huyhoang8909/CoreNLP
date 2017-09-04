@@ -30,7 +30,7 @@
 (. .))
 </s>
 <s>
-(S(C Và )
+(S(C Và)
     (NP-SUB(Nc-H người)(N dân))
                       (C thì)
     (VP(VP(R không)(V-H phải)
@@ -518,7 +518,7 @@
                    (NP-DOB(N-H mặt hàng)(V kinh doanh)
                             (AP(A-H duy nhất))
                             (C là)
-                            (NP(Nb-H oxy)(M 99 , 9% )
+                            (NP(Nb-H oxy)(M 99 , 9%)
                                          (LBKT LBKT)
                                    (SBAR(E-H do)
                                                  (S(NP-SUB(N-H nhà máy)(Np A34)(C và)(Np A41)

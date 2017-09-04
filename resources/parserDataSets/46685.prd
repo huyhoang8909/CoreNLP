@@ -197,7 +197,7 @@
                                                    (NP(N-H tiền)(N công)
                                                               (NP(N-H thợ mộc))
                                                               (VP(V-H hết)
-                                                                           (NP-DOB(M 6 )(, ,)(M 7)(Nu-H triệu)))))))))))))
+                                                                           (NP-DOB(M 6)(, ,)(M 7)(Nu-H triệu)))))))))))))
 (. .))
 
 </s>
@@ -317,7 +317,7 @@
                     (VP-TMP(V-H cách)
                           (NP-TMP(P-H đây))
                           (NP-TMP(N-H chừng)
-                                   (NP-DOB(M năm )(M sáu)(N-H năm)))))
+                                   (NP-DOB(M năm)(M sáu)(N-H năm)))))
                                         (, ,)
                                    (C nhưng)
              (AP-PRD(A-H rầm rộ)(R nhất)
@@ -798,7 +798,7 @@
      (- -)
      (VP (V-H kể) (: :)
           (SBAR 
-               (S (" ")
+               (S(" ")
                     (NP-SUB (P-H Chúng tôi))
                     (VP (V-H phải)
                          (VP (V-H thuyết phục)
@@ -967,7 +967,7 @@
 
 </s>
 <s>
-(S (C Rồi)
+(S(C Rồi)
      (S 
           (NP-SUB (N-H bộ đội))
           (VP (V-H phát động)
@@ -1026,7 +1026,7 @@
 (. .))
 </s>
 <s>
-(S(S(NP-SUB(N-H Dân )(Np Agrí))
+(S(S(NP-SUB(N-H Dân)(Np Agrí))
 (VP(V-H mừng)))
 (C mà)
 (S(NP-SUB(N-H bộ đội))

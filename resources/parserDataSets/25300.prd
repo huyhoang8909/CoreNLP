@@ -14,7 +14,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Cục)(Np Thủy lợi)
+(S(NP-SUB(N-H Cục)(Np Thủy lợi)
                                 (LBKT LBKT)
                    (NP(N-H Bộ)
                            (NP(N-H Nông nghiệp))
@@ -79,7 +79,7 @@
                   (. .))
 </s>
 <s>
-(S (PP-TMP(E-H Trong)
+(S(PP-TMP(E-H Trong)
                (NP(N-H khi)(P đó)))
                             (, ,)
       (PP-LOC(E-H tại)
@@ -118,14 +118,14 @@
                                                                   (NP(M 100%)(N-H dân số)))
                                                           (PP-TMP(E-H vào)
                                                                 (NP(N-H năm)(M 2020)))))))))
-                       (C thì )
+                       (C thì)
                      (S(NP-SUB-1 *T*)
                           (VP(V-H phải)
                                        (VP(V-H có)
                                                (NP-DOB(M ba)(N-H yếu tố)
                                                   (: :)
                                                 (VP(V-H tạo)(R ra)
-                                                            (AP(A-H nhiều)(A hơn )(R nữa)
+                                                            (AP(A-H nhiều)(A hơn)(R nữa)
                                                                  (NP(L các)(N-H nguồn)
                                                                         (VP(V-H đầu tư)
                                                                                 (PP-LOC(E-H trong)(C và)(E-H ngoài)
@@ -141,7 +141,7 @@
                                                                                                                     (VP(V-H có)
                                                                                                                               (NP(N-H nhu cầu)(N nước)
                                                                                                                                          (AP(A-H lớn)(A nhất))))))))))
-                                                   (, , )
+                                                   (, ,)
                                                   (VP(V-H huy động)
                                                             (NP-DOB(A nhiều)(N-H đối tượng))
                                                             (VP(V-H tham gia)

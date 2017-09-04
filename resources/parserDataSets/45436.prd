@@ -148,7 +148,7 @@
      (. .))
 </s>
 <s>
-(S (C Ví dụ) (NP-SUB *E*)
+(S(C Ví dụ) (NP-SUB *E*)
      (VP (V-H đưa)
           (NP-DOB 
                (NP (N-H người)
@@ -234,7 +234,7 @@
      (. .))
 </s>
 <s>
-(S (T Thế) (C nhưng)
+(S(T Thế) (C nhưng)
      (NP-SUB (Np-H Thư))
      (NP-TMP (R không) (N-H lúc) (P nào))
      (VP (V-H nguôi ngoai)
@@ -488,7 +488,7 @@
      (. .))
 </s>
 <s>
-(S (C Hoặc)
+(S(C Hoặc)
      (NP-SUB (Np-H Thư))
      (VP (R sẽ) (V-H gửi)
           (NP-DOB (L những) (Nc-H tờ) (N giấy) (P này))
@@ -693,7 +693,7 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (NP-SUB (Nc-H Con) (N đĩ))
           (VP (A chắc) (R chỉ) (V-H có)
                (NP-DOB (N-H nước)
@@ -726,7 +726,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Tháo)
           (NP-DOB (N-H ngòi nổ)))
      (... ...))
@@ -737,7 +737,7 @@
      (VP (V-H nói) (: :)
           (SBAR 
                (S 
-                    (S (C dù)
+                    (S(C dù)
                          (S 
                               (NP-SUB (M đôi) (N-H nhân tình) (P kia))
                               (VP (R đã) (V-H đoạn tuyệt)))
@@ -884,7 +884,7 @@
      (NP-SUB (L Mọi) (N-H lời lẽ)
           (PP (E-H của)
                (NP (Np-H Toàn))))
-     (NP-PRD (X dường như ) (R không) (N-H ý nghĩa))
+     (NP-PRD (X dường như) (R không) (N-H ý nghĩa))
      (. .))
 </s>
 <s>
@@ -913,7 +913,7 @@
      (. .))
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (NP-SUB (N-H chị))
      (VP (V-H phải) (V thấy)
           (SBAR (C rằng)
@@ -1075,8 +1075,8 @@
      (. .))
 </s>
 <s>
-(S (C Và)
-     (NP-SUB (Np-H Thư )
+(S(C Và)
+     (NP-SUB (Np-H Thư)
           (PP (E-H từ)
                (NP (N-H nạn nhân))))
      (VP (R sẽ) (V-H biến) (V thành)
@@ -1130,7 +1130,7 @@
 </s>
 <s>
 (S 
-     (S (R Có thể)
+     (S(R Có thể)
           (NP-SUB (N-H người yêu) (Np Liên))
           (VP (R sẽ) (V-H bỏ)
                (NP-DOB (N-H cô) (P ta))))

@@ -125,7 +125,7 @@
                                                                                  (NP(" ")(N-H tàng)(N đạo)(" "))
                                                                                               (LBKT LBKT)
                                                                                          (VP(V-H công nhận)
-                                                           (SBAR(S(NP-SUB(N-H ngoại kiều) )
+                                                           (SBAR(S(NP-SUB(N-H ngoại kiều))
                                                                               (VP(V-H nhập cư)(A hợp pháp)))))
                                                                               (, ,)
                                                                               (VP(V-H được)
@@ -692,7 +692,7 @@
 (. .))
 </s>
 <s>
-(S (C Và)
+(S(C Và)
      (NP-SUB (N-H điều) (C mà)
           (SBAR 
                (S 
@@ -987,7 +987,7 @@
               (NP(N-H vùng)
                            (NP(N-H đông)(N-H bắc)
                                      (NP(Np-H Thái)))))
-(AP-PRD(A-H có thể )
+(AP-PRD(A-H có thể)
            (VP(V-H chất)
                      (NP-DOB(N-H đồ đạc))
                      (R lên)

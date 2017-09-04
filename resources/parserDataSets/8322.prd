@@ -6,54 +6,54 @@
 </s>
 <s>
 (S 
-     (AP-ADV (R Thật ) (A-H lạ ))
-     (, , )
+     (AP-ADV (R Thật) (A-H lạ))
+     (, ,)
      (S 
-          (NP-SUB (N-H văn minh ) (N nhân loại ))
-          (VP (R dường như ) (R chỉ ) (V-H phát triển )
-               (PP-LOC (E-H bên )
-                    (NP (N-H triền )
-                         (NP (L những ) (Nc-H con ) (N sông ))))))
-     (, , )
-     (C nhưng )
+          (NP-SUB (N-H văn minh) (N nhân loại))
+          (VP (R dường như) (R chỉ) (V-H phát triển)
+               (PP-LOC (E-H bên)
+                    (NP (N-H triền)
+                         (NP (L những) (Nc-H con) (N sông))))))
+     (, ,)
+     (C nhưng)
      (S 
-          (PP-TMP (E-H vào )
-               (NP (N-H thế kỷ ) (P này )))
-          (, , )
-          (NP-SUB (N-H con người ))
+          (PP-TMP (E-H vào)
+               (NP (N-H thế kỷ) (P này)))
+          (, ,)
+          (NP-SUB (N-H con người))
           (VP 
-               (VP (R lại ) (V-H quay ) (N lưng )
-                    (PP (E-H với )
-                         (NP (N-H sông ))))
-               (, , )
-               (VP (V-H biến )
-                    (NP-DOB (L các ) (N-H dòng ) (N sông ))
+               (VP (R lại) (V-H quay) (N lưng)
+                    (PP (E-H với)
+                         (NP (N-H sông))))
+               (, ,)
+               (VP (V-H biến)
+                    (NP-DOB (L các) (N-H dòng) (N sông))
                     (VP 
-                         (VP (V-H thành )
-                              (NP-DOB (Nc-H bãi ) (N rác thải )
-                                        (AP (A-H lộ thiên ))))
-                         (, , )
-                         (VP (V-H thành )
-                              (NP-DOB (Nc-H mảnh ) (N sân sau )
-                                       (AP (A-H nhếch nhác ))))))))
-     (. . ))
+                         (VP (V-H thành)
+                              (NP-DOB (Nc-H bãi) (N rác thải)
+                                        (AP (A-H lộ thiên))))
+                         (, ,)
+                         (VP (V-H thành)
+                              (NP-DOB (Nc-H mảnh) (N sân sau)
+                                       (AP (A-H nhếch nhác))))))))
+     (. .))
 
 
 </s>
 <s>
 (S 
-     (PP-LOC (E-H Ở )
-          (NP (L vài ) (N-H thành phố )))
-     (, , )
-     (NP-SUB (P-H người ta ))
+     (PP-LOC (E-H Ở)
+          (NP (L vài) (N-H thành phố)))
+     (, ,)
+     (NP-SUB (P-H người ta))
      (VP 
-          (VP (R chỉ ) (" " ) (V-H qua ) 
-                  (NP-DOB(N-H sông )) (" " ))
-          (C chứ )
-          (VP (R không ) (" " ) (V-H ra ) 
-                  (NP-DOB(N-H sông )) (" " )
-               (NP-TMP (P-H bao giờ ))))
-     (. . ))
+          (VP (R chỉ) (" ") (V-H qua) 
+                  (NP-DOB(N-H sông)) (" "))
+          (C chứ)
+          (VP (R không) (" ") (V-H ra) 
+                  (NP-DOB(N-H sông)) (" ")
+               (NP-TMP (P-H bao giờ))))
+     (. .))
 
 
 </s>
@@ -110,7 +110,7 @@
                              (AP(A-H bất ngờ)))
                      (PP-TMP(E-H sau)
                              (NP(N-H đêm)(N giao thừa)
-                                     (NP(Np-H Tết )(Np Giáp Thân)))))
+                                     (NP(Np-H Tết)(Np Giáp Thân)))))
 (. .))
 
 
@@ -150,7 +150,7 @@
 
 </s>
 <s>
-(S(NP-SUB(N-H Đường )(Np Bạch Đằng)
+(S(NP-SUB(N-H Đường)(Np Bạch Đằng)
               (AP(A-H cũ)))
     (VP(V-H có)
            (PP-TMP(E-H từ)
@@ -244,7 +244,7 @@
 <s>
 (S(XP-MDP(X-H May mà))
      (NP-SUB(L các)(N-H kiến trúc sư)(A trẻ))
-     (VP(R đã)(V-H tìm)(R ra )(R được)
+     (VP(R đã)(V-H tìm)(R ra)(R được)
              (NP-DOB(N-H phương án)
                       (AP(A-H tốt))
                               (: :)
@@ -278,7 +278,7 @@
                           (AP(A-H dọc)
                                   (NP(N-H bờ)(N sông)))
                           (AP(A-H dài)
-                                  (NP(M 2,5 )(Nu-H km))))))
+                                  (NP(M 2,5)(Nu-H km))))))
                         (; ;)
      (S(PP-LOC(E-H trong)
                  (NP(P-H đó)))
@@ -473,7 +473,7 @@
                      (NP-TMP(N-H khi)
                               (VP(V-H thấy)
                                      (SBAR(S(S(NP-SUB(N-H thành phố))
-                                                           (NP-PRD(R chỉ)(L vài)(M trăm )(M ngàn)(N-H dân)))
+                                                           (NP-PRD(R chỉ)(L vài)(M trăm)(M ngàn)(N-H dân)))
                                                                            (C mà)
                                                          (S(NP-SUB(N-H ống)(N cống))
                                                                                 (C thì)
@@ -558,7 +558,7 @@
 
 </s>
 <s>
-(S-SPL(PP(E-H Theo )
+(S-SPL(PP(E-H Theo)
                       (NP(N-H Thời)(N báo)
                               (NP(N-H Kinh tế)(Ny SG))))
 (. .))

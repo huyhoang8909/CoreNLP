@@ -79,7 +79,7 @@
      (. .))
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Được) (V biết) (, ,)
           (SBAR 
                (S 

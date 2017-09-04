@@ -324,7 +324,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Sàng lọc))
      (. .))
 
@@ -426,7 +426,7 @@
 
 </s>
 <s>
-(S (C Như  vậy) (, ,) (R có thể) (C là)
+(S(C Như  vậy) (, ,) (R có thể) (C là)
      (NP-SUB (N-H người)
           (PP (E-H của)
                (NP (N-H Công ty) (Ny H))))
@@ -591,7 +591,7 @@
                          (NP-SUB (Nc-H lá) (N đơn))
                          (VP (V-H được)
                               (SBAR 
-                                   (S (NP-SUB *E*)
+                                   (S(NP-SUB *E*)
                                         (VP (V-H gửi)
                                              (PP-LOC (E-H từ)
                                                   (PP (E-H trong)
@@ -607,7 +607,7 @@
      (NP-SUB (N-H Giả thiết) (M một))
      (VP (V-H được)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H tiến hành)
                          (NP-DOB (N-H trước))))))
      (. .))
@@ -732,7 +732,7 @@
 
 </s>
 <s>
-(S (C Tuy vậy) (, ,)
+(S(C Tuy vậy) (, ,)
      (S 
           (NP-SUB (N-H số) (N máy) (P này))
           (VP (R lại) (R không) (V-H đặt)

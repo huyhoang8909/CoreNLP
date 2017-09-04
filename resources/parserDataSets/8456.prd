@@ -849,7 +849,7 @@
 
 </s>
 <s>
-(S(PP-TMP(E-H Trong )
+(S(PP-TMP(E-H Trong)
              (AP(A-H suốt)
                      (NP(N-H thời gian)
                              (VP(V-H diễn)(R ra)
@@ -1165,7 +1165,7 @@
             (NP(N-H buổi)(N sáng)
                     (PP(E-H sau)
                             (NP(N-H trận)(V đấu)
-                                    (NP(N-H đêm )(N hôm)(A trước))))))
+                                    (NP(N-H đêm)(N hôm)(A trước))))))
                        (, ,)
     (NP-SUB(Ny-H T.)(" ")(N bóng)(" "))
     (VP(VP(R sẽ)(V-H đi)

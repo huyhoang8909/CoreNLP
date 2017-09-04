@@ -103,7 +103,7 @@
 (... ...))
 </s>
 <s>
-(S(PP-LOC(E-H Ở )
+(S(PP-LOC(E-H Ở)
              (NP(Np-H Quỳnh Thanh)))
 (, ,)
 (NP-SUB(P-H tôi))
@@ -390,7 +390,7 @@
             (PP(E-H trong)
                     (NP(R từng)(N-H gia đình)))))
 (, ,)
-(C như )
+(C như)
 (S(NP-SUB(R không)(P-H ai))
 (VP(V-H cảm nhận)
            (NP-DOB(Nc-H cái)(N nắng)

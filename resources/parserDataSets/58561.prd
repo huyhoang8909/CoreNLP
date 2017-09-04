@@ -45,7 +45,7 @@
 </s>
 <s>
 (S-SPL(AP(R Bỗng)(A-H vù)(... ...)(A-H vù)(... ...)(A-H vù))
-(. ! )
+(. !)
 (... ...))
 
 
@@ -136,7 +136,7 @@
                    (S(NP-SUB(P-H ai))
                         (VP(V-H đi)
                                (PP-LOC(E-H trên)
-                                      (NP(N-H đường ))))
+                                      (NP(N-H đường))))
                         (AP-PRD(R không)(A-H kịp)
                                 (VP(V-H tìm)
                                         (NP-DOB(N-H chỗ)(V tránh)))))))
@@ -352,7 +352,7 @@
 </s>
 <s>
 (S(VP(V-H Có)
-            (NP-DOB(N-H tín hiệu )
+            (NP-DOB(N-H tín hiệu)
                      (SBAR(S(NP-SUB(Nc-H đoàn)(N cửu vạn))
                                         (VP(R đã)(V-H lọt)(R vào)
                                                 (NP-DOB(N-H vòng vây)
@@ -406,7 +406,7 @@
 <s>
 (S(PP-LOC-SUB(E-H Trong)
              (NP(N-H rừng)))
-     (VP(R bỗng)(V-H vang)(R lên )
+     (VP(R bỗng)(V-H vang)(R lên)
              (NP-DOB(N-H tiếng)(V hô)
 (: :)(" ")
      (SBAR(S(VP-ADV(V-H Đứng)(R lại))
@@ -501,7 +501,7 @@
              (NP-DOB(Nc-H loại)(N thú)(P gì)))
 (. ?)
 (- -)
-   (SBAR(S(NP-SUB(M Một)(N-H lái )(N xe ôm))
+   (SBAR(S(NP-SUB(M Một)(N-H lái)(N xe ôm))
                      (VP(V-H chặn)
                              (VP-PRP(V-H hỏi)
                                      (NP-TMP(N-H khi)
@@ -915,7 +915,7 @@
      (NP-SUB (L Những) (N-H thú) (A quí) (P này))
      (VP (R thường xuyên) (V-H được)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H di chuyển)
                          (AP-MNR (A-H bí mật))
                          (PP-DIR 
@@ -932,12 +932,12 @@
 <s>
 (S 
      (SBAR-CND (C Nếu)
-          (S (NP-SUB *E*)
+          (S(NP-SUB *E*)
                (VP (V-H gặp)
                     (AP (A-H đúng))
                     (NP-DOB (N-H khách)))))
      (, ,)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP 
                (VP (R chỉ) (V-H cần)
                     (VP (V-H liếc)
@@ -951,7 +951,7 @@
                          (NP-SUB (N-H số phận) (N con) (N thú))
                          (VP (V-H được)
                               (SBAR 
-                                   (S (NP-SUB *E*)
+                                   (S(NP-SUB *E*)
                                         (VP (V-H đặt)
                                              (NP-DOB (N-H giá)
                                                   (QP 
@@ -1399,7 +1399,7 @@
                                                                          (NP-LOC(N-H rừng))))))))
 (, ,)
                                 (S(VP-ADV(V-H làm)
-                                             (NP-DOB(P-H vậy )))
+                                             (NP-DOB(P-H vậy)))
 (C mà)
                                     (NP-SUB *E*)
                                     (VP(R vẫn)(V-H thấy)
@@ -1573,9 +1573,9 @@
 
 </s>
 <s>
-(S(VP-TMP(V-H Bắt đầu )
+(S(VP-TMP(V-H Bắt đầu)
              (PP(E-H từ)
-                     (NP(N-H tháng )(M tám)
+                     (NP(N-H tháng)(M tám)
                              (NP(R hằng)(N-H năm)))))
 (, ,)
    (NP-SUB(R từng)(Nc-H đoàn)(N cửu vạn)
@@ -1593,7 +1593,7 @@
                           (NP(N-H cửa khẩu)(Np Cầu Treo)
                                   (NP(LBKT LBKT)(Np-H Hà Tĩnh)(RBKT RBKT)))))
  (C rồi)
-         (VP(V-H tràn)(R lên )
+         (VP(V-H tràn)(R lên)
                  (NP-LOC(N-H đường)(M 8))))
 (. .))
 
@@ -1624,7 +1624,7 @@
 </s>
 <s>
 (S(NP-SUB(N-H Trưởng phòng)(N pháp chế)
-             (NP(N-H Chi cục)(Ny KL)(Np Hà Tĩnh ))
+             (NP(N-H Chi cục)(Ny KL)(Np Hà Tĩnh))
              (NP(Np-H Đặng Hữu Cư)))
     (VP(V-H cho)(V biết)
 (: :)(" ")

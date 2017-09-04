@@ -55,7 +55,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Thanh tra)
+(S(NP-SUB(N-H Thanh tra)
               (NP(N-H Bộ)(N Y tế)))
       (VP(R cũng)(V-H kiến nghị)
               (NP-DOB(N-H Bộ)(N Y tế))

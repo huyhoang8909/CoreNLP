@@ -2,7 +2,7 @@
 (SQ-TTL 
      (NP-SUB (N-H Môi giới) (V mại dâm)
           (NP (N-H người)
-               (AP (R chưa ) (A-H thành niên)))
+               (AP (R chưa) (A-H thành niên)))
           (PP-LOC (E-H ở)
                (NP (Np-H Bình Dương)))
           (: :)
@@ -90,7 +90,7 @@
                                                                                                     (VP 
                                                                                                          (VP (V-H công tác)
                                                                                                               (PP-LOC (E-H tại)
-                                                                                                                   (NP (N-H Viện Kiểm sát) (LBKT LBKT )
+                                                                                                                   (NP (N-H Viện Kiểm sát) (LBKT LBKT)
                                                                                                                         (NP (Ny-H VKS))
                                                                                                                         (RBKT RBKT)
                                                                                                                         (NP (N-H nhân dân)
@@ -178,7 +178,7 @@
                          (NP-DOB (N-H dâm))
                          (VP (V-H bị)
                               (SBAR 
-                                   (S (NP-SUB *E*)
+                                   (S(NP-SUB *E*)
                                         (VP (V-H bắt)
                                              (NP-DOB (N-H quả tang))
                                              (PP 
@@ -381,7 +381,7 @@
 
 </s>
 <s>
-(S (“ ”)
+(S(“ ”)
      (NP-ADV (T Riêng) (N-H trường hợp)
           (NP (Nc-H ông) (Np Phương)
                (PP-LOC (E-H ở)
@@ -391,7 +391,7 @@
      (NP-SUB (N-H cơ quan) (V điều tra))
      (VP (R chưa) (V-H xác định)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H có)
                          (VP (V-H tham gia)
                               (PP (E-H vào)
@@ -401,7 +401,7 @@
 </s>
 <s>
 (S 
-     (S (NP-SUB-1 *T*)
+     (S(NP-SUB-1 *T*)
           (VP (V-H Nhậu nhẹt)))
      (, ,)
      (C rồi)
@@ -439,7 +439,7 @@
 
 </s>
 <s>
-(S (C Tuy nhiên) (, ,)
+(S(C Tuy nhiên) (, ,)
      (NP-SUB (P-H chúng tôi))
      (VP 
           (VP (R cũng) (R đã) (V-H kiểm điểm)
@@ -537,7 +537,7 @@
                                              (NP-DOB (N-H hành vi) (V mua dâm))
                                              (, ,)
                                              (SBAR-PRP (E-H vì) (C nếu)
-                                                  (S (NP-SUB *E*)
+                                                  (S(NP-SUB *E*)
                                                        (VP (V-H có)))
                                                   (C thì)
                                                   (S 
@@ -673,7 +673,7 @@
      (. .))
 </s>
 <s>
-(S (T Thế) (C nhưng) (, ,)
+(S(T Thế) (C nhưng) (, ,)
      (NP-SUB (T ngay) (T cả) (Nc-H ông) (N viện trưởng)
           (NP (Ny-H VKS) (N nhân dân) (N tỉnh)))
      (VP (R cũng) (R không thể) (T nào) (V-H lý giải) (R được)
@@ -709,7 +709,7 @@
           (NP (N-H vụ án)
                (VP (R đang) (V-H được)
                     (SBAR 
-                         (S (NP-SUB *E*)
+                         (S(NP-SUB *E*)
                               (VP (V-H xét xử)))))))
      (VP (V-H có)
           (SBAR 
@@ -724,12 +724,12 @@
                          (C thì)
                          (VP (V-H bị)
                               (SBAR 
-                                   (S (NP-SUB *E*)
+                                   (S(NP-SUB *E*)
                                         (VP (V-H khởi tố) (C và) (V-H truy tố)))))))))
      (. .))
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (NP-SUB 
           (NP (R cũng) (M hai) (Nc-H cô) (N gái)
                (AP (R chưa) (A-H thành niên))
@@ -755,7 +755,7 @@
 </s>
 <s>
 (S 
-     (S (" ")
+     (S(" ")
           (NP-SUB (P-H Chúng tôi))
           (VP (V-H thống nhất)
                (PP (E-H với)
@@ -770,7 +770,7 @@
                                    (VP (V-H xử) (A trước))))
                          (, ,)
                          (C còn)
-                         (S (NP-SUB *E* ) (C thì)
+                         (S(NP-SUB *E*) (C thì)
                               (VP 
                                    (VP (V-H tách) (R ra))
                                    (VP (V-H tiếp tục)
@@ -792,7 +792,7 @@
                (NP (N-H Công an) (Np Bình Dương))))
      (VP (R cũng) (V-H cho) (V biết)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (R đã) (V-H thống nhất)
                          (PP (E-H với)
                               (NP (Ny VKS)))
@@ -861,7 +861,7 @@
      (. .))
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (VP-VOC (V-H thưa)
           (NP-DOB (N-H ông)))
      (, ,)
@@ -909,7 +909,7 @@
      (. .))
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (PP-TMP (E-H đến)
           (NP (P-H nay)))
      (NP-TMP (R đã) (M ba) (N-H năm)
@@ -923,7 +923,7 @@
                                              (NP-DOB (N-H dâm))))
                                    (VP (V-H bị)
                                         (SBAR 
-                                             (S (NP-SUB *E*)
+                                             (S(NP-SUB *E*)
                                                   (VP (V-H phanh phui))))))))
                     (C và)
                     (NP (N-H khi)
@@ -932,7 +932,7 @@
                                    (NP-SUB (N-H vụ án))
                                    (VP (V-H được)
                                         (SBAR 
-                                             (S (NP-SUB *E*)
+                                             (S(NP-SUB *E*)
                                                   (VP (V-H đưa) (R ra)
                                                        (VP-PRP (V-H xét xử))))))))))))
      (, ,)
@@ -973,10 +973,10 @@
                (NP (P-H tôi))))
      (S 
           (SBAR-CND (C nếu)
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP-SUB (V-H vi phạm))))
           (C thì)
-          (S (NP-SUB *E*)
+          (S(NP-SUB *E*)
                (VP (V-H phải)
                     (VP (V-H bị) (V xử lý)))))
      (- -)
@@ -988,7 +988,7 @@
                          (NP (P-H ai)))))
           (, ,)
           (C nhưng)
-          (S (NP-SUB *E*)
+          (S(NP-SUB *E*)
                (VP (V-H phải)
                     (AP 
                          (AP (A-H đúng) (N người))
@@ -1096,7 +1096,7 @@
           (NP-SUB (S Phó) (N-H viện trưởng) (Np Nguyễn Thành Phương))
           (VP (V-H được)
                (SBAR 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP (V-H phân công)
                               (VP (V-H phụ trách)
                                    (NP-DOB (N-H lĩnh vực) (N cảnh sát))))))))
@@ -1113,7 +1113,7 @@
                          (C thì)
                          (VP-MDP (V-H liệu)
                               (SBAR 
-                                   (S (NP-SUB *E*)
+                                   (S(NP-SUB *E*)
                                         (VP (V-H có)
                                              (NP-DOB (N-H khách quan))))))))))
      (? ?))
@@ -1154,7 +1154,7 @@
           (NP-DOB (N-H động thái) (P nào)
                (NP-TMP (N-H khi)
                     (SBAR 
-                         (S (NP-SUB-1 *T*)
+                         (S(NP-SUB-1 *T*)
                               (VP (V-H lộ) (R ra)
                                    (NP-DOB (N-H việc)
                                         (SBAR 

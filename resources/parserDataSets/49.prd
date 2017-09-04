@@ -33,7 +33,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
       (S(NP-SUB(L những)(N-H dòng)(N nhật ký)
                    (PP(E-H của)
                           (NP(N-H anh))))
@@ -113,7 +113,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
    (VP(V-H có)
           (SBAR(S(NP-SUB-1(M hai)(Nc-H người)(N phụ nữ))
                             (AP-PRD(A-H hơi)(A khác thường)
@@ -239,7 +239,7 @@
 
 </s>
 <s>
-(S (C Và)
+(S(C Và)
      (NP-SUB(L những)(Nc-H trang)(N nhật ký)(P ấy))
     (VP(V-H khiến)
            (NP-DOB(P-H chúng tôi))
@@ -270,7 +270,7 @@
 
 </s>
 <s>
-(S (NP-TMP(N-H Khi)(P ấy))
+(S(NP-TMP(N-H Khi)(P ấy))
      (NP-SUB(N-H anh))
      (NP-PRD(M 20)(N-H tuổi))
 (. .))
@@ -290,7 +290,7 @@
 
 </s>
 <s>
-(S (NP-SUB *T*)
+(S(NP-SUB *T*)
      (AP-PRD(A-H Lãng mạn))
                    (, ,)
      (VP(V-H yêu)
@@ -390,7 +390,7 @@
 
 </s>
 <s>
-(S (VP-MNR(V-H Dứt)
+(S(VP-MNR(V-H Dứt)
              (NP(Nc-H tiếng)(N máy bay)))
    (, ,)
    (NP-SUB(N-H bầu trời))
@@ -404,7 +404,7 @@
 
 </s>
 <s>
-(S (NP-SUB(P Cả)(N-H bốn phương))
+(S(NP-SUB(P Cả)(N-H bốn phương))
      (AP-PRD(A-H lồng lộng)
               (NP(NP(Nu-H cái)(N gió)(N nam)
                              (PP-TMP(E-H của)
@@ -448,7 +448,7 @@
 
 </s>
 <s>
-(S (S(NP-SUB(N-H Bầu trời)
+(S(S(NP-SUB(N-H Bầu trời)
                     (PP-LOC(E-H ở)
                              (NP(P-H đây))))
            (VP(V-H có)
@@ -480,7 +480,7 @@
 
 </s>
 <s>
-(S (S(NP-SUB(P-H Ta))
+(S(S(NP-SUB(P-H Ta))
           (VP(V-H yêu)
                  (NP-DOB(N-H hòa bình))))
                               (, ,)
@@ -534,7 +534,7 @@
 
 </s>
 <s>
-(S (NP-SUB(M Một)(Nc-H đoạn)(N nhật ký)
+(S(NP-SUB(M Một)(Nc-H đoạn)(N nhật ký)
                 (AP(A-H khác)))
       (VP(V-H khiến)
              (NP-DOB(Nc-H người)(V đọc))
@@ -552,7 +552,7 @@
 
 </s>
 <s>
-(S (NP-TMP(P-H Bây giờ)
+(S(NP-TMP(P-H Bây giờ)
               (NP(R đã)(M 7)(Nu-H giờ)(N tối)))
                 (C thế mà)
      (NP-SUB *E*)
@@ -596,7 +596,7 @@
 
 </s>
 <s>
-(S (NP-TMP(P-H Bây giờ))
+(S(NP-TMP(P-H Bây giờ))
      (NP-SUB *E*)
      (VP(R chỉ)(V-H còn)
             (NP-DOB(NP(N-H mình)(P tôi))
@@ -619,7 +619,7 @@
 
 </s>
 <s>
-(S (C Và)
+(S(C Và)
       (NP-SUB(N-H việc)
                (PP(E-H của)
                       (NP(P-H tôi))))
@@ -630,7 +630,7 @@
 
 </s>
 <s>
-(S (NP-TMP(L Những)(N-H lúc)
+(S(NP-TMP(L Những)(N-H lúc)
                (C như)
                (NP(P-H thế)(P này)))
                 (C thì)
@@ -687,7 +687,7 @@
 
 </s>
 <s>
-(S (I  A)
+(S(I  A)
       ( ! !)
    (NP(Ny-H L .19)(P này))
       (, ,)
@@ -761,7 +761,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Trang)(A cuối)
+(S(NP-SUB(N-H Trang)(A cuối)
                  (PP(E-H của)
                  (NP(Nc-H cuốn)(N nhật ký))))
      (VP(V-H là)
@@ -788,7 +788,7 @@
 
 </s>
 <s>
-(S (S(NP-TMP(N-H Ngày mai))
+(S(S(NP-TMP(N-H Ngày mai))
           (NP-SUB(P-H tôi))
           (VP(V-H giáp trận)))
                       (, ,)
@@ -885,7 +885,7 @@
 
 </s>
 <s>
-(S (PP-LOC(E-H Sau)
+(S(PP-LOC(E-H Sau)
              (NP(L những)(Nc-H dòng)(N địa chỉ)
              (PP(E-H của)
                      (NP(N-H bố mẹ)
@@ -904,7 +904,7 @@
 
 </s>
 <s>
-(S (VP-ADV(V-H Là)
+(S(VP-ADV(V-H Là)
                (NP(L những)(Nc-H người)(N kháng chiến)
                        (AP(A-H cũ))))
                                (, ,)
@@ -959,7 +959,7 @@
 
 </s>
 <s>
-(S (S (NP-SUB(Nc-H Cuốn)(N nhật ký))
+(S(S(NP-SUB(Nc-H Cuốn)(N nhật ký))
            (VP(V-H khép)(R lại)
                    (PP-MNR(E-H bằng)
                           (NP(L những)(N-H dòng)
@@ -967,7 +967,7 @@
                                   (NP(P-H thế))))))
        (, ,)
        (C và)
-   (S (PP-MNR(E-H theo)
+   (S(PP-MNR(E-H theo)
                  (NP(N-H giấy)(V báo tử)))
                             (, ,)
        (NP-SUB(N-H anh))
@@ -988,7 +988,7 @@
 (. .))
 </s>
 <s>
-(S (NP-SUB(Nc-H Chị)(Np Anh Đào)
+(S(NP-SUB(Nc-H Chị)(Np Anh Đào)
                             (, ,)
                (NP(N-H em gái)
                        (PP(E-H của)
@@ -1015,7 +1015,7 @@
 
 </s>
 <s>
-(S (AP-TMP(A-H Hơn)
+(S(AP-TMP(A-H Hơn)
                                (NP(M 30)(N-H năm)
                                (VP(V-H kể)
                                        (PP(E-H từ)
@@ -1047,7 +1047,7 @@
 
 </s>
 <s>
-(S (NP-TMP(NP(M Mỗi)(N-H tháng))
+(S(NP-TMP(NP(M Mỗi)(N-H tháng))
                                      (, ,)
                          (NP(R có khi)(M mỗi)(N-H tuần)))
                               (, ,)
@@ -1082,7 +1082,7 @@
 
 </s>
 <s>
-(S (R Hầu như)
+(S(R Hầu như)
      (NP-SUB(P-H họ))
      (VP(VP(R đã)(V-H đi)
              (AP-LOC(A-H khắp)
@@ -1105,7 +1105,7 @@
 
 </s>
 <s>
-(S (S (NP-SUB(Np-H Nguyễn Kỳ Sơn))
+(S(S(NP-SUB(Np-H Nguyễn Kỳ Sơn))
            (VP(R chỉ)(V-H là)
                    (NP(M một)(E trong)(R hàng)(M chục)(M vạn)(N-H người)(N lính)
                           (VP(R đã)(V-H nằm xuống)
@@ -1114,7 +1114,7 @@
                                                  (PP(E-H của)
                                                          (NP(N-H Tổ quốc)))))))))
        (, ,)
-    (S (NP-SUB(N-H anh))
+    (S(NP-SUB(N-H anh))
           (VP(R cũng)(R chỉ)(V-H là)
                  (NP(M một)(N-H liệt sĩ)
                           (AP(A-H bình thường)
@@ -1137,7 +1137,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
       (NP-SUB(L những)(N-H dòng)(N nhật ký)
               (PP(E-H của)
                      (NP(N-H anh))))
@@ -1164,14 +1164,14 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Nhà văn)(Np Hoàng Phủ Ngọc Tường))
+(S(NP-SUB(N-H Nhà văn)(Np Hoàng Phủ Ngọc Tường))
      (VP(R đã)(V-H viết))
 (: :))
 
 
 </s>
 <s>
-(S (" ")(NP-SUB(L Những)(N-H người)
+(S(" ")(NP-SUB(L Những)(N-H người)
                        (VP(V-H chết)(R đi)))
            (VP(R không)(T hề)(V-H mong)
                    (VP(VP(V-H được)
@@ -1207,7 +1207,7 @@
 
 </s>
 <s>
-(S (NP-SUB(P-H Họ))
+(S(NP-SUB(P-H Họ))
       (VP(V-H chết)
              (PP(E-H cho)
                     (NP(M một)(N-H lẽ)
@@ -1219,7 +1219,7 @@
 
 </s>
 <s>
-(S (C Là)
+(S(C Là)
      (NP-LOC(N-H đằng)(N sau)
              (NP(P-H họ)))
                    (, ,)

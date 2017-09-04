@@ -118,7 +118,7 @@
 
 </s>
 <s>
-(S (S-SUB(NP-SUB(N-H Nguy cơ))
+(S(S-SUB(NP-SUB(N-H Nguy cơ))
                     (VP(V-H là)
                            (NP(N-H đất)
                                    (VP(VP(V-H phải)
@@ -363,7 +363,7 @@
      (VP-SUB(V-H có)
                    (NP-DOB(N-H đất)))
       (NP-TMP(N-H giờ))
-      (AP-PRD(R cũng)(C như )(A-H không))
+      (AP-PRD(R cũng)(C như)(A-H không))
               (" ")
 (. .))
 
@@ -970,7 +970,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Già làng)
+(S(NP-SUB(N-H Già làng)
               (NP(Np-H Hồ Văn Hiền)))
       (VP(V-H kể)(R lại)
                  (: :)
@@ -1086,7 +1086,7 @@
 
 </s>
 <s>
-(S (NP-TMP(N-H Khi)
+(S(NP-TMP(N-H Khi)
                (SBAR(S(NP-SUB *T*)
                                  (VP(V-H quay)(R lại)
                                         (NP(Nc-H con)(N đường)
@@ -1108,7 +1108,7 @@
 
 </s>
 <s>
-(S (VP-ADV(R Không)(V-H biết)
+(S(VP-ADV(R Không)(V-H biết)
              (PP-TMP(E-H đến)
                     (NP(P-H bao giờ))))
      (NP-SUB(N-H bà con)(N vùng cao)

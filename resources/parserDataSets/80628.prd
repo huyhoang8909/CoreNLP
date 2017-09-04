@@ -44,7 +44,7 @@
 
 </s>
 <s>
-(S (C Thậm chí)
+(S(C Thậm chí)
      (NP-SUB (R không) (A ít) (N-H người))
      (PP-TMP (E-H sau)
           (NP (N-H khi)
@@ -69,7 +69,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (S 
           (PP-LOC (E-H ở)
                (NP (M một) (N-H góc độ) (A khác)))
@@ -82,7 +82,7 @@
                          (NP (L các) (N-H đấu sĩ))))))
      (, ,)
      (C thậm chí)
-     (S (NP-SUB-1 *T*)
+     (S(NP-SUB-1 *T*)
           (VP (V-H chấp nhận)
                (VP (V-H hy sinh)
                     (PP-PRP 
@@ -242,7 +242,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (S 
           (NP-SUB (N-H điều)
                (AP (A-H đặc biệt)))
@@ -695,7 +695,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (VP-TMP (V-H bước) (V sang)
           (NP (N-H hiệp) (N thứ) (M ba)))
      (, ,)
@@ -727,7 +727,7 @@
                (NP (Nc-H nỗi) (V tuyệt vọng)
                     (NP-TMP (N-H khi)
                          (SBAR 
-                              (S (NP-SUB *E*)
+                              (S(NP-SUB *E*)
                                    (VP (A liên tiếp) (V-H trúng)
                                         (NP-EXT (M ba) (N-H đòn)
                                              (VP (V-H đá) (V bạt)
@@ -787,7 +787,7 @@
 </s>
 <s>
 (S 
-     (S (C Nhưng)
+     (S(C Nhưng)
           (NP-SUB (P-H đó))
           (VP (V-H là)
                (NP (N-H khoảnh khắc)
@@ -1003,7 +1003,7 @@
           (NP-SUB (P-H chúng tôi))
           (VP (R mới) (V-H xem) (T hết)
                (NP-DOB (N-H trận)
-                    (NP (N-H thứ ) (M ba)))))
+                    (NP (N-H thứ) (M ba)))))
      (, ,)
      (S 
           (NP-SUB (N-H cậu) (Ny SV)
@@ -1283,7 +1283,7 @@
      (. .))
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (PP-ADV (E-H với)
           (NP (N-H ông)))
      (C thì)
@@ -1321,7 +1321,7 @@
      (PP-ADV (E-H Trong)
           (NP (M một) (N-H trận) (V đấu)
                (NP (Np-H Muay Thái))))
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (AP-PRD (R rất) (A-H khó)
                (VP (V-H có)
                     (SBAR 
@@ -1350,7 +1350,7 @@
      (... ...))
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (NP-TMP (N-H khi)
           (SBAR 
                (S 
@@ -1391,7 +1391,7 @@
      (. .))
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (PP-ADV (E-H với)
           (NP (Nc-H ông) (Np Amnuay Kesbumrung) (- -)
                (NP (N-H thành viên)

@@ -20,7 +20,7 @@
 
 </s>
 <s>
-(S(PP-DIR(PP(E-H Từ )
+(S(PP-DIR(PP(E-H Từ)
                              (NP(Np-H Hải Phòng)))
                                        (, ,)
                      (PP(E-H qua)
@@ -697,7 +697,7 @@
 <s>
 (S(S(NP-SUB *E*)
          (VP(V-H Làm)(R xong)))
-   (C thì )
+   (C thì)
      (S(VP(V-H có)
                  (SBAR(S(NP-SUB(N-H liên lạc))
                                    (VP(VP(V-H đến))
@@ -980,7 +980,7 @@
 <s>
 (S(S(NP-SUB(P-H Tôi))
          (VP(V-H đi)
-                 (NP-LOC(N-H đường )(Np Trường Sơn))
+                 (NP-LOC(N-H đường)(Np Trường Sơn))
                   (NP-TMP(A gần)(M tám)(N-H tháng)
                            (VP(R mới)(V-H ra)
                                    (PP-LOC(E-H tới)
@@ -1014,7 +1014,7 @@
 (, ,)
                  (VP(V-H loanh quanh)(V-H luẩn quẩn)
                          (VP(R chẳng)(V-H biết)
-                                 (VP(V-H làm )
+                                 (VP(V-H làm)
                                          (NP-DOB(P-H gì)))))
 (, ,)
                   (VP(R không)(V-H được)
@@ -1062,7 +1062,7 @@
    (S(NP-SUB(P-H tôi))
         (VP(R đang)(V-H ở)
                 (NP-LOC(N-H Ban)(V Thống nhất))))
-(C thì )
+(C thì)
    (S(VP-SUB(V-H có)
                 (NP-DOB(N-H người)))
        (VP(VP(V-H đưa)
@@ -1258,7 +1258,7 @@
 (, ,)
 (C rồi)
              (VP(V-H ôm)(R lấy)
-                     (NP-DOB(P cả)(M hai )(N-H vai)(P tôi)))
+                     (NP-DOB(P cả)(M hai)(N-H vai)(P tôi)))
              (VP(V-H *E*)
 (: :)(- -)
  (SBAR(S(NP-SUB(N-H Đồng chí)(Np Thanh))
@@ -1322,7 +1322,7 @@
                                               (VP(V-H đi)(N đường)
                                                       (VP(V-H mất)
                                                               (NP-TMP(L mấy)(N-H tháng)))))))
-(. ? ))
+(. ?))
 
 
 
@@ -1788,12 +1788,12 @@
 </s>
 <s>
 (S(NP-TMP(N-H Lần)(P này))
-     (NP-SUB(N-H ông  ))
+     (NP-SUB(N-H ông ))
      (VP(VP(R không)(V-H bắt tay)
                     (NP-DOB(P-H tôi)))
                              (C mà)
              (VP(V-H ôm)(A chặt)
-                     (NP-DOB(P cả)(M hai )(N-H vai)(P tôi))))
+                     (NP-DOB(P cả)(M hai)(N-H vai)(P tôi))))
 (. .))
 
 
@@ -1834,7 +1834,7 @@
 </s>
 <s>
 (S(NP-SUB(N-H Tóc))
-     (VP(V-H rụng)(R hết)(P cả)(T rồi )
+     (VP(V-H rụng)(R hết)(P cả)(T rồi)
              (NP-DOB(P-H đây)(P này)))
 (... ...))
 

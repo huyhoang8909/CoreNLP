@@ -170,7 +170,7 @@
      (. .))
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (R Hãy) (V-H cử)
           (NP-DOB (N-H người)
                (VP (V-H đón) (, ,)
@@ -186,7 +186,7 @@
      (NP-SUB (Np-H Nguyễn Chơn))
      (VP (V-H được)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H giao)
                          (NP-DOB (N-H nhiệm vụ)
                               (VP-PRP (V-H đi)
@@ -377,7 +377,7 @@
      (NP-SUB (N-H anh))
      (VP (R lại) (V-H nói) (: :)
           (SBAR 
-               (S (X Có lẽ) (NP-SUB *E*)
+               (S(X Có lẽ) (NP-SUB *E*)
                     (VP (R chỉ) (R có thể) (V-H đoán)
                          (SBAR (C rằng)
                               (S 
@@ -434,7 +434,7 @@
                (NP (P-H chúng tôi)))
           (NP-DOB (M một) (N-H ý tưởng) (: :)
                (SBAR 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP (R có thể) (V-H tìm) (R ra) (, ,)
                               (NP-DOB (X ít nhất) (C là) (L đôi chút) (N-H dấu vết)
                                    (PP (E-H của)
@@ -469,7 +469,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Gặp)
           (NP-DOB 
                (NP (L các) (N-H mẹ))
@@ -485,12 +485,12 @@
 </s>
 <s>
 (S 
-     (S (C Và)
+     (S(C Và)
           (AP-ADV (A-H kỳ lạ) (I thay))
           (NP-SUB (P-H chúng tôi))
           (VP (V-H tìm) (R ra)))
      (, ,)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (AP-PRD (R không) (A-H phải) (C là)
                (NP (M một) (N-H dấu vết)))
           (C mà)
@@ -578,7 +578,7 @@
      (, ,)
      (VP (V-H *E*)
           (SBAR 
-               (S (R thậm chí)
+               (S(R thậm chí)
                     (NP-SUB (N-H anh))
                     (VP 
                          (XP (R còn) (X-H có vẻ))
@@ -803,12 +803,12 @@
                (PP-LOC (E-H trong)
                     (NP (Np-H Nam)))))
      (, ,)
-     (S (NP-SUB-1 *T*)
+     (S(NP-SUB-1 *T*)
           (VP (V-H là)
                (NP (N-H đảng viên)
                     (VP (V-H được)
                          (SBAR 
-                              (S (NP-SUB *E*)
+                              (S(NP-SUB *E*)
                                    (VP (V-H bố trí)
                                         (VP (V-H nằm vùng)
                                              (VP-PRP (V-H hoạt động) (A bí mật)
@@ -867,7 +867,7 @@
 
 </s>
 <s>
-(S (C Và)
+(S(C Và)
      (NP-TMP (N-H giữa)
           (NP (N-H năm) (M 1959)))
      (NP-SUB (Np-H Huỳnh Ba))
@@ -922,8 +922,8 @@
 
 </s>
 <s>
-(S (C Và)
-     (S (NP-SUB *E*)
+(S(C Và)
+     (S(NP-SUB *E*)
           (AP-PRD (A-H bí mật)
                (VP (V-H đóng)
                     (NP-DOB (N-H thuyền) (: :)
@@ -1039,7 +1039,7 @@
      (NP-SUB (N-H Cánh) (N buồm))
      (VP (V-H được)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H kéo) (V lên)))))
      (, ,)
      (AP-PRD (A-H trắng) (A nhờ)
@@ -1073,7 +1073,7 @@
      (. .))
 </s>
 <s>
-(S (C Và) (NP-SUB *E*)
+(S(C Và) (NP-SUB *E*)
      (VP (V-H mất hút)
           (PP-TMP (E-H trong)
                (NP (N-H màn) (N đêm)
@@ -1117,7 +1117,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Dự kiến)
           (VP (V-H đến)
                (PP-TMP (E-H sau)
@@ -1128,7 +1128,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Đón)
           (PP-LOC (E-H tại)
                (NP (Np-H Hố Chuối))
@@ -1139,7 +1139,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Nhận) (V được)
           (NP-DOB (N-H báo cáo)))
      (... ...))
@@ -1187,7 +1187,7 @@
      (NP-SUB (N-H Câu chuyện))
      (VP (V-H được)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (A rì rầm) (V-H kể) (V lại)
                          (PP-LOC (E-H trên)
                               (NP (N-H biển) (N đêm)
@@ -1390,7 +1390,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (R Vẫn) (V-H ra sức)
           (VP-PRP (V-H chống chèo)))
      (. .))
@@ -1410,7 +1410,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (NP-SUB (P-H chúng tôi))
      (VP (V-H còn)
           (NP-DOB (M một) (N-H tay lái)
@@ -1434,7 +1434,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP 
           (VP (V-H Kéo) (R lên))
           (VP (V-H sửa)
@@ -1494,7 +1494,7 @@
 
 </s>
 <s>
-(S (C Mà)
+(S(C Mà)
      (NP-SUB (Nc-H bọn) (N thuyền) (N địch))
      (VP (R cũng) (V-H ra))
      (. .))
@@ -1502,7 +1502,7 @@
 
 </s>
 <s>
-(S (X Tức là) (NP-SUB *E*)
+(S(X Tức là) (NP-SUB *E*)
      (VP (V-H có)
           (NP-DOB (N-H nguy cơ)
                (VP (V-H bị) (V bắt))))
@@ -1539,7 +1539,7 @@
      (. .))
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Còn) (R lại)
           (NP-DOB (R toàn) (N-H súng đạn)))
      (. .))
@@ -1547,7 +1547,7 @@
 
 </s>
 <s>
-(S (NP-AUB *E*)
+(S(NP-AUB *E*)
      (VP (V-H Vứt) (T hết)
           (VP (V-H xuống)
                (NP-LOC (E-H biển))))
@@ -1556,7 +1556,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Có)
           (NP-DOB (M một) (N-H nguyên tắc) (: :)
                (AP (A-H tuyệt đối)
@@ -1576,14 +1576,14 @@
      (NP-SUB (P-H chúng tôi))
      (VP (V-H bị)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H bắt)))))
      (. .))
 
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (R Đã) (V-H bàn)
           (PP (E-H với) (N nhau)
                (NP (N-H trước)))
@@ -1618,7 +1618,7 @@
 (S-PV (NP-SUB *E*)
      (VP (V-H Bị)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H giam)
                          (PP-LOC (E-H ở)
                               (NP (N-H đảo) (Np Lý Sơn)))
@@ -1628,7 +1628,7 @@
 
 </s>
 <s>
-(S (C Rồi) (NP-SUB *E*)
+(S(C Rồi) (NP-SUB *E*)
      (VP 
           (VP (V-H đưa)
                (VP-DIR (V-H về)
@@ -1640,7 +1640,7 @@
 
 </s>
 <s>
-(S (C Rồi) (NP-SUB *E*)
+(S(C Rồi) (NP-SUB *E*)
      (VP-DIR (V-H vào)
           (NP-LOC (Np-H Tổng nha) (Np Sài Gòn)))
      (. .))
@@ -1659,7 +1659,7 @@
      (NP-LOC-SUB (N-H Lao) (Np Chí Hòa))
      (AP-PRD (A-H đầy) (R quá)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (R lại) (V-H gửi)
                          (VP (V-H qua)
                               (NP-LOC (N-H lao) (Np Gia Định)))))))
@@ -1729,21 +1729,21 @@
      (NP-SUB (P-H tôi))
      (VP (V-H được)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H thả) (R ra)))))
      (. .))
 
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (AP-PRD (A-H Bệnh tật) (, ,) (A-H xơ xác))
      (. .))
 
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Lần mò)
           (VP (V-H về) (R được))
           (PP-LOC (E-H đến)
@@ -1785,7 +1785,7 @@
           (AP (A-H tuyệt mật)))
      (VP (V-H được)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H đánh) (V đi)
                          (PP-DIR (E-H từ)
                               (NP (N-H cơ quan) (N đầu não)
@@ -1793,7 +1793,7 @@
                          (: :)
                          (SBAR 
                               (S 
-                                   (S (NP-SUB *E*)
+                                   (S(NP-SUB *E*)
                                         (VP (V-H Gửi)
                                              (NP-LOC 
                                                   (NP (Np-H Trung ương) (N Cục))
@@ -1815,7 +1815,7 @@
                                                                            (VP-DIR (V-H ra)
                                                                                 (NP-LOC (Np-H Bắc)))))))
                                                        (, ,)
-                                                       (S (NP-SUB *E*)
+                                                       (S(NP-SUB *E*)
                                                             (VP (V-H báo cáo)
                                                                  (NP-DOB 
                                                                       (NP (N-H tình hình) (N bến bãi))
@@ -1833,7 +1833,7 @@
      (. .))
 </s>
 <s>
-(S (C Rồi) (NP-SUB *E*)
+(S(C Rồi) (NP-SUB *E*)
      (VP (A trực tiếp) (V-H dẫn)
           (NP-DOB (N-H tàu)
                (VP (V-H vào))))

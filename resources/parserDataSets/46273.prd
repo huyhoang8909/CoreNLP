@@ -793,7 +793,7 @@
 (. .))
 </s>
 <s>
-(S(NP-TPC(N-H Thứ )(M hai))
+(S(NP-TPC(N-H Thứ)(M hai))
                (, ,)
      (S(NP-SUB(P-H đây))
          (VP(V-H là)
@@ -881,7 +881,7 @@
                                 (PP-PRP(E-H để)
                                       (VP(V-H chống)
                                              (NP-DOB(Nc-H kẻ)(V quấy rối))))))
-                                                                   (, , )
+                                                                   (, ,)
                            (VP(R vừa)(V-H phải)
                                    (VP(V-H kết hợp)
                                           (PP(E-H với)

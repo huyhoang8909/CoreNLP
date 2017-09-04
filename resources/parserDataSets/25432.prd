@@ -12,7 +12,7 @@
 
 </s>
 <s>
-(S (NP-SUB(R Hàng)(M trăm)(N-H hộ)(N dân)
+(S(NP-SUB(R Hàng)(M trăm)(N-H hộ)(N dân)
              (NP-LOC(Np-H Phú Yên)))
       (VP(R vừa)(V-H nhận)(R được)
              (NP-DOB(N-H thông báo)
@@ -31,7 +31,7 @@
 
 </s>
 <s>
-(S (VP-TMP(V-H Cách)
+(S(VP-TMP(V-H Cách)
               (NP(P-H đây))
              (NP(A hơn)(M ba)(N-H năm)
                                                 (, ,)
@@ -65,7 +65,7 @@
 
 </s>
 <s>
-(S (NP-SUB(P-H Họ))
+(S(NP-SUB(P-H Họ))
       (VP(R lập tức)(V-H thông báo)
              (PP(E-H với)
                     (NP(N-H người thân)(C và)(N-H bạn bè)
@@ -120,7 +120,7 @@
    (. .))
 </s>
 <s>
-(S (S-PV(NP-SUB(N-H Thủ tục)
+(S(S-PV(NP-SUB(N-H Thủ tục)
                   (AP(A-H quan trọng)(A nhất)))
           (VP(R cũng)(V-H được)
                  (SBAR(S(NP-SUB *E*)
@@ -167,7 +167,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Thực chất))
+(S(NP-SUB(N-H Thực chất))
      (VP(V-H là)
             (VP(V-H đổi)
                    (NP-DOB(N-H đất))
@@ -192,7 +192,7 @@
 
 </s>
 <s>
-(S (S-PV(NP-SUB-1(N-H Sơ đồ)(N qui hoạch))
+(S(S-PV(NP-SUB-1(N-H Sơ đồ)(N qui hoạch))
           (VP(V-H được)
                   (SBAR(S(NP-SUB-2(N-H chính quyền)(A sở tại))
                                     (VP(V-H công bố)
@@ -212,7 +212,7 @@
 
 </s>
 <s>
-(S (PP-TMP(E-H Sau)
+(S(PP-TMP(E-H Sau)
              (NP(N-H khi)
                      (VP(V-H hoàn tất)
                              (NP(N-H thủ tục)))))
@@ -229,7 +229,7 @@
 
 </s>
 <s>
-(S (S(NP-SUB-1(L Một số)(N-H người))
+(S(S(NP-SUB-1(L Một số)(N-H người))
           (VP(R đã)(V-H xin)(R được)
                  (NP-DOB(N-H giấy phép)
                          (NP(Ny-H UBND)
@@ -255,7 +255,7 @@
 
 </s>
 <s>
-(S (C Còn)
+(S(C Còn)
      (NP-SUB(Ny-H UBND)
                 (NP-LOC(N-H huyện)(Np Sông Cầu)))
    (VP(VP(R lại)(R không)(V-H trả lời)
@@ -308,7 +308,7 @@
 
 </s>
 <s>
-(S (PP-TMP(E-H Trong)
+(S(PP-TMP(E-H Trong)
                    (NP(N-H lúc)
                       (SBAR(S(S-SUB(NP-SUB(L nhiều)(N-H công dân))
                                                    (VP(V-H có)
@@ -377,7 +377,7 @@
 (. .))
 </s>
 <s>
-(S (NP-SUB(N-H Sự việc)
+(S(NP-SUB(N-H Sự việc)
                    (VP(V-H nói)
                           (NP(N-H trên))))
            (VP(VP(R đã)(V-H gây)
@@ -399,7 +399,7 @@
 
 </s>
 <s>
-(S (S(VP-MNR(V-H Trao đổi)
+(S(S(VP-MNR(V-H Trao đổi)
               (PP(E-H với)
                      (NP(Np-H Tuổi Trẻ))))
                                         (, ,)
@@ -433,7 +433,7 @@
 (. .))
 </s>
 <s>
-(S (VP-MNR(V-H Trả lời)
+(S(VP-MNR(V-H Trả lời)
               (VP(V-H phỏng vấn)))
                            (, ,)
     (NP-SUB(Nc-H ông)(Np Lộc))
@@ -476,7 +476,7 @@
 
 </s>
 <s>
-(S (XP-ADV(X-H Nói tóm lại))
+(S(XP-ADV(X-H Nói tóm lại))
                        (C là)
               (S(NP-SUB(N-H giá))
                  (VP(R chưa)(V-H duyệt)))
@@ -501,7 +501,7 @@
 
 </s>
 <s>
-(S (NP-SUB(P-H Tôi))
+(S(NP-SUB(P-H Tôi))
      (VP(R rất)(V-H lấy)(V làm)(A lạ)
              (SBAR(C là)
                       (S(WHPP(X-H vì sao))
@@ -515,7 +515,7 @@
 
 </s>
 <s>
-(S (NP-TMP(N-H Hiện))
+(S(NP-TMP(N-H Hiện))
      (NP-SUB(P-H chúng tôi))
      (VP(R vẫn)(V-H tiếp tục)
              (VP(V-H điều tra)
@@ -527,7 +527,7 @@
 
 </s>
 <s>
-(S (NP-SUB(P-H Chúng tôi))
+(S(NP-SUB(P-H Chúng tôi))
       (VP(V-H xem)
              (NP-DOB(P-H đây)
                      (C như)
@@ -578,7 +578,7 @@
 
 </s>
 <s>
-(S (NP-SUB(P-H Tôi))
+(S(NP-SUB(P-H Tôi))
      (VP(R đã)(V-H chấp nhận)
             (VP(V-H cho)
                    (VP(V-H trả)(R lại)
@@ -591,17 +591,17 @@
 
 </s>
 <s>
-(S (S(C Bởi)
+(S(S(C Bởi)
           (NP-SUB(N-H giá)
                   (NP-TMP(N-H hồi)(P đó)))
           (AP-PRD(R không)(A-H phải)
                  (VP(V-H là)
                         (NP-DOB(N-H giá)))
                  (SBAR-PRP(E-H vì)
-                      (S (NP-SUB(R không)(P-H ai))
+                      (S(NP-SUB(R không)(P-H ai))
                             (VP(V-H cho)(N phép))))))
    (, ,)
-(S (NP-SUB *T*)
+(S(NP-SUB *T*)
       (VP(V-H chắc chắn)(C là)
             (VP(V-H có)
                     (NP-DOB(N-H cái)(P gì)
@@ -658,7 +658,7 @@
 
 </s>
 <s>
-(S (X Hơn nữa)
+(S(X Hơn nữa)
      (NP-SUB(N-H giá cả))
      (VP(V-H phải)
             (VP(V-H được)
@@ -669,7 +669,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP(R Có thể)(V-H coi)
             (SBAR(S(NP-SUB(P-H đây))
                               (VP(V-H là)

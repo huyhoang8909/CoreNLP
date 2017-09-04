@@ -45,7 +45,7 @@
 
 </s>
 <s>
-(S (C Nhưng)(C rồi)
+(S(C Nhưng)(C rồi)
       (NP-SUB(Np-H Đà Lạt))
       (VP(V-H ra đời)
                (VP(R lại)(R không)(V-H nằm)
@@ -65,7 +65,7 @@
 
 </s>
 <s>
-(S (T Vậy)(C nên)
+(S(T Vậy)(C nên)
    (NP-SUB(N-H vùng đất)
             (AP(A-H tuyệt)(A đẹp))
                     (P kia))
@@ -299,7 +299,7 @@
 
 </s>
 <s>
-(S (C Nhưng)(C rồi)
+(S(C Nhưng)(C rồi)
        (S(NP-SUB(N-H kinh tế)(Np châu Á))
            (VP(V-H bị)
                   (VP(V-H khủng hoảng))))
@@ -336,7 +336,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (NP-SUB(Np-H Dankia))
      (AP-PRD(R không)(A-H yên ổn))
 (... ...))
@@ -853,7 +853,7 @@
 
 </s>
 <s>
-(S (NP-SUB(M Một)(N-H khu)(N du lịch)
+(S(NP-SUB(M Một)(N-H khu)(N du lịch)
                 (VP(V-H chụp giật)))
      (VP(R đã)(V-H ra đời)
             (SBAR-MNR(C mà)
@@ -863,7 +863,7 @@
 
 </s>
 <s>
-(S (XP-TMP(X-H Mới đây))
+(S(XP-TMP(X-H Mới đây))
        (, ,)
    (S(NP-SUB(N-H tổng cục trưởng)
                                    (NP(N-H Tổng cục)(N Du lịch))
@@ -930,7 +930,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
      (NP-SUB(P-H đó đây))
      (VP(R vẫn)(V-H còn)
               (SBAR(S(NP-SUB(L những)(N-H người))
@@ -944,7 +944,7 @@
 
 </s>
 <s>
-(S (C Và)
+(S(C Và)
      (XP-TMP(X-H mới đây)(T thôi))
        (, ,)
      (PP-LOC(E-H trong)

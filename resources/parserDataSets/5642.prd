@@ -60,7 +60,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Câu chuyện)
+(S(NP-SUB(N-H Câu chuyện)
               (PP(E-H về)
                       (NP(N-H anh))))
      (VP(V-H hấp dẫn)
@@ -71,7 +71,7 @@
 
 </s>
 <s>
-(S-TTL(PP-LOC(E-H Từ )
+(S-TTL(PP-LOC(E-H Từ)
                         (NP(Nc-H căn)(N chòi)
                                  (AP(A-H chơ vơ))))
 (... ...))
@@ -164,7 +164,7 @@
                           (? ?))
        (" ")
         (, ,)
-   (S (NP-SUB(Nc-H người)(N dân)
+   (S(NP-SUB(Nc-H người)(N dân)
                   (NP-LOC(N-H thôn)(Np Trung Hưng)))
          (VP(V-H trố)(N mắt)
                          (AP(A-H ngạc nhiên)
@@ -188,7 +188,7 @@
 
 </s>
 <s>
-(S (NP-SUB(Nc-H Ông)(N chủ nhiệm)
+(S(NP-SUB(Nc-H Ông)(N chủ nhiệm)
                (NP(N-H hợp tác xã)))
       (C thì)
        (VP(V-H kiên quyết)
@@ -472,7 +472,7 @@
 
 </s>
 <s>
-(S (NP-TMP(A Mờ)(N-H sáng))
+(S(NP-TMP(A Mờ)(N-H sáng))
          (, ,)
    (NP-SUB *E*)
    (VP(V-H hỏi)
@@ -481,7 +481,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Vợ))
+(S(NP-SUB(N-H Vợ))
      (VP(V-H bảo)
             (VP(V-H tùy)
                     (NP-DOB(N-H anh))))
@@ -619,7 +619,7 @@
 
 </s>
 <s>
-(S (NP-TMP(N-H Đêm)(A khuya))
+(S(NP-TMP(N-H Đêm)(A khuya))
       (S(NP-SUB(N-H con bé))
            (VP(VP(V-H trở mình))
                   (VP(V-H lăn)
@@ -636,7 +636,7 @@
 
 </s>
 <s>
-(S (" ")
+(S(" ")
       (S(NP-SUB(N-H Trăng))
                      (VP(V-H lặn)))
       (S(NP-SUB(P-H tui))
@@ -715,7 +715,7 @@
 
 </s>
 <s>
-(S (S(" ")(VP(V-H Về)(R đi))
+(S(S(" ")(VP(V-H Về)(R đi))
                  (NP-SUB-VOC(Nc-H ông)(Np Đỗi)
                                 (T ơi)))
        (, ,)
@@ -833,7 +833,7 @@
 
 </s>
 <s>
-(S (X May sao)
+(S(X May sao)
      (NP-SUB(N-H bà con)
                        (N-H bạn bè))
      (VP(V-H đến)
@@ -844,7 +844,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Ngân hàng))
+(S(NP-SUB(N-H Ngân hàng))
      (VP(VP(V-H biết)
                    (NP-DOB(N-H chuyện)))
             (VP(R cũng)(V-H cử)
@@ -1012,7 +1012,7 @@
 
 </s>
 <s>
-(S (C Và)
+(S(C Và)
        (AP-MNR(A-H đúng)
                 (C như)
                 (NP(Nc-H niềm)(V tin)
@@ -1088,7 +1088,7 @@
 
 </s>
 <s>
-(S (VP(V-H Tiếp)
+(S(VP(V-H Tiếp)
              (NP(P-H đó))
        (R nữa))
        (C là)

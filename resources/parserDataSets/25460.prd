@@ -32,7 +32,7 @@
      (C nhưng)
      (S 
           (SBAR-CND (C nếu)
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (R không) (V-H đưa) (R ra)
                          (NP-DOB (N-H chỉ tiêu)
                               (VP-PRP (V-H phấn đấu))))))
@@ -222,7 +222,7 @@
      (. .))
 </s>
 <s>
-(S (X Như vậy) (, ,)
+(S(X Như vậy) (, ,)
      (S 
           (NP-SUB (N-H người) (V vi phạm))
           (VP (V-H đỡ)
@@ -240,7 +240,7 @@
      (. .))
 </s>
 <s>
-(S (X Mặt khác) (, ,) (NP-SUB *E*)
+(S(X Mặt khác) (, ,) (NP-SUB *E*)
      (VP (R có thể) (V-H xem xét) (V-H khuyến khích)
           (SBAR 
                (S 
@@ -286,7 +286,7 @@
                     (NP-SUB (R rất) (A nhiều) (N-H giải pháp))
                     (VP (V-H được)
                          (SBAR 
-                              (S (NP-SUB *E*)
+                              (S(NP-SUB *E*)
                                    (VP (V-H đưa) (R ra)
                                         (PP-PRP (E-H để)
                                              (VP (V-H giảm)
@@ -391,7 +391,7 @@
      (NP-SUB (Nc-H Ông) (Np Đua))
      (VP (V-H đề nghị)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H nên)
                          (VP 
                               (VP (V-H xác định)

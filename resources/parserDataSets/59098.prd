@@ -230,7 +230,7 @@
                               (PP-IOB (E-H cho)
                                    (NP (N-H con)))
                               (SBAR-PRP (E-H để)
-                                   (S (NP-SUB *E*)
+                                   (S(NP-SUB *E*)
                                         (VP 
                                              (VP (V-H gọi)
                                                   (NP-DOB (N-H tiếng) (Np Thái)
@@ -298,7 +298,7 @@
                     (NP (Np-H Quảng Bình))
                     (RBKT RBKT)))
           (SBAR 
-               (S (C dù)
+               (S(C dù)
                     (NP-SUB (N-H gia đình) (N anh))
                     (VP (V-H sang)
                          (NP-LOC (P-H đây))
@@ -370,13 +370,13 @@
                          (PP-LOC (E-H ở)
                               (NP (Np-H Bangkok)))))))
      (, ,)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (V-H ra)
                (VP (V-H làm)
                     (NP-DOB (N-H nghề)
                          (VP (V-H sửa)
                               (NP-DOB 
-                                   (NP (N-H tivi ) (A đen trắng))
+                                   (NP (N-H tivi) (A đen trắng))
                                    (C và)
                                    (NP (L các) (Nc-H loại) (N máy móc))))))))
      (. .))
@@ -423,7 +423,7 @@
 
 </s>
 <s>
-(S (C Rồi)
+(S(C Rồi)
      (NP-TMP (N-H năm) (M 1978))
      (, ,)
      (S 
@@ -454,7 +454,7 @@
                     (PP (E-H với)
                          (NP (N-H vợ)))
                     (SBAR (C hay)
-                         (S (NP-SUB *E*)
+                         (S(NP-SUB *E*)
                               (VP (V-H về)
                                    (NP-LOC (P-H đây))
                                    (VP-PRP (V-H nuôi)
@@ -482,7 +482,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (AP-PRD (R Đang) (A-H yên ấm)
           (PP-LOC (E-H ở)
                (NP (Np-H Bangkok))))
@@ -506,11 +506,11 @@
 
 </s>
 <s>
-(S (C Nhưng) (C rồi)
+(S(C Nhưng) (C rồi)
      (NP-SUB-1 (N-H chị))
      (VP (R cũng) (V-H đồng ý)
           (SBAR-PRP (E-H vì)
-               (S (NP-SUB-1 *T*)
+               (S(NP-SUB-1 *T*)
                     (VP (V-H thấy)
                          (SBAR 
                               (S 
@@ -599,7 +599,7 @@
 
 </s>
 <s>
-(S (" ")
+(S(" ")
      (S 
           (NP-TMP (N-H Năm) (M 1983))
           (NP-SUB-1 (P-H tôi))
@@ -633,7 +633,7 @@
 </s>
 <s>
 (S 
-     (S (C Rồi)
+     (S(C Rồi)
           (NP-ADV (R cứ) (P-H thế))
           (NP-SUB-1 *T*)
           (VP 
@@ -727,7 +727,7 @@
                                                        (NP-1 (N-H heo)
                                                             (NP (N-H khi)
                                                                  (SBAR 
-                                                                      (S (NP-SUB-1 *T*)
+                                                                      (S(NP-SUB-1 *T*)
                                                                            (NP-PRD (M ba) (N-H tuần) (N tuổi) (LBKT LBKT)
                                                                                 (NP-TMP (M 21) (N-H ngày))
                                                                                 (RBKT RBKT)))))
@@ -750,7 +750,7 @@
                          (VP (V-H cai sữa))))))
      (VP (V-H được)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H chuyển giao)
                          (SBAR-PRP (E-H cho)
                               (S 
@@ -794,7 +794,7 @@
                     (Nc-H con))))
      (, ,)
      (S 
-          (NP-TMP (A khoảng) (M ba ) (N-H tháng) (M rưỡi))
+          (NP-TMP (A khoảng) (M ba) (N-H tháng) (M rưỡi))
           (C thì)
           (NP-SUB *E*)
           (VP (V-H xuất)
@@ -954,7 +954,7 @@
 
 </s>
 <s>
-(S (X Chẳng hạn) (C như)
+(S(X Chẳng hạn) (C như)
      (NP-SUB (N-H công nghệ)
           (VP (V-H nuôi)
                (NP-DOB (N-H heo)))
@@ -976,7 +976,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (R Chỉ) (V-H muốn)
           (VP (V-H khẳng định)
                (SBAR 
@@ -1192,7 +1192,7 @@
 
 </s>
 <s>
-(S (NP-SUB *E*)
+(S(NP-SUB *E*)
      (VP (V-H Phải)
           (VP (V-H vay)
                (NP-DOB (N-H nợ)
@@ -1501,7 +1501,7 @@
                (NP-TMP (M mỗi) (N-H tháng)))
           (NP-SUB (N-H công ty))
           (VP (V-H lãi)
-               (NP-DOB (A hơn) (M 150 . 000) (Nu-H USD ))))
+               (NP-DOB (A hơn) (M 150 . 000) (Nu-H USD))))
      (. .))
 
 
@@ -1660,7 +1660,7 @@
 
 </s>
 <s>
-(S (C Và)
+(S(C Và)
      (NP-TPC (Nc-H sự) (A thành đạt) (P ấy))
      (NP-SUB (R không) (R chỉ) (T riêng) (P-H mình) (P ai))
      (VP (V-H hưởng))

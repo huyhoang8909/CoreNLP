@@ -193,7 +193,7 @@
          (VP(VP(V-H Theo)
                         (NP-DOB(N-H địa chỉ)))
                  (VP(V-H mang)
-                         (PP-DIR(E-H đến )
+                         (PP-DIR(E-H đến)
                                  (NP(N-H nhà)(P họ)))
                           (VP-PRP(V-H trả)))))
                   (, ,)
@@ -305,7 +305,7 @@
 (S(NP-TMP(N-H Trước)(N-H giờ))
                     (, ,)
      (NP-SUB *E*)
-     (VP(VP(V-H phân )
+     (VP(VP(V-H phân)
                     (NP-DOB(N-H rác))(R ra))
              (VP(R thỉnh thoảng)(R cũng)(V-H thấy)))
 (. .))
@@ -629,7 +629,7 @@
                    (VP(V-H mời)
                             (VP(V-H đến)
                                    (VP-PRP(V-H nhận)(R lại)
-                                            (NP-DOB(N-H giấy)(Ny CMND ))))))
+                                            (NP-DOB(N-H giấy)(Ny CMND))))))
 (. .))
 
 
@@ -769,7 +769,7 @@
 
 </s>
 <s>
-(S(VP-TMP(R Cũng)(V-H có )
+(S(VP-TMP(R Cũng)(V-H có)
             (NP-TMP(N-H khi)))
    (NP-SUB(N-H người)
           (VP(V-H được)
@@ -893,7 +893,7 @@
 
 </s>
 <s>
-(S(" ")(VP-SUB(V-H Làm )
+(S(" ")(VP-SUB(V-H Làm)
                    (NP(N-H việc)(P này)))
     (C tuy)
      (AP-PRD(AP(A-H âm thầm))
@@ -930,7 +930,7 @@
                                                          (PP(E-H về)
                                                                  (NP(N-H dịch vụ)(V báo)(V mất))))))
                                         (, ,)
-                                (NP-SUB(N-H anh ))
+                                (NP-SUB(N-H anh))
                                 (VP(R đã)(V-H thực hiện)
                                         (NP-DOB(M một)(N-H cuộc)(V thăm dò)
                                                  (PP(E-H về)
@@ -1040,7 +1040,7 @@
 
 </s>
 <s>
-(S(VP-TMP(V-H Có )
+(S(VP-TMP(V-H Có)
             (NP(N-H khi)))
     (NP-SUB(N-H điện thoại))
     (VP(V-H reo)
@@ -1108,7 +1108,7 @@
                           (, ,)
                            (C và)
    (S(VP-ADV(V-H tính)
-                (XP(X-H như vậy )))
+                (XP(X-H như vậy)))
                            (C thì)
        (NP-SUB(N-H công ty))
        (AP-PRD(R đã)(A-H giàu)))

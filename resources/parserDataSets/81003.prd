@@ -597,7 +597,7 @@
            (NP-DOB(N-H ai)))))
 (C nên)
 (S(VP-MNR(V-H đi)(P đâu))
-(VP-MNR(V-H làm )(P gì))
+(VP-MNR(V-H làm)(P gì))
 (NP-SUB-1 *T*)
 (VP(R cũng)(V-H sợ)(R lắm)))
 (. .))

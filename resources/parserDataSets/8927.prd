@@ -413,7 +413,7 @@
 </s>
 <s>
 (S-SPL(NP(N-H Con)
-             (NP(N-H thứ )(M năm))
+             (NP(N-H thứ)(M năm))
              (PP(E-H trong)
                     (NP(M một)(N-H gia đình)(N nông dân)
                             (VP(V-H có)
@@ -460,31 +460,31 @@
 </s>
 <s>
 (S 
-     (NP-SUB-1 (N-H Cậu ))
+     (NP-SUB-1 (N-H Cậu))
      (VP (VP
-          (VP (R đã ) (R từng ) (V-H bán )
-               (NP-DOB (N-H báo )))
-          (, , )
-          (VP (V-H đánh ) 
-                  (NP-DOB(N-H giày )))
-          (NP-TMP (M hai ) (N-H năm ))
-          (PP-LOC (E-H ở )
-                  (NP (Ny TP.HCM ))))
-                                     (, , )
-          (VP (R mới ) (V-H ra )
-               (NP-LOC (Np-H Hà Nội ))
-               (VP-PRP (V-H hành nghề ))
-               (SBAR-PRP (E-H để )
+          (VP (R đã) (R từng) (V-H bán)
+               (NP-DOB (N-H báo)))
+          (, ,)
+          (VP (V-H đánh) 
+                  (NP-DOB(N-H giày)))
+          (NP-TMP (M hai) (N-H năm))
+          (PP-LOC (E-H ở)
+                  (NP (Ny TP.HCM))))
+                                     (, ,)
+          (VP (R mới) (V-H ra)
+               (NP-LOC (Np-H Hà Nội))
+               (VP-PRP (V-H hành nghề))
+               (SBAR-PRP (E-H để)
                     (S 
-                         (NP-TMP (L mỗi ) (N-H khi )
-                              (VP (V-H nhớ )
-                                   (NP-DOB (N-H nhà ))))
-                         (C thì )
+                         (NP-TMP (L mỗi) (N-H khi)
+                              (VP (V-H nhớ)
+                                   (NP-DOB (N-H nhà))))
+                         (C thì)
                          (NP-SUB-1 *T*)
-                         (VP (V-H nhảy ) (N tàu )
-                              (VP (V-H về )
-                                   (AP-MNR (A-H dễ ) (R hơn ))))))))
-     (. . ))
+                         (VP (V-H nhảy) (N tàu)
+                              (VP (V-H về)
+                                   (AP-MNR (A-H dễ) (R hơn))))))))
+     (. .))
 
 </s>
 <s>
@@ -605,7 +605,7 @@
          (VP(V-H định)
                  (VP(A lịch sự)(V-H nói)
                                    (: :)(" ")
-                         (SBAR(SQ(WHAP Can )
+                         (SBAR(SQ(WHAP Can)
                                                (NP-SUB(Pb-H I))
                                                (VP(Vb-H help)
                                                        (NP-DOB(Nb-H you)))
@@ -644,7 +644,7 @@
 
 </s>
 <s>
-(S-TTL-TC(NP-TPC(N-H Chè )(N chén))
+(S-TTL-TC(NP-TPC(N-H Chè)(N chén))
                                   (: :)
                      (VP-TH(V-H ra vào)
                            (AP(A-H hợp lý)))
@@ -738,7 +738,7 @@
 
 </s>
 <s>
-(S(NP-SUB(N-H Hàng)(N chè )(N chén))
+(S(NP-SUB(N-H Hàng)(N chè)(N chén))
      (VP(R cũng)(A có thể)(V-H đi)(V rong))
 (. .))
 
@@ -803,7 +803,7 @@
 
 </s>
 <s>
-(S(T Chính)(C vì thế )(C mà)
+(S(T Chính)(C vì thế)(C mà)
      (PP-TMP(E-H vào)
               (NP(N-H buổi)
                             (... ...)
@@ -1473,7 +1473,7 @@
     (VP-ADV(V-H trừ)
                     (NP(NP(N-H tiền)(V ăn))
                             (, ,)
-                            (NP(N-H tiền )(V trọ))))
+                            (NP(N-H tiền)(V trọ))))
     (NP-SUB *E*)
     (VP(V-H còn)(V được)
             (NP(R gần)(M năm chục)(N-H bạc)))
@@ -1669,7 +1669,7 @@
 <s>
 (S(VP-SUB(V-H Bán)
               (NP-DOB(N-H báo)))
-                                 (C thì )
+                                 (C thì)
      (VP(VP(V-H phải)
                     (VP(V-H đi)(V rao)))
                                  (, ,)
@@ -1777,7 +1777,7 @@
                                           (NP-SUB(P-H chúng tôi))
                                           (VP(R vẫn)(V-H thấy)
                                                   (SBAR(S(NP-SUB(NP(N-H hàng)
-                                                                                              (NP(N-H chè )(N chén)))
+                                                                                              (NP(N-H chè)(N chén)))
                                                                                                          (, ,)
                                                                                       (NP(N-H hàng)
                                                                                               (NP(N-H quần áo)(V rong))))
@@ -1800,7 +1800,7 @@
                                                       (NP-DOB(N-H tay))
                                                       (PP-LOC(E-H vào)
                                                              (NP(N-H mồm))))
-                                               (VP(V-H huýt sáo )
+                                               (VP(V-H huýt sáo)
                                                        (VP(V-H đánh)
                                                                (AP(" ")(A-H toét)(" ")
                                                                         (NP(M một)(N-H cái))(C như)

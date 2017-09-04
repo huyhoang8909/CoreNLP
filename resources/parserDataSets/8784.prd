@@ -369,7 +369,7 @@
                                                  (NP-DOB(N-H mẹ))))
                                                          (, ,)
                                   (NP-PRD(N-H tướng)(N tá)
-                                          (NP(P-H vậy )))
+                                          (NP(P-H vậy)))
                                                       (C mà)
                                   (VP(V-H đi)(V lấy)
                                           (NP-DOB(N-H con nhỏ)
@@ -383,7 +383,7 @@
 <s>
 (S(NP-SUB(Np-H Út Sương)
              (NP-TMP(N-H lúc)(P ấy))
-             (NP(R mới)(M 18 )(, ,)(M 19)(N-H tuổi)))
+             (NP(R mới)(M 18)(, ,)(M 19)(N-H tuổi)))
                           (, ,)
     (VP(VP(R không)(V-H chịu)
                    (VP(V-H để)
@@ -676,7 +676,7 @@
 <s>
 (S(PP-SUB(E-H Sau)
             (NP(P-H đó)))
-     (VP(V-H là )
+     (VP(V-H là)
              (NP-DOB(Nc-H anh)(Np Hồ Hảo Hớn)))
                            (, ,)
     (PP-TMP(E-H sau)
@@ -685,7 +685,7 @@
 
 </s>
 <s>
-(S(PP-SUB(E-H Sau)(T nữa ))
+(S(PP-SUB(E-H Sau)(T nữa))
     (VP(V-H là)
             (NP-DOB(Nc-H anh)(Np Đỗ Văn Mai)
                           (, ,)
@@ -881,7 +881,7 @@
          (VP(R vẫn)(R không)(V-H đồng ý)))
                          (, ,)
      (S(NP-SUB(Nc-H cô)(Np Năm Lời))
-          (NP-PRD(P tự)(N-H tay )
+          (NP-PRD(P tự)(N-H tay)
                    (VP(V-H cầm)
                            (NP-DOB(N-H dao)))
                    (VP(V-H chặt)(V đứt)
@@ -920,7 +920,7 @@
             (VP(A nhiều)(V-H ngạc nhiên)
                                  (: :)
             (SBAR(S(VP-ADV(V-H tham gia)
-                                     (VP(V-H hoạt động )
+                                     (VP(V-H hoạt động)
                                             (NP(N-H cách mạng))
                                             (PP-TMP(E-H từ)
                                                    (AP(R rất)(A-H sớm)))))
@@ -1010,7 +1010,7 @@
                       (VP(V-H tin)
                               (NP(L các)(N-H con))))
                                                  (C nên)
-    (NP-TPC(N-H việc )(P gì))
+    (NP-TPC(N-H việc)(P gì))
     (NP-SUB(N-H má))
     (VP(VP(R cũng)(V-H làm))
                           (C và)

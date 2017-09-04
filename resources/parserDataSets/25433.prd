@@ -7,7 +7,7 @@
 
 </s>
 <s>
-(S (S-SUB(NP-SUB(N-H Công trình)
+(S(S-SUB(NP-SUB(N-H Công trình)
                              (NP(N-H đường)(Np Trương Định)
                                     (VP(V-H nối)
                                            (AP(A-H dài)))
@@ -26,7 +26,7 @@
    (. .))
 </s>
 <s>
-(S (C Mặc dù)
+(S(C Mặc dù)
       (S(NP-SUB(P-H đây))
            (VP(V-H là)
               (NP(N-H công trình)
@@ -63,7 +63,7 @@
 
 </s>
 <s>
-(S (PP-LOC(E-H Trên)
+(S(PP-LOC(E-H Trên)
               (NP(N-H tuyến)(N đường)(Np Kỳ Đồng)))
       (S(NP-SUB(N-H cát))
           (VP(V-H rơi vãi)
@@ -87,7 +87,7 @@
 
 </s>
 <s>
-(S (PP-TMP(E-H Trong)
+(S(PP-TMP(E-H Trong)
               (NP(N-H khi)(P đó))) 
                          (, ,)
       (NP-SUB(A nhiều)(N-H ống)(N cống)(Nb bêtông)

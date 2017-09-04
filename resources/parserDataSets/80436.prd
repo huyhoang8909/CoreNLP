@@ -237,7 +237,7 @@
      (, ,)
      (S 
           (SBAR-CNC (C cho dù)
-               (S (NP-SUB-1 *T*)
+               (S(NP-SUB-1 *T*)
                     (AP-PRD (A-H may mắn)
                          (VP (V-H lấy) (R được)
                               (NP-DOB (Nc-H người) (N chồng)
@@ -288,7 +288,7 @@
                     (NP-SUB (N-H con))
                     (VP (V-H còn)
                          (AP (R quá) (A-H nhỏ)))))
-          (S (C nên)
+          (S(C nên)
                (VP-TMP (V-H có)
                     (NP-DOB (L những) (N-H lúc)))
                (NP-SUB-1 *T*)
@@ -301,7 +301,7 @@
 (S 
      (S 
           (SBAR-CNC (C Cho dù)
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (R đã) (P tự) (V-H trang bị)
                          (PP-IOB (E cho)
                               (NP (P-H mình)))
@@ -533,7 +533,7 @@
      (VP (V-H quyết định)
           (VP (V-H đăng ký)
                (VP (V-H theo)
-                    (VP (V-H học )
+                    (VP (V-H học)
                          (NP-DOB (N-H ngành)
                               (VP (V-H học))
                               (VP (V-H nghiên cứu)
@@ -579,7 +579,7 @@
      (. .))
 </s>
 <s>
-(S (C Hơn nữa)
+(S(C Hơn nữa)
      (NP-SUB (L những) (N-H công việc)
           (SBAR (C mà)
                (S 
@@ -649,13 +649,13 @@
      (... ...))
 </s>
 <s>
-(S (X Ngoài ra)
+(S(X Ngoài ra)
      (NP-SUB (Np-H Phượng))
      (VP 
           (VP (R vẫn) (R thỉnh thoảng) (V-H xuất hiện)
                (PP-LOC (E-H trên)
                     (NP (N-H sóng)
-                         (VP (V-H phát thanh )
+                         (VP (V-H phát thanh)
                               (NP-DOB (N-H giáo dục))
                               (PP (E-H của)
                                    (NP (Ny-H TP) (Np Đài Bắc))))))
@@ -744,7 +744,7 @@
           (VP (V-H phát hành) (R được)
                (NP-DOB (A khoảng) (M 1 . 000) (Nc-H tờ))))
      (, ,)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (A chủ yếu) (V-H phân phát)
                (PP-IOB (E-H cho)
                     (NP (L các) (N-H chị em)
@@ -785,7 +785,7 @@
      (. .))
 </s>
 <s>
-(S (" ")
+(S(" ")
      (S 
           (NP-SUB (P-H Tôi))
           (VP (V-H muốn)
@@ -1163,7 +1163,7 @@
           (NP-SUB (N-H chị))
           (VP (V-H bảo)
                (SBAR 
-                    (S (NP-SUB *E*)
+                    (S(NP-SUB *E*)
                          (VP 
                               (VP (V-H muốn)
                                    (VP (V-H mở rộng)
@@ -1180,7 +1180,7 @@
           (P này))
      (SBAR-CNC (C tuy)
           (S 
-               (S (NP-SUB-1 *T*)
+               (S(NP-SUB-1 *T*)
                     (VP (R không) (V-H nằm)
                          (PP-LOC (E-H trong)
                               (NP (N-H trung tâm)))))
@@ -1191,7 +1191,7 @@
                          (NP-DOB (L nhiều) (N-H chị em)
                               (NP (Nc-H người) (Ny VN)))))))
      (C nhưng)
-     (S (NP-SUB-1 *T*)
+     (S(NP-SUB-1 *T*)
           (VP (R lại) (V-H có)
                (NP-DOB (N-H lợi thế) (C là)
                     (VP (V-H nằm)
@@ -1258,7 +1258,7 @@
                                    (NP-DB (L các) (N-H công việc))))))))
      (, ,)
      (C nhưng)
-     (S (" ")
+     (S(" ")
           (NP-SUB (P-H tôi))
           (VP (R đang) (V-H chuẩn bị)
                (VP 
@@ -1278,7 +1278,7 @@
           (NP-SUB (N-H Khách))
           (AP-PRD (A-H đông) (R quá)))
      (C mà)
-     (S (NP-SUB *E*)
+     (S(NP-SUB *E*)
           (VP (R không thể) (V-H mở rộng) (R được)
                (NP-DOB (N-H mặt bằng) (P này))))
      (. .))
@@ -1357,7 +1357,7 @@
      (. .))
 </s>
 <s>
-(S (R Riết) (C rồi)
+(S(R Riết) (C rồi)
      (S 
           (SBAR-PRP (NP-SUB-1 *T*)
                (VP (V-H thấy)
@@ -1394,7 +1394,7 @@
                     (NP-SUB (R không) (P-H ai))
                     (VP (V-H biết))))
           (C thì)
-          (S (NP-SUB *E*)
+          (S(NP-SUB *E*)
                (VP 
                     (VP (V-H lùng)
                          (VP (V-H tìm)
@@ -1437,7 +1437,7 @@
           (SBAR 
                (S 
                     (SBAR-CND (C nếu)
-                         (S (NP-SUB *E*)
+                         (S(NP-SUB *E*)
                               (VP (V-H tìm) (R được)
                                    (NP-DOB (N-H mặt bằng)
                                         (AP (A-H rộng rãi) (R hơn))))))

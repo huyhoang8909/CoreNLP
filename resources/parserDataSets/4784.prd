@@ -149,7 +149,7 @@
 
 </s>
 <s>
-(S (VP-MNR(R Thật)(V-H kinh ngạc))
+(S(VP-MNR(R Thật)(V-H kinh ngạc))
                        (, ,)
    (NP-SUB(M 42)(N-H khối)
              (AP(A-H vuông hình sắc cạnh)))
@@ -220,13 +220,13 @@
 (. .))
 </s>
 <s>
-(S (S(NP-SUB(N-H Công)
+(S(S(NP-SUB(N-H Công)
                             (VP(V-H xem)
                                    (NP-DOB(N-H xương))))
                                       (: :)
                    (QP-PRD(M-H 3triệu)))
           (, ,)
-       (S (NP-SUB(N-H công)
+       (S(NP-SUB(N-H công)
                               (VP(VP(V-H đập)
                                              (NP-DOB(N-H xương)))
                                                     (C và)
@@ -236,12 +236,12 @@
 (... ...))
 </s>
 <s>
-(S (VP-SUB(V-H Tổng cộng))
+(S(VP-SUB(V-H Tổng cộng))
      (NP-PRD(M 150triệu)(Nu-H đồng))
 (. .))
 </s>
 <s>
-(S (NP-SUB(N-H Giá)
+(S(NP-SUB(N-H Giá)
                (PP-LOC(E-H tại)
                        (NP(N-H nồi))))
      (NP-PRD(M 3,34triệu)(Nu-H đồng)
@@ -250,7 +250,7 @@
 (. .))
 </s>
 <s>
-(S (NP-SUB(L Mọi)(N-H người))
+(S(NP-SUB(L Mọi)(N-H người))
      (AP-PRD(A-H ồn ào)
               (VP(VP(V-H đếm)
                              (NP-DOB(N-H tiền)))
@@ -261,7 +261,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Khách)
+(S(NP-SUB(N-H Khách)
                (VP(V-H mua)
                        (NP(N-H cao))))
      (VP(R thường)(V-H là)
@@ -271,7 +271,7 @@
 
 </s>
 <s>
-(S (NP-SUB(A Nhiều)(N-H người))
+(S(NP-SUB(A Nhiều)(N-H người))
      (VP(V-H thuê)
             (NP-DOB(N-H giáo sư)
                                (, ,)
@@ -284,7 +284,7 @@
 
 </s>
 <s>
-(S (VP-SUB(V-H Có)
+(S(VP-SUB(V-H Có)
              (NP(N-H người)))
      (VP(V-H yêu cầu)
             (VP(V-H đem)
@@ -347,7 +347,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Xe))
+(S(NP-SUB(N-H Xe))
      (VP(VP(V-H vượt)
                     (NP-DOB(N-H cầu)(Np Lủ)))
             (VP(V-H rẽ)
@@ -472,7 +472,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Giá)
+(S(NP-SUB(N-H Giá)
                (NP(N-H xương)
                (AP(A-H to)(A-H nhỏ))))
       (VP(V-H chênh)
@@ -518,7 +518,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Hổ)(P này))
+(S(NP-SUB(N-H Hổ)(P này))
       (VP(V-H là)
              (PP(E-H của)
                     (NP(Np-H Ấn Độ)
@@ -534,7 +534,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Đường)
+(S(NP-SUB(N-H Đường)
                (NP(N-H thứ)(M ba)))
      (VP(V-H là)
             (PP-LOC(E-H từ)
@@ -613,7 +613,7 @@
 
 </s>
 <s>
-(S (VP-SUB(V-H Lừa)
+(S(VP-SUB(V-H Lừa)
               (AP(A-H thông thường)))
      (VP(V-H là)
             (VP(V-H tráo)
@@ -627,14 +627,14 @@
 
 </s>
 <s>
-(S (S (VP-SUB(V-H Có)
+(S(S(VP-SUB(V-H Có)
                     (NP(" ")(N-H tâm)(" "))
                     (AP(A-H hơn)))
           (VP(V-H là)
                  (VP(V-H trộn)
                         (NP-DOB(N-H xương)(A khác)))))
              (C và)
-   (S (AP-SUB(" ")(A-H tử tế)(" ")(A nhất))
+   (S(AP-SUB(" ")(A-H tử tế)(" ")(A nhất))
          (VP(V-H là)
                 (VP(VP(V-H bớt)(R đi)
                                (NP-DOB(L một số)(N-H xương)
@@ -649,7 +649,7 @@
 
 </s>
 <s>
-(S (VP-SUB(V-H Lừa)
+(S(VP-SUB(V-H Lừa)
               (NP(N-H cấp)
                       (AP(A-H thấp)(A hơn))))
     (VP(V-H là)
@@ -750,7 +750,7 @@
 
 </s>
 <s>
-(S (C Nhưng)
+(S(C Nhưng)
       (SBAR-PRP(E-H do)
       (S(NP-SUB(R không)(P-H ai))
           (VP(V-H xác định)(R được)
@@ -788,7 +788,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Rượu mạnh)
+(S(NP-SUB(N-H Rượu mạnh)
                (VP(V-H pha)
                        (NP-DOB(N-H cao)(N hổ))))
    (VP(V-H làm)
@@ -801,7 +801,7 @@
 
 </s>
 <s>
-(S (NP-SUB(L Những)(N-H quan khách)
+(S(NP-SUB(L Những)(N-H quan khách)
               (AP(A-H lịch lãm))
               (P ấy))
    (VP(VP(V-H ngửa)
@@ -827,7 +827,7 @@
 
 </s>
 <s>
-(S (NP-SUB(N-H Lang)(Np Thưởng))
+(S(NP-SUB(N-H Lang)(Np Thưởng))
       (VP(V-H nói)
              (: :)
              (" ")

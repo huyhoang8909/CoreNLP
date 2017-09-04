@@ -984,7 +984,7 @@ Sáng hôm sau họ tìm  đến công ty thám tử  .
                (NP(M đôi)(N-H trai gái)))))
 (, ,)
     (S(NP-SUB(Np-H Bình))
-         (VP(VP(V-H đi)(A sát )
+         (VP(VP(V-H đi)(A sát)
                     (NP-LOC(N-H phía)(N sau)
                         (NP(M đôi)(P-H này))))
          (C và)

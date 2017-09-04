@@ -618,7 +618,7 @@
                                                (NP(Np-H Nghệ An))))
                         (VP-PRP(V-H cắt)
                                 (NP-DOB(N-H thuốc nam)
-                                        (PP-LOC(E-H ở )
+                                        (PP-LOC(E-H ở)
                                                 (NP(L các)(N-H ông)(N lang))))
                                  (VP-PRP(V-H về)
                                         (VP(V-H chữa)

@@ -152,7 +152,7 @@
           (P này))
      (VP (R sẽ) (V-H được)
           (SBAR 
-               (S (NP-SUB *E*)
+               (S(NP-SUB *E*)
                     (VP (V-H trình bày) (C và) (V-H thảo luận)
                          (VP (V-H thông qua)
                               (NP-DOB 

@@ -1,13 +1,13 @@
 <s>
 (S-TTL(VP(V-H Yêu)
-                      (NP-DOB(N-H  thú dữ )))
+                      (NP-DOB(N-H  thú dữ)))
 (. .))
 
 </s>
 <s>
 (S(NP-SUB (N-H Vườn)(N thú)(Np Hà Nội))
      (VP(V-H  có)
-             (NP-DOB(M  87 )(N-H nhân viên)(V nuôi)(N thú)
+             (NP-DOB(M  87)(N-H nhân viên)(V nuôi)(N thú)
                         ( , ,)
                      (PP(E-H trong)(P đó)
                              (QP(M-H 2 /3)
@@ -47,7 +47,7 @@
 <s>
 (S-TTL(NP(N-H Thạc sĩ)(N thú y)
                       (PP(E-H với)
-                              (NP(Nc-H  bầy)(N  muông thú ))))
+                              (NP(Nc-H  bầy)(N  muông thú))))
 (. .))
 
 
@@ -91,14 +91,14 @@
             (AP(A-H đủ)
                     (NP(NP(P cả)(N-H thuốc men))
                                          (, ,)
-                            (NP(N-H  dụng cụ )(N thú y))
+                            (NP(N-H  dụng cụ)(N thú y))
                                         (C  và)
-                            (NP(L các )(Nc-H loại)(N  sách)(N  chuyên ngành)))))
+                            (NP(L các)(Nc-H loại)(N  sách)(N  chuyên ngành)))))
 ( . .))
 
 </s>
 <s>
-(S(PP-TMP(E-H Từ )
+(S(PP-TMP(E-H Từ)
               (NP(N-H khi)
                       (VP(V-H là)
                               (NP-DOB(M một)(N-H cô gái)
@@ -139,11 +139,11 @@
                       (NP-LOC(N-H chuồng)(N thú))))
      (VP(R  cũng)(V-H là)
              (NP-TMP(N-H lần)(N  đầu tiên)
-                      (PP(E-H trong )
+                      (PP(E-H trong)
                               (NP(N-H đời)))
                       (SBAR(S(NP-SUB(N-H chị))
                                         (VP(V-H chạm trán)
-                                                (NP-DOB(N-H chúa sơn lâm )))))))
+                                                (NP-DOB(N-H chúa sơn lâm)))))))
 (. .))
 
 </s>
@@ -172,7 +172,7 @@
 </s>
 <s>
 (S(" ")
-    (S(NP-SUB(Np-H Đông )(, ,)(Np-H  Bin)(, ,)(Np-H  My))
+    (S(NP-SUB(Np-H Đông)(, ,)(Np-H  Bin)(, ,)(Np-H  My))
                    (... ...)
          (AP-PRD(A-H ngoan)(T nào)))
                 (, ,)
@@ -184,9 +184,9 @@
 </s>
 <s>
 (S(NP-SUB(N-H Bàn tay)(N chị))
-    (VP(V-H xoa xoa )
+    (VP(V-H xoa xoa)
             (PP-LOC(E-H trên)
-                    (NP(N-H đầu)(Nc con)(N mãnh thú )
+                    (NP(N-H đầu)(Nc con)(N mãnh thú)
                             (AP(A-H to)
                                     (C như)
                                    (NP(N-H bò)(A mộng))))))
@@ -198,7 +198,7 @@
              (SBAR(S(NP-SUB(N-H vằn)(A đen))
                                 (AP(A-H mượt)(C như)(N nhung)))))
      (, ,)
-    (VP(V-H nhe )(N răng)
+    (VP(V-H nhe)(N răng)
             (VP(V-H gầm)(A vang)
                     (AP(A-H sung sướng))))
 (. .))
@@ -206,7 +206,7 @@
 </s>
 <s>
 (S(NP-SUB(L Tất cả)(L  những)(Nc-H con)(N vật)(V nuôi)
-            (PP-LOC(E-H ở )
+            (PP-LOC(E-H ở)
                     (NP(P-H đây)))
              (PP(E-H dù)
                      (AP(A-H dữ dằn)
@@ -250,10 +250,10 @@
                                              (NP(N-H thế giới)))))))
   (, ,)
   (C nhưng)
-  (S(PP-SUB(E-H ở )
+  (S(PP-SUB(E-H ở)
                 (NP(P-H ta)))
        (NP-TMP(N-H  xưa nay))
-        (VP(R chưa)(R từng )(V-H có)))
+        (VP(R chưa)(R từng)(V-H có)))
 (. .))
 
 </s>
@@ -281,7 +281,7 @@
                  (VP(V-H bị)(V thương))))
        (C hoặc)
    (S(NP-SUB(N-H chuyện)(A xấu)(A nhất))
-       (VP(V-H xảy )(R ra))))
+       (VP(V-H xảy)(R ra))))
       (C thì)
    (S(NP-SUB *E*)
         (VP(V-H biết)
@@ -294,7 +294,7 @@
 <s>
 (S(NP-SUB(N-H Chị))
      (VP(V-H  đặt)
-             (NP-DOB(P cả )(N-H sự nghiệp)
+             (NP-DOB(P cả)(N-H sự nghiệp)
                      (PP(E-H của)
                              (NP(P-H  mình))))
               (PP-LOC(E-H lên)
@@ -303,10 +303,10 @@
 
 </s>
 <s>
-(S(VP-ADV(V-H Quyết tâm )
+(S(VP-ADV(V-H Quyết tâm)
             (VP(V-H làm)))
     (C nhưng)
-    (NP-SUB(N-H chị)(C và )(N-H anh em)
+    (NP-SUB(N-H chị)(C và)(N-H anh em)
              (PP-LOC(E-H trong)
                      (NP(N-H vườn)(N thú))))
     (VP(R  vẫn)(V-H phải)
@@ -317,7 +317,7 @@
 </s>
 <s>
 (S(S(NP-SUB(N-H Giờ)(Ny G))
-         (VP(R đã)(V-H điểm )))
+         (VP(R đã)(V-H điểm)))
       (, ,)
     (S(NP-SUB(NP(N-H gậy gộc))
                                     (, ,)
@@ -326,9 +326,9 @@
                            (NP(N-H lửa)))
              (... ...)
           (AP-PRD(A-H sẵn sàng)
-                  (PP-PRP(E-H để )
+                  (PP-PRP(E-H để)
                           (VP(V-H tách)
-                                  (NP(P-H  chúng ))
+                                  (NP(P-H  chúng))
                                    (C nếu)
                                    (VP-PRP(V-H xảy)(R  ra)
                                            (NP(" ")(M song)(N-H hổ)
@@ -391,7 +391,7 @@
 
 </s>
 <s>
-(S(NP-SUB(Nc-H Chú )(N hổ)
+(S(NP-SUB(Nc-H Chú)(N hổ)
               (PP(E-H do)
                       (NP(T chính)(N-H bàn tay)(L các)(" ")(N bà đỡ)(" ")
                               (NP-LOC(N-H vườn)(N thú)(Np Hà Nội)))))
@@ -400,7 +400,7 @@
 
 </s>
 <s>
-(S(C Nhưng )
+(S(C Nhưng)
      (S(NP-SUB(N-H hổ)(N mẹ))
           (VP(R không)(V-H có)
                   (NP-DOB(A nhiều)(N-H sữa))))
@@ -423,13 +423,13 @@
 
 </s>
 <s>
-(S(NP-SUB(P Cả )(N-H vườn)(N thú))
+(S(NP-SUB(P Cả)(N-H vườn)(N thú))
      (VP(V-H buồn)(V thương))
 (. .))
 
 </s>
 <s>
-(S(NP-SUB(L Các)(" ")(N-H mẹ )(" "))
+(S(NP-SUB(L Các)(" ")(N-H mẹ)(" "))
      (VP(V-H buồn)(C như)
              (VP(V-H  mất)(R đi)
                      (NP-DOB(Nc-H đứa)(N con)
@@ -442,11 +442,11 @@
 (S(NP-TMP(L Vài)(N-H năm)(A trước))
      (, ,)
      (NP-SUB(N-H vườn)(N thú)(Np  Hà Nội))
-     (AP-PRD(A-H nổi tiếng )
+     (AP-PRD(A-H nổi tiếng)
              (PP(E-H với)
                      (NP(N-H câu chuyện)
-                             (PP(E-H  về )
-                                     (NP(Nc-H chú )(N hổ)(Np Lâm Nhi))))))
+                             (PP(E-H  về)
+                                     (NP(Nc-H chú)(N hổ)(Np Lâm Nhi))))))
 (. .))
 
 </s>
@@ -480,7 +480,7 @@
 (S(NP-SUB(L Các)(N-H cô))
      (VP(V-H gọi)
              (NP-DOB(P-H nó))
-             (C là )
+             (C là)
               (NP-DOB(Nc-H con)(Np Huế My)))
  (. .))
 
@@ -500,10 +500,10 @@
                                        (VP(V-H đưa)(R về)
                                                (PP-LOC(E-H từ)
                                                        (NP(M một)(N-H cánh)(N rừng)
-                                                               (PP(E-H ở )
+                                                               (PP(E-H ở)
                                                                        (NP(Np-H Huế)))))
                                                 (PP-TMP(E-H sau)
-                                                         (NP(M một)(N-H vụ )(V buôn bán)(N động vật)
+                                                         (NP(M một)(N-H vụ)(V buôn bán)(N động vật)
                                                                  (AP(A-H trái phép))
                                                                  (VP(R không)(V-H thành))))))))
 (. .))
@@ -511,13 +511,13 @@
 <s>
 (S 
      (NP-SUB(N-H Chữ)(" ")(Np My)(" ")
-          (SBAR(C mà )
+          (SBAR(C mà)
                (S 
-                    (NP-SUB(L những ) (N-H cô)
+                    (NP-SUB(L những) (N-H cô)
                          (VP (V-H nuôi) (V-H dạy)
-                              (NP-DOB(N-H hổ ))))
-                    (VP (V-H đặt )))))
-     (, , )
+                              (NP-DOB(N-H hổ))))
+                    (VP (V-H đặt)))))
+     (, ,)
 (VP(V-H theo)
            (NP(N-H tiếng)(Np Anh)
                        (VP(V-H có)
@@ -544,32 +544,32 @@
 </s>
 <s>
 (S 
-     (NP-TMP (N-H Nay ))
+     (NP-TMP (N-H Nay))
      (S 
-          (NP-SUB (Np-H Lâm Nhi ))
-          (VP (R đã ) (V-H lớn )))
-     (, , )
+          (NP-SUB (Np-H Lâm Nhi))
+          (VP (R đã) (V-H lớn)))
+     (, ,)
      (S 
           (S-SUB 
-               (NP-SUB (Nc-H nỗi ) (V đau )
-                    (PP (E-H về )
-                         (NP (N-H lần ) (N đầu tiên )
-                              (VP (V-H cho )
-                                   (NP-DOB (N-H hổ ) (N mẹ ))
-                                   (VP-IOB (V-H sinh sản ))))))
-               (VP (R không ) (V-H thành )))
-          (VP (R chưa ) (V-H nguôi ngoai )))
-     (, , )
+               (NP-SUB (Nc-H nỗi) (V đau)
+                    (PP (E-H về)
+                         (NP (N-H lần) (N đầu tiên)
+                              (VP (V-H cho)
+                                   (NP-DOB (N-H hổ) (N mẹ))
+                                   (VP-IOB (V-H sinh sản))))))
+               (VP (R không) (V-H thành)))
+          (VP (R chưa) (V-H nguôi ngoai)))
+     (, ,)
      (S 
-          (NP-SUB (M một ) (N-H quyết định ) (A táo bạo ) (T nữa ))
-          (VP (R đã ) (V-H được )
+          (NP-SUB (M một) (N-H quyết định) (A táo bạo) (T nữa))
+          (VP (R đã) (V-H được)
                (SBAR-DOB 
-                    (S (NP-SUB *E* )
-                         (VP (V-H đưa ) (R ra ) (: : )
-                              (VP (V-H cho )
-                                   (NP-DOB (Np-H Lâm Nhi ))
-                                   (VP-IOB (V-H giao phối ))))))))
-     (. . ))
+                    (S(NP-SUB *E*)
+                         (VP (V-H đưa) (R ra) (: :)
+                              (VP (V-H cho)
+                                   (NP-DOB (Np-H Lâm Nhi))
+                                   (VP-IOB (V-H giao phối))))))))
+     (. .))
 
 </s>
 <s>
@@ -647,12 +647,12 @@
                                    (SBAR(C mà)
                                              (S(NP-SUB(P-H mình))
                                                   (VP(V-H chăm bẵm)
-                                                          (NP-TMP(R hàng)(M chục)(N-H năm ))))))))
+                                                          (NP-TMP(R hàng)(M chục)(N-H năm))))))))
                           (, ,) 
               (VP(V-H phải)
                       (VP(V-H chia tay)
                              (NP-DOB(Nc-H  chú)(N  voi)(Np Pha Lang)
-                                     (NP(R đã)(A gần)(M trăm )(Nu-H tuổi))))))
+                                     (NP(R đã)(A gần)(M trăm)(Nu-H tuổi))))))
 (... ...))
 </s>
 <s>
@@ -746,7 +746,7 @@
     (VP(V-H là)
             (NP-DOB(Nc-H chú)(Np Ước)
                      (VP(V-H phải)
-                             (VP(V-H mang )
+                             (VP(V-H mang)
                                      (NP(Nc-H vết)(N sẹo)
                                              (PP-LOC(E-H trên)
                                                     (NP(N-H bàn tay)(A  phải))))
@@ -774,7 +774,7 @@
              (SBAR(S(NP-SUB(M một)(N-H quản tượng))
                                (VP(V-H bớt)
                                        (NP-DOB(M năm)(Nc-H quả)(N dứa))
-                                       (PP-LOC(E-H trong )
+                                       (PP-LOC(E-H trong)
                                                         (NP(N-H khẩu phần)
                                                                 (PP(E-H của)
                                                                         (NP(P-H nó)))))))))
@@ -804,11 +804,11 @@
 
 </s>
 <s>
-(S(NP-SUB(Nc-H Chị)(Np Vũ Thanh Thủy ))
-     (VP(R không thể )(V-H quên)(R được)
+(S(NP-SUB(Nc-H Chị)(Np Vũ Thanh Thủy))
+     (VP(R không thể)(V-H quên)(R được)
              (NP-TMP(N-H lần)
                      (VP(V-H bị)
-                             (SBAR(S(NP-SUB(N-H ngựa ))
+                             (SBAR(S(NP-SUB(N-H ngựa))
                                                 (VP(V-H bổ)))))))
 (. .))
 
@@ -817,7 +817,7 @@
 (S(NP-TMP(NP(N-H Khi)
              (SBAR(S(NP-SUB(N-H chị))
                                (VP(V-H vào)
-                                      (VP-PRP(V-H tiêm )(N thuốc)
+                                      (VP-PRP(V-H tiêm)(N thuốc)
                                              (PP(E-H cho)
                                                      (NP(P-H nó))))))))
 (, ,)
@@ -833,7 +833,7 @@
                                   (NP-IOB(N-H chị))
                                   (VP-DOB(V-H ngã)(A sấp)(R xuống)))))
          (C rồi)
-         (VP(R còn)(V-H bồi)(V thêm )
+         (VP(R còn)(V-H bồi)(V thêm)
                  (NP-DOB(M một)(N-H phát))
                 (PP-LOC(E-H vào)
                             (NP(N-H vai)))))
@@ -844,10 +844,10 @@
 (S(NP-SUB(P-H Chúng tôi))
      (VP(V-H  hỏi)
               (: :)(" ")
-             (SBAR-DOB(SQ(NP-SUB(N-H Chị ))
+             (SBAR-DOB(SQ(NP-SUB(N-H Chị))
                                    (VP(V-H hãi)(A nhất)
                                            (NP-DOB(Nc-H con)(N vật)(P nào)
-                                                   (PP-LOC(E-H ở )
+                                                   (PP-LOC(E-H ở)
                                                            (NP(N-H vườn)(N thú)(P này)))))
                         (? ?)))
           (" "))
@@ -862,7 +862,7 @@
                                      (! !)
                                 (SBAR-PRP(E-H Vì)
                                                   (S(NP-SUB(P-H nó))
-                                                       (VP(V-H nhớ )
+                                                       (VP(V-H nhớ)
                                                                (AP(R quá)(A-H  dai))))))))
 (. .))
 
@@ -871,12 +871,12 @@
 (S(NP-TMP(M Mỗi)(N-H  lần)
              (VP(V-H thấy)
                     (SBAR(S(NP-SUB(P-H mình))
-                                      (VP(V-H cầm )
-                                              (NP-DOB(N-H kim tiêm )))))))
+                                      (VP(V-H cầm)
+                                              (NP-DOB(N-H kim tiêm)))))))
 (C là)
  (NP-SUB(P-H nó))
   (VP(R  lại)(V-H gừ gừ)
-          (VP-PRP(V-H  đe dọa )))
+          (VP-PRP(V-H  đe dọa)))
 (" ")
 (. .))
 
@@ -925,13 +925,13 @@
                    (, ,) 
                  (VP(V-H chăm sóc)
                          (NP(P-H  chúng))
-                         (AP(A-H đúng)(N mức )))))
+                         (AP(A-H đúng)(N mức)))))
          (C thì)
    (S(PP-PRP(E-H dù)
                 (VP(V-H có)
                         (AP(A-H dữ dằn))))
         (NP-SUB(P-H chúng))
-        (VP(R  cũng )(R sẽ )(V-H trở nên)
+        (VP(R  cũng)(R sẽ)(V-H trở nên)
                 (AP(A-H  thân thiện))
                              (C  và)
                 (VP(V-H  đáng)(V  yêu)(A hơn))))
@@ -947,7 +947,7 @@
                                         (VP(V-H đối mặt)
                                                 (PP(E-H  với)
                                                        (NP(Nc-H con)(N hổ)
-                                                               (NP(R đang)(N-H thời kỳ )(V động dục)))))))))
+                                                               (NP(R đang)(N-H thời kỳ)(V động dục)))))))))
 (. .))
 
 </s>
@@ -959,7 +959,7 @@
        (, ,)
     (NP-SUB(P-H  nó))
     (VP(V-H vượt)(R  qua)
-           (NP-DOB(N-H song )(N sắt)
+           (NP-DOB(N-H song)(N sắt)
                    (VP(V-H khép)(A  hờ)))
             (VP-PRP(V-H lao)
                     (PP-DIR(E-H vào)
@@ -980,7 +980,7 @@
 </s>
 <s>
 (S(S(NP-SUB(NP(N-H Người))
-                                     (C và )
+                                     (C và)
                            (NP(N-H thú)))
           (VP(V-H vật)(N nhau)))
         (, ,)
@@ -1034,7 +1034,7 @@
 </s>
 <s>
 (S(C Dù)
-     (S(NP-SUB(L những )(N-H câu chuyện)(V kinh hoàng )(P ấy))
+     (S(NP-SUB(L những)(N-H câu chuyện)(V kinh hoàng)(P ấy))
           (VP(V-H để)(R lại)
                   (NP-DOB(L những)(N-H ấn tượng)
                           (AP(A-H sâu đậm)))))
@@ -1048,7 +1048,7 @@
                                         (NP(L các)(N-H chị)))))
        (VP(T chính)(V-H là)
                (NP-DOB(L những)(N-H kỷ niệm)(A đẹp)
-                       (SBAR(C mà )
+                       (SBAR(C mà)
                                  (S(NP-SUB(R chỉ)(L  những)(N-H ai)
                                               (VP(VP(V-H yêu thương)
                                                           (NP-DOB(Nc-H loài)(N vật)))

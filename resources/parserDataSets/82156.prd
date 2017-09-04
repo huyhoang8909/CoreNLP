@@ -26,7 +26,7 @@
      (VP(V-H làm nên)
            (NP-DOB(N-H ánh)(N điện)
                    (AP(A-H rực rỡ))))
-(. . ))
+(. .))
 
 
 
@@ -49,7 +49,7 @@
                      (VP(V-H cưu mang)
                                (NP(L những)(N-H phận)(N người)
                                              (VP(V-H trôi dạt))))))
-(. . ))
+(. .))
 </s>
 <s>
 (S(NP-TMP(M 15)(N-H năm)(T rồi))
@@ -560,7 +560,7 @@
 (. .))
 </s>
 <s>
-(S(AP-SUB(A-H Đẹp)(R nhất ))
+(S(AP-SUB(A-H Đẹp)(R nhất))
 (VP(V-H là)
          (NP-DOB(N-H đảo)
                        (PP(E-H của)

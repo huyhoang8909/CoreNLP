@@ -156,7 +156,7 @@
 (. .))
 </s>
 <s>
-(S(S (NP-SUB *E*)
+(S(S(NP-SUB *E*)
      (VP 
           (VP (R Không) (V-H được)
                (VP (V-H đứng tên)
@@ -182,7 +182,7 @@
                               (S-CND (C nếu) (NP-SUB *E*)
                                    (VP (V-H vào)
                                         (NP-DOB (N-H đại học))))
-                              (S (NP-SUB *E*)
+                              (S(NP-SUB *E*)
                                    (VP (V-H phải) (V chịu)
                                         (NP (M một) (N-H khoản) (N học phí) (C như)
                                              (NP (Nc-H người) (N nước ngoài) (LBKT LBKT)

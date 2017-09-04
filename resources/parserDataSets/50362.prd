@@ -291,7 +291,7 @@
                                                                                                         (NP-DOB(N-H dân quân))
                                                                                                         (VP-IOB(V-H lấp)
                                                                                                                      (NP-DOB(N-H hố)(N bom))))
-                                                                                              (C thì )
+                                                                                              (C thì)
                                                                                              (VP(V-H bị)
                                                                                                         (SBAR-DOB(S(NP-SUB(N-H bom))
                                                                                                                                       (VP(V-H sát hại))))))))))))))))
@@ -352,7 +352,7 @@
             (NP-DOB(M ba)(N-H nấc)(N tuổi)
                      (AP(A-H khác)(N nhau))
                      (VP(V-H gồm)
-                             (QP-TMP(M-H 1950)(, ,)(M-H 1949)(, , )(M-H 1944)))))
+                             (QP-TMP(M-H 1950)(, ,)(M-H 1949)(, ,)(M-H 1944)))))
 (. .))
 </s>
 <s>
@@ -716,7 +716,7 @@
              (PP(E-H đến)
                      (NP(P-H đó))))
       (R tức thì)
-      (NP-SUB(N-H cò)(Ny K )(. .))
+      (NP-SUB(N-H cò)(Ny K)(. .))
       (VP(V-H hướng dẫn)
               (SBAR(S(NP-SUB *E*)
                                 (VP(V-H nên)
@@ -779,15 +779,15 @@
   (S(NP-SUB(Nc-H ông)(Np Chính))
        (VP(R đang)(V-H lưỡng lự)))
                       (C thì)
-   (S(NP-SUB(Ny-H K )(. .))
+   (S(NP-SUB(Ny-H K)(. .))
         (VP(V-H yêu cầu)
                 (VP(V-H cởi)(A hết)
-                        (NP-DOB(N-H quần áo )(A dài)
+                        (NP-DOB(N-H quần áo)(A dài)
                                 (PP(E-H của)
                                         (NP(N-H ông))))
                                     (R ra)
                         (SBAR-PRP(E-H để)
-                                (S(NP-SUB(Ny-H K )(. .))
+                                (S(NP-SUB(Ny-H K)(. .))
                                      (VP(V-H xem)(V thử)
                                              (NP-DOB(L các)(N-H vết thương))))))))
 (. .))
@@ -805,7 +805,7 @@
 
 </s>
 <s>
-(S(R Bỗng )
+(S(R Bỗng)
      (NP-SUB(Ny-H K)(. .))
       (VP(V-H nói)
                      (: :)(" ")
@@ -897,7 +897,7 @@
 (. .))
 </s>
 <s>
-(S(S(NP-SUB(N-H Cò )(Ny K)(. .))
+(S(S(NP-SUB(N-H Cò)(Ny K)(. .))
          (VP(S nguyên)(V-H là)
                  (NP-DOB(N-H đảng viên))))
                               (, ,)
@@ -1012,7 +1012,7 @@
                                           (S(PP-TMP(E-H đến)
                                                         (NP(N-H tháng)(M 9)(- -)(M 2004)))
                                                (NP-SUB-1 *T*)
-                                               (VP(R đã)(V-H tăng)(R vọt)(R lên )
+                                               (VP(R đã)(V-H tăng)(R vọt)(R lên)
                                                                        (NP(M 11)(M triệu)(Nu-H đồng)
                                                                                       (/ /)
                                                                                      (NP(N-H suất)))))))
@@ -1080,7 +1080,7 @@
 (. .))
 </s>
 <s>
-(S(C Vì thế )(C mà)
+(S(C Vì thế)(C mà)
      (PP-LOC-SUB(E-H ở)
              (NP(N-H huyện)(Np Nghi Xuân))) 
      (VP(V-H có)

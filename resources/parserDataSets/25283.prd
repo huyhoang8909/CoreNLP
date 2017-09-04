@@ -148,7 +148,7 @@
                     (: :)  
                     (SBAR(S(S(NP-TPC-2(N-H vợ chồng)(Np Trường)(- -)(Np Trinh)
                                                    (VP(V-H có)
-                                                          (NP-DOB(M hai)(N-H con )(A nhỏ))))                  
+                                                          (NP-DOB(M hai)(N-H con)(A nhỏ))))                  
                                            (NP-SUB-1 *T*)
                                             (VP(R không)(V-H biết)
                                                     (SBAR(S(NP-SUB-2 *T*)
@@ -222,11 +222,11 @@
                                                                         (" "))
                                                                 (VP(V-H đăng)
                                                                       (PP(E-H trên)
-                                                                               (NP(N-H báo)(Np Pháp Luật)(Ny TP.HCM ))))))))))
+                                                                               (NP(N-H báo)(Np Pháp Luật)(Ny TP.HCM))))))))))
        (. .))
 </s>
 <s>
-(S (NP-TMP(N-H Khi)
+(S(NP-TMP(N-H Khi)
               (VP(V-H hay)
                       (NP(N-H tin))
                       (VP(V-H có)
@@ -312,7 +312,7 @@
 
 </s>
 <s>
-(S (VP-MNR(V-H Chỉ)
+(S(VP-MNR(V-H Chỉ)
                (NP(N-H tay))
                (PP-DIR(E-H vào)
                       (NP(Nc-H đứa)(N con)(N gái)
@@ -335,7 +335,7 @@
 
 </s>
 <s>
-(S (S(NP-SUB(N-H Nỗi)(A oan))
+(S(S(NP-SUB(N-H Nỗi)(A oan))
           (VP(R chưa)(V-H được)
                   (VP(V-H giải))))
                              (C nên)
@@ -372,7 +372,7 @@
 (. .))
 </s>
 <s>
-(S (NP-SUB(N-H Anh))
+(S(NP-SUB(N-H Anh))
       (VP(V-H khẳng định)
         (: :)
         (" ")
@@ -478,27 +478,27 @@
 <s>
 (S 
      (S 
-          (NP-SUB (M Đôi ) (N-H gò má ))
-          (AP-PRD (A-H hóp )))
-     (, , )
+          (NP-SUB (M Đôi) (N-H gò má))
+          (AP-PRD (A-H hóp)))
+     (, ,)
      (S 
-          (NP-SUB (M đôi ) (N-H mắt ))
-          (AP-PRD (A-H trũng ) (A sâu )
-               (PP-TMP (E-H sau )
-                    (NP (L những ) (N-H đêm )
-                         (AP (A-H vất vả )
-                              (PP (E-H đến ) (E tận )
-                                   (NP (M 2 ) (- - ) (M 3 ) (Nu-H giờ ) (N sáng ))))
-                         (, , )
-                         (VP (V-H rảo ) (V bước )
-                              (AP-LOC (A-H khắp )
-                                   (XP (X-H hang cùng ngõ hẻm )))
+          (NP-SUB (M đôi) (N-H mắt))
+          (AP-PRD (A-H trũng) (A sâu)
+               (PP-TMP (E-H sau)
+                    (NP (L những) (N-H đêm)
+                         (AP (A-H vất vả)
+                              (PP (E-H đến) (E tận)
+                                   (NP (M 2) (- -) (M 3) (Nu-H giờ) (N sáng))))
+                         (, ,)
+                         (VP (V-H rảo) (V bước)
+                              (AP-LOC (A-H khắp)
+                                   (XP (X-H hang cùng ngõ hẻm)))
                               (VP-PRP 
-                                   (VP (V-H bới )
-                                        (NP-DOB (N-H rác )))
-                                   (VP (V-H nhặt )
-                                        (NP-DOB (N-H bao bì ) (, , ) (N-H ve chai )))))))))
-     (. . ))
+                                   (VP (V-H bới)
+                                        (NP-DOB (N-H rác)))
+                                   (VP (V-H nhặt)
+                                        (NP-DOB (N-H bao bì) (, ,) (N-H ve chai)))))))))
+     (. .))
 
 </s>
 <s>
@@ -585,7 +585,7 @@
 (S(PP-SUB(E-H Ở)
             (NP(P-H đó)))
      (VP(V-H có)(R đến)
-             (SBAR(S (NP-SUB(M 13)(N-H con người))
+             (SBAR(S(NP-SUB(M 13)(N-H con người))
                                 (VP(V-H chen chúc)
                                        (NP-DOB(N-H nhau))
                                        (VP(V-H sống)
@@ -631,7 +631,7 @@
     (AP-PRD(R đang)(A-H cùng)
                        (NP(NP(N-H chồng))
                                  (C và)
-                               (NP(Nc-H đứa)(N con )(N gái)))
+                               (NP(Nc-H đứa)(N con)(N gái)))
                      (VP(V-H ăn)(A vội)
                             (NP(Nc-H miếng)(N cơm)
                                     (AP(A-H đạm bạc)))))
@@ -654,7 +654,7 @@
 
 </s>
 <s>
-(S (S(NP-SUB(N-H Thân)(P mình))
+(S(S(NP-SUB(N-H Thân)(P mình))
           (VP(VP(VP(V-H chịu)
                                (AP(A-H cực)))
                                 (, ,)
@@ -665,7 +665,7 @@
                                                   (, ,)
       (C nhưng)
   (S(VP-SUB(V-H thương)
-               (AP(A-H nhất )))
+               (AP(A-H nhất)))
         (VP(V-H là)
                (NP-DOB(M hai)(Nc-H đứa)(N con))))
    (. .))

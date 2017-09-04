@@ -7,7 +7,7 @@
 
 </s>
 <s>
-(S-SPL(VP(V-H Mưa ))
+(S-SPL(VP(V-H Mưa))
 (. .))
 
 </s>
@@ -358,7 +358,7 @@
 
 </s>
 <s>
-(S(S(NP-SUB(Nc-H Người )(Ny CN))
+(S(S(NP-SUB(Nc-H Người)(Ny CN))
          (VP(VP(V-H cúi)(R xuống))
                                (, ,)
                  (VP(V-H cầm)
@@ -627,7 +627,7 @@
                                                             (NP(L những)(N-H người)
                                                                     (PP-LOC(E-H dưới)
                                                                              (NP(N-H đáy)
-                                                                                     (NP(N-H xã hội ))))))))))))
+                                                                                     (NP(N-H xã hội))))))))))))
 (. .))
 
 </s>
@@ -657,7 +657,7 @@
 <s>
 (SQ(PP-LOC(R Chẳng)(E-H tận)
                 (NP(N-H đáy)))
-                               (C thì )
+                               (C thì)
          (VP(V-H là)
                  (NP-DOB(P-H gì)))(" ")
 (? ?))
@@ -791,14 +791,14 @@
 
 </s>
 <s>
-(S(VP-SUB(VP(V-H Buồn  )
-                              (AP(A-H hơn )))
-                                          (C và )
-                      (VP(V-H đáng )
-                             (VP(V-H suy nghĩ ))
-                                    (AP(A-H hơn ))))
-    (VP(V-H là )
-            (NP(N-H chuyện )
+(S(VP-SUB(VP(V-H Buồn )
+                              (AP(A-H hơn)))
+                                          (C và)
+                      (VP(V-H đáng)
+                             (VP(V-H suy nghĩ))
+                                    (AP(A-H hơn))))
+    (VP(V-H là)
+            (NP(N-H chuyện)
                      (NP(N-H con người))))
 (. .))
 
@@ -888,7 +888,7 @@
 
 </s>
 <s>
-(S(S(VP-TMP(V-H Có )
+(S(S(VP-TMP(V-H Có)
               (NP(N-H khi)))
          (NP-SUB *E*)
          (VP(V-H đổ)(T ngay)
