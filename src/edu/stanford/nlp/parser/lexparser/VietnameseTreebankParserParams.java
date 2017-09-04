@@ -230,7 +230,8 @@ public class VietnameseTreebankParserParams extends AbstractTreebankParserParams
    * Makes appropriate TreeReaderFactory with all options specified
    */
   @Override
-  public TreeReaderFactory treeReaderFactory() {
+  public TreeReaderFactory
+  treeReaderFactory() {
     return in -> new PennTreeReader(in, new LabeledScoredTreeFactory(), new NPTmpRetainingTreeNormalizer(englishTrain.splitTMP, englishTrain.splitSGapped == 5, englishTrain.leaveItAll, englishTrain.splitNPADV >= 1, headFinder()));
   }
 

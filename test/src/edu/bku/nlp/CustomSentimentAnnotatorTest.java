@@ -186,7 +186,7 @@ public class CustomSentimentAnnotatorTest {
             pipeline.addAnnotator(new CustomParserAnnotator(false, -1));
             pipeline.addAnnotator(new BinarizerAnnotator("", properties));
 
-            String text = "Cậu bé đang nghịch quả bóng màu xanh";
+            String text = "Cựu lãnh đạo Ngân hàng Sacombank Trầm Bê bị cho có sai phạm, tiếp tay cho Phạm Công Danh gây thất thoát hàng nghìn tỷ đồng.";
             Annotation document = new Annotation(text);
 
             // Run all Annotations on this text

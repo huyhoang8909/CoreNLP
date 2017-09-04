@@ -24,7 +24,7 @@ public class VietnameseHeadFinder extends AbstractCollinsHeadFinder {
   static final String[] rightExceptPunct = {"rightexcept", "PU"};
 
   public VietnameseHeadFinder() {
-    this(new ChineseTreebankLanguagePack());
+    this(new VietnameseTreeBankLanguagePack());
   }
 
   public VietnameseHeadFinder(TreebankLanguagePack tlp) {
@@ -41,7 +41,7 @@ public class VietnameseHeadFinder extends AbstractCollinsHeadFinder {
 
     // ROOT is not always unary for chinese -- PAIR is a special notation
     // that the Irish people use for non-unary ones....
-    nonTerminalInfo.put("ROOT", new String[][]{{left, "IP"}});
+    nonTerminalInfo.put("S", new String[][]{{left, "IP"}});
     nonTerminalInfo.put("PAIR", new String[][]{{left, "IP"}});
 
     // Major syntactic categories
