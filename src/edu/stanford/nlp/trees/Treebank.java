@@ -38,7 +38,7 @@ public abstract class Treebank extends AbstractCollection<Tree> {
    */
   private String encoding = TreebankLanguagePack.DEFAULT_ENCODING;
 
-  public static final String DEFAULT_TREE_FILE_SUFFIX = "mrg";
+  public static final String DEFAULT_TREE_FILE_SUFFIX = "prd";
 
   /**
    * Create a new Treebank (using a LabeledScoredTreeReaderFactory).
