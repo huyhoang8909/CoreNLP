@@ -22,7 +22,7 @@ public class VietnameseTreeBankLanguagePack extends AbstractTreebankLanguagePack
      */
     private static final String[] vnStartSymbols = {"S", "S-EXC", "SQ", "S-CMD", "SBAR"};
     private static final String[] vnSFPunctWords = {".", "!", "?", "..."};
-    private static final String[] vnSFPunctTags = {"."};
+    private static final String[] vnSFPunctTags = {".", "!", ",", "...", ":", "?", "\"", "-"};
     private static final String[] collinsPunctTags = {"''", "``", ".", ":", ","};
 
     private static final String[] vnPunctWords = {"''", "'", "``", "`", "-LRB-", "-RRB-", "-LCB-", "-RCB-", ".", "?", "!", ",", ":", "-", "--", "...", ";"};

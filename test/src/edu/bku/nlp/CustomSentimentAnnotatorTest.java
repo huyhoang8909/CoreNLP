@@ -186,7 +186,7 @@ public class CustomSentimentAnnotatorTest {
             pipeline.addAnnotator(new CustomParserAnnotator(false, -1));
             pipeline.addAnnotator(new BinarizerAnnotator("", properties));
 
-            String text = "Cựu lãnh đạo Ngân hàng Sacombank Trầm Bê bị cho có sai phạm, tiếp tay cho Phạm Công Danh gây thất thoát hàng nghìn tỷ đồng.";
+            String text = "Nguyễn Kỳ Sơn chỉ là một trong hàng chục vạn người lính đã nằm xuống cho độc lập tự do của Tổ quốc , anh cũng chỉ là một liệt sĩ bình thường như hàng ngàn người lính đã hi sinh nay vẫn chưa tìm thấy thân ";
             Annotation document = new Annotation(text);
 
             // Run all Annotations on this text
@@ -198,7 +198,7 @@ public class CustomSentimentAnnotatorTest {
                 // get the tokens for the sentence and iterate over them
                 for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
 
-                    System.out.println(token.word() + "/" + token.tag());
+//                    System.out.println(token.word() + "/" + token.tag());
                 }
 
                 Tree tree = sentence.get(TreeCoreAnnotations.TreeAnnotation.class);
@@ -219,7 +219,7 @@ public class CustomSentimentAnnotatorTest {
 //            old.edu.stanford.nlp.tagger.maxent.MaxentTagger maxentTagger = new old.edu.stanford.nlp.tagger.maxent.MaxentTagger(taggerConfig);
 
             VietnameseMaxentTagger vn = new VietnameseMaxentTagger();
-            List<WordTag> results = vn.tagText2("Cựu lãnh đạo Ngân hàng Sacombank Trầm Bê bị cho có sai phạm, tiếp tay cho Phạm Công Danh gây thất thoát hàng nghìn tỷ đồng.");
+            List<WordTag> results = vn.tagText2("Kiếm sống dưới đáy sông.");
             System.out.println(results);
 
         }
