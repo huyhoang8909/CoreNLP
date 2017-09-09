@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-import old.edu.stanford.nlp.ling.WordTag;
+import edu.stanford.nlp.ling.WordTag;
 
 import static org.junit.Assert.assertEquals;
 

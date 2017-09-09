@@ -14,7 +14,7 @@ import java.util.List;
 
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.TaggedWord;
-import old.edu.stanford.nlp.ling.WordTag;
+import edu.stanford.nlp.ling.WordTag;
 import old.edu.stanford.nlp.tagger.maxent.MaxentTagger;
 import old.edu.stanford.nlp.tagger.maxent.TaggerConfig;
 import vn.hus.nlp.tagger.io.IOutputer;

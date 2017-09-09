@@ -5,7 +5,7 @@ package vn.hus.nlp.tagger.io;
 
 import java.util.List;
 
-import old.edu.stanford.nlp.ling.WordTag;
+import edu.stanford.nlp.ling.WordTag;
 import vn.hus.nlp.tagger.IConstants;
 
 /**
