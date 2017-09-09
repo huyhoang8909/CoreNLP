@@ -1,7 +1,7 @@
 package old.edu.stanford.nlp.tagger.maxent;
 
 import old.edu.stanford.nlp.process.TransformXML;
-import old.edu.stanford.nlp.util.XMLUtils;
+import edu.stanford.nlp.util.XMLUtils;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 

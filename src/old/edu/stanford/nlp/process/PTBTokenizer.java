@@ -37,8 +37,8 @@ import old.edu.stanford.nlp.ling.CoreLabel;
 import old.edu.stanford.nlp.ling.Word;
 import old.edu.stanford.nlp.ling.HasWord;
 import old.edu.stanford.nlp.objectbank.TokenizerFactory;
-import old.edu.stanford.nlp.util.StringUtils;
-import old.edu.stanford.nlp.util.Timing;
+import edu.stanford.nlp.util.StringUtils;
+import edu.stanford.nlp.util.Timing;
 import edu.stanford.nlp.io.IOUtils;
 
 

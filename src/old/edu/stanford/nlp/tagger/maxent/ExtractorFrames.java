@@ -29,7 +29,7 @@
 package old.edu.stanford.nlp.tagger.maxent;
 
 import old.edu.stanford.nlp.util.StringBuildMemoizer;
-import old.edu.stanford.nlp.util.StringUtils;
+import edu.stanford.nlp.util.StringUtils;
 
 import java.util.*;
 

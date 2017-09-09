@@ -28,8 +28,8 @@
 
 package old.edu.stanford.nlp.tagger.maxent;
 
-import old.edu.stanford.nlp.util.Index;
-import old.edu.stanford.nlp.util.HashIndex;
+import edu.stanford.nlp.util.Index;
+import edu.stanford.nlp.util.HashIndex;
 
 /**
  * A collection of Ambiguity Class.

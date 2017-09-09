@@ -11,7 +11,7 @@ import java.io.OutputStreamWriter;
 import java.util.*;
 
 import edu.stanford.nlp.io.EncodingPrintWriter;
-import old.edu.stanford.nlp.util.StringUtils;
+import edu.stanford.nlp.util.StringUtils;
 
 
 /** A POS tagger server for the Stanford POS Tagger.

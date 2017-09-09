@@ -1,6 +1,7 @@
 package old.edu.stanford.nlp.util;
 
 import edu.stanford.nlp.io.ExtensionFileFilter;
+import edu.stanford.nlp.util.FileProcessor;
 
 import java.io.File;
 import java.io.FileFilter;

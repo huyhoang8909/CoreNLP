@@ -3,7 +3,7 @@ package old.edu.stanford.nlp.tagger.maxent;
 import old.edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.trees.TreeNormalizer;
 import edu.stanford.nlp.trees.TreeTransformer;
-import old.edu.stanford.nlp.util.StringUtils;
+import edu.stanford.nlp.util.StringUtils;
 
 import java.io.*;
 import java.util.HashMap;

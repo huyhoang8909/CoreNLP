@@ -8,7 +8,7 @@ import old.edu.stanford.nlp.ling.Document;
 import old.edu.stanford.nlp.ling.HasWord;
 import old.edu.stanford.nlp.ling.CoreAnnotations;
 import old.edu.stanford.nlp.util.CoreMap;
-import old.edu.stanford.nlp.util.Generics;
+import edu.stanford.nlp.util.Generics;
 
 /**
  * Transforms a Document of Words into a Document of Sentences by grouping the

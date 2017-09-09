@@ -8,7 +8,7 @@ import old.edu.stanford.nlp.ling.CoreAnnotations.CurrentAnnotation;
 import old.edu.stanford.nlp.ling.CoreAnnotations.PositionAnnotation;
 import old.edu.stanford.nlp.process.PTBTokenizer;
 import old.edu.stanford.nlp.process.WordToSentenceProcessor;
-import old.edu.stanford.nlp.util.XMLUtils;
+import edu.stanford.nlp.util.XMLUtils;
 
 import java.io.*;
 import java.util.*;

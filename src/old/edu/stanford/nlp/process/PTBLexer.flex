@@ -34,7 +34,7 @@ import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.Set;
 
-import old.edu.stanford.nlp.util.StringUtils;
+import edu.stanford.nlp.util.StringUtils;
 import old.edu.stanford.nlp.ling.CoreLabel;
 import old.edu.stanford.nlp.process.CoreLabelTokenFactory;
 import old.edu.stanford.nlp.ling.CoreAnnotations.AfterAnnotation;

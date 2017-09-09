@@ -31,8 +31,8 @@ import old.edu.stanford.nlp.io.InDataStreamFile;
 import old.edu.stanford.nlp.io.OutDataStreamFile;
 import edu.stanford.nlp.io.PrintFile;
 import old.edu.stanford.nlp.maxent.iis.LambdaSolve;
-import old.edu.stanford.nlp.util.StringUtils;
-import old.edu.stanford.nlp.util.Timing;
+import edu.stanford.nlp.util.StringUtils;
+import edu.stanford.nlp.util.Timing;
 
 import java.io.*;
 import java.util.ArrayList;

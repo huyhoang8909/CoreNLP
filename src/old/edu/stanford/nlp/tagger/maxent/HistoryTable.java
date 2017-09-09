@@ -7,8 +7,8 @@
 
 package old.edu.stanford.nlp.tagger.maxent;
 
-import old.edu.stanford.nlp.util.Index;
-import old.edu.stanford.nlp.util.HashIndex;
+import edu.stanford.nlp.util.Index;
+import edu.stanford.nlp.util.HashIndex;
 
 /**
  * <i>Notes:</i> This maintains a two way lookup between a History and

@@ -13,7 +13,7 @@ import org.xml.sax.helpers.DefaultHandler;
 
 import old.edu.stanford.nlp.util.Function;
 import edu.stanford.nlp.io.IOUtils;
-import old.edu.stanford.nlp.util.XMLUtils;
+import edu.stanford.nlp.util.XMLUtils;
 
 
 /**

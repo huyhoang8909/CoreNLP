@@ -3,8 +3,8 @@ package old.edu.stanford.nlp.tagger.maxent;
 import old.edu.stanford.nlp.io.InDataStreamFile;
 import old.edu.stanford.nlp.io.OutDataStreamFile;
 import edu.stanford.nlp.io.RuntimeIOException;
-import old.edu.stanford.nlp.util.Index;
-import old.edu.stanford.nlp.util.HashIndex;
+import edu.stanford.nlp.util.Index;
+import edu.stanford.nlp.util.HashIndex;
 
 import java.io.IOException;
 import java.io.DataInputStream;

@@ -39,8 +39,8 @@ import old.edu.stanford.nlp.process.*;
 import old.edu.stanford.nlp.process.PTBTokenizer.PTBTokenizerFactory;
 import old.edu.stanford.nlp.sequences.PlainTextDocumentReaderAndWriter;
 import old.edu.stanford.nlp.util.Function;
-import old.edu.stanford.nlp.util.Timing;
-import old.edu.stanford.nlp.util.XMLUtils;
+import edu.stanford.nlp.util.Timing;
+import edu.stanford.nlp.util.XMLUtils;
 
 import java.io.*;
 import java.util.*;
