@@ -5,9 +5,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-import old.edu.stanford.nlp.stats.Counter;
-import old.edu.stanford.nlp.stats.Counters;
-import old.edu.stanford.nlp.stats.IntCounter;
+import edu.stanford.nlp.stats.Counter;
+import edu.stanford.nlp.stats.Counters;
+import edu.stanford.nlp.stats.IntCounter;
 import vn.hus.nlp.utils.UTF8FileUtility;
 
 /**
