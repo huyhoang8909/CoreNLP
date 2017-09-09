@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-import old.edu.stanford.nlp.ling.CategoryWordTag;
+import edu.stanford.nlp.ling.CategoryWordTag;
 import edu.stanford.nlp.trees.DiskTreebank;
 import edu.stanford.nlp.trees.PennTreeReaderFactory;
 import edu.stanford.nlp.trees.Tree;

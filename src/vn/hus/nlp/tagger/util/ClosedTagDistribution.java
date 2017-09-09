@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import old.edu.stanford.nlp.ling.CategoryWordTag;
+import edu.stanford.nlp.ling.CategoryWordTag;
 import edu.stanford.nlp.trees.DiskTreebank;
 import edu.stanford.nlp.trees.PennTreeReaderFactory;
 import edu.stanford.nlp.trees.Tree;

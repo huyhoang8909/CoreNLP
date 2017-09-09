@@ -6,7 +6,7 @@ package vn.hus.nlp.tagger.util;
 import java.util.Set;
 import java.util.TreeSet;
 
-import old.edu.stanford.nlp.ling.CategoryWordTag;
+import edu.stanford.nlp.ling.CategoryWordTag;
 import edu.stanford.nlp.trees.DiskTreebank;
 import edu.stanford.nlp.trees.PennTreeReaderFactory;
 import edu.stanford.nlp.trees.Tree;
