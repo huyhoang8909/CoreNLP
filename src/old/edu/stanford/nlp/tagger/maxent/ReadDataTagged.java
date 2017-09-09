@@ -10,7 +10,7 @@ import edu.stanford.nlp.io.NumberRangesFileFilter;
 import old.edu.stanford.nlp.ling.Sentence;
 import old.edu.stanford.nlp.ling.TaggedWord;
 import old.edu.stanford.nlp.ling.WordTag;
-import old.edu.stanford.nlp.trees.*;
+import edu.stanford.nlp.trees.*;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -70,68 +70,68 @@ public class ReadDataTagged {
   }
 
   private void initFromTrees(TaggerConfig config) throws Exception {
-    System.err.println("Training a tagger from treebank" + filename);
-    ArrayList<String> words = new ArrayList<String>();
-    ArrayList<String> tags = new ArrayList<String>();
-    int numSentences = 0;
-    int numWords = 0;
-
-    int maxLen = Integer.MIN_VALUE;
-    int minLen = Integer.MAX_VALUE;
-    TreeReaderFactory trf = new LabeledScoredTreeReaderFactory();
-    TreeTransformer transformer = config.getTreeTransformer();
-    TreeNormalizer normalizer = config.getTreeNormalizer();
-    DiskTreebank treebank = new DiskTreebank(trf, config.getEncoding());
-    if (config.getTreeRange() != null) {
-      treebank.loadPath(filename, new NumberRangesFileFilter(config.getTreeRange(), true));
-    } else {
-      treebank.loadPath(filename);
-    }
-    for (Tree t : treebank) {
-      if (normalizer != null) {
-        t = normalizer.normalizeWholeTree(t, t.treeFactory());
-      }
-      if (transformer != null) {
-        t = t.transform(transformer);
-      }
-      Sentence<TaggedWord> yield = t.taggedYield();
-      for(TaggedWord tw : yield) {
-        if(tw != null) {
-          words.add(tw.word());
-          tags.add(tw.tag());
-          if (!GlobalHolder.tagTokens.containsKey(tw.tag())) {
-            GlobalHolder.tagTokens.put(tw.tag(), new HashSet<String>());
-          }
-          GlobalHolder.tagTokens.get(tw.tag()).add(tw.word());
-        }
-      }
-      maxLen = (yield.length() > maxLen ? yield.length() : maxLen);
-      minLen = (yield.length() < minLen ? yield.length() : minLen);
-      words.add(eosWord);
-      tags.add(eosTag);
-      numElements = numElements + yield.length() + 1;
-      // iterate over the words in the sentence
-      for (int i = 0; i < yield.length() + 1; i++) {
-        History h = new History(numWords+numSentences, numWords+numSentences + yield.length(), numWords+numSentences + i, pairs);
-        String tag = tags.get(i);
-        String word = words.get(i);
-        pairs.add(new WordTag(word,tag));
-        int y = GlobalHolder.tags.add(tag);
-        DataWordTag dat = new DataWordTag(h, y);
-        v.add(dat);
-        GlobalHolder.dict.add(word, tag);
-
-      }
-      numSentences++;
-      numWords += yield.length();
-      words.clear();
-      tags.clear();
-      if ((numSentences % 100000) == 0) System.err.println("Read " + numSentences + " sentences, min " + minLen + " words, max " + maxLen + " words ... [still reading]");
-
-    }
-
-    System.err.println("Read " + numWords + " words from " + filename + " [done].");
-    System.err.println("Read " + numSentences + " sentences, min " + minLen + " words, max " + maxLen + " words.");
+//    System.err.println("Training a tagger from treebank" + filename);
+//    ArrayList<String> words = new ArrayList<String>();
+//    ArrayList<String> tags = new ArrayList<String>();
+//    int numSentences = 0;
+//    int numWords = 0;
+//
+//    int maxLen = Integer.MIN_VALUE;
+//    int minLen = Integer.MAX_VALUE;
+//    TreeReaderFactory trf = new LabeledScoredTreeReaderFactory();
+//    TreeTransformer transformer = config.getTreeTransformer();
+//    TreeNormalizer normalizer = config.getTreeNormalizer();
+//    DiskTreebank treebank = new DiskTreebank(trf, config.getEncoding());
+//    if (config.getTreeRange() != null) {
+//      treebank.loadPath(filename, new NumberRangesFileFilter(config.getTreeRange(), true));
+//    } else {
+//      treebank.loadPath(filename);
+//    }
+//    for (Tree t : treebank) {
+//      if (normalizer != null) {
+//        t = normalizer.normalizeWholeTree(t, t.treeFactory());
+//      }
+//      if (transformer != null) {
+//        t = t.transform(transformer);
+//      }
+//      Sentence<TaggedWord> yield = t.taggedYield();
+//      for(TaggedWord tw : yield) {
+//        if(tw != null) {
+//          words.add(tw.word());
+//          tags.add(tw.tag());
+//          if (!GlobalHolder.tagTokens.containsKey(tw.tag())) {
+//            GlobalHolder.tagTokens.put(tw.tag(), new HashSet<String>());
+//          }
+//          GlobalHolder.tagTokens.get(tw.tag()).add(tw.word());
+//        }
+//      }
+//      maxLen = (yield.length() > maxLen ? yield.length() : maxLen);
+//      minLen = (yield.length() < minLen ? yield.length() : minLen);
+//      words.add(eosWord);
+//      tags.add(eosTag);
+//      numElements = numElements + yield.length() + 1;
+//      // iterate over the words in the sentence
+//      for (int i = 0; i < yield.length() + 1; i++) {
+//        History h = new History(numWords+numSentences, numWords+numSentences + yield.length(), numWords+numSentences + i, pairs);
+//        String tag = tags.get(i);
+//        String word = words.get(i);
+//        pairs.add(new WordTag(word,tag));
+//        int y = GlobalHolder.tags.add(tag);
+//        DataWordTag dat = new DataWordTag(h, y);
+//        v.add(dat);
+//        GlobalHolder.dict.add(word, tag);
+//
+//      }
+//      numSentences++;
+//      numWords += yield.length();
+//      words.clear();
+//      tags.clear();
+//      if ((numSentences % 100000) == 0) System.err.println("Read " + numSentences + " sentences, min " + minLen + " words, max " + maxLen + " words ... [still reading]");
+//
+//    }
+//
+//    System.err.println("Read " + numWords + " words from " + filename + " [done].");
+//    System.err.println("Read " + numSentences + " sentences, min " + minLen + " words, max " + maxLen + " words.");
   }
 
 

@@ -10,12 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import old.edu.stanford.nlp.ling.CategoryWordTag;
-import old.edu.stanford.nlp.trees.DiskTreebank;
-import old.edu.stanford.nlp.trees.PennTreeReaderFactory;
-import old.edu.stanford.nlp.trees.Tree;
-import old.edu.stanford.nlp.trees.TreeVisitor;
-import old.edu.stanford.nlp.trees.Treebank;
-import old.edu.stanford.nlp.trees.Trees;
+import edu.stanford.nlp.trees.DiskTreebank;
+import edu.stanford.nlp.trees.PennTreeReaderFactory;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.trees.TreeVisitor;
+import edu.stanford.nlp.trees.Treebank;
+import edu.stanford.nlp.trees.Trees;
 import vn.hus.nlp.tagger.IConstants;
 
 /**

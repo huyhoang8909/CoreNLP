@@ -1,8 +1,8 @@
 package old.edu.stanford.nlp.tagger.maxent;
 
 import old.edu.stanford.nlp.ling.TaggedWord;
-import old.edu.stanford.nlp.trees.TreeNormalizer;
-import old.edu.stanford.nlp.trees.TreeTransformer;
+import edu.stanford.nlp.trees.TreeNormalizer;
+import edu.stanford.nlp.trees.TreeTransformer;
 import old.edu.stanford.nlp.util.StringUtils;
 
 import java.io.*;

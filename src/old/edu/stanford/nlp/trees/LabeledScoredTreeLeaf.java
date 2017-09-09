@@ -1,8 +1,12 @@
 package old.edu.stanford.nlp.trees;
 
-import old.edu.stanford.nlp.ling.Label;
-import old.edu.stanford.nlp.ling.LabelFactory;
-import old.edu.stanford.nlp.ling.StringLabel;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
+import edu.stanford.nlp.ling.StringLabel;
+import edu.stanford.nlp.trees.LabeledScoredTreeFactory;
+import edu.stanford.nlp.trees.LabeledScoredTreeNode;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.trees.TreeFactory;
 
 /**
  * A <code>LabeledScoredTreeLeaf</code> represents the leaf of a tree
