@@ -8,7 +8,7 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import old.edu.stanford.nlp.math.ArrayMath;
+import edu.stanford.nlp.math.ArrayMath;
 
 
 /**

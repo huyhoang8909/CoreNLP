@@ -2,7 +2,7 @@ package old.edu.stanford.nlp.optimization;
 
 import old.edu.stanford.nlp.objectbank.ObjectBank;
 import old.edu.stanford.nlp.util.Pair;
-import old.edu.stanford.nlp.math.ArrayMath;
+import edu.stanford.nlp.math.ArrayMath;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -12,7 +12,7 @@ import edu.stanford.nlp.io.PrintFile;
 import old.edu.stanford.nlp.ling.HasWord;
 import old.edu.stanford.nlp.ling.Sentence;
 import old.edu.stanford.nlp.ling.TaggedWord;
-import old.edu.stanford.nlp.math.ArrayMath;
+import edu.stanford.nlp.math.ArrayMath;
 import old.edu.stanford.nlp.maxent.iis.LambdaSolve;
 import old.edu.stanford.nlp.sequences.BestSequenceFinder;
 import old.edu.stanford.nlp.sequences.ExactBestSequenceFinder;

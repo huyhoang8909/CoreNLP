@@ -1,6 +1,6 @@
 package old.edu.stanford.nlp.util;
 
-import old.edu.stanford.nlp.math.SloppyMath;
+import edu.stanford.nlp.math.SloppyMath;
 
 import java.io.*;
 import java.util.*;
