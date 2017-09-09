@@ -1,6 +1,6 @@
 package old.edu.stanford.nlp.trees.international.pennchinese;
 
-import old.edu.stanford.nlp.io.EncodingPrintWriter;
+import edu.stanford.nlp.io.EncodingPrintWriter;
 import old.edu.stanford.nlp.process.AbstractTokenizer;
 import old.edu.stanford.nlp.process.Tokenizer;
 

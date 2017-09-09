@@ -1,7 +1,7 @@
 package old.edu.stanford.nlp.tagger.maxent;
 
-import old.edu.stanford.nlp.io.NumberRangesFileFilter;
-import old.edu.stanford.nlp.io.PrintFile;
+import edu.stanford.nlp.io.NumberRangesFileFilter;
+import edu.stanford.nlp.io.PrintFile;
 import old.edu.stanford.nlp.ling.TaggedWord;
 import old.edu.stanford.nlp.ling.Word;
 import old.edu.stanford.nlp.ling.Sentence;

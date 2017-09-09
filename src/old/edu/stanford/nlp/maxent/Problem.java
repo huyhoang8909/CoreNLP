@@ -10,7 +10,7 @@
 
 package old.edu.stanford.nlp.maxent;
 
-import old.edu.stanford.nlp.io.PrintFile;
+import edu.stanford.nlp.io.PrintFile;
 import old.edu.stanford.nlp.util.Index;
 import old.edu.stanford.nlp.util.IntPair;
 

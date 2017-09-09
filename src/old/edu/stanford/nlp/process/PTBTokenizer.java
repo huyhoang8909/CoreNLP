@@ -39,7 +39,7 @@ import old.edu.stanford.nlp.ling.HasWord;
 import old.edu.stanford.nlp.objectbank.TokenizerFactory;
 import old.edu.stanford.nlp.util.StringUtils;
 import old.edu.stanford.nlp.util.Timing;
-import old.edu.stanford.nlp.io.IOUtils;
+import edu.stanford.nlp.io.IOUtils;
 
 
 /**
@@ -253,7 +253,7 @@ public class PTBTokenizer<T extends HasWord> extends AbstractTokenizer<T> {
       numTokens = ptb2Text(r, out);
     } else {
       for (int j = 0; j < sz; j++) {
-        Reader r = IOUtils.readReaderFromString(inputFileList.get(j), charset);
+        Reader r = IOUtils.readerFromString(inputFileList.get(j), charset);
         PrintWriter out;
         if (outputFileList == null) {
           out = new PrintWriter(System.out, true);
@@ -315,7 +315,7 @@ public class PTBTokenizer<T extends HasWord> extends AbstractTokenizer<T> {
       numTokens += tokReader(r, out, parseInsideBegin, parseInsideEnd, options, preserveLines, dump);
     } else {
       for (int j = 0; j < sz; j++) {
-        Reader r = IOUtils.readReaderFromString(inputFileList.get(j), charset);
+        Reader r = IOUtils.readerFromString(inputFileList.get(j), charset);
         PrintWriter out;
         if (outputFileList == null) {
           out = new PrintWriter(System.out, true);

@@ -7,8 +7,8 @@
 
 package old.edu.stanford.nlp.tagger.maxent;
 
-import old.edu.stanford.nlp.io.EncodingPrintWriter;
-import old.edu.stanford.nlp.io.PrintFile;
+import edu.stanford.nlp.io.EncodingPrintWriter;
+import edu.stanford.nlp.io.PrintFile;
 import old.edu.stanford.nlp.ling.HasWord;
 import old.edu.stanford.nlp.ling.Sentence;
 import old.edu.stanford.nlp.ling.TaggedWord;

@@ -3,8 +3,8 @@ package old.edu.stanford.nlp.trees;
 import java.io.*;
 import java.util.*;
 
-import old.edu.stanford.nlp.io.FileSequentialCollection;
-import old.edu.stanford.nlp.io.RuntimeIOException;
+import edu.stanford.nlp.io.FileSequentialCollection;
+import edu.stanford.nlp.io.RuntimeIOException;
 
 
 /**

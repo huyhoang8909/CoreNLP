@@ -9,7 +9,7 @@ package old.edu.stanford.nlp.maxent.iis;
 
 import old.edu.stanford.nlp.io.InDataStreamFile;
 import old.edu.stanford.nlp.io.OutDataStreamFile;
-import old.edu.stanford.nlp.io.PrintFile;
+import edu.stanford.nlp.io.PrintFile;
 import old.edu.stanford.nlp.math.ArrayMath;
 import old.edu.stanford.nlp.maxent.*;
 import old.edu.stanford.nlp.util.MutableDouble;

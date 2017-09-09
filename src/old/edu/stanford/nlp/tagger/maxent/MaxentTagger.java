@@ -28,9 +28,9 @@
 
 package old.edu.stanford.nlp.tagger.maxent;
 
-import old.edu.stanford.nlp.io.IOUtils;
-import old.edu.stanford.nlp.io.PrintFile;
-import old.edu.stanford.nlp.io.RuntimeIOException;
+import edu.stanford.nlp.io.IOUtils;
+import edu.stanford.nlp.io.PrintFile;
+import edu.stanford.nlp.io.RuntimeIOException;
 import old.edu.stanford.nlp.ling.*;
 import old.edu.stanford.nlp.objectbank.ObjectBank;
 import old.edu.stanford.nlp.objectbank.ReaderIteratorFactory;
@@ -688,7 +688,7 @@ public class MaxentTagger implements Function<Sentence<? extends HasWord>,Senten
         //Now determine if we're tagging from stdin or from a file
         BufferedReader br;
         if (!stdin) {
-          br = IOUtils.readReaderFromString(config.getFile(), config.getEncoding());
+          br = IOUtils.readerFromString(config.getFile(), config.getEncoding());
         } else {
           System.err.println("Type some text to tag, then EOF.");
           System.err.println("  (For EOF, use Return, Ctrl-D on Unix; Enter, Ctrl-Z, Enter on Windows.)");

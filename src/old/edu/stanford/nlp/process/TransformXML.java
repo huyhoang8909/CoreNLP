@@ -12,7 +12,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import old.edu.stanford.nlp.util.Function;
-import old.edu.stanford.nlp.io.IOUtils;
+import edu.stanford.nlp.io.IOUtils;
 import old.edu.stanford.nlp.util.XMLUtils;
 
 

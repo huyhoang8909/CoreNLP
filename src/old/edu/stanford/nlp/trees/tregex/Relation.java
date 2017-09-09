@@ -7,7 +7,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import old.edu.stanford.nlp.io.NumberRangesFileFilter;
+import edu.stanford.nlp.io.NumberRangesFileFilter;
 import old.edu.stanford.nlp.trees.DiskTreebank;
 import old.edu.stanford.nlp.trees.HeadFinder;
 import old.edu.stanford.nlp.trees.Tree;

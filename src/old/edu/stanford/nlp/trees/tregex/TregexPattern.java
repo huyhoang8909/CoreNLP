@@ -35,7 +35,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import old.edu.stanford.nlp.io.IOUtils;
+import edu.stanford.nlp.io.IOUtils;
 import old.edu.stanford.nlp.ling.StringLabelFactory;
 import old.edu.stanford.nlp.util.Function;
 import old.edu.stanford.nlp.trees.*;

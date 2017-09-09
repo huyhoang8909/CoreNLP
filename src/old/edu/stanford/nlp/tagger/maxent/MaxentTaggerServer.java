@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.*;
 
-import old.edu.stanford.nlp.io.EncodingPrintWriter;
+import edu.stanford.nlp.io.EncodingPrintWriter;
 import old.edu.stanford.nlp.util.StringUtils;
 
 

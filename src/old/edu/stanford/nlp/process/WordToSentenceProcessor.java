@@ -3,7 +3,7 @@ package old.edu.stanford.nlp.process;
 import java.util.*;
 import java.util.regex.Pattern;
 
-import old.edu.stanford.nlp.io.EncodingPrintWriter;
+import edu.stanford.nlp.io.EncodingPrintWriter;
 import old.edu.stanford.nlp.ling.Document;
 import old.edu.stanford.nlp.ling.HasWord;
 import old.edu.stanford.nlp.ling.CoreAnnotations;

@@ -1,6 +1,6 @@
 package old.edu.stanford.nlp.process;
 
-import old.edu.stanford.nlp.io.IOUtils;
+import edu.stanford.nlp.io.IOUtils;
 import old.edu.stanford.nlp.ling.HasWord;
 import old.edu.stanford.nlp.ling.Word;
 import old.edu.stanford.nlp.objectbank.TokenizerFactory;

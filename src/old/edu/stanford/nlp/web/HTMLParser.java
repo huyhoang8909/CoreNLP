@@ -1,6 +1,6 @@
 package old.edu.stanford.nlp.web;
 
-import old.edu.stanford.nlp.io.IOUtils;
+import edu.stanford.nlp.io.IOUtils;
 import old.edu.stanford.nlp.util.StringUtils;
 
 import javax.swing.text.MutableAttributeSet;

@@ -29,7 +29,7 @@ package old.edu.stanford.nlp.tagger.maxent;
 
 import old.edu.stanford.nlp.io.InDataStreamFile;
 import old.edu.stanford.nlp.io.OutDataStreamFile;
-import old.edu.stanford.nlp.io.PrintFile;
+import edu.stanford.nlp.io.PrintFile;
 import old.edu.stanford.nlp.maxent.iis.LambdaSolve;
 import old.edu.stanford.nlp.util.StringUtils;
 import old.edu.stanford.nlp.util.Timing;

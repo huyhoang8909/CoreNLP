@@ -1,6 +1,6 @@
 package old.edu.stanford.nlp.trees;
 
-import old.edu.stanford.nlp.io.ExtensionFileFilter;
+import edu.stanford.nlp.io.ExtensionFileFilter;
 import old.edu.stanford.nlp.stats.ClassicCounter;
 import old.edu.stanford.nlp.stats.Counters;
 import old.edu.stanford.nlp.util.Sets;
