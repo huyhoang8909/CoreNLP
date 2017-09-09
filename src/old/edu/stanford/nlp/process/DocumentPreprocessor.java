@@ -6,7 +6,6 @@ import old.edu.stanford.nlp.ling.Word;
 import old.edu.stanford.nlp.objectbank.TokenizerFactory;
 import old.edu.stanford.nlp.objectbank.XMLBeginEndIterator;
 import old.edu.stanford.nlp.util.Function;
-import old.edu.stanford.nlp.web.HTMLParser;
 
 import java.io.*;
 import java.net.URL;
@@ -400,42 +399,6 @@ public class DocumentPreprocessor {
     return lis;
   }
 
-
-  //
-  // METHODS TO PROCESS HTML
-  //
-
-  public List<Word> getWordsFromHTML(String fileOrURL) throws IOException {
-    return getWordsFromHTML(fileOrURLToReader(fileOrURL));
-  }
-
-  public List<Word> getWordsFromHTML(Reader input) {
-    HTMLParser parser = new HTMLParser();
-    try {
-      String s = parser.parse(input);
-      return getWordsFromText(new StringReader(s));
-    } catch (IOException e) {
-      System.err.println("IOException" + e.getMessage());
-    }
-    return null;
-  }
-
-  public List<List<? extends HasWord>> getSentencesFromHTML(String fileOrURL) throws IOException {
-    return getSentencesFromHTML(fileOrURLToReader(fileOrURL));
-  }
-
-  public List<List<? extends HasWord>> getSentencesFromHTML(Reader input) {
-    HTMLParser parser = new HTMLParser();
-    try {
-      String s = parser.parse(input);
-      return getSentencesFromText(new StringReader(s));
-    } catch (IOException e) {
-      System.err.println("IOException" + e.getMessage());
-    }
-    return null;
-  }
-
-
   //
   // PRIVATE
   //
@@ -572,107 +535,4 @@ public class DocumentPreprocessor {
   private static final int PLAIN = 0;
   private static final int XML = 1;
   private static final int HTML = 2;
-
-
-  /**
-   * This provides a simple test method for DocumentPreprocessor. <br/>
-   * Usage:
-   * java
-   * DocumentPreprocessor -file filename [-xml tag|-html] [-noSplitSentence]
-   * <p>
-   * A filename is required. The code doesn't run as a filter currently.
-   * <p>
-   * tag is the element name of the XML from which to extract text.  It can
-   * be a regular expression which is called on the element with the
-   * matches() method, such as 'TITLE|P'.
-   * The -noSplitSentence flag suppresses the normal splitting into sentences
-   * using PTBTokenizer and WordToSentenceProcessor
-   *
-   * @param args Command-line arguments
-   * @throws IOException If file isn't openable, etc.
-   */
-  public static void main(String[] args) throws IOException {
-    if (args.length == 0) {
-      System.err.println("usage: DocumentPreprocessor -file filename [-xml tag|-html] [-noSplitSentence]");
-      return;
-    }
-
-    boolean splitSentences = true;
-    boolean suppressEscaping = false;
-    boolean noTokenization = false;
-    boolean plainOutput = true;
-    String xmlTag = null;
-    DocumentPreprocessor docPreprocessor;
-
-    int fileType = PLAIN;
-
-    String file = null;
-
-    for (int i = 0; i < args.length; i++) {
-      if (args[i].equals("-file")) {
-        file = args[++i];
-      } else if (args[i].equals("-xml")) {
-        fileType = XML;
-        xmlTag = args[++i];
-      } else if (args[i].equals("-html")) {
-        fileType = HTML;
-      } else if (args[i].equals("-noSplitSentence")) {
-        splitSentences = false;
-      } else if (args[i].equals("-suppressEscaping")) {
-        suppressEscaping = true;
-      } else if (args[i].equals("-noTokenization")) {
-        noTokenization = true;
-      //} else if (args[i].equals("-plainOutput")) {
-      //  plainOutput = true;
-      }
-    }
-
-    if(noTokenization)
-      docPreprocessor = new DocumentPreprocessor(WhitespaceTokenizer.factory(true));
-    else
-      docPreprocessor = new DocumentPreprocessor(suppressEscaping);
-    System.err.println("Tokenizer: "+docPreprocessor.tokenizerFactory.getClass());
-
-    List<? extends HasWord> doc;
-    List<List<? extends HasWord>> docs = new ArrayList<List<? extends HasWord>>();
-
-    switch (fileType) {
-      case (PLAIN):
-        if (splitSentences) {
-          docs = docPreprocessor.getSentencesFromText(file);
-        } else {
-          doc = docPreprocessor.getWordsFromText(file);
-          docs.add(doc);
-        }
-        break;
-      case (XML):
-        boolean doPTBEscaping = !suppressEscaping;
-        docs = docPreprocessor.getSentencesFromXML(file, xmlTag, doPTBEscaping);
-        break;
-      case (HTML):
-        if (splitSentences) {
-          docs = docPreprocessor.getSentencesFromHTML(file);
-        } else {
-          doc = docPreprocessor.getWordsFromHTML(file);
-          docs.add(doc);
-        }
-        break;
-    }
-
-    System.err.println("Read in " + docs.size() + " sentences.");
-    for (List lis : docs) {
-      System.err.println("Length: " + lis.size());
-      if(plainOutput) {
-        for(int i=0; i<lis.size(); ++i) {
-          if(i>0) System.out.print(" ");
-          System.out.print(lis.get(i));
-        }
-        System.out.println();
-      } else {
-        System.out.println(lis);
-      }
-    }
-
-  } // end main()
-
 }
