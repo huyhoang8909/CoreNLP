@@ -5,9 +5,9 @@ import java.util.Map;
 
 import edu.stanford.nlp.trees.Tree;
 import old.edu.stanford.nlp.util.CoreMap;
-import old.edu.stanford.nlp.util.ErasureUtils;
-import old.edu.stanford.nlp.util.IntPair;
-import old.edu.stanford.nlp.util.IntTuple;
+import edu.stanford.nlp.util.ErasureUtils;;
+import edu.stanford.nlp.util.IntPair;
+import edu.stanford.nlp.util.IntTuple;
 import old.edu.stanford.nlp.util.Pair;
 import old.edu.stanford.nlp.util.Triple;
 

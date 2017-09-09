@@ -6,6 +6,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
+import edu.stanford.nlp.util.ErasureUtils;
+
 
 /**
  * Implementation of CollectionValuedMap that appears to store an "original"

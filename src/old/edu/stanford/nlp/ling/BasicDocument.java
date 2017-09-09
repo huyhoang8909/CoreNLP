@@ -3,7 +3,7 @@ package old.edu.stanford.nlp.ling;
 import old.edu.stanford.nlp.objectbank.TokenizerFactory;
 import old.edu.stanford.nlp.process.PTBTokenizer;
 import old.edu.stanford.nlp.process.Tokenizer;
-import old.edu.stanford.nlp.util.ErasureUtils;
+import edu.stanford.nlp.util.ErasureUtils;;
 
 import java.io.*;
 import java.net.URL;

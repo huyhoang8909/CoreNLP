@@ -8,6 +8,8 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
+import edu.stanford.nlp.util.ErasureUtils;
+
 /**
  * Map from keys to {@link Collection}s.
  * Important methods are the {@link #add} and {@link #remove} methods for adding and removing a value

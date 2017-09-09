@@ -2,6 +2,8 @@ package old.edu.stanford.nlp.util;
 
 import java.util.*;
 
+import edu.stanford.nlp.util.ErasureUtils;
+
 /**
  * A Map which wraps an original Map, and only stores the changes (deltas) from
  * the original Map. This increases Map access time (roughly doubles it) but eliminates

@@ -10,7 +10,7 @@ package old.edu.stanford.nlp.maxent;
 import old.edu.stanford.nlp.io.InDataStreamFile;
 import old.edu.stanford.nlp.io.OutDataStreamFile;
 import edu.stanford.nlp.util.Index;
-import old.edu.stanford.nlp.util.IntPair;
+import edu.stanford.nlp.util.IntPair;
 
 import java.io.PrintStream;
 import java.util.HashMap;

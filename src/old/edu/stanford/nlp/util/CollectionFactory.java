@@ -7,6 +7,8 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 
+import edu.stanford.nlp.util.ErasureUtils;
+
 /**
  * Factory for vending Collections.  It's a class instead of an interface because I guessed that it'd primarily be used for its inner classes.
  *

@@ -17,7 +17,7 @@ import old.edu.stanford.nlp.maxent.iis.LambdaSolve;
 import old.edu.stanford.nlp.sequences.BestSequenceFinder;
 import old.edu.stanford.nlp.sequences.ExactBestSequenceFinder;
 import old.edu.stanford.nlp.sequences.SequenceModel;
-import old.edu.stanford.nlp.util.ArrayUtils;
+import edu.stanford.nlp.util.ArrayUtils;
 
 import java.util.*;
 import java.text.NumberFormat;

@@ -1,6 +1,6 @@
 package old.edu.stanford.nlp.tagger.maxent;
 
-import old.edu.stanford.nlp.util.ErasureUtils;
+import edu.stanford.nlp.util.ErasureUtils;;
 
 import java.util.StringTokenizer;
 

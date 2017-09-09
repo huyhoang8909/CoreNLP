@@ -48,7 +48,7 @@ import old.edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation;
 import old.edu.stanford.nlp.ling.CoreAnnotations.VerbSenseAnnotation;
 import old.edu.stanford.nlp.ling.CoreAnnotations.WordAnnotation;
 import old.edu.stanford.nlp.ling.CoreLabel.GenericAnnotation;
-import old.edu.stanford.nlp.util.ErasureUtils;
+import edu.stanford.nlp.util.ErasureUtils;;
 
 public class AnnotationLookup {
   private AnnotationLookup() {};

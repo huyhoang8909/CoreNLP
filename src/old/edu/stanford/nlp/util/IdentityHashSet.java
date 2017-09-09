@@ -6,6 +6,8 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.*;
 
+import edu.stanford.nlp.util.ErasureUtils;
+
 /** This class provides a <code>IdentityHashMap</code>-backed
  *  implementation of the <code>Set</code> interface.  This means that
  *  whether an object is an element of the set depends on whether it is ==
