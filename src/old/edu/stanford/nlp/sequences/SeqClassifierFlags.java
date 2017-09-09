@@ -1,7 +1,7 @@
 package old.edu.stanford.nlp.sequences;
 
 import old.edu.stanford.nlp.ling.CoreLabel;
-import old.edu.stanford.nlp.optimization.StochasticCalculateMethods;
+import edu.stanford.nlp.optimization.StochasticCalculateMethods;
 import old.edu.stanford.nlp.process.WordShapeClassifier;
 
 import java.io.Serializable;

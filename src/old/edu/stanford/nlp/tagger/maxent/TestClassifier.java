@@ -5,7 +5,7 @@ import edu.stanford.nlp.io.PrintFile;
 import edu.stanford.nlp.ling.TaggedWord;
 import old.edu.stanford.nlp.ling.Word;
 import old.edu.stanford.nlp.ling.Sentence;
-import old.edu.stanford.nlp.maxent.CGRunner;
+import edu.stanford.nlp.maxent.CGRunner;
 import old.edu.stanford.nlp.maxent.Problem;
 import edu.stanford.nlp.trees.*;
 
@@ -281,111 +281,7 @@ public class TestClassifier {
    */
   public static void trainAndSaveModel(TaggerConfig config) throws IOException {
 
-    String modelName = config.getModel();
-    GlobalHolder.init(config);
-
-    // Allow clobbering.  You want it all the time when running experiments.
-
-    TaggerExperiments samples = new TaggerExperiments(config);
-    GlobalHolder.domain = samples;
-    TaggerFeatures feats = samples.getTaggerFeatures();
-    System.err.println("Samples from " + config.getFile());
-    System.err.println("Number of features: " + feats.size());
-    Problem p = new Problem(samples, feats);
-    LambdaSolveTagger prob = new LambdaSolveTagger(p, 0.0001, 0.00001);
-    GlobalHolder.prob = prob;
-
-    if (config.getSearch().equals("owlqn")) {
-      CGRunner runner = new CGRunner(prob, config.getModel(), config.getSigmaSquared());
-      runner.solveL1(config.getRegL1());
-    } else if (config.getSearch().equals("cg")) {
-      CGRunner runner = new CGRunner(prob, config.getModel(), config.getSigmaSquared());
-      runner.solveCG();
-    } else if (config.getSearch().equals("qn")) {
-      CGRunner runner = new CGRunner(prob, config.getModel(), config.getSigmaSquared());
-      runner.solveQN();
-    } else {
-      prob.improvedIterative(config.getIterations());
-    }
-
-    if (prob.checkCorrectness()) {
-      System.out.println("Model is correct [empirical expec = model expec]");
-    } else {
-      System.out.println("Model is not correct");
-    }
-    GlobalHolder.saveModel(modelName, config);
   }
-
-
-   /**
-   * This saves the parameters in a file like for the Improved Iterative.
-   * This calculates the model from a filename, with the specified
-   * parameters for the history and saves the result back to that filename.
-   *
-   * Warning: This method almost certainly no longer works.
-   */
-//  public static void save_param(String filename, String delimiter, String encoding) throws Exception {
-//    GlobalHolder.init();
-//    TaggerExperiments samples = new TaggerExperiments(filename, null, delimiter, encoding);
-//    GlobalHolder.domain = samples;
-//    TaggerFeatures feats = TaggerExperiments.feats;
-//    System.out.println("Before" + feats.size());
-//    //feats.print_by_numbers();
-//    Problem p = new Problem(samples, feats);
-//    System.out.println(" Entering lambda solve ");
-//    LambdaSolveTagger prob = new LambdaSolveTagger(p, 0.0001, 0.00001);
-//    GlobalHolder.prob = prob;
-//    OutDataStreamFile rf = new OutDataStreamFile(filename);
-//    GlobalHolder.save_prev(null, rf);
-//    Runtime rt = Runtime.getRuntime();
-//    System.out.println(" before " + rt.freeMemory());
-//    GlobalHolder.release_mem();
-//    rt.gc();
-//    System.out.println(" after " + rt.freeMemory());
-//    //prob.improvedIterative();
-//    //prob.save_problem(filename+".math");
-//    GlobalHolder.prob = prob;
-//    if (prob.checkCorrectness()) {
-//      System.out.println("model is correct");
-//    } else {
-//      System.out.println("model is not correct");
-//    }
-//    GlobalHolder.save_after(rf);
-//    rf.close();
-//
-//  }
-
-
-  /**
-   * Warning: This method almost certainly no longer works.
-   */
-//  public static void expandModel(String filename, String oldModelFile, int iters, String delimiter, String encoding) throws Exception {
-//    GlobalHolder.init();
-//    TaggerExperiments samples = new TaggerExperiments(filename, arg_outputs, delimiter, encoding);
-//    GlobalHolder.domain = samples;
-//    TaggerFeatures feats = TaggerExperiments.feats;
-//    System.out.println("Before" + feats.size());
-//    //feats.print_by_numbers();
-//    Problem p = new Problem(samples, feats);
-//    LambdaSolveTagger prob = new LambdaSolveTagger(p, 0.0001, 0.00001);
-//    GlobalHolder.prob = prob;
-//    OutDataStreamFile rf = new OutDataStreamFile(filename);
-//    GlobalHolder.save_prev(null, rf);
-//    Runtime rt = Runtime.getRuntime();
-//    System.out.println(" before " + rt.freeMemory());
-//    GlobalHolder.release_mem();
-//    rt.gc();
-//    System.out.println(" after " + rt.freeMemory());
-//    prob.readOldLambdas(filename, oldModelFile);
-//    GlobalHolder.getLambdaSolve().improvedIterative(iters);
-//    if (prob.checkCorrectness()) {
-//      System.out.println("model is correct");
-//    } else {
-//      System.out.println("model is not correct");
-//    }
-//    GlobalHolder.save_after(rf);
-//    rf.close();
-//  }
 
 
   void printModelAndAccuracy(TaggerConfig config) {
