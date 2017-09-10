@@ -33,7 +33,6 @@ public class TestSentence implements SequenceModel {
     protected static final String naTag = "NA";
     protected static final boolean DBG = false;
     protected static boolean doDeterministicTagExpansion = true;
-    protected static int kBestSize = 1;
     static boolean VERBOSE = false;
     static String tagSeparator = "/"; // currently a yucky static. Remove someday.
     static int leftContext = 2;
@@ -41,16 +40,11 @@ public class TestSentence implements SequenceModel {
     protected final PairsHolder pairs = new PairsHolder();
     protected List<String> sent; // = null // DON'T NEED? = new ArrayList<String>();
     protected int size; // this always has the value of sent.size(). Remove it? [cdm 2008]
-    // protected double[][][] probabilities;
-    protected String[] correctTags;
     protected String[] finalTags;
     protected LambdaSolve prob;
     protected volatile Map<String, double[]> localScores = new HashMap<String, double[]>();
     protected volatile double[][] localContextScores;
-    int numRight;
-    int numWrong;
     int numUnknown;
-    int numWrongUnknown;
     private int endSizePairs = 0;
     private volatile History history = new History(pairs);
 

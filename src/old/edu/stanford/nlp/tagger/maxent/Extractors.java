@@ -8,8 +8,6 @@
 
 package old.edu.stanford.nlp.tagger.maxent;
 
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -133,31 +131,6 @@ public class Extractors implements Serializable {
     return v.length;
   }
 
-  /*
-  public void save(String filename) {
-    try {
-      OutDataStreamFile rf = new OutDataStreamFile(filename);
-      rf.writeInt(v.length);
-      for (Extractor extr : v) {
-        rf.writeBytes(extr.toString());
-      }
-      rf.close();
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-  }
-
-  public void read(String filename) {
-    try {
-      InDataStreamFile rf = new InDataStreamFile(filename);
-      int len = rf.readInt();
-      v = new Extractor[len];
-      //GlobalHolder.init();
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-  }
-  */
 
   Extractor get(int index) {
     return v[index];

@@ -83,15 +83,6 @@ public class TemplateHash {
     return tempHash.get(p).getPositions();
   }
 
-  //public void init() {
-//    cdm 2008: stringNums isn't used anywhere, so we now don't do any init.
-//    int num = GlobalHolder.extractors.getSize() + GlobalHolder.extractorsRare.getSize();
-//    //System.err.println("A total of "+num+" features in TemplateHash");
-//    stringNums = new String[num];
-//    for (int i = 0; i < num; i++) {
-//      stringNums[i] = String.valueOf(i);
-//    }
-  //}
 
   protected void release() {
     tempHash.clear();

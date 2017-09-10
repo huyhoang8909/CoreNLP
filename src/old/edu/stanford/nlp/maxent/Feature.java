@@ -194,16 +194,6 @@ public class Feature {
     }
   }
 
-
-  public double sumValues() {
-    return sum;
-  }
-
-
-  public void save(OutDataStreamFile oF) {
-    throw new UnsupportedOperationException();
-  }
-
   public void read(InDataStreamFile inf) {
     throw new UnsupportedOperationException();
   }

@@ -10,9 +10,6 @@ package old.edu.stanford.nlp.tagger.maxent;
 
 import java.io.DataInputStream;
 
-import old.edu.stanford.nlp.io.OutDataStreamFile;
-
-
 /**
  * Stores a triple of an extractor ID, a feature value (derived from history)
  * and a y (tag) value.  Used to compute a feature number in the loglinear
