@@ -280,42 +280,4 @@ public class DeltaMap<K,V> extends AbstractMap<K,V> {
   public DeltaMap(Map<K,V> originalMap) {
     this(originalMap, MapFactory.HASH_MAP_FACTORY);
   }
-
-  /**
-   * For testing only.
-   *
-   * @param args from command line
-   */
-  public static void main(String[] args) {
-    Map<Integer,Integer> originalMap = new HashMap<Integer,Integer>();
-    Random r = new Random();
-    for (int i = 0; i < 1000; i++) {
-      originalMap.put(Integer.valueOf(i), Integer.valueOf(r.nextInt(1000)));
-    }
-    Map<Integer,Integer> originalCopyMap = new HashMap<Integer,Integer>(originalMap);
-    Map<Integer,Integer> deltaCopyMap = new HashMap<Integer,Integer>(originalMap);
-    Map<Integer,Integer> deltaMap = new DeltaMap<Integer,Integer>(originalMap);
-    // now make a lot of changes to deltaMap;
-    // add and change some stuff
-    for (int i = 900; i < 1100; i++) {
-      Integer rInt = Integer.valueOf(r.nextInt(1000));
-      deltaMap.put(Integer.valueOf(i), rInt);
-      deltaCopyMap.put(Integer.valueOf(i), rInt);
-    }
-    // remove some stuff
-    for (int i = 0; i < 100; i++) {
-      Integer rInt = Integer.valueOf(r.nextInt(1100));
-      deltaMap.remove(rInt);
-      deltaCopyMap.remove(rInt);
-    }
-    // set some stuff to null
-    for (int i = 0; i < 100; i++) {
-      Integer rInt = Integer.valueOf(r.nextInt(1100));
-      deltaMap.put(rInt, null);
-      deltaCopyMap.put(rInt, null);
-    }
-
-    System.out.println("Original preserved? " + originalCopyMap.equals(originalMap));
-    System.out.println("Delta accurate? " + deltaMap.equals(deltaCopyMap));
-  }
 }

@@ -175,27 +175,6 @@ public class Extractors implements Serializable {
     sb.append(']');
     return sb.toString();
   }
-
-
-  /**
-   * Prints out the pair of <code>Extractors</code> objects found in the
-   * file that is the first and only argument.
-   * @param args Filename of extractors file (standardly written with
-   *       <code>.ex<code> extension)
-   */
-  public static void main(String[] args) {
-    try {
-      ObjectInputStream in = new ObjectInputStream(new FileInputStream(args[0]));
-      Extractors extrs = (Extractors) in.readObject();
-      Extractors extrsRare = (Extractors) in.readObject();
-      in.close();
-      System.out.println("All words:  " + extrs);
-      System.out.println("Rare words: " + extrsRare);
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-  }
-
   private static final long serialVersionUID = -4777107742414749890L;
 
 }

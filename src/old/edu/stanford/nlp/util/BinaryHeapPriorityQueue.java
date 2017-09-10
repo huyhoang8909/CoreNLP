@@ -490,26 +490,4 @@ public class BinaryHeapPriorityQueue<E> extends AbstractSet<E> implements Priori
     indexToEntry = new ArrayList<Entry<E>>();
     keyToEntry = mapFactory.newMap();
   }
-
-  public static void main(String[] args) {
-    BinaryHeapPriorityQueue<String> queue =
-      new BinaryHeapPriorityQueue<String>();
-    queue.add("a", 1.0);
-    System.out.println("Added a:1 " + queue);
-    queue.add("b", 2.0);
-    System.out.println("Added b:2 " + queue);
-    queue.add("c", 1.5);
-    System.out.println("Added c:1.5 " + queue);
-    queue.relaxPriority("a", 3.0);
-    System.out.println("Increased a to 3 " + queue);
-    queue.decreasePriority("b", 0.0);
-    System.out.println("Decreased b to 0 " + queue);
-    System.out.println("removeFirst()=" + queue.removeFirst());
-    System.out.println("queue=" + queue);
-    System.out.println("removeFirst()=" + queue.removeFirst());
-    System.out.println("queue=" + queue);
-    System.out.println("removeFirst()=" + queue.removeFirst());
-    System.out.println("queue=" + queue);
-  }
-
 }

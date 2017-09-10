@@ -64,18 +64,4 @@ public class FilteredIterator<T> implements Iterator<T> {
     advanceCandidate();
     skipUnacceptableCandidates();
   }
-
-  public static void main(String[] args) {
-    Collection<String> c = Arrays.asList(new String[]{"a", "aa", "b", "bb", "cc"});
-    Iterator<String> i = new FilteredIterator<String>(c.iterator(), new Filter<String>() {
-      private static final long serialVersionUID = 1L;
-
-      public boolean accept(String o) {
-        return o.length() == 1;
-      }
-    });
-    while (i.hasNext()) {
-      System.out.println("Accepted: " + i.next());
-    }
-  }
 }
