@@ -28,7 +28,7 @@
 package old.edu.stanford.nlp.tagger.maxent;
 
 import old.edu.stanford.nlp.maxent.Experiments;
-import old.edu.stanford.nlp.util.Pair;
+import edu.stanford.nlp.util.Pair;
 
 import java.io.File;
 import java.io.IOException;

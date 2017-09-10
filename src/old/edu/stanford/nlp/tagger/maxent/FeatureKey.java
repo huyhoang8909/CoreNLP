@@ -50,15 +50,6 @@ public class FeatureKey {
     return Integer.toString(num) + ' ' + val + ' ' + tag;
   }
 
-  protected void save(OutDataStreamFile f) {
-    try {
-      f.writeInt(num);
-      f.writeUTF(val);
-      f.writeUTF(tag);
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-  }
 
   protected void read(DataInputStream inf) {
     try {

@@ -86,27 +86,6 @@ public class Dictionary {
         return !dict.containsKey(word);
     }
 
-    void save(OutDataStreamFile file) {
-        String[] arr = dict.keySet().toArray(new String[dict.keySet().size()]);
-        try {
-            file.writeInt(arr.length);
-            System.err.println("Saving dictionary of " + arr.length + " words ...");
-            for (String word : arr) {
-                TagCount tC = get(word);
-                file.writeUTF(word);
-                tC.save(file);
-            }
-            Integer[] arrverbs = this.partTakingVerbs.keySet().toArray(new Integer[partTakingVerbs.keySet().size()]);
-            file.writeInt(arrverbs.length);
-            for (Integer iO : arrverbs) {
-                CountWrapper tC = this.partTakingVerbs.get(iO);
-                file.writeInt(iO.intValue());
-                tC.save(file);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     private void read(DataInputStream rf, String filename) throws IOException {
         // Object[] arr=dict.keySet().toArray();

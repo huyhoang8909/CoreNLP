@@ -7,7 +7,7 @@
 
 package old.edu.stanford.nlp.tagger.maxent;
 
-import old.edu.stanford.nlp.util.Pair;
+import edu.stanford.nlp.util.Pair;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -62,34 +62,6 @@ class ListInstances {
     }
     return arr;
   }
-
-  /*
-  Methods unused: commented for now.
-  public void save(OutDataStreamFile rf) {
-    try {
-      rf.writeInt(v.size());
-      int[] arr = getInstances();
-      for (int i = 0; i < v.size(); i++) {
-        rf.writeInt(arr[i]);
-      }
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-  }
-
-  public void read(InDataStreamFile rf) {
-    try {
-      int len = rf.readInt();
-      for (int i = 0; i < len; i++) {
-        int x = rf.readInt();
-        add(x);
-      }
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-
-  }// end read
-  */
 
 }
 
@@ -173,62 +145,5 @@ public class TemplateHash {
     }
     return null;
   }
-
-  /* Methods unused. Commented for now.
-  public void save(OutDataStreamFile rf) {
-    try {
-      Pair[] keys = new Pair[tempHash.keySet().size()];
-      tempHash.keySet().toArray(keys);
-      rf.writeInt(keys.length);
-      for (Pair key : keys) {
-        //rf.writeInt(s.length());
-        //rf.write(s.getBytes());
-        key.save(rf);
-        tempHash.get(key).save(rf);
-      } // for
-
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-  }
-
-  private void read(InDataStreamFile rf) {
-    try {
-      int numElem = rf.readInt();
-      for (int i = 0; i < numElem; i++) {
-        //int strLen=rf.readInt();
-        //byte[] buff=new byte[strLen];
-        //rf.read(buff);
-        //String s=new String(buff);
-        Pair<String,String> sWT = Pair.readStringPair(rf);
-        Pair<Integer,String> wT = new Pair<Integer,String>(Integer.parseInt(sWT.first()), sWT.second());
-        ListInstances li = new ListInstances();
-        li.read(rf);
-        tempHash.put(wT, li);
-      }// for
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-  }
-
-  public void print() {
-    Object[] arr = tempHash.keySet().toArray();
-    for (int i = 0; i < arr.length; i++) {
-      System.out.println(arr[i]);
-    }
-  }
-
-  public static void main(String[] args) {
-    TemplateHash hT = new TemplateHash();
-    Pair<Integer,String> p = new Pair<Integer,String>(0, "0");
-    ListInstances li = new ListInstances();
-    li.add(14);
-    hT.tempHash.put(p, new ListInstances());
-    if (hT.tempHash.containsKey(p)) {
-      System.out.println(hT.tempHash.get(p));
-    }
-  }
-
-  */
 
 }

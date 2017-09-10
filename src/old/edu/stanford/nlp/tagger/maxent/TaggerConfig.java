@@ -248,15 +248,11 @@ public class TaggerConfig extends Properties /* Inherits implementation of seria
 
   public String getModel() { return getProperty("model"); }
 
-  public String getJarModel() { return getProperty("jarModel"); }
-
   public String getFile() { return getProperty("file"); }
 
   public String getOutputFile() { return getProperty("outputFile"); }
 
   public String getOutputFormat() { return getProperty("outputFormat"); }
-
-  public String[] getOutputOptions() { return getProperty("outputFormatOptions").split("\\s*,\\s*"); }
 
   public String getSearch() { return getProperty("search"); }
 
@@ -316,13 +312,7 @@ public class TaggerConfig extends Properties /* Inherits implementation of seria
 
   public double getRegL1() { return Double.parseDouble(getProperty("regL1")); }
 
-  public String[] getXMLInput() {
-    return wsvStringToStringArray(getProperty("xmlInput"));
-  }
-
   public boolean getInitFromTrees() { return Boolean.parseBoolean(getProperty("initFromTrees")); }
-
-  public String getTreeRange() { return getProperty("treeRange"); }
 
   public boolean getVerbose() { return Boolean.parseBoolean(getProperty("verbose")); }
 
@@ -377,21 +367,6 @@ public class TaggerConfig extends Properties /* Inherits implementation of seria
       return null;
     }
   }
-
-  public TreeNormalizer getTreeNormalizer() {
-    if (undefined("treeNormalizer")) {
-        return null;
-    }
-    //Try to load the tree normalizer by reflection
-    try {
-      return (TreeNormalizer) Class.forName(getProperty("treeNormalizer")).newInstance();
-    } catch (Exception e) {
-      System.err.println("Error loading treeNormalizer - no TreeNormalizer will be used.");
-      e.printStackTrace();
-      return null;
-    }
-  }
-
 
   public void dump() { dump(new PrintWriter(System.err)); }
 

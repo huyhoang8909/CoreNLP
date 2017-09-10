@@ -179,13 +179,7 @@ public class GlobalHolder {
                 defaultScore = config.getDefaultScore();
         }
 
-        if (config != null && config.getMode() == TaggerConfig.Mode.TRAIN) {
-            // initialize the extractors based on the arch variable
-            // you only need to do this when training; otherwise they will be
-            // restored from the serialized file
-            extractors.init(ExtractorFrames.getExtractorFrames(arch));
-//            extractorsRare.init(ExtractorFramesRare.getExtractorFramesRare(arch));
-        }
+
 
         initted = true;
     }

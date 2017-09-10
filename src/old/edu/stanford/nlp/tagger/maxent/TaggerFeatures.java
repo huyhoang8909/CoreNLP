@@ -41,24 +41,6 @@ public class TaggerFeatures extends Features {
   static int[] xIndexed;
 
   @Override
-  public void save(String filename) {
-    try {
-      OutDataStreamFile rF = new OutDataStreamFile(filename);
-      rF.writeInt(xIndexed.length);
-      for (int aXIndexed : xIndexed) {
-        rF.writeInt(aXIndexed);
-      }
-      rF.writeInt(size());
-      for (int i = 0; i < size(); i++) {
-        get(i).save(rF);
-      }
-      rF.close();
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-  }
-
-  @Override
   public void read(String filename) {
     try {
       InDataStreamFile rF = new InDataStreamFile(filename);

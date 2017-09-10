@@ -27,7 +27,6 @@
 package old.edu.stanford.nlp.tagger.maxent;
 
 import old.edu.stanford.nlp.io.InDataStreamFile;
-import old.edu.stanford.nlp.io.OutDataStreamFile;
 import old.edu.stanford.nlp.maxent.Feature;
 
 
@@ -98,17 +97,7 @@ public class TaggerFeature extends Feature {
   }
 
 
-  @Override
-  public void save(OutDataStreamFile rF) {
-    try {
-      rF.writeInt(start);
-      rF.writeInt(end);
-      key.save(rF);
-      rF.writeInt(yTag);
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-  }
+
 
   @Override
   public void read(InDataStreamFile rF) {

@@ -8,9 +8,6 @@
 
 package old.edu.stanford.nlp.tagger.maxent;
 
-import java.io.PrintStream;
-
-
 /**
  *
  *  @author Kristina Toutanova
@@ -37,29 +34,6 @@ public class History {
     this.current = current;
   }
 
-  /*
-  public void save(OutDataStreamFile rf) {
-    try {
-      rf.writeInt(start);
-      rf.writeInt(end);
-      rf.writeInt(current);
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-  }
-
-
-  public void read(InDataStreamFile rf) {
-    try {
-      start = rf.readInt();
-      end = rf.readInt();
-      current = rf.readInt();
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-  }
-  */
-
   private String getX(int index) {
     // get the string by the index in x
     return GlobalHolder.extractors.get(index).extract(this);
@@ -73,24 +47,6 @@ public class History {
     return x;
   }
 
-
-  void print(PrintStream ps) {
-    String[] str = getX();
-    for (String aStr : str) {
-      ps.print(aStr);
-      ps.print('\t');
-    }
-    ps.println();
-  }
-
-  public void printSent() {
-    print(System.out);
-
-    for (int i = this.start; i < this.end; i++) {
-      System.out.print(pairs.getTag(i) + ' ' + pairs.getWord(i) + '\t');
-    }
-    System.out.println();
-  }
   
   protected void setTag(int pos, String tag) {
     pairs.setTag(pos + start, tag);
