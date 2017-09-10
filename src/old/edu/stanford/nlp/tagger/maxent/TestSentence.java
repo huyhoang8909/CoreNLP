@@ -11,7 +11,7 @@ import edu.stanford.nlp.io.EncodingPrintWriter;
 import edu.stanford.nlp.io.PrintFile;
 import edu.stanford.nlp.ling.HasWord;
 import old.edu.stanford.nlp.ling.Sentence;
-import old.edu.stanford.nlp.ling.TaggedWord;
+import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.math.ArrayMath;
 import old.edu.stanford.nlp.maxent.iis.LambdaSolve;
 import edu.stanford.nlp.sequences.BestSequenceFinder;

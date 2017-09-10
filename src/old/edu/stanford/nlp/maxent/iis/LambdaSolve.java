@@ -11,7 +11,7 @@ import java.io.DataInputStream;
 import java.io.IOException;
 
 import old.edu.stanford.nlp.io.InDataStreamFile;
-import old.edu.stanford.nlp.maxent.Convert;
+import edu.stanford.nlp.util.ConvertByteArray;
 import old.edu.stanford.nlp.maxent.Experiments;
 import old.edu.stanford.nlp.maxent.Feature;
 import old.edu.stanford.nlp.maxent.Problem;
@@ -121,7 +121,7 @@ public class LambdaSolve {
                 System.err.println("Whoops! Incomplete read. Rewrite the code!");
             }
             rf.close();
-            return Convert.byteArrToDoubleArr(b);
+            return ConvertByteArray.byteArrToDoubleArr(b);
         } catch (IOException e) {
             e.printStackTrace();
             return null;
