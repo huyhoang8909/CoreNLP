@@ -8,7 +8,7 @@ import java.io.StringReader;
 
 import edu.stanford.nlp.io.IOUtils;
 import old.edu.stanford.nlp.ling.Word;
-import old.edu.stanford.nlp.ling.WordLemmaTag;
+import edu.stanford.nlp.ling.WordLemmaTag;
 import old.edu.stanford.nlp.ling.WordTag;
 import old.edu.stanford.nlp.util.Function;
 

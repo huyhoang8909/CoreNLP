@@ -27,7 +27,7 @@
 
 package old.edu.stanford.nlp.tagger.maxent;
 
-import old.edu.stanford.nlp.process.WordShapeClassifier;
+import edu.stanford.nlp.process.WordShapeClassifier;
 import edu.stanford.nlp.util.StringUtils;
 
 import java.util.*;

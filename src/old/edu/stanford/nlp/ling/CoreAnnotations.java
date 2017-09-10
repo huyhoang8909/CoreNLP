@@ -3,6 +3,7 @@ package old.edu.stanford.nlp.ling;
 import java.util.List;
 import java.util.Map;
 
+import edu.stanford.nlp.ling.WordLemmaTag;
 import edu.stanford.nlp.trees.Tree;
 import old.edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.ErasureUtils;;

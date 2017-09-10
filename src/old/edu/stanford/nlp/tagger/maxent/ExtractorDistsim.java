@@ -6,7 +6,7 @@
  */
 package old.edu.stanford.nlp.tagger.maxent;
 
-import old.edu.stanford.nlp.objectbank.ObjectBank;
+import edu.stanford.nlp.objectbank.ObjectBank;
 import edu.stanford.nlp.util.Timing;
 
 import java.io.File;

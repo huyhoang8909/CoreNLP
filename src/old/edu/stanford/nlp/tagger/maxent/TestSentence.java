@@ -14,9 +14,9 @@ import old.edu.stanford.nlp.ling.Sentence;
 import old.edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.math.ArrayMath;
 import old.edu.stanford.nlp.maxent.iis.LambdaSolve;
-import old.edu.stanford.nlp.sequences.BestSequenceFinder;
-import old.edu.stanford.nlp.sequences.ExactBestSequenceFinder;
-import old.edu.stanford.nlp.sequences.SequenceModel;
+import edu.stanford.nlp.sequences.BestSequenceFinder;
+import edu.stanford.nlp.sequences.ExactBestSequenceFinder;
+import edu.stanford.nlp.sequences.SequenceModel;
 import edu.stanford.nlp.util.ArrayUtils;
 
 import java.util.*;
