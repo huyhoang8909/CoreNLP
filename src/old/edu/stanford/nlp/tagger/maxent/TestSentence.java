@@ -131,17 +131,6 @@ public class TestSentence implements SequenceModel {
     return sb.toString();
   }
 
-
-  Sentence<TaggedWord> getTaggedSentence() {
-    Sentence<TaggedWord> taggedSentence = new Sentence<TaggedWord>();
-    for (int j = 0; j < size - 1; j++) {
-      String tag = finalTags[j];
-      TaggedWord w = new TaggedWord(sent.get(j), tag);
-      taggedSentence.add(w);
-    }
-    return taggedSentence;
-  }
-
   static String toNice(String s) {
     if (s == null) {
       return naTag;

@@ -74,15 +74,4 @@ public class ASBCunkDict {
     return ASBCunk_dict.get(a);
   }
 
-  /*
-  public static String getPathPrefix() {
-    return pathPrefix;
-  }
-
-
-  public static void setPathPrefix(String pathPrefix) {
-    ASBCunkDict.pathPrefix = pathPrefix;
-  }
-  */
-
 }//class

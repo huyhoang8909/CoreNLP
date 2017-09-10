@@ -105,12 +105,6 @@ public class TaggerExperiments extends Experiments {
     getFeaturesNew();
   }
 
-
-  public TaggerFeatures getTaggerFeatures() {
-    return feats;
-  }
-
-
   /** Adds a FeatureKey to the set of known FeatureKeys.
    *
    * @param s The feature key to be added
@@ -403,9 +397,6 @@ public class TaggerExperiments extends Experiments {
     }
   }
 
-  HistoryTable getHistoryTable() {
-    return tHistories;
-  }
 
 
   /*

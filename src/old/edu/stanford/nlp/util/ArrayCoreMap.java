@@ -8,6 +8,8 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
+import edu.stanford.nlp.util.HashableCoreMap;
+
 
 /**
  * <p>

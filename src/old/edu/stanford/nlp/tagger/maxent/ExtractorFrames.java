@@ -281,31 +281,6 @@ class ExtractorCWordNextWord extends Extractor {
 
 
 /**
- * This extractor extracts the current and the next word and the next tag in conjunction.
- */
-class ExtractorCWordNextWordTag extends Extractor {
-
-  private static final long serialVersionUID = 277004119652781182L;
-
-  public ExtractorCWordNextWordTag() {
-  }
-
-  @Override
-  public int rightContext() {
-    return 1;
-  }
-
-  @Override
-  String extract(History h, PairsHolder pH) {
-    return pH.getWord(h, 0) + '!' + pH.getTag(h, 1) + '!' + pH.getWord(h, 1);
-  }
-
-  @Override public boolean isLocal() { return false; }
-  @Override public boolean isDynamic() { return true; }
-}
-
-
-/**
  * This extractor extracts the current and the previous word in conjunction.
  */
 class ExtractorCWordPrevWord extends Extractor {
@@ -322,32 +297,6 @@ class ExtractorCWordPrevWord extends Extractor {
 
   @Override public boolean isLocal() { return false; }
   @Override public boolean isDynamic() { return false; }
-}
-
-
-/**
- * This extractor extracts the current and the previous word in conjunction and also the
- * previous tag
- */
-class ExtractorCWordPrevWordTag extends Extractor {
-
-  private static final long serialVersionUID = -3271166574128085943L;
-
-  public ExtractorCWordPrevWordTag() {
-  }
-
-  @Override
-  public int leftContext() {
-    return 1;
-  }
-
-  @Override
-  String extract(History h, PairsHolder pH) {
-    return pH.getWord(h, -1) + '!' + pH.getTag(h, -1) + '!' + pH.getWord(h, 0);
-  }
-
-  @Override public boolean isLocal() { return false; }
-  @Override public boolean isDynamic() { return true; }
 }
 
 
@@ -429,31 +378,6 @@ class ExtractorNextTwoTags extends Extractor {
 
 
 /**
- * This extractor extracts the next three tags.
- */
-class ExtractorNextThreeTags extends Extractor {
-
-  private static final long serialVersionUID = 8563584394721620568L;
-
-  public ExtractorNextThreeTags() {
-  }
-
-  @Override
-  public int rightContext() {
-    return 3;
-  }
-
-  @Override
-  String extract(History h, PairsHolder pH) {
-    return pH.getTag(h, 1) + '!' + pH.getTag(h, 2) + '!' + pH.getTag(h, 3);
-  }
-
-  @Override public boolean isLocal() { return false; }
-  @Override public boolean isDynamic() { return true; }
-}
-
-
-/**
  * This extractor extracts the previous tag and the current word in conjunction.
  */
 class ExtractorPrevTagWord extends Extractor {
@@ -476,36 +400,6 @@ class ExtractorPrevTagWord extends Extractor {
   @Override public boolean isLocal() { return false; }
   @Override public boolean isDynamic() { return true; }
 
-}
-
-
-/**
- * This extractor extracts the previous tag , next tag, and the current word in conjunction.
- */
-class ExtractorPrevTagNextTagWord extends Extractor {
-
-  private static final long serialVersionUID = -4942654091455804179L;
-
-  public ExtractorPrevTagNextTagWord() {
-  }
-
-  @Override
-  public int leftContext() {
-    return 1;
-  }
-
-  @Override
-  public int rightContext() {
-    return 1;
-  }
-
-  @Override
-  String extract(History h, PairsHolder pH) {
-    return pH.getTag(h, -1) + '!' + pH.getWord(h, 0) + pH.getTag(h, 1);
-  }
-
-  @Override public boolean isLocal() { return false; }
-  @Override public boolean isDynamic() { return true; }
 }
 
 

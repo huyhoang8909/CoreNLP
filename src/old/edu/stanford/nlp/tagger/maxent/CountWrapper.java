@@ -41,28 +41,6 @@ public class CountWrapper {
 
   }
 
-  protected void incThat() {
-    this.countThat++;
-  }
-
-  public int getCountPart() {
-    return countPart;
-  }
-
-  public int getCountThat() {
-    return countThat;
-  }
-
-
-  public int getCountIn() {
-    return countIn;
-  }
-
-  public int getCountRB() {
-    return countRB;
-  }
-
-
   public String getWord() {
     return word;
   }

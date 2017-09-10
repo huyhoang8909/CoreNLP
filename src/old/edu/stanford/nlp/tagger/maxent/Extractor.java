@@ -138,48 +138,6 @@ public class Extractor implements Serializable {
     return isTag ? pH.getTag(h, position) : pH.getWord(h, position);
   }
 
-  @SuppressWarnings({"MethodMayBeStatic"})
-  String extractLV(History h, PairsHolder pH) {
-    // should extract last verbal word and also the current word
-    int start = h.start;
-    String lastverb = "NA";
-    int current = h.current;
-    int index = current - 1;
-    while (index >= start) {
-      String tag = pH.getTag(index);
-      if (tag.startsWith("VB")) {
-        lastverb = pH.getWord(index);
-        break;
-      }
-      if (tag.startsWith(",")) {
-        break;
-      }
-      index--;
-    }
-    return lastverb;
-  }
-
-  String extractLV(History h, PairsHolder pH, int bound) {
-    // should extract last verbal word and also the current word
-    int start = h.start;
-    String lastverb = "NA";
-    int current = h.current;
-    int index = current - 1;
-    while ((index >= start) && (index >= current - bound)) {
-      String tag = pH.getTag(index);
-      if (tag.startsWith("VB")) {
-        lastverb = pH.getWord(index);
-        break;
-      }
-      if (tag.startsWith(",")) {
-        break;
-      }
-      index--;
-    }
-    return lastverb;
-  }
-
-
   // By default the bound is ignored, but a few subclasses make use of it.
   @SuppressWarnings({"UnusedDeclaration"})
   String extract(History h, PairsHolder pH, int bound) {
@@ -196,23 +154,6 @@ public class Extractor implements Serializable {
     return cl.substring(ind + 1) + '(' + args + ')';
   }
 
-
-  /** This is used for argument parsing in arch variable.
-   *  It can extract a comma separated argument.
-   *  Assumes the input format is "name(arg,arg,arg)".
-   *
-   *  @param str arch variable component input
-   *  @param num Number of argument
-   *  @return The parenthesized String, or null if none.
-   */
-  static String getParenthesizedArg(String str, int num) {
-    String[] args = str.split("\\s*[,()]\\s*");
-    // System.err.println("getParenthesizedArg split " + str + " into " + args.length + " pieces; returning number " + num);
-    // for (int i = 0; i < args.length; i++) {
-    //   System.err.println("  " + args[i]);
-    // }
-    return args[num];
-  }
 
   /** This is used for argument parsing in arch variable.
    *  It can extract a comma separated argument.

@@ -309,10 +309,6 @@ public class TTags {
     closed.add(tag);
   }
 
-  public void setLearnClosedTags(boolean learn) {
-    learnClosedTags = learn;
-  }
-
   public void setOpenClassTags(String[] openClassTags) {
     openTags = new HashSet<String>();
     openTags.addAll(Arrays.asList(openClassTags));

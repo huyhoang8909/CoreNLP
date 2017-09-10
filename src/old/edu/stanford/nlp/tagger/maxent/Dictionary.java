@@ -62,13 +62,6 @@ public class Dictionary {
         return dict.get(word);
     }
 
-    String getFirstTag(String word) {
-        if (dict.containsKey(word)) {
-            return dict.get(word).getFirstTag();
-        }
-        return null;
-    }
-
     protected int sum(String word) {
         if (dict.containsKey(word)) {
             return dict.get(word).sum();

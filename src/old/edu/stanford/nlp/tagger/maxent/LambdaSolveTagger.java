@@ -11,7 +11,7 @@ import java.io.DataInputStream;
 import old.edu.stanford.nlp.maxent.Experiments;
 import old.edu.stanford.nlp.maxent.Problem;
 import old.edu.stanford.nlp.maxent.iis.LambdaSolve;
-import old.edu.stanford.nlp.util.MutableDouble;
+import edu.stanford.nlp.util.MutableDouble;
 
 
 /**

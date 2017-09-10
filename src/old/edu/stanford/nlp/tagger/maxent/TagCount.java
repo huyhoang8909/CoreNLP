@@ -60,9 +60,6 @@ class TagCount {
     this.ambClassId = ambClassId;
   }
 
-  public int getAmbClassId() {
-    return ambClassId;
-  }
 
   // The object's fields are read form the file. They are read from the current position and the
   // file is not closed afterwards.

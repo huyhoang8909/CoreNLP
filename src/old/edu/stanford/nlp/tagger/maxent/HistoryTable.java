@@ -38,10 +38,6 @@ public class HistoryTable {
     return idx.get(index);
   }
 
-  int getIndex(History h) {
-    return idx.indexOf(h);
-  }
-
   int size() {
     return idx.size();
   }

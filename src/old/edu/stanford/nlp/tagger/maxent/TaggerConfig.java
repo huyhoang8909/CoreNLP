@@ -655,18 +655,6 @@ public class TaggerConfig extends Properties /* Inherits implementation of seria
     return mode;
   }
 
-
-  /** Serialize the TaggerConfig.
-   *
-   * @param os Where to write this TaggerConfig
-   * @throws IOException If any IO problems
-   */
-  public void saveConfig(OutputStream os) throws IOException {
-    ObjectOutputStream out = new ObjectOutputStream(os);
-    out.writeObject(this);
-  }
-
-
   /** Read in a TaggerConfig.
    *
    * @param stream Where to read from
