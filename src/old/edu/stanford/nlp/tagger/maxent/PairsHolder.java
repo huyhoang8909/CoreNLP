@@ -7,7 +7,7 @@
 
 package old.edu.stanford.nlp.tagger.maxent;
 
-import old.edu.stanford.nlp.ling.WordTag;
+import edu.stanford.nlp.ling.WordTag;
 
 import java.util.*;
 

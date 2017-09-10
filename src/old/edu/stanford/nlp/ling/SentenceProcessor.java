@@ -1,5 +1,7 @@
 package old.edu.stanford.nlp.ling;
 
+import edu.stanford.nlp.ling.HasWord;
+
 /**
  * This is a simple interface for applying a transformer to a
  * <code>Sentence</code>. It typically is called iteratively over

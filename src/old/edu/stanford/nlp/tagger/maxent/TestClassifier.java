@@ -19,7 +19,7 @@ import edu.stanford.nlp.trees.TreeNormalizer;
 import edu.stanford.nlp.trees.TreeReaderFactory;
 import edu.stanford.nlp.trees.TreeTransformer;
 import old.edu.stanford.nlp.ling.Sentence;
-import old.edu.stanford.nlp.ling.Word;
+import edu.stanford.nlp.ling.Word;
 
 
 /**

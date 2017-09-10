@@ -31,7 +31,7 @@ package old.edu.stanford.nlp.tagger.maxent;
 import java.util.Arrays;
 
 import old.edu.stanford.nlp.ling.Sentence;
-import old.edu.stanford.nlp.ling.Word;
+import edu.stanford.nlp.ling.Word;
 
 
 public class MaxentTagger {

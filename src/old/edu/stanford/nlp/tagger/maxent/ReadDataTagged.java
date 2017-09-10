@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.StringTokenizer;
 
-import old.edu.stanford.nlp.ling.WordTag;
+import edu.stanford.nlp.ling.WordTag;
 
 
 /**

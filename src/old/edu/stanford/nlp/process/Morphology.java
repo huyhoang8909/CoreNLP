@@ -8,9 +8,9 @@ import java.io.StringReader;
 import java.util.function.Function;
 
 import edu.stanford.nlp.io.IOUtils;
-import old.edu.stanford.nlp.ling.Word;
+import edu.stanford.nlp.ling.Word;
 import edu.stanford.nlp.ling.WordLemmaTag;
-import old.edu.stanford.nlp.ling.WordTag;
+import edu.stanford.nlp.ling.WordTag;
 
 
 /**

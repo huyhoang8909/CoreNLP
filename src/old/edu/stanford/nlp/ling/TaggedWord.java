@@ -1,5 +1,12 @@
 package old.edu.stanford.nlp.ling;
 
+import edu.stanford.nlp.ling.HasTag;
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
+import edu.stanford.nlp.ling.TaggedWordFactory;
+import edu.stanford.nlp.ling.Word;
+
 /**
  * A <code>TaggedWord</code> object contains a word and its tag.
  * The <code>value()</code> of a TaggedWord is the Word.  The tag
@@ -7,7 +14,7 @@ package old.edu.stanford.nlp.ling;
  *
  * @author Christopher Manning
  */
-public class TaggedWord extends Word implements HasTag {
+public class TaggedWord extends Word implements HasWord {
 
   private String tag;
 
