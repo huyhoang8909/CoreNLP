@@ -47,7 +47,7 @@ public class VietnamesePennTreebankLanguagePack extends AbstractTreebankLanguage
   /**
    * This is valid for "BobChrisTreeNormalizer" conventions only.
    */
-  private static final String[] pennStartSymbols = {"ROOT", "S", "SQ"};
+  private static final String[] pennStartSymbols = {"ROOT"};
 
 
   /**

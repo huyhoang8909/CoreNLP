@@ -54,6 +54,7 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
     //nonTerminalInfo.put("PRT", new String[][]{{"right", "RP"}});
     // add '#' for pounds!!
     //nonTerminalInfo.put("QP", new String[][]{{"left", "$", "IN", "NNS", "NN", "JJ", "CD", "PDT", "DT", "RB", "NCD", "QP", "JJR", "JJS"}});
+    nonTerminalInfo.put("QP", new String[][]{{"left", "M"}});
     // reduced relative clause can be any predicate VP, ADJP, NP, PP.
     // For choosing between NP and PP, really need to know which one is temporal and to choose the other.
     // It's not clear ADVP needs to be in the list at all (delete?).
@@ -62,24 +63,28 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
     // delete IN -- go for main part of sentence; add FRAG
 
     //nonTerminalInfo.put("S", new String[][]{{"left", "VP", "S", "FRAG", "SBAR", "ADJP", "JJP", "UCP", "NP", ","}});
-    nonTerminalInfo.put("S", new String[][]{{"right", "."}, {"left", "S", "SBAR"}});
+    nonTerminalInfo.put("S", new String[][]{{"leftdis",  "C", "S", "SBAR", "AP", "NP", "VP", "PP"}});
+    nonTerminalInfo.put("SBAR", new String[][]{{"left"}});
     //nonTerminalInfo.put("SBAR", new String[][]{{"left", "WHNP", "WHPP", "WHADVP", "WHADJP", "IN", "DT", "S", "SQ", "SINV", "SBAR", "FRAG"}});
     //nonTerminalInfo.put("SBARQ", new String[][]{{"left", "SQ", "S", "SINV", "SBARQ", "FRAG", "SBAR"}});
     // cdm: if you have 2 VP under an SINV, you should really take the 2nd as syntactic head, because the first is a topicalized VP complement of the second, but for now I didn't change this, since it didn't help parsing.  (If it were changed, it'd need to be also changed to the opposite in SemanticHeadFinder.)
     //nonTerminalInfo.put("SINV", new String[][]{{"left", "VBZ", "VBD", "VBP", "VB", "MD", "VBN", "VP", "S", "SINV", "ADJP", "JJP", "NP"}});
     //nonTerminalInfo.put("SQ", new String[][]{{"left", "VBZ", "VBD", "VBP", "VB", "MD", "AUX", "AUXG", "VP", "SQ"}});  // TODO: Should maybe put S before SQ for tag questions. Check.
+    nonTerminalInfo.put("SQ", new String[][]{{"left", "NP"}});
     //nonTerminalInfo.put("UCP", new String[][]{{"right"}});
     // below is weird!! Make 2 lists, one for good and one for bad heads??
     // VP: added AUX and AUXG to work with Charniak tags
     //nonTerminalInfo.put("VP", new String[][]{{"left", "V", "TO", "VBD", "VBN", "MD", "VBZ", "VB", "VBG", "VBP", "VP", "AUX", "AUXG", "ADJP", "JJP", "NN", "NNS", "JJ", "NP", "NNP", "PP"}});
-    nonTerminalInfo.put("VP", new String[][]{{"left", "V", "R", "VP", "NP", "PP"}});    
+    nonTerminalInfo.put("VP", new String[][]{{"left", "V", "R", "VP", "NP", "PP"}});
     //nonTerminalInfo.put("WHADJP", new String[][]{{"left", "WRB", "WHADVP", "RB", "JJ", "ADJP", "JJP", "JJR"}});
     //nonTerminalInfo.put("WHADVP", new String[][]{{"right", "WRB", "WHADVP"}});
     //nonTerminalInfo.put("WHNP", new String[][]{{"left", "WDT", "WP", "WP$", "WHADJP", "WHPP", "WHNP"}});
+    nonTerminalInfo.put("WHNP", new String[][]{{"left", "p"}});
     //nonTerminalInfo.put("WHPP", new String[][]{{"right", "IN", "TO", "FW"}});
+    nonTerminalInfo.put("WHPP", new String[][]{{"left", "E",}});
     //nonTerminalInfo.put("X", new String[][]{{"right", "S", "VP", "ADJP", "JJP", "NP", "SBAR", "PP", "X"}});
     //nonTerminalInfo.put("NP", new String[][]{{"rightdis", "NN", "NNP", "NNPS", "NNS", "NML", "NX", "POS", "JJR"}, {"left", "N", "NP", "PRP"}, {"rightdis", "$", "ADJP", "JJP", "PRN", "FW"}, {"right", "CD"}, {"rightdis", "JJ", "JJS", "RB", "QP", "DT", "WDT", "RBR", "ADVP"}});
-    nonTerminalInfo.put("NP", new String[][]{{"left", "Nc", "N", "M"}});
+    nonTerminalInfo.put("NP", new String[][]{{"leftdis", "LBKT"}, {"left", "Nc", "M", "N"}});
     //nonTerminalInfo.put("NX", nonTerminalInfo.get("NP"));
     // TODO: seems JJ should be head of NML in this case:
     // (NP (NML (JJ former) (NML Red Sox) (JJ great)) (NNP Luis) (NNP Tiant)),
@@ -109,12 +114,12 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
 
     // todo: Uncomment this line if we always want to take the leftmost if no head rule is defined for the mother category.
     // defaultRule = defaultLeftRule; // Don't exception, take leftmost if no rule defined for a certain parent category
-    
+
     /******************************************************************
      ******************* Vietnamese Rule ******************************
      ******************************************************************
      */
-    
+
     nonTerminalInfo.put("AP", new String[][]{{"left", "A"}});
     nonTerminalInfo.put("MDP", new String[][]{{"left", "T"}});
     nonTerminalInfo.put("X", new String[][]{{"left"}});
@@ -127,8 +132,8 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
     nonTerminalInfo.put("RP", new String[][]{{"left"}});
     nonTerminalInfo.put("MP", new String[][]{{"left", "M"}});
     nonTerminalInfo.put("UCP", new String[][]{{"left"}});
-    
-  
+
+
   }
 
   private static final long serialVersionUID = -5970387458902637256L;
