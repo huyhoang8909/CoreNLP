@@ -1,5 +1,6 @@
 package edu.stanford.nlp.parser.lexparser; 
 import edu.stanford.nlp.util.logging.Redwood;
+import vn.hus.nlp.tagger.VietnameseMaxentTagger;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -578,6 +579,7 @@ public class EvaluateTreebank  {
     TreebankLangParserParams tlpParams = op.tlpParams;
     TreebankLanguagePack tlp = op.langpack();
     PrintWriter pwOut, pwErr;
+    VietnameseMaxentTagger tagger = new VietnameseMaxentTagger();
     if (op.testOptions.quietEvaluation) {
       NullOutputStream quiet = new NullOutputStream();
       pwOut = tlpParams.pw(quiet);
@@ -640,6 +642,8 @@ public class EvaluateTreebank  {
 
       for (Tree goldTree : testTreebank) {
         final List<CoreLabel> sentence = getInputSentence(goldTree);
+        // use Vietnamese tagger
+        tagOneSentence(sentence, tagger);
 
         pwErr.println("Parsing [len. " + sentence.size() + "]: " + SentenceUtils.listToString(sentence));
 
@@ -731,6 +735,19 @@ public class EvaluateTreebank  {
     return f1;
   } // end testOnTreebank()
 
+  private void tagOneSentence(List<CoreLabel> sentence, VietnameseMaxentTagger tagger) {
+	 List<TaggedWord> tagged = null;
+	 tagged = tagger.tagListCoreLabel(sentence);
 
+	 if (tagged != null) {
+	     for (int i = 0, sz = sentence.size(); i < sz; i++) {
+	        sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, tagged.get(i).tag());
+	     }
+	 } else {
+	     for (CoreLabel token : sentence) {
+	        token.set(CoreAnnotations.PartOfSpeechAnnotation.class, "X");
+	     }
+	 }
+  }
 
 }
