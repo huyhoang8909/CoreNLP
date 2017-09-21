@@ -84,7 +84,7 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
     nonTerminalInfo.put("WHPP", new String[][]{{"left", "E",}});
     //nonTerminalInfo.put("X", new String[][]{{"right", "S", "VP", "ADJP", "JJP", "NP", "SBAR", "PP", "X"}});
     //nonTerminalInfo.put("NP", new String[][]{{"rightdis", "NN", "NNP", "NNPS", "NNS", "NML", "NX", "POS", "JJR"}, {"left", "N", "NP", "PRP"}, {"rightdis", "$", "ADJP", "JJP", "PRN", "FW"}, {"right", "CD"}, {"rightdis", "JJ", "JJS", "RB", "QP", "DT", "WDT", "RBR", "ADVP"}});
-    nonTerminalInfo.put("NP", new String[][]{{"leftdis", "LBKT"}, {"left", "Nc", "M", "N"}});
+    nonTerminalInfo.put("NP", new String[][]{{"leftdis", "LBKT"}, {"right", "A"},{"left", "Nc", "M", "N"}});
     //nonTerminalInfo.put("NX", nonTerminalInfo.get("NP"));
     // TODO: seems JJ should be head of NML in this case:
     // (NP (NML (JJ former) (NML Red Sox) (JJ great)) (NNP Luis) (NNP Tiant)),
