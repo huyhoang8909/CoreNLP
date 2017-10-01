@@ -11,3 +11,4 @@
 /.classpath
 /.project
 *.log
+*VietnamesePCFG.ser.gz

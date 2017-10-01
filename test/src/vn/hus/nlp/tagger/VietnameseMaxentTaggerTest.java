@@ -168,4 +168,10 @@ public class VietnameseMaxentTaggerTest {
 
         assertEquals("Năm/N 2000,/M khi/N vung/V tiền/N tỷ/V mua/V khu/N đất/N vườn/N ở/E quận/N 9,/N ông/Nc Điền/Np bị/V dèm/V pha/V là/V kẻ/N đốt/V tiền/N vì/E mua/V đất/N chỉ/R để/E đào/V ao/N thả/V cá,/N nuôi/V gà,/N trồng/V dăm_ba/N loại/N cây_ăn_quả/N cho/E doanh_thu/N bèo_bọt./N Còn/V căn/Nc nhà/N 150m2/N xây/V kiểu/N thôn_quê/N mỗi/M tháng/N về/V chơi/V không/R quá/R vài_ba/M ngày./N “Khi/V đó,/N giao_thông/N về/E hướng/N quận/N 9/M còn/R khó_khăn,/V lầy_lội,/N phải/V mất/V thêm/V tiền/N thuê/V người/N giữ/V vườn/N nên/C anh_em/N họ_hàng/N mắng/V tôi/P chơi/V ngông/N và/CC tiêu/V hoang./N Nhưng/C tôi/P quyết/V mua/V khu/N đất/N này/P làm/V của/E để_dành,/N xem/V như/C kênh/N đầu_tư/V dài_hạn”,/N ông/Nc Điền/Np nhớ/V lại./N 7/M năm/N sau/A (tức/M năm/N 2007),/M khu/N đất/N của/E ông/Nc Điền/Np được/V khách/N ngã_giá/V 7,5/M tỷ/N đồng,/N nhưng/C ông/N vẫn/R quyến_luyến/V mảnh/Nc vườn/N nhiều/A năm/N vun_đắp/A nên/C giữ/V lại./N Trong/E các/L năm/N 2015-2016,/V nhiều/A đầu_nậu/N săn/V đất/N ồ_ạt/A đổ/V về/E quận/N 9./V Khu/N đất/N của/E ông/Nc Điền/Np được/V nhiều/A người/N hỏi/V mua,/N giá/N cứ/R nhích/V dần/R lên/R 10/M rồi/C 13/M tỷ/N đồng/N nhưng/C ông/N từ_chối/V sang_nhượng./V Mãi/R đến/E quý/N I/2017,/V một/M nhà/N đầu_tư/V ngã_giá/V 16/M tỷ/N đồng,/A lần/N này/P chủ/N đất/N mới/R đồng_ý/V tiến_hành/V giao_dịch./N Sau/N 17/M năm/N ôm/V đất/N để_dành,/N trừ/V đi/V tiền/N mua/V đất/N 3,5/M tỷ/N đồng/N cộng/V thêm/V các/L chi_phí/N làm/V hàng_rào,/N san_lấp/V toàn/R khu,/N làm/V nhà/N và/CC trả/V công/N người/N giữ/V đất/N (khoảng/N gần/A 2/M tỷ),/Nu ông/Nc Điền/Np nhẩm/V tính/V lãi_ròng/N trên/E chục/M tỷ/N đồng./V “Nếu/N ngày_xưa/N tôi/P dùng/V số/N tiền/N này/P mua/V vàng/N hay/C gửi/V tiết_kiệm,/N cũng/R kiếm/V được/R lãi/V kha_khá/A nhưng/C khó/A mà/C tích_cóp/V dần/R thành/V 16/M tỷ/N đồng/N như/C hiện_nay”,/N nhà/N đầu_tư/V này/P tính_toán./V", result);
     }
+
+    @Test
+    public void xx() {
+        System.out.println(tagger.tagText("Ông giục tôi đi ngủ , \" ngày_mai công_việc dài lắm , cố ngủ một_chút mà lấy sức \" ..."));
+    }
+
 }
