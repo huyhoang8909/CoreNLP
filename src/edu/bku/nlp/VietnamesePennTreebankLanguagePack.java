@@ -23,13 +23,13 @@ public class VietnamesePennTreebankLanguagePack extends AbstractTreebankLanguage
   }
 
 
-  public static final String[] pennPunctTags = {"''", "``", "-LRB-", "-RRB-", ".", ":", ","};
+  public static final String[] pennPunctTags = {"''", "``", "-LRB-", "-RRB-", "LBKT", "RBKT",".", ":", ","};
 
   private static final String[] pennSFPunctTags = {"."};
 
   private static final String[] collinsPunctTags = {"''", "``", ".", ":", ","};
 
-  private static final String[] pennPunctWords = {"''", "'", "``", "`", "-LRB-", "-RRB-", "-LCB-", "-RCB-", ".", "?", "!", ",", ":", "-", "--", "...", ";"};
+  private static final String[] pennPunctWords = {"''", "'", "``", "`", "-LRB-", "-RRB-", "LBKT", "RBKT","-LCB-", "-RCB-", ".", "?", "!", ",", ":", "-", "--", "...", ";"};
 
   private static final String[] pennSFPunctWords = {".", "!", "?"};
 
@@ -47,7 +47,7 @@ public class VietnamesePennTreebankLanguagePack extends AbstractTreebankLanguage
   /**
    * This is valid for "BobChrisTreeNormalizer" conventions only.
    */
-  private static final String[] pennStartSymbols = {"ROOT", "TOP"};
+  private static final String[] pennStartSymbols = {"ROOT"};
 
 
   /**
