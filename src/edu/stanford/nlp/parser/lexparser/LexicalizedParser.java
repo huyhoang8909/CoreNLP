@@ -423,6 +423,22 @@ public class LexicalizedParser extends ParserGrammar implements Serializable  {
     return trainTreebank;
   }
 
+  /**
+   * This function is only use in RandomShuffleTreesBank.java
+   * @param treebankPath
+   * @param op
+   * @return
+   * @author: HoangNam
+   */
+  public static Treebank LoadTreeBank(String treebankPath, Options op) {
+    log.info("Training a parser from treebank dir: " + treebankPath);
+    Treebank trainTreebank = op.tlpParams.diskTreebank();
+    log.info("Reading trees...");
+      trainTreebank.loadPath(treebankPath);
+    Timing.tick("done [read " + trainTreebank.size() + " trees].");
+    return trainTreebank;
+  }
+
   private static DiskTreebank makeSecondaryTreebank(String treebankPath, Options op, FileFilter filt) {
     log.info("Additionally training using secondary disk treebank: " + treebankPath + ' ' + filt);
     DiskTreebank trainTreebank = op.tlpParams.diskTreebank();
