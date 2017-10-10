@@ -195,7 +195,7 @@ public class VietnamesePennTreebankLanguagePack extends AbstractTreebankLanguage
 
   @Override
   public boolean supportsGrammaticalStructures() {
-    return true;
+    return false;
   }
 
   /** {@inheritDoc} */

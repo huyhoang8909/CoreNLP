@@ -1815,18 +1815,9 @@ public class VietnameseTreebankParserParams extends AbstractTreebankParserParams
       }
       if (englishTrain.splitBaseNP > 0 && baseCat.equals("NP") &&
           t.isPrePreTerminal()) {
-        if (englishTrain.splitBaseNP == 2) {
-          if (parentStr.startsWith("NP")) { // already got one above us
-            cat = cat + "-B";
-          } else {
-            // special case splice in a new node!  Do it all here
-            Label labelBot = new CategoryWordTag("NP^NP-B", word, tag);
-            t.setLabel(labelBot);
-            Label labelTop = new CategoryWordTag(cat, word, tag);
-            List<Tree> newerChildren = new ArrayList<>(1);
-            newerChildren.add(t);
-            return categoryWordTagTreeFactory.newTreeNode(labelTop, newerChildren);
-          }
+        if (baseTag.equals("A")) {
+        	//NP-A in case NP(N A)
+            cat = cat + "-A";
         } else {
           cat = cat + "-B";
         }

@@ -1,5 +1,6 @@
 package edu.stanford.nlp.pipeline; 
 import edu.stanford.nlp.util.logging.Redwood;
+import vn.hus.nlp.tagger.VietnameseMaxentTagger;
 
 import java.util.*;
 
@@ -26,6 +27,11 @@ public class POSTaggerAnnotator implements Annotator  {
   private final int nThreads;
 
   private final boolean reuseTags;
+  
+  /**
+   * Vietnamese tagger
+   */
+  private final VietnameseMaxentTagger tagger = new VietnameseMaxentTagger();
 
   /** Create a tagger annotator using the default English tagger from the models jar
    *  (and non-verbose initialization).
@@ -126,13 +132,15 @@ public class POSTaggerAnnotator implements Annotator  {
       return this;
     }
   }
-
+  
   private CoreMap doOneSentence(CoreMap sentence) {
     List<CoreLabel> tokens = sentence.get(CoreAnnotations.TokensAnnotation.class);
     List<TaggedWord> tagged = null;
     if (tokens.size() <= maxSentenceLength) {
       try {
-        tagged = pos.tagSentence(tokens, this.reuseTags);
+        //tagged = pos.tagSentence(tokens, this.reuseTags);
+        // use Vietnamese tagger
+        tagged = tagger.tagListCoreLabel(tokens);
       } catch (OutOfMemoryError e) {
         log.error(e); // Beware that we can now get an OOM in logging, too.
         log.warn("Tagging of sentence ran out of memory. " +
