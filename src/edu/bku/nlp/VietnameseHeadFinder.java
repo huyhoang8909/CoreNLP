@@ -48,13 +48,13 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
     // added SYM as used in new treebanks for symbols filling role of IN
     // Changed PP search to left -- just what you want for conjunction (and consistent with SemanticHeadFinder)
     //nonTerminalInfo.put("PP", new String[][]{{"right", "IN", "TO", "VBG", "VBN", "RP", "FW", "JJ", "SYM"}, {"left", "E", "NP", "PP"}});
-    nonTerminalInfo.put("PP", new String[][]{{"left", "E"}});
+    nonTerminalInfo.put("PP", new String[][]{{"left", "E", "NP", "VP"}});
 
     //nonTerminalInfo.put("PRN", new String[][]{{"left", "VP", "NP", "PP", "SQ", "S", "SINV", "SBAR", "ADJP", "JJP", "ADVP", "INTJ", "WHNP", "NAC", "VBP", "JJ", "NN", "NNP"}});
     //nonTerminalInfo.put("PRT", new String[][]{{"right", "RP"}});
     // add '#' for pounds!!
     //nonTerminalInfo.put("QP", new String[][]{{"left", "$", "IN", "NNS", "NN", "JJ", "CD", "PDT", "DT", "RB", "NCD", "QP", "JJR", "JJS"}});
-    nonTerminalInfo.put("QP", new String[][]{{"left", "M"}});
+    nonTerminalInfo.put("QP", new String[][]{{"left", "R", "M"}});
     // reduced relative clause can be any predicate VP, ADJP, NP, PP.
     // For choosing between NP and PP, really need to know which one is temporal and to choose the other.
     // It's not clear ADVP needs to be in the list at all (delete?).
@@ -84,7 +84,7 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
     nonTerminalInfo.put("WHPP", new String[][]{{"left", "E",}});
     //nonTerminalInfo.put("X", new String[][]{{"right", "S", "VP", "ADJP", "JJP", "NP", "SBAR", "PP", "X"}});
     //nonTerminalInfo.put("NP", new String[][]{{"rightdis", "NN", "NNP", "NNPS", "NNS", "NML", "NX", "POS", "JJR"}, {"left", "N", "NP", "PRP"}, {"rightdis", "$", "ADJP", "JJP", "PRN", "FW"}, {"right", "CD"}, {"rightdis", "JJ", "JJS", "RB", "QP", "DT", "WDT", "RBR", "ADVP"}});
-    nonTerminalInfo.put("NP", new String[][]{{"leftdis", "LBKT"}, {"right", "A"},{"left", "Nc", "M", "N"}});
+    nonTerminalInfo.put("NP", new String[][]{{"leftdis", "LBKT"}, {"right", "A"},{"left", "M", "L", "Nc", "N", "I", "Np", "Nu", "SBAR"}});
     //nonTerminalInfo.put("NX", nonTerminalInfo.get("NP"));
     // TODO: seems JJ should be head of NML in this case:
     // (NP (NML (JJ former) (NML Red Sox) (JJ great)) (NNP Luis) (NNP Tiant)),
@@ -95,7 +95,7 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
     //nonTerminalInfo.put("POSSP", new String[][]{{"right", "POS"}});
 
     /* HJT: Adding the following to deal with oddly formed data in (for example) the Brown corpus */
-    nonTerminalInfo.put("ROOT", new String[][]{{"left", "S", "SQ", "SINV", "SBAR", "FRAG"}});
+    nonTerminalInfo.put("ROOT", new String[][]{{"left", "S", "SQ"}});
     // Just to handle trees which have TOP instead of ROOT at the root
     //nonTerminalInfo.put("TOP", nonTerminalInfo.get("ROOT"));
     //nonTerminalInfo.put("TYPO", new String[][]{{"left", "NN", "NP", "NML", "NNP", "NNPS", "TO",
@@ -120,7 +120,7 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
      ******************************************************************
      */
 
-    nonTerminalInfo.put("AP", new String[][]{{"left", "A"}});
+    nonTerminalInfo.put("AP", new String[][]{{"left", "R", "A", "PP", ""}});
     nonTerminalInfo.put("MDP", new String[][]{{"left", "T"}});
     nonTerminalInfo.put("X", new String[][]{{"left"}});
     nonTerminalInfo.put("XP", new String[][]{{"left", "X"}}); // There is no rule XP, the line keep parser work
