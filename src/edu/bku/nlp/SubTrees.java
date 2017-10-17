@@ -38,7 +38,7 @@ public class SubTrees {
 	}
 	
 	/** DB configuration params */
-    private static String url = "jdbc:mysql://192.168.33.10:3306/vietnamese_treebank";
+    private static String url = "jdbc:mysql://192.168.33.11:3306/vietnamese_treebank?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8";
     private static String username = "root";
     private static String password = "";
     private static Connection connection = null;
@@ -46,7 +46,7 @@ public class SubTrees {
     private static int order = 1;
     
 	public static void printSubTrees(Tree inputTree, ArrayList<Word> previousWords, 
-			int sentiment, PreparedStatement words_statement, 
+			int sentiment, int parent_id,PreparedStatement words_statement, 
 			PreparedStatement sentences_words_statement) 
 	{
         if (inputTree.isLeaf()) {
@@ -59,6 +59,8 @@ public class SubTrees {
         CoreLabel label = (CoreLabel)inputTree.label();
         String cat = label.value();
         String sentence = "";
+        int isVerifed = 0;
+        int isInDict = 0;
 
         if (cat.equals("ROOT") || (previousWords != null && !previousWords.equals(words))) {
         
@@ -70,20 +72,24 @@ public class SubTrees {
             int new_sen = getSentiment(sentence);
             if ( new_sen >= 0 ) {
                 sentiment = new_sen;
+                isInDict = 1;
             }
 
             String lowerCaseSentence = sentence.toLowerCase(); 
             
             if (lowerCaseSentence.startsWith("ưu_điểm") || lowerCaseSentence.startsWith("ưu")) {
             	sentiment = Sentiment.POSITIVE;
+//            	isVerifed = 1;
             } else if (lowerCaseSentence.startsWith("khuyết_điểm") || lowerCaseSentence.startsWith("khuyết")) {
             	sentiment = Sentiment.NEGATIVE;
+//            	isVerifed = 1;
             }
             
             if (cat.equals("N") || cat.equals("M") || cat.equals("Np")|| cat.equals("R") || cat.equals("E") || cat.equals("C") 
             		|| cat.contains("QP") || cat.contains("L") || cat.contains("CC") || cat.contains("EOS") || cat.contains("Nc")
             		|| sentence.equals("-LRB-") || sentence.equals("-RRB-")) {
             	sentiment = Sentiment.NEUTRAL;
+//            	isVerifed = 1;
             }
             
 //        	System.out.println(sentiment + " " + cat + " " + sentence);
@@ -95,16 +101,20 @@ public class SubTrees {
 //            }
             	// insert words
 //            if ( new_sen == -1 ) {
-//         		words_statement.setString(1, sentence);
-//             	words_statement.setInt(2, sentiment);
-//				 words_statement.executeUpdate();
+         		words_statement.setString(1, sentence);
+         		words_statement.setInt(2, parent_id);
+         		words_statement.setString(3, cat);
+         		words_statement.setInt(4, sentiment);
+             	words_statement.setInt(5, isInDict);
+				words_statement.executeUpdate();
 //            }
-    //             ResultSet rs = words_statement.getGeneratedKeys();
-    //             int word_id = 1;
-    //             if(rs.next())
-    //             {
-    //                 word_id = rs.getInt(1);
-    //             }
+				 if (cat.equals("ROOT")) {
+					 ResultSet rs = words_statement.getGeneratedKeys();
+                 	if(rs.next())
+	                 {
+	                     parent_id = rs.getInt(1);
+	                 }
+				 }
 
 				// // insert sentences_words
 				// sentences_words_statement.setInt(1, sentence_id);
@@ -120,7 +130,7 @@ public class SubTrees {
 			}
         }
         for (Tree subTree : inputTree.children()) {
-            printSubTrees(subTree, words,sentiment, words_statement, sentences_words_statement);
+            printSubTrees(subTree, words,sentiment, parent_id,words_statement, sentences_words_statement);
         }
     }
 
@@ -167,7 +177,7 @@ public class SubTrees {
             throw new IllegalStateException("Cannot connect the database!", e);
         }
 
-        String select_reviews_sql = "SELECT * FROM reviews WHERE category = 'laptop' and length < 95";
+        String select_reviews_sql = "SELECT * FROM reviews WHERE category = 'phu-kien' and length < 95 limit 10";
         PreparedStatement reviews_stmt;
 		try {
 			writer = new PrintWriter("test-data/phu-kien-root.txt", "UTF-8");
@@ -192,7 +202,7 @@ public class SubTrees {
         List<CoreMap> sentences = annotation.get(CoreAnnotations.SentencesAnnotation.class);
         if (sentences != null && sentences.size() > 0) {
         	String sentences_sql = "INSERT INTO sentences(parsed_tree,hash_tree) VALUES (?,?)";
-        	String words_sql = "INSERT INTO accessory_words(content,sentiment) VALUES (?,?)";
+        	String words_sql = "INSERT INTO accessory(content,parent,category,sentiment,is_in_dict) VALUES (?,?,?,?,?)";
         	String sentences_words_sql = "INSERT INTO sentences_words VALUES (?,?,?,?)";
             String select_words_sql = "SELECT sentiment FROM words WHERE content = ? and is_verified = 1";
             String select_accessory_words_sql = "SELECT sentiment FROM accessory_words WHERE content = ?";
@@ -231,7 +241,7 @@ public class SubTrees {
 	              // }
 	        	  // tree2 = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
 	        	  order = 1;
-	        	  printSubTrees(sentenceTree, null, sentiment, words_statement, sentences_words_statement);
+	        	  printSubTrees(sentenceTree, null, sentiment, 0,words_statement, sentences_words_statement);
 	        	  System.out.println();
 //  			  } catch (SQLException e) {
 //                log.info(e.getMessage());
