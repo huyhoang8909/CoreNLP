@@ -1395,6 +1395,7 @@ public class LexicalizedParser extends ParserGrammar implements Serializable  {
       }
 
       lp = getParserFromTreebank(trainTreebank, secondaryTrainTreebank, secondaryTreebankWeight, compactor, op, tuneTreebank, extraTaggedWords);
+      System.out.println(lp.ug);
     } else if (textInputFileOrUrl != null) {
       // so we load the parser from a text grammar file
       lp = getParserFromTextFile(textInputFileOrUrl, op);

@@ -2241,6 +2241,7 @@ public class VietnameseTreebankParserParams extends AbstractTreebankParserParams
       englishTrain.correctTags = true;  // different from acl03pcfg
       i += 1;
     } else if (args[i].equalsIgnoreCase("-goodPCFG")) {
+      System.out.println("===========================================================");
       englishTrain.splitIN = 4;  // different from acl03pcfg
       englishTrain.splitPercent = true;
       englishTrain.splitNPpercent = 0;  // no longer different from acl03pcfg

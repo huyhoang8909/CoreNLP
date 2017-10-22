@@ -741,7 +741,15 @@ public class EvaluateTreebank  {
 
 	 if (tagged != null) {
 	     for (int i = 0, sz = sentence.size(); i < sz; i++) {
-	        sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, tagged.get(i).tag());
+	       if (tagged.get(i).tag().equals("CC")) {
+             sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "C");
+           } else if (tagged.get(i).value().equals("mùa")){
+             sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "Nc");
+           } else if (i > 1 && tagged.get(i - 1).tag().equals("V") && tagged.get(i).value().equals("qua")){
+             sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "R");
+           } else {
+             sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, tagged.get(i).tag());
+           }
 	     }
 	 } else {
 	     for (CoreLabel token : sentence) {
