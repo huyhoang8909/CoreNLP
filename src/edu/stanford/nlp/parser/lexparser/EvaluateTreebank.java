@@ -1,4 +1,4 @@
-package edu.stanford.nlp.parser.lexparser; 
+package edu.stanford.nlp.parser.lexparser;
 import edu.stanford.nlp.util.logging.Redwood;
 import vn.hus.nlp.tagger.VietnameseMaxentTagger;
 
@@ -736,26 +736,47 @@ public class EvaluateTreebank  {
   } // end testOnTreebank()
 
   private void tagOneSentence(List<CoreLabel> sentence, VietnameseMaxentTagger tagger) {
-	 List<TaggedWord> tagged = null;
-	 tagged = tagger.tagListCoreLabel(sentence);
+    List<TaggedWord> tagged = null;
+    tagged = tagger.tagListCoreLabel(sentence);
+    if (tagged != null) {
+      for (int i = 0, sz = sentence.size(); i < sz; i++) {
+        String currentTag = tagged.get(i).tag();
+        if (i == 0 || i == (sz -1)) {
+          sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, currentTag);
+          continue;
+        }
 
-	 if (tagged != null) {
-	     for (int i = 0, sz = sentence.size(); i < sz; i++) {
-	       if (tagged.get(i).tag().equals("CC")) {
-             sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "C");
-           } else if (tagged.get(i).value().equals("mùa")){
-             sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "Nc");
-           } else if (i > 1 && tagged.get(i - 1).tag().equals("V") && tagged.get(i).value().equals("qua")){
-             sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "R");
-           } else {
-             sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, tagged.get(i).tag());
-           }
-	     }
-	 } else {
-	     for (CoreLabel token : sentence) {
-	        token.set(CoreAnnotations.PartOfSpeechAnnotation.class, "X");
-	     }
-	 }
+        String currentValue = tagged.get(i).value();
+        String previousTag = tagged.get(i -1).tag();
+        String nextValue = tagged.get(i + 1).value();
+        if (currentTag.equals("CC")) {
+          sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "C");
+        } else if (currentValue.equals("mùa")){
+          sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "Nc");
+        } else if (previousTag.equals("V") && currentValue.equals("qua")){
+          sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "R");
+        } else if (currentValue.equals("bước")){
+          if ((previousTag.equals("V") || previousTag.equals("A"))) {
+            sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "N");
+          } else {
+            sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "V");
+          }
+        } else if (currentValue.equals("VN")){
+          //Khi gán nhãn, nhãn từ viết tắt sẽ là nhãn kép. Chẳng hạn nếu từ viết tắt là HIV thì nhãn của nó là Ny vì HIV viết đầy đủ thì là danh từ.
+          sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "Ny");
+//           }  else if (i > 0 && previousTag.value().toLowerCase().equals("nỗi") && currentValue.equals("đau")){
+//             sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "A");
+        } else if(currentValue.equalsIgnoreCase("Thắng") && nextValue.equalsIgnoreCase("rồi")) {
+             sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, "V");
+        } else {
+          sentence.get(i).set(CoreAnnotations.PartOfSpeechAnnotation.class, currentTag);
+        }
+      }
+    } else {
+      for (CoreLabel token : sentence) {
+        token.set(CoreAnnotations.PartOfSpeechAnnotation.class, "X");
+      }
+    }
   }
 
 }

@@ -63,8 +63,8 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
     // delete IN -- go for main part of sentence; add FRAG
 
     //nonTerminalInfo.put("S", new String[][]{{"left", "VP", "S", "FRAG", "SBAR", "ADJP", "JJP", "UCP", "NP", ","}});
-    nonTerminalInfo.put("S", new String[][]{{"left",  "C", "S", "SBAR", "AP", "NP", "VP", "PP"}});
-    nonTerminalInfo.put("SBAR", new String[][]{{"left", "S"}});
+    nonTerminalInfo.put("S", new String[][]{{"left",  "C", "S", "SBAR", "AP", "NP", "VP", "PP", ","}});
+    nonTerminalInfo.put("SBAR", new String[][]{{"left", "S", "C", "R", "E"}});
 //    nonTerminalInfo.put("SBAR", new String[][]{{"left", "WHNP", "WHPP", "WHADVP", "WHADJP", "IN", "DT", "S", "SQ", "SINV", "SBAR", "FRAG"}});
     //nonTerminalInfo.put("SBARQ", new String[][]{{"left", "SQ", "S", "SINV", "SBARQ", "FRAG", "SBAR"}});
     // cdm: if you have 2 VP under an SINV, you should really take the 2nd as syntactic head, because the first is a topicalized VP complement of the second, but for now I didn't change this, since it didn't help parsing.  (If it were changed, it'd need to be also changed to the opposite in SemanticHeadFinder.)
@@ -84,7 +84,7 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
     nonTerminalInfo.put("WHPP", new String[][]{{"left", "E",}});
     //nonTerminalInfo.put("X", new String[][]{{"right", "S", "VP", "ADJP", "JJP", "NP", "SBAR", "PP", "X"}});
     //nonTerminalInfo.put("NP", new String[][]{{"rightdis", "NN", "NNP", "NNPS", "NNS", "NML", "NX", "POS", "JJR"}, {"left", "N", "NP", "PRP"}, {"rightdis", "$", "ADJP", "JJP", "PRN", "FW"}, {"right", "CD"}, {"rightdis", "JJ", "JJS", "RB", "QP", "DT", "WDT", "RBR", "ADVP"}});
-    nonTerminalInfo.put("NP", new String[][]{{"leftdis", "LBKT"}, {"right", "A"}, {"left", "M", "L", "Nc", "N", "PP", "I", "Np", "Nu", "A", "VP", "SBAR"}});
+    nonTerminalInfo.put("NP", new String[][]{{"leftdis", "LBKT"}, {"right", "A"}, {"left", "M", "L", "Nc", "N", "PP", "I", "Np", "Nu", "A", "SBAR"}});
     //nonTerminalInfo.put("NX", nonTerminalInfo.get("NP"));
     // TODO: seems JJ should be head of NML in this case:
     // (NP (NML (JJ former) (NML Red Sox) (JJ great)) (NNP Luis) (NNP Tiant)),
