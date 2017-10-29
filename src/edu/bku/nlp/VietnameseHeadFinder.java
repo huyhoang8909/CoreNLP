@@ -120,7 +120,7 @@ public class VietnameseHeadFinder extends CollinsHeadFinder {
      ******************************************************************
      */
 
-    nonTerminalInfo.put("AP", new String[][]{{"left", "R", "A", "PP", ""}});
+    nonTerminalInfo.put("AP", new String[][]{{"left", "R", "A", "PP"}});
     nonTerminalInfo.put("MDP", new String[][]{{"left", "T"}});
     nonTerminalInfo.put("X", new String[][]{{"left"}});
     nonTerminalInfo.put("XP", new String[][]{{"left", "X"}}); // There is no rule XP, the line keep parser work

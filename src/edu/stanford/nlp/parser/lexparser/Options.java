@@ -559,6 +559,36 @@ public class Options implements Serializable  {
         log.info("Error processing deleteSplitters");
       }
       // don't increment i so it gets language specific stuff as well
+    } else if (args[i].equalsIgnoreCase("-goodPCFGVN")) {
+      doDep = false;
+      doPCFG = true;
+      // op.lexOptions.smoothInUnknownsThreshold = 30;
+      trainOptions.markUnary = 1;
+      trainOptions.PA = true;
+      trainOptions.gPA = false;
+      trainOptions.tagPA = true;
+      trainOptions.tagSelectiveSplit = false;
+      trainOptions.rightRec = true;
+      trainOptions.selectiveSplit = true;
+      trainOptions.selectiveSplitCutOff = 400.0;
+      trainOptions.markovFactor = true;
+      trainOptions.markovOrder = 2;
+      trainOptions.hSelSplit = true;
+      lexOptions.useUnknownWordSignatures = 2;
+      lexOptions.flexiTag = true;
+      // DAN: Tag double-counting is BAD for PCFG-only parsing
+      dcTags = false;
+      String[] delSplit = { "-deleteSplitters", "VP^NP,VP^VP,VP^SINV,VP^SQ" };
+      if (this.setOptionFlag(delSplit, 0) != 2) {
+        log.info("Error processing deleteSplitters");
+      }
+      /**
+       * Enable true improve from
+       * pcfg LP/LR summary evalb: LP: 56.05 LR: 56.2 F1: 56.12 Exact: 7.28 N: 453
+       * pcfg LP/LR summary evalb: LP: 57.15 LR: 56.61 F1: 56.88 Exact: 7.72 N: 453
+       */
+      trainOptions.markUnaryTags = true;
+      // don't increment i so it gets language specific stuff as well
     } else if (args[i].equalsIgnoreCase("-linguisticPCFG")) {
       doDep = false;
       doPCFG = true;
