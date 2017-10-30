@@ -133,6 +133,7 @@ public class VietnameseTreebankParserParams extends AbstractTreebankParserParams
   private HeadFinder headFinder;
 
   private EnglishTrain englishTrain = new EnglishTrain();
+  private VietnameseTrain vietnameseTrain = new VietnameseTrain();
 
   protected EnglishTest englishTest = new EnglishTest();
 
@@ -273,6 +274,54 @@ public class VietnameseTreebankParserParams extends AbstractTreebankParserParams
   }
 
 
+  public static class VietnameseTrain implements Serializable {
+    VietnameseTrain(){};
+    // Memo
+    // baseline pcfg LP/LR summary evalb: LP: 57.89 LR: 56.95 F1: 57.41 Exact: 8.55 N: 421
+    // Below is result of dev set with length <= 40
+    // pcfg LP/LR summary evalb: LP: 57.98 LR: 57.14 F1: 57.55 Exact: 8.78 N: 421
+    public boolean unaryV = true;
+
+    // down pcfg LP/LR summary evalb: LP: 57.69 LR: 57.14 F1: 57.41 Exact: 8.55 N: 421
+    public boolean unaryN = false;
+
+    // pcfg LP/LR summary evalb: LP: 57.91 LR: 57.15 F1: 57.53 Exact: 8.31 N: 421
+    public boolean unaryA = false;
+
+    // pcfg LP/LR summary evalb: LP: 58.6 LR: 57.32 F1: 57.95 Exact: 9.02 N: 421
+    public boolean unaryP = true;
+
+    // pcfg LP/LR summary evalb: LP: 58.51 LR: 57.27 F1: 57.89 Exact: 9.02 N: 421
+    public boolean unaryL = false;
+
+    // pcfg LP/LR summary evalb: LP: 58.45 LR: 57.26 F1: 57.85 Exact: 9.02 N: 421
+    public boolean unaryM = false;
+
+    // pcfg LP/LR summary evalb: LP: 58.52 LR: 57.27 F1: 57.89 Exact: 9.02 N: 421
+    public boolean unaryR = false;
+
+    // pcfg LP/LR summary evalb: LP: 58.7 LR: 57.39 F1: 58.04 Exact: 9.02 N: 421
+    public boolean unaryE = true;
+
+    // pcfg LP/LR summary evalb: LP: 58.7 LR: 57.39 F1: 58.04 Exact: 9.02 N: 421
+    public boolean unaryC = false;
+
+    // pcfg LP/LR summary evalb: LP: 58.69 LR: 57.39 F1: 58.03 Exact: 9.02 N: 421
+    public boolean unaryI = false;
+
+    // pcfg LP/LR summary evalb: LP: 58.7 LR: 57.39 F1: 58.04 Exact: 9.02 N: 421
+    public boolean unaryT = false;
+
+    // pcfg LP/LR summary evalb: LP: 58.7 LR: 57.39 F1: 58.04 Exact: 9.02 N: 421
+    public boolean unaryU = false;
+
+    // pcfg LP/LR summary evalb: LP: 58.69 LR: 57.39 F1: 58.03 Exact: 9.02 N: 421
+    public boolean unaryY = false;
+
+    // pcfg LP/LR summary evalb: LP: 58.57 LR: 57.26 F1: 57.9 Exact: 9.02 N: 421
+    public boolean unaryX = false;
+
+  }
   public static class EnglishTrain implements Serializable {
     /* THESE OPTIONS ARE ENGLISH-SPECIFIC AND AFFECT ONLY TRAIN TIME */
     EnglishTrain() {}
@@ -372,7 +421,7 @@ public class VietnameseTreebankParserParams extends AbstractTreebankParserParams
     /**
      * Mark "Intransitive" DT.  Good.
      */
-    public boolean unaryDT = false;//true;
+    public boolean unaryDT = true;//true;
     /**
      * Mark "Intransitive" RB.  Good.
      */
@@ -563,7 +612,7 @@ public class VietnameseTreebankParserParams extends AbstractTreebankParserParams
      *  Also get 'in case Sfin', 'In order to', and on one occasion
      *  'in order that'
      */
-    public int splitSbar = 0;
+    public int splitSbar = 3;
 
     /**
      * Retain NP-ADV annotation.  0 means strip "-ADV" annotation.  1 means to
@@ -672,6 +721,91 @@ public class VietnameseTreebankParserParams extends AbstractTreebankParserParams
     String cat = lab.value();
     String baseCat = tlp.basicCategory(cat);
 
+    if (t.isPreTerminal()) {
+      if (vietnameseTrain.unaryV && cat.startsWith("V")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryN && cat.startsWith("N")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryA && cat.startsWith("A")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryP && cat.startsWith("P")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryL && cat.startsWith("L")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryM && cat.startsWith("M")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryR && cat.startsWith("R")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryE && cat.startsWith("E")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryC && cat.startsWith("C")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryI && cat.startsWith("I")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryT && cat.startsWith("T")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryU && cat.startsWith("U")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryY && cat.startsWith("Y")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+
+      if (vietnameseTrain.unaryX && cat.startsWith("X")) {
+        if (parent.children().length == 1) {
+          cat = cat + "^U";
+        }
+      }
+    }
     if (t.isPreTerminal()) {
       if (englishTrain.correctTags) {
         if (baseParentStr.equals("NP")) {
@@ -2241,6 +2375,26 @@ public class VietnameseTreebankParserParams extends AbstractTreebankParserParams
       englishTrain.correctTags = true;  // different from acl03pcfg
       i += 1;
     } else if (args[i].equalsIgnoreCase("-goodPCFG")) {
+      System.out.println("===========================================================");
+      englishTrain.splitIN = 4;  // different from acl03pcfg
+      englishTrain.splitPercent = true;
+      englishTrain.splitNPpercent = 0;  // no longer different from acl03pcfg
+      englishTrain.splitPoss = 1;
+      englishTrain.splitCC = 1;
+      englishTrain.unaryDT = true;
+      englishTrain.unaryRB = true;
+      englishTrain.splitAux = 2;   // different from acl03pcfg
+      englishTrain.splitVP = 3;   // different from acl03pcfg
+      englishTrain.splitSGapped = 4;
+      englishTrain.dominatesV = 1;
+      englishTrain.splitTMP = NPTmpRetainingTreeNormalizer.TEMPORAL_ACL03PCFG;
+      englishTrain.splitNPADV = 1; // different from acl03pcfg
+      englishTrain.splitBaseNP = 1;
+      // englishTrain.splitMoreLess = true;   // different from acl03pcfg
+      englishTrain.correctTags = true;  // different from acl03pcfg
+      englishTrain.markDitransV = 2; // different from acl03pcfg
+      i += 1;
+    } else if (args[i].equalsIgnoreCase("-goodPCFxGVN")) {
       System.out.println("===========================================================");
       englishTrain.splitIN = 4;  // different from acl03pcfg
       englishTrain.splitPercent = true;
