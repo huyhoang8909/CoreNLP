@@ -15,6 +15,7 @@ import edu.stanford.nlp.util.ArraySet;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Generics;
 import edu.stanford.nlp.util.IntPair;
+import edu.stanford.nlp.util.logging.Redwood;
 import edu.stanford.nlp.pipeline.*;
 
 /**
@@ -36,6 +37,9 @@ import edu.stanford.nlp.pipeline.*;
  * @author Hoang Nguyen
  */
 public class CustomSentimentAnnotator implements Annotator {
+	
+  /** A logger for this class */
+  private static Redwood.RedwoodChannels log = Redwood.channels(CustomSentimentAnnotator.class);
 
   private static final String DEFAULT_MODEL = "edu/stanford/nlp/models/sentiment/sentiment.ser.gz";
 
@@ -48,6 +52,7 @@ public class CustomSentimentAnnotator implements Annotator {
     if (modelPath == null) {
       throw new IllegalArgumentException("No model specified for Sentiment annotator");
     }
+    log.info("Loading file: " + modelPath);
     this.model = SentimentModel.loadSerialized(modelPath);
   }
 

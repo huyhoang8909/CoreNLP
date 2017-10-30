@@ -207,6 +207,14 @@
       <scope>system</scope>
       <systemPath>${basedir}/lib/opennlp-tools-1.4.3.jar</systemPath>
     </dependency>
+        
+    <!-- MySQL JDBC driver -->
+    <!-- http://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.44</version>
+    </dependency>
 
   </dependencies>
   <build>
