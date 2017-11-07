@@ -65,7 +65,7 @@ public class PairsHolder {
     arr.add(wordtag);
   }
 
-  void setWord(int pos, String word) {
+  public void setWord(int pos, String word) {
     arr.get(pos).setWord(word);
   }
 

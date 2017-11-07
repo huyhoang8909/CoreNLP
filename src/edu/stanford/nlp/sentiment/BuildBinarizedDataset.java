@@ -2,6 +2,9 @@ package edu.stanford.nlp.sentiment;
 import edu.stanford.nlp.util.logging.Redwood;
 
 import java.io.StringReader;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -17,6 +20,8 @@ import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.Trees;
 import edu.stanford.nlp.util.Generics;
 import edu.stanford.nlp.util.Pair;
+import edu.stanford.nlp.util.concurrent.MulticoreWrapper;
+import edu.stanford.nlp.util.concurrent.ThreadsafeProcessor;
 
 /**
  * @author John Bauer
@@ -28,6 +33,69 @@ public class BuildBinarizedDataset  {
   private static Redwood.RedwoodChannels log = Redwood.channels(BuildBinarizedDataset.class);
 
   private BuildBinarizedDataset() {} // static methods only
+  
+  public class ParsingProcessor implements ThreadsafeProcessor<String, Tree> {
+	   public ParsingProcessor() {
+	   }
+
+		@Override
+		public Tree process(String chunk) {
+			
+		      if (chunk.trim().isEmpty()) {
+		          return null;
+		      }
+		      // The expected format is that line 0 will be the text of the
+		      // sentence, and each subsequence line, if any, will be a value
+		      // followed by the sequence of tokens that get that value.
+
+		     // Here we take the first line and tokenize it as one sentence.
+		     String[] lines = chunk.trim().split("\\n");
+		     String sentence = lines[0];
+		     StringReader sin = new StringReader(sentence);
+		     DocumentPreprocessor document = new DocumentPreprocessor(sin);
+		     document.setSentenceFinalPuncWords(new String[] {"\n"});
+		     List<HasWord> tokens = document.iterator().next();
+		     Integer mainLabel = new Integer(tokens.get(0).word());
+		     //System.out.print("Main Sentence Label: " + mainLabel.toString() + "; ");
+		     tokens = tokens.subList(1, tokens.size());
+		     //log.info(tokens);
+			
+		      Map<Pair<Integer, Integer>, String> spanToLabels = Generics.newHashMap();
+		      for (int i = 1; i < lines.length; ++i) {
+		    	  BuildBinarizedDataset.extractLabels(spanToLabels, tokens, lines[i]);
+		      }
+		      
+		      Tree tree = BuildBinarizedDataset.parser.apply(tokens);
+		      Tree binarized = BuildBinarizedDataset.binarizer.transformTree(tree);
+		      Tree collapsedUnary = BuildBinarizedDataset.transformer.transformTree(binarized);
+
+		      // if there is a sentiment model for use in prelabeling, we
+		      // label here and then use the user given labels to adjust
+		      if (BuildBinarizedDataset.sentimentModel != null) {
+		        Trees.convertToCoreLabels(collapsedUnary);
+		        SentimentCostAndGradient scorer = new SentimentCostAndGradient(BuildBinarizedDataset.sentimentModel, null);
+		        scorer.forwardPropagateTree(collapsedUnary);
+		        BuildBinarizedDataset.setPredictedLabels(collapsedUnary);
+		      } else {
+		    	  BuildBinarizedDataset.setUnknownLabels(collapsedUnary, mainLabel);
+		      }
+
+		      Trees.convertToCoreLabels(collapsedUnary);
+		      collapsedUnary.indexSpans();
+
+		      for (Map.Entry<Pair<Integer, Integer>, String> pairStringEntry : spanToLabels.entrySet()) {
+		    	  BuildBinarizedDataset.setSpanLabel(collapsedUnary, pairStringEntry.getKey(), pairStringEntry.getValue());
+		      }
+			return collapsedUnary;
+		}
+
+		@Override
+		public ThreadsafeProcessor<String, Tree> newInstance() {
+			// TODO Auto-generated method stub
+			return this;
+		}
+
+  }
 
   /**
    * Sets all of the labels on a tree to the given default value.
@@ -131,15 +199,21 @@ public class BuildBinarizedDataset  {
    * will be used to prelabel the sentences.  Any spans with given
    * labels will then be used to adjust those labels.
    */
+  public static CollapseUnaryTransformer transformer = null;
+  public static LexicalizedParser parser = null;
+  public static TreeBinarizer binarizer = null;
+  public static SentimentModel sentimentModel = null;
+  private static final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+  
   public static void main(String[] args) {
-    CollapseUnaryTransformer transformer = new CollapseUnaryTransformer();
+    transformer = new CollapseUnaryTransformer();
 
     String parserModel = "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz";
 
     String inputPath = null;
 
     String sentimentModelPath = null;
-    SentimentModel sentimentModel = null;
+    sentimentModel = null;
 
     for (int argIndex = 0; argIndex < args.length; ) {
       if (args[argIndex].equalsIgnoreCase("-input")) {
@@ -161,8 +235,8 @@ public class BuildBinarizedDataset  {
       throw new IllegalArgumentException("Must specify input file with -input");
     }
 
-    LexicalizedParser parser = LexicalizedParser.loadModel(parserModel);
-    TreeBinarizer binarizer = TreeBinarizer.simpleTreeBinarizer(parser.getTLPParams().headFinder(), parser.treebankLanguagePack());
+    parser = LexicalizedParser.loadModel(parserModel);
+    binarizer = TreeBinarizer.simpleTreeBinarizer(parser.getTLPParams().headFinder(), parser.treebankLanguagePack());
 
     if (sentimentModelPath != null) {
       sentimentModel = SentimentModel.loadSerialized(sentimentModelPath);
@@ -170,59 +244,26 @@ public class BuildBinarizedDataset  {
 
     String text = IOUtils.slurpFileNoExceptions(inputPath);
     String[] chunks = text.split("\\n\\s*\\n+"); // need blank line to make a new chunk
+    int numThreads = 4;
+    BuildBinarizedDataset dataset = new BuildBinarizedDataset();
+    MulticoreWrapper<String, Tree> wrapper = new MulticoreWrapper<>(numThreads, dataset.new ParsingProcessor());
 
     for (String chunk : chunks) {
-      if (chunk.trim().isEmpty()) {
-        continue;
+      wrapper.put(chunk);
+      //log.info("start at " + sdf.format(new Date()));
+      while (wrapper.peek()) {
+    	
+        System.out.println(wrapper.poll());
       }
-      // The expected format is that line 0 will be the text of the
-      // sentence, and each subsequence line, if any, will be a value
-      // followed by the sequence of tokens that get that value.
-
-      // Here we take the first line and tokenize it as one sentence.
-      String[] lines = chunk.trim().split("\\n");
-      String sentence = lines[0];
-      StringReader sin = new StringReader(sentence);
-      DocumentPreprocessor document = new DocumentPreprocessor(sin);
-      document.setSentenceFinalPuncWords(new String[] {"\n"});
-      List<HasWord> tokens = document.iterator().next();
-      Integer mainLabel = new Integer(tokens.get(0).word());
-      //System.out.print("Main Sentence Label: " + mainLabel.toString() + "; ");
-      tokens = tokens.subList(1, tokens.size());
-      //log.info(tokens);
-
-      Map<Pair<Integer, Integer>, String> spanToLabels = Generics.newHashMap();
-      for (int i = 1; i < lines.length; ++i) {
-        extractLabels(spanToLabels, tokens, lines[i]);
-      }
-
-      // TODO: add an option which treats the spans as constraints when parsing
-
-      Tree tree = parser.apply(tokens);
-      Tree binarized = binarizer.transformTree(tree);
-      Tree collapsedUnary = transformer.transformTree(binarized);
-
-      // if there is a sentiment model for use in prelabeling, we
-      // label here and then use the user given labels to adjust
-      if (sentimentModel != null) {
-        Trees.convertToCoreLabels(collapsedUnary);
-        SentimentCostAndGradient scorer = new SentimentCostAndGradient(sentimentModel, null);
-        scorer.forwardPropagateTree(collapsedUnary);
-        setPredictedLabels(collapsedUnary);
-      } else {
-        setUnknownLabels(collapsedUnary, mainLabel);
-      }
-
-      Trees.convertToCoreLabels(collapsedUnary);
-      collapsedUnary.indexSpans();
-
-      for (Map.Entry<Pair<Integer, Integer>, String> pairStringEntry : spanToLabels.entrySet()) {
-        setSpanLabel(collapsedUnary, pairStringEntry.getKey(), pairStringEntry.getValue());
-      }
-
-      System.out.println(collapsedUnary);
+      //log.info("end at " + sdf.format(new Date()));
       //System.out.println();
+    }
+    wrapper.join();
+    while (wrapper.peek()) {
+    	System.out.println(wrapper.poll());
     }
   } // end main
 
 }
+
+
