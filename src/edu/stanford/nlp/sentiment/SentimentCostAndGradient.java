@@ -57,12 +57,32 @@ public class SentimentCostAndGradient extends AbstractCachingDiffFunction {
    */
   private static int getPredictedClass(SimpleMatrix predictions) {
     int argmax = 0;
-    for (int i = 1; i < predictions.getNumElements(); ++i) {
+    for (int i = 1; i < 5; ++i) {
       if (predictions.get(i) > predictions.get(argmax)) {
         argmax = i;
       }
     }
     return argmax;
+  }
+  
+  private static int getPredictedRootClass(SimpleMatrix predictions) {
+	int argmax = 0;
+	
+	for (int i = 1; i < 5; ++i) {
+		if (predictions.get(i) > predictions.get(argmax)) {
+			argmax = i;
+		}
+	}
+	// price: 5,6,7
+	int send_arg = 5;
+	
+	for (int i = 6; i < 8; ++i) {
+		if (predictions.get(i) > predictions.get(argmax)) {
+			send_arg = i;
+		}
+	}
+	
+    return argmax*10 + send_arg;
   }
 
   private static class ModelDerivatives {
@@ -372,7 +392,10 @@ public class SentimentCostAndGradient extends AbstractCachingDiffFunction {
     // Build a vector that looks like 0,0,1,0,0 with an indicator for the correct class
     SimpleMatrix goldLabel = new SimpleMatrix(model.numClasses, 1);
     int goldClass = RNNCoreAnnotations.getGoldClass(tree);
-    if (goldClass >= 0) {
+    if (goldClass > 4) {
+    	goldLabel.set(goldClass/10, 1.0);
+    	goldLabel.set(goldClass % 10, 1.0);
+    } else if (goldClass >= 0) {
       goldLabel.set(goldClass, 1.0);
     }
 
@@ -531,7 +554,13 @@ public class SentimentCostAndGradient extends AbstractCachingDiffFunction {
 
     SimpleMatrix predictions = NeuralUtils.softmax(classification.mult(NeuralUtils.concatenateWithBias(nodeVector)));
 
-    int index = getPredictedClass(predictions);
+    int index = 0;
+    int goldClass = RNNCoreAnnotations.getGoldClass(tree);
+    if (goldClass > 4) {
+    	index = getPredictedRootClass(predictions);
+    } else {
+    	index = getPredictedClass(predictions);
+    }
     if (!(tree.label() instanceof CoreLabel)) {
       log.info("SentimentCostAndGradient: warning: No CoreLabels in nodes: " + tree);
       throw new AssertionError("Expected CoreLabels in the nodes");
