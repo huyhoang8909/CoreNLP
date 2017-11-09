@@ -21,7 +21,7 @@ import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 
 
 public class SubTrees {
-	
+
 	/** A logger for this class */
 	private static Redwood.RedwoodChannels log = Redwood.channels(SubTrees.class);
 
@@ -33,12 +33,12 @@ public class SubTrees {
 	    public static final int POSITIVE = 3;
 	    public static final int VERY_POSITIVE = 4;
 	}
-	
+
 	/** DB configuration params */
     private static String url = "jdbc:mysql://%s:3306/vietnamese_treebank?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8";
     private static Connection connection = null;
-    
-	public static void printSubTrees(Tree inputTree, ArrayList<Word> previousWords, 
+
+	public static void printSubTrees(Tree inputTree, ArrayList<Word> previousWords,
 			int sentiment,PreparedStatement words_statement)
 	{
         if (inputTree.isLeaf()) {
@@ -53,18 +53,18 @@ public class SubTrees {
         String sentence = "";
 
         if (cat.equals("ROOT") || (previousWords != null && !previousWords.equals(words))) {
-        	
+
         	if((label.containsKey(PredictedClass.class))){
         	 	 sentiment = RNNCoreAnnotations.getPredictedClass(inputTree);
         	}
-        
+
 	        for (Word w : words) {
 	        	sentence += w.word() + " ";
 	        }
         	sentence = sentence.trim();
         	try {
 
-            
+
         		System.out.println(sentiment + " " + sentence);
 
             	words_statement.setInt(1, sentiment);
@@ -80,9 +80,9 @@ public class SubTrees {
             printSubTrees(subTree, words,sentiment,words_statement);
         }
     }
-	
-	public static void setSentimentWithParser(Tree inputTree, ArrayList<Word> previousWords, 
-			int sentiment, int parent_id, int review_id, PreparedStatement words_statement) 
+
+	public static void setSentimentWithParser(Tree inputTree, ArrayList<Word> previousWords,
+			int sentiment, int parent_id, int review_id, PreparedStatement words_statement)
 	{
         if (inputTree.isLeaf()) {
             return;
@@ -97,49 +97,50 @@ public class SubTrees {
         int isInDict = 0;
 
         if (cat.equals("ROOT") || (previousWords != null && !previousWords.equals(words))) {
-        	
+
         	if((label.containsKey(PredictedClass.class))){
         	 	 sentiment = RNNCoreAnnotations.getPredictedClass(inputTree);
         	}
-        
+
 	        for (Word w : words) {
 	        	sentence += w.word() + " ";
 	        }
         	sentence = sentence.trim();
-        	
+
         	try {
 	            int new_sen = getSentiment(sentence);
 	            if ( new_sen >= 0 ) {
 	                sentiment = new_sen;
 	                isInDict = 1;
 	            }
-	
-	            String lowerCaseSentence = sentence.toLowerCase(); 
-	            
+
+	            String lowerCaseSentence = sentence.toLowerCase();
+
 	            if (lowerCaseSentence.startsWith("ưu_điểm") || lowerCaseSentence.startsWith("ưu")) {
 	            	sentiment = Sentiment.POSITIVE;
-	
+
 	            } else if (lowerCaseSentence.startsWith("khuyết_điểm") || lowerCaseSentence.startsWith("khuyết")) {
 	            	sentiment = Sentiment.NEGATIVE;
-	
+
 	            }
-	            
-	            if (cat.equals("N") || cat.equals("M") || cat.equals("Np")|| cat.equals("R") || cat.equals("E") || cat.equals("C") 
+
+	            if (cat.equals("N") || cat.equals("M") || cat.equals("Np")|| cat.equals("R") || cat.equals("E") || cat.equals("C")
 	            		|| cat.contains("QP") || cat.contains("L") || cat.contains("CC") || cat.contains("EOS") || cat.contains("Nc")
 	            		|| sentence.equals("-LRB-") || sentence.equals("-RRB-")) {
 	            	sentiment = Sentiment.NEUTRAL;
-	
+
 	            }
-	            
+
 	            System.out.println(sentiment + " " + sentence);
-	
+
 	     		words_statement.setString(1, sentence);
 	     		words_statement.setInt(2, parent_id);
 	     		words_statement.setString(3, cat);
 	     		words_statement.setInt(4, sentiment);
 	         	words_statement.setInt(5, isInDict);
+	         	words_statement.setInt(6, review_id);
 				words_statement.executeUpdate();
-				
+
 				if (cat.equals("ROOT")) {
 					 ResultSet rs = words_statement.getGeneratedKeys();
 	             	if(rs.next())
@@ -169,16 +170,16 @@ public class SubTrees {
 
         return -1;
     }
-    
+
     public static void runwithParser(Properties props) {
-        
+
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         Annotation annotation = null;
-        
+
         String category = props.getProperty("category");
         String select_reviews_sql = "SELECT * FROM reviews WHERE category = '%s' and length < 95 and is_verified = 1";
         select_reviews_sql = String.format(select_reviews_sql, category);
-        
+
         PreparedStatement reviews_stmt;
 		try {
 			reviews_stmt = connection.prepareStatement(select_reviews_sql);
@@ -187,7 +188,7 @@ public class SubTrees {
 	        List<Integer> sentiment_list = new ArrayList<>();
 	        List<Integer> review_id_list = new ArrayList<>();
 	        String text = "";
-	
+
 	        while(reviews_rs.next())
 	        {
 	        	text += reviews_rs.getString("content") + "\r\n";
@@ -196,16 +197,16 @@ public class SubTrees {
 	        }
 		    annotation = new Annotation(text);
 		    pipeline.annotate(annotation);
-	        
+
 	        int index = 0;
 	        int sentiment = 0;
-	        
+
 	        List<CoreMap> sentences = annotation.get(CoreAnnotations.SentencesAnnotation.class);
 	        if (sentences != null && sentences.size() > 0) {
 	        	String words_sql = "INSERT INTO %s(content,parent,category,sentiment,is_in_dict,reviews_id) VALUES (?,?,?,?,?,?)";
 	        	words_sql = String.format(words_sql, category);
 	            String select_words_sql = "SELECT sentiment FROM words WHERE content = ? and is_verified = 1";
-	            
+
 	        	PreparedStatement words_statement = null;
 				try {
 					words_statement = connection.prepareStatement(words_sql, Statement.RETURN_GENERATED_KEYS);
@@ -214,28 +215,28 @@ public class SubTrees {
 					e.printStackTrace();
 				}
 	        	Tree sentenceTree = null;
-	
+
 	        	for(CoreMap sentence : sentences) {
 	        	  sentiment = sentiment_list.get(index);
-	        	  
+
 	              sentenceTree = sentence.get(TreeCoreAnnotations.BinarizedTreeAnnotation.class);
 	        	  setSentimentWithParser(sentenceTree, null, sentiment, 0, review_id_list.get(index), words_statement);
 		          System.out.println();
 		          ++index;
 	        	}
-	        	
+
 	        }
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			log.info(e1.getMessage());
 		}
-    	
+
     }
-    
-    
+
+
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
         Properties props = new Properties();
-        
+
         if (args.length > 0) {
             props = StringUtils.argsToProperties(args);
         }
@@ -260,9 +261,9 @@ public class SubTrees {
 
         // update predicted column
         String category = props.getProperty("category");
-        String select_reviews_sql = "SELECT * FROM reviews WHERE category = '%s' and length < 95 and is_verified = 0";
+        String select_reviews_sql = "SELECT * FROM reviews WHERE category = '%s' and length < 95 and is_verified = 0 ";
         select_reviews_sql = String.format(select_reviews_sql, category);
-       
+
         PreparedStatement reviews_stmt;
 		try {
 			reviews_stmt = connection.prepareStatement(select_reviews_sql);
@@ -279,13 +280,13 @@ public class SubTrees {
 
 			annotation = new Annotation(text);
 			pipeline.annotate(annotation);
-        
+
 			int sentiment = 0;
-        
+
 			List<CoreMap> sentences = annotation.get(CoreAnnotations.SentencesAnnotation.class);
 			if (sentences != null && sentences.size() > 0) {
         	String words_sql = "update accessory set predicted_sentiment = ? where content = ? and predicted_sentiment is null";
-            
+
         	PreparedStatement words_statement = null;
 			try {
 				words_statement = connection.prepareStatement(words_sql, Statement.RETURN_GENERATED_KEYS);
