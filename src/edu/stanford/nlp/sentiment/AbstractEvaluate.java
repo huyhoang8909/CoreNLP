@@ -124,7 +124,7 @@ public abstract class AbstractEvaluate  {
 
     public void eval(Tree tree) {
         //cag.forwardPropagateTree(tree);
-        countTree(tree);
+        //countTree(tree);
         countRoot(tree);
         countLengthAccuracy(tree);
         if (ngrams != null) {
@@ -179,13 +179,22 @@ public abstract class AbstractEvaluate  {
     protected void countRoot(Tree tree) {
         Integer gold = RNNCoreAnnotations.getGoldClass(tree);
         Integer predicted = RNNCoreAnnotations.getPredictedClass(tree);
+        
         if (gold >= 0) {
             if (gold.equals(predicted)) {
                 rootLabelsCorrect++;
             } else {
                 rootLabelsIncorrect++;
             }
-            rootLabelConfusion[gold][predicted]++;
+            
+            if (gold > 4) {
+            	rootLabelConfusion[gold/10][predicted/10]++;
+            	rootLabelConfusion[gold%10][predicted%10]++;
+
+            } else {
+            	rootLabelConfusion[gold][predicted]++;
+            }
+            
         }
     }
 

@@ -82,7 +82,7 @@ public class SubTrees {
     }
 	
 	public static void setSentimentWithParser(Tree inputTree, ArrayList<Word> previousWords, 
-			int sentiment, int parent_id,PreparedStatement words_statement) 
+			int sentiment, int parent_id, int review_id, PreparedStatement words_statement) 
 	{
         if (inputTree.isLeaf()) {
             return;
@@ -153,7 +153,7 @@ public class SubTrees {
 			}
         }
         for (Tree subTree : inputTree.children()) {
-            setSentimentWithParser(subTree, words,sentiment, parent_id,words_statement);
+            setSentimentWithParser(subTree, words,sentiment, parent_id, review_id, words_statement);
         }
     }
 
@@ -185,12 +185,14 @@ public class SubTrees {
 
 	        ResultSet reviews_rs = reviews_stmt.executeQuery();
 	        List<Integer> sentiment_list = new ArrayList<>();
+	        List<Integer> review_id_list = new ArrayList<>();
 	        String text = "";
 	
 	        while(reviews_rs.next())
 	        {
 	        	text += reviews_rs.getString("content") + "\r\n";
 	        	sentiment_list.add(reviews_rs.getInt("sentiment"));
+	        	review_id_list.add(reviews_rs.getInt("id"));
 	        }
 		    annotation = new Annotation(text);
 		    pipeline.annotate(annotation);
@@ -200,7 +202,7 @@ public class SubTrees {
 	        
 	        List<CoreMap> sentences = annotation.get(CoreAnnotations.SentencesAnnotation.class);
 	        if (sentences != null && sentences.size() > 0) {
-	        	String words_sql = "INSERT INTO %s(content,parent,category,sentiment,is_in_dict) VALUES (?,?,?,?,?)";
+	        	String words_sql = "INSERT INTO %s(content,parent,category,sentiment,is_in_dict,reviews_id) VALUES (?,?,?,?,?,?)";
 	        	words_sql = String.format(words_sql, category);
 	            String select_words_sql = "SELECT sentiment FROM words WHERE content = ? and is_verified = 1";
 	            
@@ -214,11 +216,12 @@ public class SubTrees {
 	        	Tree sentenceTree = null;
 	
 	        	for(CoreMap sentence : sentences) {
-	        	  sentiment = sentiment_list.get(index++);
+	        	  sentiment = sentiment_list.get(index);
+	        	  
 	              sentenceTree = sentence.get(TreeCoreAnnotations.BinarizedTreeAnnotation.class);
-	        	  setSentimentWithParser(sentenceTree, null, sentiment, 0,words_statement);
+	        	  setSentimentWithParser(sentenceTree, null, sentiment, 0, review_id_list.get(index), words_statement);
 		          System.out.println();
-	
+		          ++index;
 	        	}
 	        	
 	        }
