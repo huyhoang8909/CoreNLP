@@ -124,7 +124,7 @@ public abstract class AbstractEvaluate  {
 
     public void eval(Tree tree) {
         //cag.forwardPropagateTree(tree);
-        //countTree(tree);
+        countTree(tree);
         countRoot(tree);
         countLengthAccuracy(tree);
         if (ngrams != null) {
@@ -172,7 +172,13 @@ public abstract class AbstractEvaluate  {
             } else {
                 labelsIncorrect++;
             }
-            labelConfusion[gold][predicted]++;
+            if (gold > 4) {
+            	labelConfusion[gold/10][predicted/10]++;
+            	labelConfusion[gold%10][predicted%10]++;
+
+            } else {
+            	labelConfusion[gold][predicted]++;
+            }
         }
     }
 
