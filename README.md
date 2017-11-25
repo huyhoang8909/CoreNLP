@@ -55,3 +55,37 @@ For information about making contributions to Stanford CoreNLP, see the file [CO
 
 Questions about CoreNLP can either be posted on StackOverflow with the tag [stanford-nlp](http://stackoverflow.com/questions/tagged/stanford-nlp),
   or on the [mailing lists](http://nlp.stanford.edu/software/corenlp.shtml#Mail).
+  
+## Input
+* Training Treebank has 9046 trees (8312 of length <= 40) and 194969 words (tokens)
+PCFG parsing 7 words (incl. stop): insideScore = -66.84719
+
+* Dev Treebank has 453 trees (421 of length <= 40) and 10148 words (tokens)
+
+* Testing Treebank has 900 trees (816 of length <= 40) and 20166 words (tokens)
+
+## Output
+##### without config any parameters
+* dev
+    * pcfg LP/LR summary evalb: LP: 56.05 LR: 56.2 F1: **56.12** Exact: 7.28 N: 453
+* test
+    * pcfg LP/LR summary evalb: LP: 58.08 LR: 59.04 F1: **58.55** Exact: 8.88 N: 900
+
+##### markUnaryTags is true (at training time not test time)
+```$xslt
+  /** Mark POS tags which are the sole member of their phrasal constituent.
+  *  This is like markUnary=2, applied to POS tags.
+  */
+  public boolean markUnaryTags = true;
+```
+
+* dev
+    * pcfg LP/LR summary evalb: LP: 57.15 LR: 56.61 F1: **56.88** Exact: 7.72 N: 453
+* test
+    * pcfg LP/LR summary evalb: LP: 58.09 LR: 59.74 F1: **58.9** Exact: 8.88 N: 900
+
+##### Limit sentence length <= 40
+* dev
+    * pcfg LP/LR summary evalb: LP: 58.63 LR: 57.58 F1: **58.1** Exact: 8.31 N: 421
+* test
+    * pcfg LP/LR summary evalb: LP: 60.66 LR: 62.05 F1: **61.35** Exact: 9.8 N: 816
