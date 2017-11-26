@@ -46,6 +46,7 @@ public class CustomSentimentAnnotator implements Annotator {
   private final String modelPath;
   private final SentimentModel model;
   private final CollapseUnaryTransformer transformer = new CollapseUnaryTransformer();
+  private final Boolean useOrigin;
 
   public CustomSentimentAnnotator(String name, Properties props) {
     this.modelPath = props.getProperty(name + ".model", DEFAULT_MODEL);
@@ -54,6 +55,7 @@ public class CustomSentimentAnnotator implements Annotator {
     }
     log.info("Loading file: " + modelPath);
     this.model = SentimentModel.loadSerialized(modelPath);
+    this.useOrigin = Boolean.parseBoolean(props.getProperty(name + ".useOrigin", "false"));
   }
 
   @Override
@@ -83,7 +85,14 @@ public class CustomSentimentAnnotator implements Annotator {
         }
         Tree collapsedUnary = transformer.transformTree(binarized);
         SentimentCostAndGradient scorer = new SentimentCostAndGradient(model, null);
-        scorer.forwardPropagateTree(collapsedUnary);
+        
+        if (this.useOrigin) {
+        	scorer.forwardPropagateTreeOrigin(collapsedUnary);
+        } else {
+        	// with cutomized gold label
+        	scorer.forwardPropagateTree(collapsedUnary);
+        }
+        
         sentence.set(SentimentCoreAnnotations.SentimentAnnotatedTree.class, collapsedUnary);
         int sentiment = RNNCoreAnnotations.getPredictedClass(collapsedUnary);
         sentence.set(SentimentCoreAnnotations.SentimentClass.class, SentimentUtils.sentimentString(model, sentiment));

@@ -57,12 +57,32 @@ public class SentimentCostAndGradient extends AbstractCachingDiffFunction {
    */
   private static int getPredictedClass(SimpleMatrix predictions) {
     int argmax = 0;
-    for (int i = 1; i < predictions.getNumElements(); ++i) {
+    for (int i = 1; i < 5; ++i) {
       if (predictions.get(i) > predictions.get(argmax)) {
         argmax = i;
       }
     }
     return argmax;
+  }
+  
+  private static int getPredictedRootClass(SimpleMatrix predictions) {
+	int argmax = 0;
+	
+	for (int i = 1; i < 5; ++i) {
+		if (predictions.get(i) > predictions.get(argmax)) {
+			argmax = i;
+		}
+	}
+	// price: 5,6,7
+	int send_arg = 5;
+	
+	for (int i = 6; i < 8; ++i) {
+		if (predictions.get(i) > predictions.get(argmax)) {
+			send_arg = i;
+		}
+	}
+	
+    return argmax*10 + send_arg;
   }
 
   private static class ModelDerivatives {
@@ -372,7 +392,10 @@ public class SentimentCostAndGradient extends AbstractCachingDiffFunction {
     // Build a vector that looks like 0,0,1,0,0 with an indicator for the correct class
     SimpleMatrix goldLabel = new SimpleMatrix(model.numClasses, 1);
     int goldClass = RNNCoreAnnotations.getGoldClass(tree);
-    if (goldClass >= 0) {
+    if (goldClass > 4) {
+    	goldLabel.set(goldClass/10, 1.0);
+    	goldLabel.set(goldClass % 10, 1.0);
+    } else if (goldClass >= 0) {
       goldLabel.set(goldClass, 1.0);
     }
 
@@ -531,7 +554,13 @@ public class SentimentCostAndGradient extends AbstractCachingDiffFunction {
 
     SimpleMatrix predictions = NeuralUtils.softmax(classification.mult(NeuralUtils.concatenateWithBias(nodeVector)));
 
-    int index = getPredictedClass(predictions);
+    int index = 0;
+    int goldClass = RNNCoreAnnotations.getGoldClass(tree);
+    if (goldClass > 4) {
+    	index = getPredictedRootClass(predictions);
+    } else {
+    	index = getPredictedClass(predictions);
+    }
     if (!(tree.label() instanceof CoreLabel)) {
       log.info("SentimentCostAndGradient: warning: No CoreLabels in nodes: " + tree);
       throw new AssertionError("Expected CoreLabels in the nodes");
@@ -541,5 +570,63 @@ public class SentimentCostAndGradient extends AbstractCachingDiffFunction {
     label.set(RNNCoreAnnotations.PredictedClass.class, index);
     label.set(RNNCoreAnnotations.NodeVector.class, nodeVector);
   } // end forwardPropagateTree
+  
+  public void forwardPropagateTreeOrigin(Tree tree) {
+	    SimpleMatrix nodeVector; // initialized below or Exception thrown // = null;
+	    SimpleMatrix classification; // initialized below or Exception thrown // = null;
+
+	    if (tree.isLeaf()) {
+	      // We do nothing for the leaves.  The preterminals will
+	      // calculate the classification for this word/tag.  In fact, the
+	      // recursion should not have gotten here (unless there are
+	      // degenerate trees of just one leaf)
+	      log.info("SentimentCostAndGradient: warning: We reached leaves in forwardPropagate: " + tree);
+	      throw new AssertionError("We should not have reached leaves in forwardPropagate");
+	    } else if (tree.isPreTerminal()) {
+	      classification = model.getUnaryClassification(tree.label().value());
+	      String word = tree.children()[0].label().value();
+	      SimpleMatrix wordVector = model.getWordVector(word);
+	      nodeVector = NeuralUtils.elementwiseApplyTanh(wordVector);
+	    } else if (tree.children().length == 1) {
+	      log.info("SentimentCostAndGradient: warning: Non-preterminal nodes of size 1: " + tree);
+	      throw new AssertionError("Non-preterminal nodes of size 1 should have already been collapsed");
+	    } else if (tree.children().length == 2) {
+	      forwardPropagateTreeOrigin(tree.children()[0]);
+	      forwardPropagateTreeOrigin(tree.children()[1]);
+
+	      String leftCategory = tree.children()[0].label().value();
+	      String rightCategory = tree.children()[1].label().value();
+	      SimpleMatrix W = model.getBinaryTransform(leftCategory, rightCategory);
+	      classification = model.getBinaryClassification(leftCategory, rightCategory);
+
+	      SimpleMatrix leftVector = RNNCoreAnnotations.getNodeVector(tree.children()[0]);
+	      SimpleMatrix rightVector = RNNCoreAnnotations.getNodeVector(tree.children()[1]);
+	      SimpleMatrix childrenVector = NeuralUtils.concatenateWithBias(leftVector, rightVector);
+	      if (model.op.useTensors) {
+	        SimpleTensor tensor = model.getBinaryTensor(leftCategory, rightCategory);
+	        SimpleMatrix tensorIn = NeuralUtils.concatenate(leftVector, rightVector);
+	        SimpleMatrix tensorOut = tensor.bilinearProducts(tensorIn);
+	        nodeVector = NeuralUtils.elementwiseApplyTanh(W.mult(childrenVector).plus(tensorOut));
+	      } else {
+	        nodeVector = NeuralUtils.elementwiseApplyTanh(W.mult(childrenVector));
+	      }
+	    } else {
+	      log.info("SentimentCostAndGradient: warning: Tree not correctly binarized: " + tree);
+	      throw new AssertionError("Tree not correctly binarized");
+	    }
+
+	    SimpleMatrix predictions = NeuralUtils.softmax(classification.mult(NeuralUtils.concatenateWithBias(nodeVector)));
+
+	    int index = getPredictedClass(predictions);
+
+	    if (!(tree.label() instanceof CoreLabel)) {
+	      log.info("SentimentCostAndGradient: warning: No CoreLabels in nodes: " + tree);
+	      throw new AssertionError("Expected CoreLabels in the nodes");
+	    }
+	    CoreLabel label = (CoreLabel) tree.label();
+	    label.set(RNNCoreAnnotations.Predictions.class, predictions);
+	    label.set(RNNCoreAnnotations.PredictedClass.class, index);
+	    label.set(RNNCoreAnnotations.NodeVector.class, nodeVector);
+	  } // end forwardPropagateTree
 
 }

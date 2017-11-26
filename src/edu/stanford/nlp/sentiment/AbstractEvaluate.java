@@ -172,20 +172,35 @@ public abstract class AbstractEvaluate  {
             } else {
                 labelsIncorrect++;
             }
-            labelConfusion[gold][predicted]++;
+            if (gold > 4) {
+            	labelConfusion[gold/10][predicted/10]++;
+            	labelConfusion[gold%10][predicted%10]++;
+
+            } else {
+            	labelConfusion[gold][predicted]++;
+            }
         }
     }
 
     protected void countRoot(Tree tree) {
         Integer gold = RNNCoreAnnotations.getGoldClass(tree);
         Integer predicted = RNNCoreAnnotations.getPredictedClass(tree);
+        
         if (gold >= 0) {
             if (gold.equals(predicted)) {
                 rootLabelsCorrect++;
             } else {
                 rootLabelsIncorrect++;
             }
-            rootLabelConfusion[gold][predicted]++;
+            
+            if (gold > 4) {
+            	rootLabelConfusion[gold/10][predicted/10]++;
+            	rootLabelConfusion[gold%10][predicted%10]++;
+
+            } else {
+            	rootLabelConfusion[gold][predicted]++;
+            }
+            
         }
     }
 
